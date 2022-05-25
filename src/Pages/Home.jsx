@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Banner_1 from "../assets/Banner1.jpg";
+import Banner_2 from "../assets/Banner2.jpg";
+import Banner_3 from "../assets/Banner3.jpg";
 import grayBg from "../assets/grayBg.png";
 import firstSectionSchool from "../assets/first-section-school.174ed857.svg";
 import firstSectionLighthouse from "../assets/first-section-lighthouse.a0be8772.svg";
@@ -24,18 +26,77 @@ import logWhite from "../assets/logoWhite.png";
 import phone from "../assets/phone.png";
 
 import { Parallax } from "react-scroll-parallax";
-
-import { Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  YouTube,
+  Circle,
+} from "@mui/icons-material";
 
 const Home = () => {
+  const [index, setIndex] = useState(0);
+  const timeout = useRef(null);
+
+  const resetTime = () => {
+    if (timeout.current) {
+      clearTimeout(timeout.current);
+    }
+  };
+
+  useEffect(() => {
+    resetTime();
+    timeout.current = setTimeout(() => {
+      setIndex((prev) => {
+        return prev === 2 ? 0 : prev + 1;
+      });
+    }, 3000);
+
+    return () => {
+      resetTime();
+    };
+  }, [index]);
+
   return (
     <div
       className="bg-[#dbdbdb] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar />
-      <img className="w-[100vw]" src={Banner_1} alt="" />
-
+      <div className=" relative">
+        <div
+          className={`w-[100vw] flex transition-all duration-300 ease-linear -translate-x-[${
+            index * 100
+          }vw]`}
+        >
+          <img key={0} className="w-[100vw]" src={Banner_1} alt="" />
+          <img key={1} className="w-[100vw]" src={Banner_2} alt="" />
+          <img key={2} className="w-[100vw]" src={Banner_3} alt="" />
+        </div>
+        <div className="flex gap-3 absolute w-full justify-center bottom-12">
+          <Circle
+            key={0}
+            onClick={() => setIndex(0)}
+            className={`${
+              index === 0 ? "text-red-500" : "text-gray-500"
+            } cursor-pointer`}
+          />
+          <Circle
+            key={1}
+            onClick={() => setIndex(1)}
+            className={`${
+              index === 1 ? "text-red-500" : "text-gray-500"
+            } cursor-pointer`}
+          />
+          <Circle
+            key={2}
+            onClick={() => setIndex(2)}
+            className={`${
+              index === 2 ? "text-red-500" : "text-gray-500"
+            } cursor-pointer`}
+          />
+        </div>
+      </div>
       <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
         <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
         <span>DISTRIBUTION PLATFORM</span>
