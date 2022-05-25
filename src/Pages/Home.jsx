@@ -169,7 +169,7 @@ const Home = () => {
         />
       </Parallax>
       <div className="flex gap-4 items-center w-[100vw] justify-center pl-6 mt-[2.5rem]">
-        <h3 className="text-gray-700 md:text-2xl text-xl lg:w-[26vw] md:w-[45vw]">
+        <h3 className="text-gray-700 md:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw]">
           Empower your children beyond books and boards that can prepare them
           for the unprecedented challenges of tomorrow.
         </h3>
@@ -180,7 +180,7 @@ const Home = () => {
       <div className="mt-[2.5rem] w-[100vw] justify-center items-center flex flex-col gap-4">
         <img src={book} className="w-[8rem] ml-[30vw] h-auto" alt="" />
         <div className="flex gap-4">
-          <Parallax translateX={[-50, 20]}>
+          <Parallax translateX={[-50, 30]}>
             <div className=" relative">
               <img src={card} className="w-[20rem] h-auto" alt="" />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
@@ -196,7 +196,7 @@ const Home = () => {
               </div>
             </div>
           </Parallax>
-          <Parallax translateX={[50, -20]}>
+          <Parallax translateX={[50, -30]}>
             <div className=" relative">
               <img src={card} className="w-[21.3rem] h-auto" alt="" />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
@@ -275,7 +275,7 @@ const Home = () => {
         </h1>
 
         <img
-          className="mt-[3rem] w-[80vw] h-auto md:ml-[10vw] ml-[5vw]"
+          className="mt-[3rem] w-[80vw] h-auto md:ml-[10vw] ml-[10vw]"
           src={schoolmitra}
           alt=""
         />
@@ -298,7 +298,7 @@ const Home = () => {
               market.
             </h1>
           </div>
-          <Parallax translateX={[100, -10]}>
+          <Parallax translateX={[100, -100]}>
             <img
               src={trophy}
               className="w-[43vw] h-auto sm:w-[20vw] sm:h-auto"
@@ -345,7 +345,7 @@ const Home = () => {
               global level.
             </h1>
           </div>
-          <Parallax translateX={[100, -10]}>
+          <Parallax translateX={[100, -80]}>
             <img
               src={laptop2}
               className="w-[43vw] h-[40vh] sm:w-[25vw] sm:h-auto"
@@ -366,7 +366,7 @@ const Home = () => {
 
       <div className="w-[100vw] my-[2rem] flex justify-center items-center">
         <iframe
-          className="w-[60vw] h-[60vh]"
+          className="sm:w-[60vw] sm:h-[60vh] w-[80vw] h-[40vh]"
           src="https://www.youtube.com/embed/J2I1oTQ7p18"
         ></iframe>
       </div>
