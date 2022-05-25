@@ -23,7 +23,10 @@ const Navbar = () => {
         style={{ backgroundImage: `url(${menuLine})` }}
       >
         <div className=" flex flex-col   gap-1 justify-center items-center">
-          <Circle className="!text-[0.9rem] text-red-800 cursor-pointer" />
+          <Circle
+            className="!text-[0.9rem] text-red-800 cursor-pointer"
+            onClick={() => navigate("/")}
+          />
           <span className="text-xs sm:text-base flex gap-1">
             <span>Why</span>
             <span>Eupheus</span>
