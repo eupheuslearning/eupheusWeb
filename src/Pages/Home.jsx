@@ -34,7 +34,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar />
-      <img className=" object-cover" src={Banner_1} alt="" />
+      <img className="w-[100vw]" src={Banner_1} alt="" />
 
       <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
         <span>INDIA’S LARGEST SCHOOL FOCUSED</span>

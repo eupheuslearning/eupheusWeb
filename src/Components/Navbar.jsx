@@ -3,8 +3,10 @@ import grayBg from "../assets/grayBg.png";
 import logo from "../assets/logo.png";
 import menuLine from "../assets/menuLine.png";
 import { CircleOutlined, Circle } from "@mui/icons-material";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div
       className={`lg:px-16 md:px-4 gap-4 sm:px-16 px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
@@ -21,33 +23,41 @@ const Navbar = () => {
         style={{ backgroundImage: `url(${menuLine})` }}
       >
         <div className=" flex flex-col   gap-1 justify-center items-center">
-          <Circle className="!text-[0.9rem] text-red-800" />
+          <Circle className="!text-[0.9rem] text-red-800 cursor-pointer" />
           <span className="text-xs sm:text-base flex gap-1">
             <span>Why</span>
             <span>Eupheus</span>
           </span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined className="!text-[0.9rem]" />
+          <CircleOutlined
+            className="!text-[0.9rem] cursor-pointer"
+            onClick={() => navigate("/about")}
+          />
+
           <span className="text-xs sm:text-base flex gap-1">
             <span>About</span>
             <span>Us</span>
           </span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined className="!text-[0.9rem]" />
+          <CircleOutlined
+            className="!text-[0.9rem] cursor-pointer"
+            onClick={() => navigate("/solutions")}
+          />
+
           <span className="text-xs sm:text-base">Solutions</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined className="!text-[0.9rem]" />
+          <CircleOutlined className="!text-[0.9rem] cursor-pointer" />
           <span className="text-xs sm:text-base">Demo</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined className="!text-[0.9rem]" />
+          <CircleOutlined className="!text-[0.9rem] cursor-pointer" />
           <span className="text-xs sm:text-base">Events</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined className="!text-[0.9rem]" />
+          <CircleOutlined className="!text-[0.9rem] cursor-pointer" />
           <span className="text-xs sm:text-base">Media</span>
         </div>
       </div>
