@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div
-      className={`lg:px-16 md:px-4 gap-4 sm:px-16 px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
+      className={`lg:px-16 md:px-4 gap-4 sm:px-16 fixed z-50  px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <img
@@ -56,7 +56,7 @@ const Navbar = () => {
           <span className="text-xs sm:text-base">Demo</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined className="!text-[0.9rem] cursor-pointer" />
+          <CircleOutlined className="!text-[0.9rem] cursor-pointer"  onClick={() => navigate("/events")} />
           <span className="text-xs sm:text-base">Events</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">

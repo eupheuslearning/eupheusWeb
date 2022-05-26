@@ -1,35 +1,12 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
-import Banner_1 from "../assets/Banner1.png";
 import grayBg from "../assets/grayBg.png";
-import firstSectionSchool from "../assets/first-section-school.174ed857.svg";
-import firstSectionLighthouse from "../assets/first-section-lighthouse.a0be8772.svg";
-import section2schools from "../assets/section2schools.png";
-import section2students from "../assets/section2students.png";
-import power from "../assets/power.png";
-import image1 from "../assets/image1.png";
-import footerimg1 from "../assets/footerimg1.png";
-import book from "../assets/book.png";
-import card from "../assets/card.png";
-import robot from "../assets/robot.png";
-import reading from "../assets/reading.png";
-import laptop from "../assets/laptop.png";
-import schoolmitra from "../assets/schoolmitra.png";
-import trophy from "../assets/trophy.png";
-import code2win from "../assets/code2win.png";
-import play from "../assets/play.png";
-import laptop2 from "../assets/laptop2.png";
-import iso from "../assets/iso.png";
-import logWhite from "../assets/logoWhite.png";
-import phone from "../assets/phone.png";
 import solutionBanner from "../assets/solution-banner.png";
 import solImg2 from "../assets/sol-img2.png";
 import solMap from "../assets/sol-map.png";
-
-import { Parallax } from "react-scroll-parallax";
-
-import { Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material";
 import Footer from "../Components/Footer";
+import img3 from "../assets/sol-img3.png";
+import { Parallax } from "react-scroll-parallax";
 
 const Solutions = () => {
   return (
@@ -87,6 +64,29 @@ const Solutions = () => {
       <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-4xl text-xl">
         <span>THE POWER OF THE 21ST CENTURY SCHOOL OS</span>
       </div>
+     <div className="grid lg:grid-cols-3  gap-2 mb-[5rem]">
+     <div className="mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
+      The 21st Century School OS unifies ERP (enterprise
+      resource planning), LMS (learning management
+      system) and CMS (content management system)
+      on a single sign-on, for all stakeholders of a school
+      – parents, teachers, students and parents. With the
+      uniqueness lies in the content and technology
+      solutions development and deployment, Eupheus
+      Learning is working together with schools to
+      encourage and support children as they develop
+      the core STEAM skills that are essential to succeed
+      in school and in today’s economy.
+      </div>
+   
+        <img
+          src={img3}
+          className="w-[50vw] h-auto lg:mt-[-5rem] ml-[25vw]"
+          alt=""
+        />   
+     </div>
+     
+                                     
 
       <Footer />
     </div>

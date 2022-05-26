@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import Banner_1 from "../assets/Banner1.jpg";
-import Banner_2 from "../assets/Banner2.jpg";
-import Banner_3 from "../assets/Banner3.jpg";
+import bn1 from "../assets/banner/banner1.jpg";
+import bn2 from "../assets/banner/banner2.jpg";
+import bn3 from "../assets/banner/banner3.jpg";
+import bn4 from "../assets/banner/banner4.jpg";
 import grayBg from "../assets/grayBg.png";
 import firstSectionSchool from "../assets/first-section-school.174ed857.svg";
 import firstSectionLighthouse from "../assets/first-section-lighthouse.a0be8772.svg";
@@ -22,12 +23,14 @@ import code2win from "../assets/code2win.png";
 import play from "../assets/play.png";
 import laptop2 from "../assets/laptop2.png";
 import iso from "../assets/iso.png";
+import sm from "../assets/sm.png";
+import footerimg1 from "../assets/footerimg1.png";
 
 import { Parallax } from "react-scroll-parallax";
 import { Circle } from "@mui/icons-material";
 
 const Home = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
   const timeout = useRef(null);
 
   const resetTime = () => {
@@ -61,9 +64,10 @@ const Home = () => {
             index * 100
           }vw]`}
         >
-          <img className="w-[100vw]" src={Banner_1} alt="" />
-          <img className="w-[100vw]" src={Banner_2} alt="" />
-          <img className="w-[100vw]" src={Banner_3} alt="" />
+          <img className="w-[100vw]" src={bn1} alt="" />
+          <img className="w-[100vw]" src={bn2} alt="" />
+          <img className="w-[100vw]" src={bn3} alt="" />
+          <img className="w-[100vw]" src={bn4} alt="" />
         </div>
         <div className="flex gap-3 absolute w-full justify-center sm:bottom-12 bottom-4">
           <Circle
@@ -85,6 +89,13 @@ const Home = () => {
             onClick={() => setIndex(2)}
             className={`${
               index === 2 ? "text-red-500" : "text-gray-500"
+            } cursor-pointer`}
+          />
+           <Circle
+            key={2}
+            onClick={() => setIndex(3)}
+            className={`${
+              index === 3 ? "text-red-500" : "text-gray-500"
             } cursor-pointer`}
           />
         </div>
@@ -245,7 +256,7 @@ const Home = () => {
           </h1>
         </span>
 
-        <h1 className=" md:mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw]  md:text-2xl text-xl">
+        <h1 className=" md:mt-[2.5rem] mb-[5rem] text-gray-700 lg:w-[50vw] md:w-[70vw]  md:text-2xl text-xl">
           Schools need assistance on ‘content management’, ‘learning
           management’, ‘enterprise resource planning’, ‘financial management’,
           ‘communication management’, etc. and there are disparate solutions
@@ -258,16 +269,20 @@ const Home = () => {
           of a school alike – Principals, Teachers, Students and Parents.
         </h1>
       </div>
-      <div className=" relative">
-        <h1 className=" lg:text-4xl text-3xl text-blue-800 font-bold absolute sm:top-0 -top-4 lg:left-[15vw] md:left-[10vw] left-[5vw] ">
+      <div className=" relative mt-[3rem]">
+        {/* <h1 className=" lg:text-4xl text-3xl text-blue-800 font-bold absolute sm:top-0 -top-4 lg:left-[15vw] md:left-[10vw] left-[5vw] ">
           SCHOOL
           <span className="lg:text-4xl text-3xl text-[#f5ab1d] font-bold">
             MITRA
           </span>
-        </h1>
-
+        </h1> */}
+         <img
+          className="  h-auto md:ml-[10vw] ml-[10vw]"
+          src={sm}
+          alt=""
+        />
         <img
-          className="mt-[3rem] w-[80vw] h-auto md:ml-[10vw] ml-[10vw]"
+          className="mt-[1rem] w-[80vw] h-auto md:ml-[10vw] ml-[10vw]"
           src={schoolmitra}
           alt=""
         />
@@ -277,7 +292,7 @@ const Home = () => {
           <h1 className=" text-red-700 text-2xl font-bold">COMPETITIONS</h1>
         </span>
         <div className="flex items-center md:gap-[7rem] gap-[2rem] ">
-          <div className="flex flex-col pt-4 gap-4">
+          <div className="flex flex-col pt-2 gap-4">
             <h1 className="text-gray-700 md:text-2xl text-sm w-[35vw]">
               Eupheus Learning hosts several national and international events
               to promote the cause of better learning, effective teaching &
@@ -347,7 +362,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-gray-700 md:text-2xl text-sm w-[70vw] pl-[2rem] md:ml-[12vw] md:wl-[5vw] mt-2 ">
+        <h1 className="text-gray-700 md:text-2xl mt-[3rem] text-sm w-[70vw] pl-[2rem] md:ml-[12vw] md:wl-[5vw] ">
           Eupheus Learning and Varthana Finance Private Ltd, has signed an MoU
           to empower schools with financing options and modern education
           offerings, thereby expanding their infrastructure, investing in
@@ -361,6 +376,37 @@ const Home = () => {
           className="sm:w-[60vw] sm:h-[60vh] w-[80vw] h-[40vh]"
           src="https://www.youtube.com/embed/J2I1oTQ7p18"
         ></iframe>
+      </div>
+      <div className="w-[100vw] lg:px-[9rem] items-center px-[3rem] py-[2rem] flex justify-between bg-[#f5ab1d]">
+        <div className=" flex flex-col gap-4">
+          <div className="flex flex-col gap-1">
+            <span className="lg:text-xl md:text-base sm:text-sm text-white">
+              Avocado App Helps Students Practice
+            </span>
+            <span className="lg:text-xl md:text-base sm:text-sm text-white">
+              Maths And Science To Perfection
+            </span>
+            <span className="md:text-base text-xs text-red-700">
+              December 17, 2018
+            </span>
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="lg:text-xl md:text-base sm:text-sm text-white">
+              Learn Coding In A Fun And
+            </span>
+            <span className="lg:text-xl md:text-base sm:text-sm text-white">
+              Interactive Manner!
+            </span>
+            <span className="md:text-base text-xs text-red-700">
+              November 15, 2017
+            </span>
+          </div>
+        </div>
+        <img
+          src={footerimg1}
+          className="md:w-[30vw] w-[20vw] hidden sm:block h-[10vh] md:h-auto"
+          alt=""
+        />
       </div>
       <Footer />
     </div>
