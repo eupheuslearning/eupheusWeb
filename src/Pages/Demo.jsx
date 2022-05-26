@@ -2,9 +2,6 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import Banner_1 from "../assets/banner2.png";
 import grayBg from "../assets/grayBg.png";
-import footerimg1 from "../assets/footerimg1.png";
-import logWhite from "../assets/logoWhite.png";
-import phone from "../assets/phone.png";
 import dashBorder from "../assets/dash-border.png";
 import board from "../assets/board.png";
 import lgDashBorder from "../assets/dash-border-lg.png";
@@ -12,7 +9,6 @@ import submit from "../assets/submit.png";
 
 import { Parallax } from "react-scroll-parallax";
 
-import { Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material";
 import Footer from "../Components/Footer";
 
 const Demo = () => {
@@ -129,46 +125,47 @@ const Demo = () => {
             </button>
           </form>
         </div>
-
-        <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-          <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
-            <span>CURRICULAR SOLUTIONS</span>
-          </div>
-        </Parallax>
-
-        <div className="w-[100vw] my-[2rem] flex justify-center items-center">
-          <iframe
-            className="w-[60vw] h-[60vh] shadow-3xl "
-            src="https://www.youtube.com/embed/J2I1oTQ7p18"
-          ></iframe>
-        </div>
-
-        <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-          <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
-            <span>SUPPLEMENTAL CONTENT SOLUTIONS</span>
-          </div>
-        </Parallax>
-
-        <div className="w-[100vw] my-[2rem] flex justify-center items-center">
-          <iframe
-            className="w-[60vw] h-[60vh] shadow-3xl "
-            src="https://www.youtube.com/embed/J2I1oTQ7p18"
-          ></iframe>
-        </div>
-        <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-          <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
-            <span>21ST CENTURY SCHOOL OS</span>
-          </div>
-        </Parallax>
-
-        <div className="w-[100vw] my-[2rem] flex justify-center items-center">
-          <iframe
-            className="w-[60vw] h-[60vh] shadow-3xl "
-            src="https://www.youtube.com/embed/J2I1oTQ7p18"
-          ></iframe>
-        </div>
-        <Footer />
       </div>
+
+      <Parallax translateX={[-50, 30]} scale={[1, 1]}>
+        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+          <span>CURRICULAR SOLUTIONS</span>
+        </div>
+      </Parallax>
+
+      <div className="w-[100vw] my-[2rem] flex justify-center items-center">
+        <iframe
+          className="w-[60vw] h-[60vh] shadow-3xl "
+          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+        ></iframe>
+      </div>
+
+      <Parallax translateX={[-50, 30]} scale={[1, 1]}>
+        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+          <span>SUPPLEMENTAL CONTENT SOLUTIONS</span>
+        </div>
+      </Parallax>
+
+      <div className="w-[100vw] my-[2rem] flex justify-center items-center">
+        <iframe
+          className="w-[60vw] h-[60vh] shadow-3xl "
+          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+        ></iframe>
+      </div>
+      <Parallax translateX={[-50, 30]} scale={[1, 1]}>
+        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+          <span>21ST CENTURY SCHOOL OS</span>
+        </div>
+      </Parallax>
+
+      <div className="w-[100vw] my-[2rem] flex justify-center items-center">
+        <iframe
+          className="w-[60vw] h-[60vh] shadow-3xl "
+          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+        ></iframe>
+      </div>
+
+      <Footer />
     </div>
   );
 };
