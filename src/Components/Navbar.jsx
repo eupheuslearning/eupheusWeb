@@ -33,7 +33,7 @@ const Navbar = () => {
           </span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined className="!text-[0.9rem] cursor-pointer" />
+          <CircleOutlined className="!text-[0.9rem] cursor-pointer" onClick={() => navigate("/about")} />
 
           <span className="text-xs sm:text-base flex gap-1">
             <span>About</span>
@@ -60,7 +60,7 @@ const Navbar = () => {
           <span className="text-xs sm:text-base">Events</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined className="!text-[0.9rem] cursor-pointer" />
+          <CircleOutlined className="!text-[0.9rem] cursor-pointer" onClick={() => navigate("/media")} />
           <span className="text-xs sm:text-base">Media</span>
         </div>
       </div>
