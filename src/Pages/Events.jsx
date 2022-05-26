@@ -4,7 +4,9 @@ import Footer from "../Components/Footer";
 import Banner_1 from "../assets/eventBanner.png";
 import power from "../assets/power.png";
 import grayBg from "../assets/grayBg.png";
-import { Parallax } from "react-scroll-parallax";
+import isfo from "../assets/iso.png";
+import eventLast from "../assets/img01.png";
+import winner from "../assets/wiiner.png";
 
 export default function Events() {
   return (
@@ -58,20 +60,114 @@ export default function Events() {
      </div>
      
      <div className="my-[5rem]">
-     <div className=" mt-[3rem] text-black-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-xl">
+ 
+
+     <div className="grid lg:grid-cols-2">
+     <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
+     <div className=" my-[3rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
      <span className='font-bold ' >FOR GRADES 1-4</span>
      </div>
-     <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
      Game-based course in which missions<br />
     are achieved by a program written by<br />
     Blocks. While preparing for a birthday<br />
     party, students will learn repeat loop<br />
     and Robo sensors of colors and text.
       </div>
-      <Parallax rotate={[180, 0]}>
-          <img src={power} className="w-[40vw] h-auto" alt="" />
-        </Parallax>
+    
+        <img src={power} className="w-[40vw] h-auto" alt="" />
      </div>
+     
+      
+     </div>
+
+     <div className="my-[5rem]">
+  
+
+     <div className="grid lg:grid-cols-2">
+
+    
+        <img src={power} className="w-[40vw] h-auto" alt="" />
+        <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
+     <div className=" my-[3rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
+     <span className='font-bold ' >FOR GRADES 5-8</span>
+     </div>
+     Game-based course in which missions<br />
+    are achieved by a program written by<br />
+    Blocks. While preparing for a birthday<br />
+    party, students will learn repeat loop<br />
+    and Robo sensors of colors and text.
+      </div>
+     </div>
+     
+      
+     </div>
+
+     <div className="my-[5rem]">
+ 
+
+ <div className="grid lg:grid-cols-2">
+ <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
+ <div className=" my-[3rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
+ <span className='font-bold ' >FOR GRADES 1-4</span>
+ </div>
+ Game-based course in which missions<br />
+are achieved by a program written by<br />
+JavaScript. Students will start their first<br />
+steps to JavaScript as a textual language<br />
+and its relation to Blocks programs.
+  </div>
+
+    <img src={power} className="w-[40vw] h-auto" alt="" />
+ </div>
+ 
+  
+ </div>
+
+<div className="my-[5rem]">
+<img src={isfo} className="w-[430px] my-[2rem]  md:ml-[12vw] ml-[5vw] h-auto" alt="" />
+<div className=" mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-xl">
+          <span className='font-bold '>OLYMPIAD THROUGH ISFO</span>
+          <span className='font-extrabold ' >(FOR GRADES 1 – 10)</span>
+        </div>
+
+        <div className='grid lg:grid-cols-2 gap-2'>
+            <div>
+            <p className='
+             md:ml-[12vw] ml-[5vw] my-[3rem] font-semibold md:text-2xl'>
+        Empowering Children to become<br />
+        Global Olympiad Champions
+        </p>
+        <div className=" my-[2rem] text-gray-700  md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
+        International Society for Olympiad (ISFO),
+        registered as a non-profit organisation in India and
+        UAE, aims to identify, encourage and promote
+        students with a creative bent of mind and affinity
+        towards the disciplines of Maths, Science, English
+        and General Knowledge. It aims to nurture &amp;
+        enhance the latent genius in students through
+        tests &amp; competitive exams of exemplary global
+        quality and standard. ISFO aims to create an army
+        of global learners who challenge the boundaries of
+        the existing educational structure &amp; emerge
+        as international olympiad champions.
+            </div>
+
+            <div className=" my-[2rem] text-gray-700  md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
+            ISFO is not just a series of tests—it’s a way
+            of life!
+            </div>
+            </div>
+            <img src={eventLast} className="" alt="" />
+        </div>
+</div>
+
+<div className=" my-[5rem]  lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-xl">
+          <span className=''>PAST <span className='font-bold '> OLYMPIAD WINNERS</span></span>
+        </div>
+
+      <div className='flex justify-center'>
+      <img src={winner} className=" w-auto" alt="" />
+      </div>
 
      <Footer />
     </div>
