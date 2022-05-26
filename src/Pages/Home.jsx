@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 import Banner_1 from "../assets/Banner1.jpg";
 import Banner_2 from "../assets/Banner2.jpg";
 import Banner_3 from "../assets/Banner3.jpg";
@@ -10,7 +11,6 @@ import section2schools from "../assets/section2schools.png";
 import section2students from "../assets/section2students.png";
 import power from "../assets/power.png";
 import image1 from "../assets/image1.png";
-import footerimg1 from "../assets/footerimg1.png";
 import book from "../assets/book.png";
 import card from "../assets/card.png";
 import robot from "../assets/robot.png";
@@ -22,17 +22,9 @@ import code2win from "../assets/code2win.png";
 import play from "../assets/play.png";
 import laptop2 from "../assets/laptop2.png";
 import iso from "../assets/iso.png";
-import logWhite from "../assets/logoWhite.png";
-import phone from "../assets/phone.png";
 
 import { Parallax } from "react-scroll-parallax";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  YouTube,
-  Circle,
-} from "@mui/icons-material";
+import { Circle } from "@mui/icons-material";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -69,9 +61,9 @@ const Home = () => {
             index * 100
           }vw]`}
         >
-          <img key={0} className="w-[100vw]" src={Banner_1} alt="" />
-          <img key={1} className="w-[100vw]" src={Banner_2} alt="" />
-          <img key={2} className="w-[100vw]" src={Banner_3} alt="" />
+          <img className="w-[100vw]" src={Banner_1} alt="" />
+          <img className="w-[100vw]" src={Banner_2} alt="" />
+          <img className="w-[100vw]" src={Banner_3} alt="" />
         </div>
         <div className="flex gap-3 absolute w-full justify-center sm:bottom-12 bottom-4">
           <Circle
@@ -370,103 +362,7 @@ const Home = () => {
           src="https://www.youtube.com/embed/J2I1oTQ7p18"
         ></iframe>
       </div>
-
-      <div className="w-[100vw] lg:px-[9rem] items-center px-[3rem] py-[2rem] flex justify-between bg-[#f5ab1d]">
-        <div className=" flex flex-col gap-4">
-          <div className="flex flex-col gap-1">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Avocado App Helps Students Practice
-            </span>
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Maths And Science To Perfection
-            </span>
-            <span className="md:text-base text-xs text-red-700">
-              December 17, 2018
-            </span>
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Learn Coding In A Fun And
-            </span>
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Interactive Manner!
-            </span>
-            <span className="md:text-base text-xs text-red-700">
-              November 15, 2017
-            </span>
-          </div>
-        </div>
-        <img
-          src={footerimg1}
-          className="md:w-[30vw] w-[20vw] hidden sm:block h-[10vh] md:h-auto"
-          alt=""
-        />
-      </div>
-
-      <div className="bg-red-600 w-[100vw] lg:px-[9rem] items-start sm:px-[3rem] px-4 py-[2rem] flex justify-between ">
-        <div className="flex flex-col gap-3 sm:w-[20vw] w-[25vw]">
-          <img src={logWhite} className="object-cover w-full" alt="" />
-          <span className="text-white sm:text-sm text-xs w-full">
-            A-12, Second Floor, Mohan Cooperative Industrial Estate, Main
-            Mathura Road, Near Sarita Vihar Metro Station, New Delhi – 110044
-          </span>
-        </div>
-        <div className="flex flex-col gap-3">
-          <span className="text-white sm:text-xl text-base">USEFUL LINKS</span>
-          <div className="flex flex-col gap-1">
-            <span className="text-white sm:text-sm text-xs">Properties</span>
-            <span className="text-white sm:text-sm text-xs">New Books</span>
-            <span className="text-white sm:text-sm text-xs">
-              Awards & Recognitions
-            </span>
-            <span className="text-white sm:text-sm text-xs">News</span>
-            <span className="text-white sm:text-sm text-xs">Press Release</span>
-            <span className="text-white sm:text-sm text-xs">
-              Terms And Conditions
-            </span>
-            <span className="text-white sm:text-sm text-xs">Career</span>
-          </div>
-          <div className="flex gap-2">
-            <Facebook />
-            <Twitter />
-            <Instagram />
-            <YouTube />
-          </div>
-        </div>
-        <div className="flex flex-col gap-3 w-[30vw]">
-          <span className="text-white sm:text-xl text-base">NEWSLETTER</span>
-          <div className="flex flex-col gap-1">
-            <span className="text-white sm:text-sm text-xs">
-              Be the first to know about the latest news.
-            </span>
-            <input
-              type="text"
-              placeholder="E-mail...."
-              className=" bg-white sm:px-4 px-2 placeholder:text-sm sm:placeholder:text-base sm:py-1 sm:w-[20vw] w-[30vw] rounded-md outline-none"
-            />
-          </div>
-          <div className="flex gap-4 items-center w-full">
-            <div className="flex flex-col gap-3 w-[12vw]">
-              <span className="text-white sm:text-xl text-base w-[30vw]">
-                GET IN TOUCH
-              </span>
-              <div className="flex flex-col gap-1">
-                <span className="text-white sm:text-sm text-xs w-[30vw]">
-                  +91 85265 25846
-                </span>
-                <span className="text-white sm:text-sm text-xs w-[30vw]">
-                  info@eupheus.in
-                </span>
-              </div>
-            </div>
-            <img
-              src={phone}
-              className="w-[15vw] h-auto hidden sm:block"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 };
