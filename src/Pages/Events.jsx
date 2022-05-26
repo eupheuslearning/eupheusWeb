@@ -7,6 +7,9 @@ import grayBg from "../assets/grayBg.png";
 import isfo from "../assets/iso.png";
 import eventLast from "../assets/img01.png";
 import winner from "../assets/wiiner.png";
+import java from "../assets/java.png";
+import python from "../assets/python.png";
+import class1 from "../assets/class1.png";
 
 export default function Events() {
   return (
@@ -74,7 +77,9 @@ export default function Events() {
     and Robo sensors of colors and text.
       </div>
     
-        <img src={power} className="w-[40vw] h-auto" alt="" />
+      <div className="flex justify-center">
+        <img src={class1} className=" h-[70vh]" alt="" />
+        </div>
      </div>
      
       
@@ -86,7 +91,9 @@ export default function Events() {
      <div className="grid lg:grid-cols-2">
 
     
-        <img src={power} className="w-[40vw] h-auto" alt="" />
+        <div className="flex justify-center">
+        <img src={java} className=" h-[70vh]" alt="" />
+        </div>
         <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
      <div className=" my-[3rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
      <span className='font-bold ' >FOR GRADES 5-8</span>
@@ -117,7 +124,9 @@ steps to JavaScript as a textual language<br />
 and its relation to Blocks programs.
   </div>
 
-    <img src={power} className="w-[40vw] h-auto" alt="" />
+    <div className="flex justify-center">
+    <img src={python} className="h-[70vh]" alt="" />
+    </div>
  </div>
  
   
@@ -157,7 +166,7 @@ and its relation to Blocks programs.
             of life!
             </div>
             </div>
-            <img src={eventLast} className="" alt="" />
+            <img src={eventLast} className="h-[100vh] lg:mt-[-10vh]" alt="" />
         </div>
 </div>
 
