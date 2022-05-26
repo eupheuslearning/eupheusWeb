@@ -15,6 +15,9 @@ import { Parallax } from "react-scroll-parallax";
 import { Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material";
 import Footer from "../Components/Footer";
 
+
+
+
 const Demo = () => {
   return (
     <div
@@ -33,6 +36,7 @@ const Demo = () => {
         </div>
         <img className="h-[100vh]" src={Banner_1} alt="" />
       </div>
+
 
       <div className="w-[100vw] flex justify-center mt-[5rem]">
         <div className="bg-white rounded-r-3xl drop-shadow-2xl px-[5rem] py-[5rem]">
@@ -129,7 +133,7 @@ const Demo = () => {
             </button>
           </form>
         </div>
-      </div>
+
 
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
         <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
@@ -169,7 +173,9 @@ const Demo = () => {
         ></iframe>
       </div>
 
+
       <Footer />
+
     </div>
   );
 };

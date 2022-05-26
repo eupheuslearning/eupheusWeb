@@ -1,7 +1,8 @@
 import React from "react";
 import logWhite from "../assets/logoWhite.png";
 import phone from "../assets/phone.png";
-import footerimg1 from "../assets/footerimg1.png";
+
+
 import {
   Facebook,
   Twitter,
@@ -13,37 +14,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="w-[100vw] lg:px-[9rem] items-center px-[3rem] py-[2rem] flex justify-between bg-[#f5ab1d]">
-        <div className=" flex flex-col gap-4">
-          <div className="flex flex-col gap-1">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Avocado App Helps Students Practice
-            </span>
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Maths And Science To Perfection
-            </span>
-            <span className="md:text-base text-xs text-red-700">
-              December 17, 2018
-            </span>
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Learn Coding In A Fun And
-            </span>
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Interactive Manner!
-            </span>
-            <span className="md:text-base text-xs text-red-700">
-              November 15, 2017
-            </span>
-          </div>
-        </div>
-        <img
-          src={footerimg1}
-          className="md:w-[30vw] w-[20vw] hidden sm:block h-[10vh] md:h-auto"
-          alt=""
-        />
-      </div>
+      
 
       <div className="bg-red-600 w-[100vw] lg:px-[9rem] items-start sm:px-[3rem] px-4 py-[2rem] flex justify-between ">
         <div className="flex flex-col gap-3 sm:w-[20vw] w-[25vw]">
