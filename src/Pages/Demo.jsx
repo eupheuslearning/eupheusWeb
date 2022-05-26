@@ -3,25 +3,12 @@ import Navbar from "../Components/Navbar";
 import Banner_1 from "../assets/banner2.png";
 import grayBg from "../assets/grayBg.png";
 import footerimg1 from "../assets/footerimg1.png";
-// import firstSectionSchool from "../assets/first-section-school.174ed857.svg";
-// import firstSectionLighthouse from "../assets/first-section-lighthouse.a0be8772.svg";
-// import section2schools from "../assets/section2schools.png";
-// import section2students from "../assets/section2students.png";
-// import power from "../assets/power.png";
-// import image1 from "../assets/image1.png";
-// import book from "../assets/book.png";
-// import card from "../assets/card.png";
-// import robot from "../assets/robot.png";
-// import reading from "../assets/reading.png";
-// import laptop from "../assets/laptop.png";
-// import schoolmitra from "../assets/schoolmitra.png";
-// import trophy from "../assets/trophy.png";
-// import code2win from "../assets/code2win.png";
-// import play from "../assets/play.png";
-// import laptop2 from "../assets/laptop2.png";
-// import iso from "../assets/iso.png";
 import logWhite from "../assets/logoWhite.png";
 import phone from "../assets/phone.png";
+import dashBorder from "../assets/dash-border.png";
+import board from "../assets/board.png";
+import lgDashBorder from "../assets/dash-border-lg.png";
+import submit from "../assets/submit.png";
 
 import { Parallax } from "react-scroll-parallax";
 
@@ -45,59 +32,102 @@ const Demo = () => {
         </div>
         <img className="h-[100vh]" src={Banner_1} alt="" />
       </div>
-      <div className=" m-[5rem]">
-        {/* <div className=" h-[100vh] w-lg-[85vw] rounded-tr-[5rem] rounded-br-[5rem] shadow-3xl pt-[3rem]  bg-white lg:mx-[15vw]  ">
-        <div className="p-[3rem] flex justify-around">
-            <div>
-            <input type="radio" name="category" id=""  /><span className=" text-red-700 md:text-3xl text-base font-bold "> PRINCIPAL/SCHOOL</span> 
-            </div>
-            <div>
-            <input type="radio" name="category"  /> <span className=" md:text-3xl text-base font-bold ">TEACHER</span> 
-            </div>
-            <div>
-              <input type="radio" name="category"  /> <span className=" md:text-3xl text-base font-bold ">PARENTS/STUDENT</span> 
-            </div>
-        </div>
-        <div className="p-[3rem] flex justify-around">
-        <div>
-            <div className=" my-2">
-            <label htmlFor="" className=" md:text-3xl text-base font-bold" >FIRST AND LAST NAME</label><br />
-                <input type="text" name="name" className=" border-2" />
-            </div> 
-            <div className=" my-2">
-                <label htmlFor="" className=" md:text-3xl text-base font-bold">ADDRESS</label><br />
-                <input type="text" name="name" className=" border-2" />
-            </div>    
-            <div className=" my-2">
-                <label htmlFor="" className=" md:text-3xl text-base font-bold">ZIP / CITY</label><br />
-                <input type="text" name="name" className=" border-2" />
-            </div> 
-            <div className=" my-2">
-                <label htmlFor="" className=" md:text-3xl text-base font-bold">PHONE</label><br />
-                <input type="text" name="name" className=" border-2" />
-            </div> 
-            <div className=" my-2">
-                <label htmlFor="" className=" md:text-3xl text-base font-bold">E-MAIL</label><br />
-                <input type="text" name="name" className=" border-2" />
-            </div> 
-             
-            </div> 
-        
-        <div>
-        <img src={reading} className="w-[10rem] sm:w-[25vw] h-auto" alt="" />
-        </div>
-        </div>
-        <div className="p-[3rem]">
-        <div>
-                <label htmlFor="" className=" md:text-3xl text-base font-bold">QUERY</label><br />
-                <input type="text" name="name" className=" border-2" />
-            </div> 
 
+      <div className="w-[100vw] flex justify-center mt-[5rem]">
+        <div className="bg-white rounded-r-3xl drop-shadow-2xl px-[5rem] py-[5rem]">
+          <form className="flex flex-col gap-[3rem]">
+            <div className="flex gap-4 justify-between items-center">
+              <input type="radio" name="info" />
+              <lable className="text-3xl font-semibold">PRINCIPAL/SCHOOL</lable>
+              <input type="radio" name="info" />
+              <lable className="text-3xl font-semibold">TEACHER</lable>
+              <input type="radio" name="info" />
+              <lable className="text-3xl font-semibold">PARENTS/STUDENT</lable>
+            </div>
+            <div className="flex gap-[4rem] items-center">
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4">
+                  <h1 className="text-3xl font-semibold">
+                    FIRST AND LAST NAME
+                  </h1>
+                  <div
+                    className="p-4 bg-no-repeat w-[30vw]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h1 className="text-3xl font-semibold">ADDRESS</h1>
+                  <div
+                    className="p-4 bg-no-repeat w-[30vw]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h1 className="text-3xl font-semibold">ZIP / CITY</h1>
+                  <div
+                    className="p-4 bg-no-repeat w-[30vw]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h1 className="text-3xl font-semibold">PHONE</h1>
+                  <div
+                    className="p-4 bg-no-repeat w-[30vw]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h1 className="text-3xl font-semibold">E-MAIL</h1>
+                  <div
+                    className="p-4 bg-no-repeat w-[30vw]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+              </div>
+              <img src={board} className="w-[25vw] h-[25vw]" alt="" />
+            </div>
+            <div>
+              <h1 className="text-3xl font-semibold">QUERY</h1>
+              <div
+                className="px-8 py-6 bg-no-repeat w-full h-[20vh]"
+                style={{
+                  backgroundImage: `url(${lgDashBorder})`,
+                  backgroundSize: "100% 100%",
+                }}
+              >
+                <input type="text" className=" outline-none w-full" />
+              </div>
+            </div>
+            <button>
+              <img src={submit} alt="" />
+            </button>
+          </form>
         </div>
-        <div className="p-[3rem]">
-            <button>SUBMIT</button>
-        </div>
-    </div> */}
       </div>
 
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
