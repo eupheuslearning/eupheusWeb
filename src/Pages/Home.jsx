@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import bn1 from "../assets/banner/banner1.jpg";
-import bn2 from "../assets/banner/banner2.jpg";
-import bn3 from "../assets/banner/banner3.jpg";
-import bn4 from "../assets/banner/banner4.jpg";
+import bn1 from "../assets/Banner1.jpg";
+import bn2 from "../assets/Banner2.jpg";
+import bn3 from "../assets/Banner3.jpg";
+import bn4 from "../assets/banner4.jpg";
 import grayBg from "../assets/grayBg.png";
 import firstSectionSchool from "../assets/first-section-school.174ed857.svg";
 import firstSectionLighthouse from "../assets/first-section-lighthouse.a0be8772.svg";
@@ -28,9 +28,10 @@ import footerimg1 from "../assets/footerimg1.png";
 
 import { Parallax } from "react-scroll-parallax";
 import { Circle } from "@mui/icons-material";
+import Slider from "../Components/Slider";
 
 const Home = () => {
-  const [index, setIndex] = useState(1);
+  const [index, setIndex] = useState(0);
   const timeout = useRef(null);
 
   const resetTime = () => {
@@ -54,20 +55,21 @@ const Home = () => {
 
   return (
     <div
-      className="bg-[#dbdbdb] overflow-hidden"
+      className="bg-[#dbdbdb] w-[100vw] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar />
-      <div className=" relative">
+      <Slider />
+      {/* <div className="relative">
         <div
           className={`w-[100vw] flex transition-all duration-300 ease-linear -translate-x-[${
             index * 100
           }vw]`}
         >
           <img className="w-[100vw]" src={bn1} alt="" />
+
           <img className="w-[100vw]" src={bn2} alt="" />
           <img className="w-[100vw]" src={bn3} alt="" />
-          <img className="w-[100vw]" src={bn4} alt="" />
         </div>
         <div className="flex gap-3 absolute w-full justify-center sm:bottom-12 bottom-4">
           <Circle
@@ -91,15 +93,8 @@ const Home = () => {
               index === 2 ? "text-red-500" : "text-gray-500"
             } cursor-pointer`}
           />
-           <Circle
-            key={2}
-            onClick={() => setIndex(3)}
-            className={`${
-              index === 3 ? "text-red-500" : "text-gray-500"
-            } cursor-pointer`}
-          />
         </div>
-      </div>
+      </div> */}
       <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
         <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
         <span>DISTRIBUTION PLATFORM</span>
@@ -276,11 +271,7 @@ const Home = () => {
             MITRA
           </span>
         </h1> */}
-         <img
-          className="  h-auto md:ml-[10vw] ml-[10vw]"
-          src={sm}
-          alt=""
-        />
+        <img className="  h-auto md:ml-[10vw] ml-[10vw]" src={sm} alt="" />
         <img
           className="mt-[1rem] w-[80vw] h-auto md:ml-[10vw] ml-[10vw]"
           src={schoolmitra}
