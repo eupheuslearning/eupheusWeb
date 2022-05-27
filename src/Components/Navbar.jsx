@@ -9,7 +9,7 @@ const Navbar = () => {
   const navigate = useNavigate();
   return (
     <div
-      className={`lg:px-16 md:px-4 gap-4 sm:px-16 fixed z-50  px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
+      className={`lg:px-16 md:px-4 gap-4 sm:px-16 fixed z-50 lg:h-[13vh] md:h-[15vh] sm:h-[20vh]   px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <img

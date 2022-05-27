@@ -59,42 +59,8 @@ const Home = () => {
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar />
-      <Slider />
-      {/* <div className="relative">
-        <div
-          className={`w-[100vw] flex transition-all duration-300 ease-linear -translate-x-[${
-            index * 100
-          }vw]`}
-        >
-          <img className="w-[100vw]" src={bn1} alt="" />
-
-          <img className="w-[100vw]" src={bn2} alt="" />
-          <img className="w-[100vw]" src={bn3} alt="" />
-        </div>
-        <div className="flex gap-3 absolute w-full justify-center sm:bottom-12 bottom-4">
-          <Circle
-            key={0}
-            onClick={() => setIndex(0)}
-            className={`${
-              index === 0 ? "text-red-500" : "text-gray-500"
-            } cursor-pointer`}
-          />
-          <Circle
-            key={1}
-            onClick={() => setIndex(1)}
-            className={`${
-              index === 1 ? "text-red-500" : "text-gray-500"
-            } cursor-pointer`}
-          />
-          <Circle
-            key={2}
-            onClick={() => setIndex(2)}
-            className={`${
-              index === 2 ? "text-red-500" : "text-gray-500"
-            } cursor-pointer`}
-          />
-        </div>
-      </div> */}
+      <Slider  />
+     
       <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
         <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
         <span>DISTRIBUTION PLATFORM</span>
@@ -115,7 +81,7 @@ const Home = () => {
           <span>TRANSFORMATION IN SCHOOLS</span>
         </div>
       </Parallax>
-      <div className="mt-[5rem] w-[80vw] flex gap-20 lg:ml-[13vw] ml-[8vw]">
+      <div className="mt-[5rem] w-[60vw] flex gap-20 lg:ml-[13vw] ml-[8vw]">
         <Parallax translateX={["-100px", "0px"]} scale={[0.75, 1]}>
           <img
             src={firstSectionLighthouse}
