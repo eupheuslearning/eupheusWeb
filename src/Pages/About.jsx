@@ -73,7 +73,7 @@ export default function About() {
         </div>
         <img
           src={img1}
-          className="sm:absolute sm:right-[5vw] bottom-0 object-cover top-[34vh] sm:w-[70vw] w-[100vw] h-auto"
+          className="sm:absolute sm:right-[5vw] bottom-0 object-cover 2xl:top-[10vh] xl:top-[36vh] lg:top-[55vh] md:top-[58vh] sm:w-[70vw] w-[100vw] h-auto"
           alt=""
         />
       </div>
@@ -112,7 +112,7 @@ export default function About() {
         </div>
         <img
           src={img3}
-          className="sm:absolute right-[3vw] bottom-0 object-cover top-[23vh] sm:w-[70vw] w-[100vw] h-auto"
+          className="sm:absolute right-[3vw] bottom-0 object-cover xl:top-[25vh] 2xl:top-[2vh] lg:top-[37vh] md:top-[50vh] top-[23vh] sm:w-[70vw] w-[100vw] h-auto"
           alt=""
         />
       </div>
@@ -220,189 +220,236 @@ export default function About() {
           touch! Let’s bring a new dawn of learning together.
         </div>
         <img src={img7} className="" alt="" />
-        <Parallax translateX={[100, -135]}>
-          <div className="flex w-[100vw]">
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p1}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">DR. REENA PURI</span>
-              <span className=" text-gray-600 text-sm">VP, ISFO OLYMPIAD</span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p2}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">RANJIT SINGH</span>
-              <span className=" text-gray-600 text-sm">VP, HUMAN</span>
-              <span className=" text-gray-600 text-sm">RESOURCES</span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p3}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">SUKHVINDER SINGH</span>
-              <span className=" font-bold text-gray-800">BHATIA</span>
-              <span className=" text-gray-600 text-sm">
-                VP, FINANCE & ACCOUNTS
-              </span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p4}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">PRITAM KUMAR</span>
-              <span className=" text-gray-600 text-sm">
-                VP, HEAD TECHNOLOGY
-              </span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p5}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">LOKESH DARIRA</span>
-              <span className=" text-gray-600 text-sm">AVP TRAINING</span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p6}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">RAJIV RAZDAN</span>
-              <span className=" text-gray-600 text-sm">
-                VP DIGITAL SALES (INDIA)
-              </span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p7}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">RAJIV BAJAJ</span>
-              <span className=" text-gray-600 text-sm">VP DIGITAL</span>
-              <span className="text-gray-600 text-sm">SALES (EXPORTS)</span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p8}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">RAJNEESH GREWAL</span>
-              <span className=" text-gray-600 text-sm">VP SALES (NORTH</span>
-              <span className=" text-gray-600 text-sm">
-                INDIA & MIDDLE EAST)
-              </span>
-            </div>
+
+        <div className="flex w-[100vw] sm:flex-nowrap flex-wrap">
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p1}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className="font-bold sm:text-base text-xs text-gray-800">
+              DR. REENA PURI
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              VP, ISFO OLYMPIAD
+            </span>
           </div>
-          <div className="flex w-[100vw] mt-[3rem]">
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p9}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">VIJAY PAUL</span>
-              <span className=" text-gray-600 text-sm">VP SALES (PUNJAB,</span>
-              <span className=" text-gray-600 text-sm">HP1, J&K)</span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p10}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">ABHIJIT SEN</span>
-              <span className=" text-gray-600 text-sm">VP SALES</span>
-              <span className=" text-gray-600 text-sm">
-                (WEST BENGAL, NEPAL)
-              </span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p11}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">ASHOK YELIGETI</span>
-              <span className=" text-gray-600 text-sm">VP SALES</span>
-              <span className=" text-gray-600 text-sm">(MAHARASHTRA)</span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p12}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">LALIT KUMAR</span>
-              <span className=" text-gray-600 text-sm">AVP SALES</span>
-              <span className=" text-gray-600 text-sm">
-                (DELHI NCR AND GCC)
-              </span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p13}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">NEHAL ATHER</span>
-              <span className=" text-gray-600 text-sm">AVP SALES</span>
-              <span className=" text-gray-600 text-sm">
-                (AP2,TELANGANA, KERALA)
-              </span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p14}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">RAMESH K</span>
-              <span className=" font-bold text-gray-800">CHOUDHARY</span>
-              <span className=" text-gray-600 text-sm">VP SALES</span>
-              <span className=" text-gray-600 text-sm">(NORTHEAST)</span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p15}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">RANJAN K SAMAL</span>
-              <span className=" text-gray-600 text-sm">VP SALES</span>
-              <span className=" text-gray-600 text-sm">
-                (ODISHA, CHHATTISGARH)
-              </span>
-            </div>
-            <div className="flex flex-col items-center w-[20vw]">
-              <img
-                src={p16}
-                className="border-2 p-2 border-solid border-[#f5ab1d] w-[10vw] h-auto"
-                alt=""
-              />
-              <span className=" font-bold text-gray-800">
-                SANJEET MUKHERJEE
-              </span>
-              <span className=" text-gray-600 text-sm">VP SALES</span>
-              <span className=" text-gray-600 text-sm">
-                (UP, UK4, BIHAR, JH)
-              </span>
-            </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p2}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              RANJIT SINGH
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">VP, HUMAN</span>
+            <span className=" text-gray-600 sm:text-sm text-xs">RESOURCES</span>
           </div>
-        </Parallax>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[35vw]">
+            <img
+              src={p3}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              SUKHVINDER SINGH
+            </span>
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              BHATIA
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              VP, FINANCE & ACCOUNTS
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p4}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              PRITAM KUMAR
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              VP, HEAD TECHNOLOGY
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p5}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              LOKESH DARIRA
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              AVP TRAINING
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p6}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              RAJIV RAZDAN
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              VP DIGITAL SALES (INDIA)
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p7}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              RAJIV BAJAJ
+            </span>
+            <span className=" text-gray-600 text-sm">VP DIGITAL</span>
+            <span className="text-gray-600 sm:text-sm text-xs">
+              SALES (EXPORTS)
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p8}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              RAJNEESH GREWAL
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              VP SALES (NORTH
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              INDIA & MIDDLE EAST)
+            </span>
+          </div>
+        </div>
+        <div className="flex w-[100vw] sm:flex-nowrap flex-wrap mt-[3rem]">
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p9}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              VIJAY PAUL
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              VP SALES (PUNJAB,
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">HP1, J&K)</span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p10}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              ABHIJIT SEN
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              (WEST BENGAL, NEPAL)
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p11}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              ASHOK YELIGETI
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              (MAHARASHTRA)
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p12}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              LALIT KUMAR
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">AVP SALES</span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              (DELHI NCR AND GCC)
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[35vw]">
+            <img
+              src={p13}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              NEHAL ATHER
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">AVP SALES</span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              (AP2,TELANGANA, KERALA)
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p14}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              RAMESH K
+            </span>
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              CHOUDHARY
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              (NORTHEAST)
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[35vw]">
+            <img
+              src={p15}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              RANJAN K SAMAL
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              (ODISHA, CHHATTISGARH)
+            </span>
+          </div>
+          <div className="flex flex-col items-center sm:w-[20vw] w-[30vw]">
+            <img
+              src={p16}
+              className="border-2 p-2 border-solid border-[#f5ab1d] sm:w-[10vw] w-[30vw] h-auto"
+              alt=""
+            />
+            <span className=" font-bold sm:text-base text-xs text-gray-800">
+              SANJEET MUKHERJEE
+            </span>
+            <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
+            <span className=" text-gray-600 sm:text-sm text-xs">
+              (UP, UK4, BIHAR, JH)
+            </span>
+          </div>
+        </div>
       </div>
 
       {/* investers section */}
@@ -411,9 +458,9 @@ export default function About() {
         <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] font-extrabold md:text-4xl text-xl">
           MEET OUR INVESTORS
         </div>
-        <div className="flex justify-around">
+        <div className="flex sm:flex-row flex-col justify-around">
           <div
-            className="py-[7rem] px-[2rem] bg-no-repeat w-[35vw] min-h-[55vw] max-h-fit"
+            className="py-[7rem] px-[2rem] bg-no-repeat sm:w-[35vw] w-full min-h-[55vw] max-h-fit"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -437,7 +484,7 @@ export default function About() {
             </div>
           </div>
           <div
-            className="py-[7rem] px-[2rem] bg-no-repeat w-[35vw]"
+            className="py-[7rem] px-[2rem] bg-no-repeat sm:w-[35vw] w-full"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -462,9 +509,9 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="flex justify-around">
+        <div className="flex sm:flex-row flex-col justify-around">
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat w-[37vw] h-[69vw] max-h-fit"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[37vw] w-full sm:min-h-[69vw] min-h-[130vw] max-h-fit"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -494,7 +541,7 @@ export default function About() {
           </div>
 
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat w-[37vw] min-h-[78vw] max-h-fit"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[37vw] w-full sm:min-h-[78vw] min-h-[142vw] max-h-fit"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
