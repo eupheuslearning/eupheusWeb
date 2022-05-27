@@ -41,7 +41,7 @@ export default function About() {
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar highlight={"about"} />
-      <div className="h-[100vh] relative w-[100vw]  ">
+      <div className="sm:h-[100vh] relative w-[100vw]  ">
         <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10">
           <h1 className=" text-black-700 md:text-3xl text-base ont-extrabold  ">
             WELCOME TO THE LIGHTHOUSE OF
@@ -73,7 +73,7 @@ export default function About() {
         </div>
         <img
           src={img1}
-          className="absolute right-[5vw] bottom-0 object-cover top-[34vh] w-[70vw] h-auto"
+          className="sm:absolute sm:right-[5vw] bottom-0 object-cover top-[34vh] sm:w-[70vw] w-[100vw] h-auto"
           alt=""
         />
       </div>
@@ -112,13 +112,13 @@ export default function About() {
         </div>
         <img
           src={img3}
-          className="absolute right-[3vw] bottom-0 object-cover top-[23vh] w-[70vw] h-auto"
+          className="sm:absolute right-[3vw] bottom-0 object-cover top-[23vh] sm:w-[70vw] w-[100vw] h-auto"
           alt=""
         />
       </div>
 
-      <div className="flex gap-7 items-center">
-        <div className="flex flex-col gap-12 mb-[30vh] relative">
+      <div className="flex sm:flex-row flex-col gap-7 items-center">
+        <div className="flex flex-col gap-12 sm:mb-[30vh] relative">
           <div className=" mt-[4rem] lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-3xl text-xl">
             <span className="text-gray-800 font-bold">
               SARVESH SHRIVASTAVA,
@@ -142,11 +142,15 @@ export default function About() {
             from the University of Illinois, Chicago, US.
           </div>
         </div>
-        <img src={img4} className="w-[25vw] shadow-2xl h-auto" alt="" />
+        <img
+          src={img4}
+          className="sm:w-[25vw] w-[60vw] shadow-2xl h-auto"
+          alt=""
+        />
       </div>
 
-      <div className="flex gap-7 items-center">
-        <div className="flex flex-col gap-12 mb-[30vh] relative">
+      <div className="flex sm:flex-row flex-col gap-7 items-center">
+        <div className="flex flex-col gap-12 sm:mb-[30vh] relative">
           <div className=" mt-[4rem] lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-3xl text-xl">
             <span className="text-gray-800 font-bold">
               VED PRAKASH KHATTRI,
@@ -167,11 +171,15 @@ export default function About() {
             South Asia. He holds a bachelor’s degree in commerce.
           </div>
         </div>
-        <img src={img5} className="w-[25vw] shadow-2xl h-auto" alt="" />
+        <img
+          src={img5}
+          className="sm:w-[25vw] w-[60vw] shadow-2xl h-auto"
+          alt=""
+        />
       </div>
 
-      <div className="flex gap-7 items-center">
-        <div className="flex flex-col gap-12 mb-[30vh] relative">
+      <div className="flex sm:flex-row flex-col gap-7 items-center">
+        <div className="flex flex-col gap-12 sm:mb-[30vh] relative">
           <div className=" mt-[4rem] lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-3xl text-xl">
             <span className="text-gray-800 font-bold">AMIT KAPOOR,</span>
             <br />
@@ -192,7 +200,11 @@ export default function About() {
             Pai Management Institute.
           </div>
         </div>
-        <img src={img6} className="w-[25vw] shadow-2xl h-auto" alt="" />
+        <img
+          src={img6}
+          className="sm:w-[25vw] w-[60vw] shadow-2xl h-auto"
+          alt=""
+        />
       </div>
 
       {/* persons */}

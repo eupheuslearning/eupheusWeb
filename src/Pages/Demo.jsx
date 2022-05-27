@@ -18,7 +18,7 @@ const Demo = () => {
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar highlight={"demo"} />
-      <div className="h-[100vh] relative w-[100vw]  ">
+      <div className="sm:h-[100vh] relative w-[100vw]  ">
         <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10">
           <h1 className=" text-black-700 md:text-3xl text-base font-extrabold ">
             EUPHEUS OFFERINGS ACROSS ALL
@@ -37,22 +37,28 @@ const Demo = () => {
       <div className="w-[100vw] flex justify-center mt-[5rem]">
         <div className="bg-white rounded-r-3xl drop-shadow-2xl px-[5rem] py-[5rem]">
           <form className="flex flex-col gap-[3rem]">
-            <div className="flex gap-4 justify-between items-center">
+            <div className="flex gap-2 justify-between items-center">
               <input type="radio" name="info" />
-              <lable className="text-3xl font-semibold">PRINCIPAL/SCHOOL</lable>
+              <lable className="sm:text-3xl text-sm font-semibold">
+                PRINCIPAL/SCHOOL
+              </lable>
               <input type="radio" name="info" />
-              <lable className="text-3xl font-semibold">TEACHER</lable>
+              <lable className="sm:text-3xl text-sm font-semibold">
+                TEACHER
+              </lable>
               <input type="radio" name="info" />
-              <lable className="text-3xl font-semibold">PARENTS/STUDENT</lable>
+              <lable className="sm:text-3xl text-sm font-semibold">
+                PARENTS/STUDENT
+              </lable>
             </div>
-            <div className="flex gap-[4rem] items-center">
+            <div className="flex sm:gap-[4rem] gap-4 items-center">
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-4">
-                  <h1 className="text-3xl font-semibold">
+                  <h1 className="sm:text-3xl text-sm font-semibold">
                     FIRST AND LAST NAME
                   </h1>
                   <div
-                    className="p-4 bg-no-repeat w-[30vw]"
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
                     style={{
                       backgroundImage: `url(${dashBorder})`,
                       backgroundSize: "100% 100%",
@@ -62,9 +68,9 @@ const Demo = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h1 className="text-3xl font-semibold">ADDRESS</h1>
+                  <h1 className="sm:text-3xl text-sm font-semibold">ADDRESS</h1>
                   <div
-                    className="p-4 bg-no-repeat w-[30vw]"
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
                     style={{
                       backgroundImage: `url(${dashBorder})`,
                       backgroundSize: "100% 100%",
@@ -74,9 +80,11 @@ const Demo = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h1 className="text-3xl font-semibold">ZIP / CITY</h1>
+                  <h1 className="sm:text-3xl text-sm font-semibold">
+                    ZIP / CITY
+                  </h1>
                   <div
-                    className="p-4 bg-no-repeat w-[30vw]"
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
                     style={{
                       backgroundImage: `url(${dashBorder})`,
                       backgroundSize: "100% 100%",
@@ -86,9 +94,9 @@ const Demo = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h1 className="text-3xl font-semibold">PHONE</h1>
+                  <h1 className="sm:text-3xl text-sm font-semibold">PHONE</h1>
                   <div
-                    className="p-4 bg-no-repeat w-[30vw]"
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
                     style={{
                       backgroundImage: `url(${dashBorder})`,
                       backgroundSize: "100% 100%",
@@ -98,9 +106,9 @@ const Demo = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                  <h1 className="text-3xl font-semibold">E-MAIL</h1>
+                  <h1 className="sm:text-3xl text-sm font-semibold">E-MAIL</h1>
                   <div
-                    className="p-4 bg-no-repeat w-[30vw]"
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
                     style={{
                       backgroundImage: `url(${dashBorder})`,
                       backgroundSize: "100% 100%",
@@ -113,9 +121,9 @@ const Demo = () => {
               <img src={board} className="w-[25vw] h-[25vw]" alt="" />
             </div>
             <div>
-              <h1 className="text-3xl font-semibold">QUERY</h1>
+              <h1 className="sm:text-3xl text-base font-semibold">QUERY</h1>
               <div
-                className="px-8 py-6 bg-no-repeat w-full h-[20vh]"
+                className="px-8 py-6 bg-no-repeat w-full sm:h-[20vh] h-[10vh]"
                 style={{
                   backgroundImage: `url(${lgDashBorder})`,
                   backgroundSize: "100% 100%",
@@ -125,7 +133,7 @@ const Demo = () => {
               </div>
             </div>
             <button>
-              <img src={submit} alt="" />
+              <img src={submit} className=" sm:w-auto w-[40vw]" alt="" />
             </button>
           </form>
         </div>

@@ -23,7 +23,7 @@ export default function Media() {
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar highlight={"media"} />
-      <div className="h-[100vh] relative w-[100vw]  ">
+      <div className="sm:h-[100vh] relative w-[100vw]  ">
         <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10">
           <h1 className=" text-black-700 md:text-3xl text-base ont-extrabold  ">
             EUPHEUS LEARNING IN

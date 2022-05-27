@@ -83,31 +83,35 @@ const Home = () => {
           <span>TRANSFORMATION IN SCHOOLS</span>
         </div>
       </Parallax>
-      <div className="mt-[5rem] w-[60vw] flex gap-20 lg:ml-[13vw] ml-[8vw]">
+      <div className="mt-[5rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 lg:ml-[13vw] sm:ml-[8vw]">
         <Parallax translateX={["-100px", "0px"]} scale={[0.75, 1]}>
           <img
             src={firstSectionLighthouse}
-            className="w-[35vw] h-auto"
+            className="sm:w-[35vw] w-[80vw] h-auto"
             alt=""
           />
         </Parallax>
         <Parallax translateX={["100px", "0px"]} scale={[0.75, 1]}>
-          <img src={firstSectionSchool} className="w-[35vw] h-auto" alt="" />
+          <img
+            src={firstSectionSchool}
+            className="sm:w-[35vw] w-[80vw]h-auto"
+            alt=""
+          />
         </Parallax>
       </div>
 
-      <div className="mt-[5rem] w-[100vw] flex md:gap-[7rem] gap-[4rem] justify-center">
+      <div className="mt-[5rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 justify-center">
         <Parallax rotateY={[180, 570]}>
           <img
             src={section2schools}
-            className="w-[25vw] h-auto object-cover"
+            className="sm:w-[25vw] w-[40vw] h-auto object-cover"
             alt=""
           />
         </Parallax>
         <Parallax rotateY={[180, 570]}>
           <img
             src={section2students}
-            className="w-[25vw] h-auto object-cover"
+            className="sm:w-[25vw] w-[40vw] h-auto object-cover"
             alt=""
           />
         </Parallax>
@@ -166,7 +170,7 @@ const Home = () => {
             <div className=" relative">
               <img src={card} className="w-[21.3rem] h-auto" alt="" />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
-                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl text-4xl">
+                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-4xl">
                   SUPPLEMENTAL CONTENT
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] sm:w-[15rem] w-[10rem]">
