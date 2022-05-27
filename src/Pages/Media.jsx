@@ -36,7 +36,7 @@ export default function Media() {
       </div>
       <div className="my-[8rem]">
         <div className="flex items-center justify-center">
-        <div className="  text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className="  text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
           <span>AWARDS & RECOGNITIONS</span>
         </div>
         <div className="lg:w-[50vw] md:w-[70vw] ">
@@ -45,7 +45,7 @@ export default function Media() {
         </div>
       </div>
       <div className="my-[8rem] ">
-      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-4xl text-xl">
+      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-5xl text-3xl">
           <span>AWARDS IN 2018</span>
         </div>
         <div className=" flex justify-around">
@@ -58,7 +58,7 @@ export default function Media() {
         </div>
         </div>
         <div className="my-[8rem] ">
-      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-4xl text-xl">
+      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-5xl text-3xl">
           <span>AWARDS IN 2019</span>
         </div>
         <div className=" flex justify-around">
@@ -69,7 +69,7 @@ export default function Media() {
         </div>
         </div>
         <div className="my-[8rem] ">
-      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-4xl text-xl">
+      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-5xl text-3xl">
           <span>AWARDS & RECOGNITIONS IN 2020</span>
         </div>
         <div className=" flex justify-around items-center">
@@ -93,7 +93,7 @@ export default function Media() {
         </div>
         </div>
         <div className="my-[8rem] ">
-      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-4xl text-xl">
+      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-5xl text-3xl">
           <span>AWARDS & RECOGNITIONS IN 2021</span>
         </div>
         <div className=" flex justify-around items-center">
@@ -107,7 +107,7 @@ export default function Media() {
      </div>
 
      <div className="my-[8rem] ">
-      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-4xl text-xl">
+      <div className=" my-[4rem]  text-red-700  font-extrabold flex justify-center md:text-5xl text-3xl">
           <span>AWARDS & RECOGNITIONS IN 2022</span>
         </div>
         <div className=" flex justify-around items-center my-[5rem]">

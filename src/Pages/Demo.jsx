@@ -128,7 +128,7 @@ const Demo = () => {
       </div>
 
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className=" mt-[10rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
           <span>CURRICULAR SOLUTIONS</span>
         </div>
       </Parallax>
@@ -141,7 +141,7 @@ const Demo = () => {
       </div>
 
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className=" mt-[10rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
           <span>SUPPLEMENTAL CONTENT SOLUTIONS</span>
         </div>
       </Parallax>
@@ -153,7 +153,7 @@ const Demo = () => {
         ></iframe>
       </div>
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className=" mt-[10rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
           <span>21ST CENTURY SCHOOL OS</span>
         </div>
       </Parallax>

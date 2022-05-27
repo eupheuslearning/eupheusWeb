@@ -61,7 +61,7 @@ const Home = () => {
       <Navbar />
       <Slider  />
      
-      <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+      <div className=" mt-[4rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
         <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
         <span>DISTRIBUTION PLATFORM</span>
       </div>
@@ -75,7 +75,7 @@ const Home = () => {
       </div>
 
       <Parallax translateX={[-20, 0]} scale={[0.75, 1]}>
-        <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-6xl text-4xl">
           <span>EUPHEUS LEARNING -</span>
           <span>THE LIGHTHOUSE OF </span>
           <span>TRANSFORMATION IN SCHOOLS</span>
@@ -112,7 +112,7 @@ const Home = () => {
       </div>
 
       <Parallax translateX={[-50, 20]} scale={[0.75, 1]}>
-        <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-6xl text-4xl">
           <span>THE POWER OF THE WIDEST</span>
           <span>CURRICULUM CATALOGUE</span>
         </div>
@@ -148,10 +148,10 @@ const Home = () => {
             <div className=" relative">
               <img src={card} className="w-[20rem] h-auto" alt="" />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
-                <div className="text-yellow-500 font-bold lg:text-2xl sm:text-xl text-sm">
+                <div className="text-yellow-500 font-bold lg:text-2xl  md:text-6xl sm:text-xl">
                   CURRICULAR CONTENT
                 </div>
-                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] sm:w-[15rem] w-[10rem] ">
+                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] ">
                   Eupheus Learning places learners at the heart of education.
                   Therefore, textbooks and syllabi are designed by subject
                   matter experts from across the globe and are mapped to CBSE
@@ -164,7 +164,7 @@ const Home = () => {
             <div className=" relative">
               <img src={card} className="w-[21.3rem] h-auto" alt="" />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
-                <div className="text-yellow-500 font-bold lg:text-2xl sm:text-xl text-sm">
+                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl text-4xl">
                   SUPPLEMENTAL CONTENT
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] sm:w-[15rem] w-[10rem]">
@@ -184,10 +184,10 @@ const Home = () => {
       </div>
       <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
         <span>
-          <h1 className=" text-red-700 md:text-2xl text-base font-bold">
+          <h1 className=" text-red-700 md:text-4xl text-3xl  font-bold">
             PERSONALISATION REMEDIAL SERVICE
           </h1>
-          <h1 className="text-red-500 md:text-xl text-sm font-semibold">
+          <h1 className="text-red-500 md:text-4xl text-3xl font-semibold">
             TO GAIN AN EDGE IN THE FUTURE
           </h1>
         </span>
@@ -209,10 +209,10 @@ const Home = () => {
       </div>
       <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] pl-[2rem] pr-[1rem] mt-[5rem]">
         <span>
-          <h1 className=" text-red-700 md:text-2xl text-base font-bold">
+          <h1 className=" text-red-700 md:text-4xl text-3xl  font-bold">
             REVOLUTIONIZING SCHOOLS WITH
           </h1>
-          <h1 className="text-red-500 md:text-xl text-sm font-semibold">
+          <h1 className="text-red-500 md:text-4xl text-3xl  font-semibold">
             THE 21ST CENTURY SCHOOL OS
           </h1>
         </span>
@@ -237,7 +237,7 @@ const Home = () => {
             MITRA
           </span>
         </h1> */}
-        <img className="  h-auto md:ml-[10vw] ml-[10vw]" src={sm} alt="" />
+        <img className="   md:ml-[10vw]  sm:ml-0 sm-p-[1rem]  lg:ml-[10vw]" src={sm} alt="" />
         <img
           className="mt-[1rem] w-[80vw] h-auto md:ml-[10vw] ml-[10vw]"
           src={schoolmitra}
@@ -246,7 +246,7 @@ const Home = () => {
       </div>
       <div className="flex gap-7 flex-col md:ml-[12vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
         <span>
-          <h1 className=" text-red-700 text-2xl font-bold">COMPETITIONS</h1>
+          <h1 className=" text-red-700 md:text-4xl text-3xl font-bold">COMPETITIONS</h1>
         </span>
         <div className="flex items-center md:gap-[7rem] gap-[2rem] ">
           <div className="flex flex-col pt-2 gap-4">
