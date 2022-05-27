@@ -22,7 +22,7 @@ export default function Events() {
       >
         <Navbar highlight={"events"} />
         <div className="h-[100vh] relative w-[100vw]  ">
-          <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[5vh] right-[5vw]  lg:right-[60vh] z-10">
+          <div className=" absolute  lg:top-[18vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[5vh] right-[5vw]  lg:right-[50vh] z-10">
             <h1 className=" text-black-700 md:text-3xl text-base  ">
               PROMOTING BETTER LEARNING,
               <br />
