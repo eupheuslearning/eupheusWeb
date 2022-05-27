@@ -73,7 +73,7 @@ export default function About() {
         </div>
         <img
           src={img1}
-          className="sm:absolute sm:right-[5vw] bottom-0 object-cover 2xl:top-[10vh] xl:top-[36vh] lg:top-[55vh] md:top-[58vh] sm:w-[70vw] w-[100vw] h-auto"
+          className="sm:absolute sm:right-[5vw] bottom-0 object-cover 2xl:top-[10vh] xl:top-[36vh] lg:top-[55vh] md:top-[50vh] sm:w-[70vw] w-[100vw] h-auto"
           alt=""
         />
       </div>
