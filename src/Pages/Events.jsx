@@ -44,7 +44,7 @@ export default function Events() {
 
         <div className="my-[5rem] flex items-start gap-8 relative">
           <div>
-            <div className="text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-xl">
+            <div className="text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-5xl text-3xl">
               <span className="font-bold ">GAMIFIED WAY OF</span>
               <span className="font-extrabold ">LEARNING TO CODE</span>
             </div>
@@ -153,7 +153,7 @@ export default function Events() {
             className="w-[430px] my-[2rem]  md:ml-[12vw] ml-[5vw] h-auto"
             alt=""
           />
-          <div className=" mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-xl">
+          <div className=" mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-5xl text-3xl">
             <span className="font-bold ">OLYMPIAD THROUGH ISFO</span>
             <span className="font-extrabold ">(FOR GRADES 1 – 10)</span>
           </div>

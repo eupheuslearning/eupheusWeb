@@ -46,7 +46,7 @@ const Solutions = () => {
         with the increased digitalization appreciation of the modern world
       </div>
 
-      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-4xl text-xl">
+      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-3xl">
         <span>COURSE BOOK SOLUTIONS FOR</span>
         <span>PRE-PRIMARY TO GRADE 8</span>
       </div>
@@ -54,14 +54,14 @@ const Solutions = () => {
         <img className=" h-auto w-[60vw]" src={solImg2} alt="" />
       </div>
 
-      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-4xl text-xl">
+      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-3xl">
         <span>SUPPLEMENTAL SOLUTIONS</span>
       </div>
       <div className="mt-[2rem] flex justify-center">
         <img className=" h-auto w-[80vw]" src={solMap} alt="" />
       </div>
 
-      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-4xl text-xl">
+      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-3xl">
         <span>THE POWER OF THE 21ST CENTURY SCHOOL OS</span>
       </div>
      <div className="grid lg:grid-cols-3  gap-2 mb-[5rem]">
