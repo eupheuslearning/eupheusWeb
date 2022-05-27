@@ -17,9 +17,9 @@ const Demo = () => {
       className="bg-[#dbdbdb] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
-      <Navbar />
+      <Navbar highlight={"demo"} />
       <div className="h-[100vh] relative w-[100vw]  ">
-        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[20vw] sm:top-[30vh]  lg:right-[40vh] z-10">
+        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10">
           <h1 className=" text-black-700 md:text-3xl text-base font-extrabold ">
             EUPHEUS OFFERINGS ACROSS ALL
           </h1>
@@ -27,7 +27,11 @@ const Demo = () => {
             DIGITAL PLATFORMS
           </h1>
         </div>
-        <img className="h-[100vh]" src={Banner_1} alt="" />
+        <img
+          className="sm:h-[100vh] h-[50vh] sm:mt-0 mt-[24vh] object-cover w-[100vw]"
+          src={Banner_1}
+          alt=""
+        />
       </div>
 
       <div className="w-[100vw] flex justify-center mt-[5rem]">
@@ -128,7 +132,7 @@ const Demo = () => {
       </div>
 
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className=" mt-[10rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
           <span>CURRICULAR SOLUTIONS</span>
         </div>
       </Parallax>
@@ -141,7 +145,7 @@ const Demo = () => {
       </div>
 
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className=" mt-[10rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
           <span>SUPPLEMENTAL CONTENT SOLUTIONS</span>
         </div>
       </Parallax>
@@ -153,7 +157,7 @@ const Demo = () => {
         ></iframe>
       </div>
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
-        <div className=" mt-[10rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-4xl text-xl">
+        <div className=" mt-[10rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
           <span>21ST CENTURY SCHOOL OS</span>
         </div>
       </Parallax>

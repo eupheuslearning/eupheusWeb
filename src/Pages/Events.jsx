@@ -20,9 +20,9 @@ export default function Events() {
         className="bg-[#dbdbdb] overflow-hidden"
         style={{ backgroundImage: `url(${grayBg})` }}
       >
-        <Navbar />
+        <Navbar highlight={"events"} />
         <div className="h-[100vh] relative w-[100vw]  ">
-          <div className=" absolute  lg:top-[20vh] md:top-[15vh] md:right-[20vw] sm:top-[30vh]  lg:right-[40vh] z-10">
+          <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[5vh] right-[5vw]  lg:right-[60vh] z-10">
             <h1 className=" text-black-700 md:text-3xl text-base  ">
               PROMOTING BETTER LEARNING,
               <br />
@@ -34,7 +34,11 @@ export default function Events() {
               NATIONAL AND GLOBAL EVENTS
             </h1>
           </div>
-          <img className="h-[100vh]" src={Banner_1} alt="" />
+          <img
+            className="sm:h-[100vh] h-[50vh] sm:mt-0 mt-[24vh] object-cover w-[100vw]"
+            src={Banner_1}
+            alt=""
+          />
         </div>
         <div className=" my-[5rem] text-gray-700 text-left lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
           Every year, Eupheus Learning hosts several national and global events
@@ -44,7 +48,7 @@ export default function Events() {
 
         <div className="my-[5rem] flex items-start gap-8 relative">
           <div>
-            <div className="text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-xl">
+            <div className="text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-5xl text-3xl">
               <span className="font-bold ">GAMIFIED WAY OF</span>
               <span className="font-extrabold ">LEARNING TO CODE</span>
             </div>
@@ -153,7 +157,7 @@ export default function Events() {
             className="w-[430px] my-[2rem]  md:ml-[12vw] ml-[5vw] h-auto"
             alt=""
           />
-          <div className=" mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-xl">
+          <div className=" mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-5xl text-3xl">
             <span className="font-bold ">OLYMPIAD THROUGH ISFO</span>
             <span className="font-extrabold ">(FOR GRADES 1 – 10)</span>
           </div>

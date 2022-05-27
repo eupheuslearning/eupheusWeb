@@ -40,9 +40,9 @@ export default function About() {
       className="bg-[#dbdbdb] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
-      <Navbar />
+      <Navbar highlight={"about"} />
       <div className="h-[100vh] relative w-[100vw]  ">
-        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh]  lg:right-[60vh] z-10">
+        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10">
           <h1 className=" text-black-700 md:text-3xl text-base ont-extrabold  ">
             WELCOME TO THE LIGHTHOUSE OF
           </h1>
@@ -50,7 +50,11 @@ export default function About() {
             TRANSFORMATION
           </h1>
         </div>
-        <img className="h-[100vh] w-[100vw]" src={Banner_1} alt="" />
+        <img
+          className="sm:h-[100vh] h-[50vh] sm:mt-0 mt-[24vh] object-cover w-[100vw]"
+          src={Banner_1}
+          alt=""
+        />
       </div>
 
       <div className="flex flex-col gap-4 mb-[30vh] relative">
@@ -204,7 +208,7 @@ export default function About() {
           touch! Let’s bring a new dawn of learning together.
         </div>
         <img src={img7} className="" alt="" />
-        <Parallax translateX={[100, -120]}>
+        <Parallax translateX={[100, -135]}>
           <div className="flex w-[100vw]">
             <div className="flex flex-col items-center w-[20vw]">
               <img

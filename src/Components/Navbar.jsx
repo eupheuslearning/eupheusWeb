@@ -5,11 +5,11 @@ import menuLine from "../assets/menuLine.png";
 import { CircleOutlined, Circle } from "@mui/icons-material";
 import { Link, useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ highlight }) => {
   const navigate = useNavigate();
   return (
     <div
-      className={`lg:px-16 md:px-4 gap-4 sm:px-16 fixed z-50  px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
+      className={`lg:px-16 md:px-4 gap-4 sm:px-16 fixed z-50 lg:h-[13vh] md:h-[15vh] sm:h-[20vh]   px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <img
@@ -23,20 +23,34 @@ const Navbar = () => {
         style={{ backgroundImage: `url(${menuLine})` }}
       >
         <div className=" flex flex-col   gap-1 justify-center items-center">
-          <Circle
-            className="!text-[0.9rem] text-red-800 cursor-pointer"
-            onClick={() => navigate("/")}
-          />
+          {highlight === "home" ? (
+            <Circle
+              className="!text-[0.9rem] text-red-800 cursor-pointer"
+              onClick={() => navigate("/")}
+            />
+          ) : (
+            <CircleOutlined
+              className="!text-[0.9rem] cursor-pointer"
+              onClick={() => navigate("/")}
+            />
+          )}
           <span className="text-xs sm:text-base flex gap-1">
             <span>Why</span>
             <span>Eupheus</span>
           </span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined
-            className="!text-[0.9rem] cursor-pointer"
-            onClick={() => navigate("/about")}
-          />
+          {highlight === "about" ? (
+            <Circle
+              className="!text-[0.9rem] text-red-800 cursor-pointer"
+              onClick={() => navigate("/about")}
+            />
+          ) : (
+            <CircleOutlined
+              className="!text-[0.9rem] cursor-pointer"
+              onClick={() => navigate("/about")}
+            />
+          )}
 
           <span className="text-xs sm:text-base flex gap-1">
             <span>About</span>
@@ -44,32 +58,60 @@ const Navbar = () => {
           </span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined
-            className="!text-[0.9rem] cursor-pointer"
-            onClick={() => navigate("/solutions")}
-          />
+          {highlight === "solutions" ? (
+            <Circle
+              className="!text-[0.9rem] text-red-800 cursor-pointer"
+              onClick={() => navigate("/solutions")}
+            />
+          ) : (
+            <CircleOutlined
+              className="!text-[0.9rem] cursor-pointer"
+              onClick={() => navigate("/solutions")}
+            />
+          )}
 
           <span className="text-xs sm:text-base">Solutions</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined
-            className="!text-[0.9rem] cursor-pointer"
-            onClick={() => navigate("/demo")}
-          />
+          {highlight === "demo" ? (
+            <Circle
+              className="!text-[0.9rem] text-red-800 cursor-pointer"
+              onClick={() => navigate("/demo")}
+            />
+          ) : (
+            <CircleOutlined
+              className="!text-[0.9rem] cursor-pointer"
+              onClick={() => navigate("/demo")}
+            />
+          )}
           <span className="text-xs sm:text-base">Demo</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined
-            className="!text-[0.9rem] cursor-pointer"
-            onClick={() => navigate("/events")}
-          />
+          {highlight === "events" ? (
+            <Circle
+              className="!text-[0.9rem] text-red-800 cursor-pointer"
+              onClick={() => navigate("/events")}
+            />
+          ) : (
+            <CircleOutlined
+              className="!text-[0.9rem] cursor-pointer"
+              onClick={() => navigate("/events")}
+            />
+          )}
           <span className="text-xs sm:text-base">Events</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
-          <CircleOutlined
-            className="!text-[0.9rem] cursor-pointer"
-            onClick={() => navigate("/media")}
-          />
+          {highlight === "media" ? (
+            <Circle
+              className="!text-[0.9rem] text-red-800 cursor-pointer"
+              onClick={() => navigate("/media")}
+            />
+          ) : (
+            <CircleOutlined
+              className="!text-[0.9rem] cursor-pointer"
+              onClick={() => navigate("/media")}
+            />
+          )}
           <span className="text-xs sm:text-base">Media</span>
         </div>
       </div>
