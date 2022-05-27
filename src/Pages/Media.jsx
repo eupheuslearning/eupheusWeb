@@ -3,6 +3,11 @@ import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Banner_1 from "../assets/mediaBanner.png";
 import grayBg from "../assets/grayBg.png";
+import image1 from "../assets/image1.png";
+import lgDashBorder from "../assets/dash-border-lg.png";
+import cap from "../assets/media/cap.png";
+import ceo from "../assets/media/ceo.png";
+import cio from "../assets/media/cio.png";
 
 export default function Media() {
   return (
@@ -22,6 +27,35 @@ export default function Media() {
         </div>
         <img className="h-[100vh] w-[100vw]" src={Banner_1} alt="" />
       </div>
+
+      <div className="flex gap-4 items-center w-[100vw] justify-center pl-6 mt-[2.5rem]">
+        <h3 className="text-red-700 md:text-4xl text-xl font-extrabold">
+          AWARDS & RECOGNITIONS
+        </h3>
+
+        <img src={image1} className="w-[40vw] h-auto" alt="" />
+      </div>
+
+      <div className="flex gap-4 flex-col items-center w-[100vw] justify-center pl-6 mt-[2.5rem]">
+        <h3 className="text-red-700 md:text-4xl text-xl font-extrabold">
+          AWARDS IN 2018
+        </h3>
+
+        <div className=" flex gap-4">
+          <div
+            className="p-4 bg-no-repeat w-[30vw]"
+            style={{
+              backgroundImage: `url(${lgDashBorder})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <img src={cio} alt="" />
+          </div>
+
+          <img src={ceo} alt="" />
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
