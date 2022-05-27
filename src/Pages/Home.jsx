@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import GoToTop from "../Components/Top";
 import bn1 from "../assets/Banner1.jpg";
 import bn2 from "../assets/Banner2.jpg";
 import bn3 from "../assets/Banner3.jpg";
@@ -378,6 +379,7 @@ const Home = () => {
         />
       </div>
       <Footer />
+      <GoToTop />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import GoToTop from "../Components/Top";
 import Banner_1 from "../assets/aboutBanner.png";
 import grayBg from "../assets/grayBg.png";
 import img1 from "../assets/about/Asset 35@3x.png";
@@ -578,6 +579,7 @@ export default function About() {
       </div>
 
       <Footer />
+      <GoToTop />
     </div>
   );
 }

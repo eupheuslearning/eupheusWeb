@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import GoToTop from "../Components/Top";
 import grayBg from "../assets/grayBg.png";
 import solutionBanner from "../assets/solution-banner.png";
 import solImg2 from "../assets/sol-img2.png";
@@ -88,6 +89,7 @@ const Solutions = () => {
       </div>
 
       <Footer />
+      <GoToTop />
     </div>
   );
 };

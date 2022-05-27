@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import GoToTop from "../Components/Top";
 import Banner_1 from "../assets/mediaBanner.png";
 import grayBg from "../assets/grayBg.png";
 import trophy from "../assets/media/tro.png";
@@ -127,6 +128,7 @@ export default function Media() {
       </div>
 
       <Footer />
+      <GoToTop />
     </div>
   );
 }

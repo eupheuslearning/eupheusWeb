@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
+import GoToTop from "../Components/Top";
 import Banner_1 from "../assets/banner2.png";
 import grayBg from "../assets/grayBg.png";
 import dashBorder from "../assets/dash-border.png";
@@ -178,6 +179,7 @@ const Demo = () => {
       </div>
 
       <Footer />
+      <GoToTop />
     </div>
   );
 };

@@ -43,7 +43,7 @@ const Navbar = ({ highlight }) => {
           {highlight === "about" ? (
             <Circle
               className="!text-[0.9rem] text-red-800 cursor-pointer"
-              onClick={() => navigate("/about")}
+              // onClick={() => navigate("/about")}
             />
           ) : (
             <CircleOutlined

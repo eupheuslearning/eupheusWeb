@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import GoToTop from "../Components/Top";
 import Banner_1 from "../assets/eventBanner.png";
 import power from "../assets/power.png";
 import grayBg from "../assets/grayBg.png";
@@ -204,6 +205,7 @@ export default function Events() {
         </div>
 
         <Footer />
+        <GoToTop />
       </div>
     </>
   );
