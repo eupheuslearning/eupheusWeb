@@ -2,10 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import GoToTop from "../Components/Top";
-import bn1 from "../assets/Banner1.jpg";
-import bn2 from "../assets/Banner2.jpg";
-import bn3 from "../assets/Banner3.jpg";
-import bn4 from "../assets/banner4.jpg";
 import grayBg from "../assets/grayBg.png";
 import firstSectionSchool from "../assets/first-section-school.174ed857.svg";
 import firstSectionLighthouse from "../assets/first-section-lighthouse.a0be8772.svg";
@@ -26,6 +22,10 @@ import laptop2 from "../assets/laptop2.png";
 import iso from "../assets/iso.png";
 import sm from "../assets/sm.png";
 import footerimg1 from "../assets/footerimg1.png";
+import dashBorder from "../assets/dash-border.png";
+import board from "../assets/board.png";
+import lgDashBorder from "../assets/dash-border-lg.png";
+import submit from "../assets/submit.png";
 
 import { Parallax } from "react-scroll-parallax";
 import { Circle } from "@mui/icons-material";
@@ -331,22 +331,121 @@ const Home = () => {
           </Parallax>
         </div>
       </div>
-      <div>
-        <h1 className="text-gray-700 md:text-2xl mt-[3rem] text-sm w-[70vw] pl-[2rem] md:ml-[12vw] md:wl-[5vw] ">
-          Eupheus Learning and Varthana Finance Private Ltd, has signed an MoU
-          to empower schools with financing options and modern education
-          offerings, thereby expanding their infrastructure, investing in
-          teacher training, and introducing new learning methods into their
-          classrooms.
-        </h1>
-      </div>
+     
 
-      <div className="w-[100vw] my-[2rem] flex justify-center items-center">
+      <div className="w-[100vw] my-[4rem] flex justify-center items-center">
         <iframe
           className="sm:w-[60vw] sm:h-[60vh] w-[80vw] h-[40vh]"
           src="https://www.youtube.com/embed/J2I1oTQ7p18"
         ></iframe>
       </div>
+
+         <div className="w-[100vw] my-[4rem] flex justify-center mt-[5rem]">
+        <div className="bg-white rounded-r-3xl drop-shadow-2xl px-[5rem] py-[5rem]">
+          <form className="flex flex-col gap-[3rem]">
+            <div className="flex gap-2 justify-between items-center">
+              <input type="radio" name="info" />
+              <lable className="sm:text-3xl text-sm font-semibold">
+                PRINCIPAL/SCHOOL
+              </lable>
+              <input type="radio" name="info" />
+              <lable className="sm:text-3xl text-sm font-semibold">
+                TEACHER
+              </lable>
+              <input type="radio" name="info" />
+              <lable className="sm:text-3xl text-sm font-semibold">
+                PARENTS/STUDENT
+              </lable>
+            </div>
+            <div className="flex sm:gap-[4rem] gap-4 items-center">
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-4">
+                  <h1 className="sm:text-3xl text-sm font-semibold">
+                    FIRST AND LAST NAME
+                  </h1>
+                  <div
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h1 className="sm:text-3xl text-sm font-semibold">ADDRESS</h1>
+                  <div
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h1 className="sm:text-3xl text-sm font-semibold">
+                    ZIP / CITY
+                  </h1>
+                  <div
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h1 className="sm:text-3xl text-sm font-semibold">PHONE</h1>
+                  <div
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+                <div className="flex flex-col gap-4">
+                  <h1 className="sm:text-3xl text-sm font-semibold">E-MAIL</h1>
+                  <div
+                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
+                    style={{
+                      backgroundImage: `url(${dashBorder})`,
+                      backgroundSize: "100% 100%",
+                    }}
+                  >
+                    <input type="text" className=" outline-none w-full" />
+                  </div>
+                </div>
+              </div>
+              <img src={board} className="w-[25vw] h-[25vw]" alt="" />
+            </div>
+            <div>
+              <h1 className="sm:text-3xl text-base font-semibold">QUERY</h1>
+              <div
+                className="px-8 py-6 bg-no-repeat w-full sm:h-[20vh] h-[10vh]"
+                style={{
+                  backgroundImage: `url(${lgDashBorder})`,
+                  backgroundSize: "100% 100%",
+                }}
+              >
+                <input type="text" className=" outline-none w-full" />
+              </div>
+            </div>
+            <button>
+              <img src={submit} className=" sm:w-auto w-[40vw]" alt="" />
+            </button>
+          </form>
+        </div>
+      </div>
+
+
       <div className="w-[100vw] lg:px-[9rem] items-center px-[3rem] py-[2rem] flex justify-between bg-[#f5ab1d]">
         <div className=" flex flex-col gap-4">
           <div className="flex flex-col gap-1">
