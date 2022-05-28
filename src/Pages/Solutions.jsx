@@ -32,7 +32,7 @@ const Solutions = () => {
         />
       </div>
 
-      <div className=" mt-[4rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
+      <div className=" mt-[4rem] text-gray-700  md:mx-[12vw] mx-[5vw] md:text-2xl text-xl">
         Eupheus Learning Group (combined entity of Eupheus Learning, ClassKlap
         and SchoolMitra), apart from their largest catalogue of curricular and
         co-curricular offerings mapped to CBSE and ICSE boards, has introduced
