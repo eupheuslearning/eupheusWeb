@@ -24,7 +24,6 @@ const PeopleSlider = () => {
       start="220px center"
       end="1000px center"
       scrub={2}
-      markers
       pin={true}
     >
       <Tween
