@@ -40,11 +40,14 @@ const Solutions = () => {
         content management system (CMS), enterprise resource planning (ERP) and
         learning management system (LMS) through a single sign on, making lives
         simpler for all stakeholders alike – principals, teachers, parents and
-        students. Eupheus is a pioneer when it comes to personalizing learning
-        outcomes for a student, since the company believes that each student is
-        unique. There’s a unique offering called ‘personalized remedial
-        solution’ which customizes remedial help for students thereby making
-        them understand the subject at the topic level.
+        students.
+        <br />
+        <br />
+        Eupheus is a pioneer when it comes to personalizing learning outcomes
+        for a student, since the company believes that each student is unique.
+        There’s a unique offering called ‘personalized remedial solution’ which
+        customizes remedial help for students thereby making them understand the
+        subject at the topic level.
         <br />
         <br />
         The brand is focused on transforming schools into a 21st Century School
@@ -58,12 +61,24 @@ const Solutions = () => {
       <div className="mt-[2rem] flex justify-center">
         <img className=" h-auto w-[60vw]" src={solImg2} alt="" />
       </div>
+      <div className="w-[100vw] my-[2rem] flex justify-center items-center">
+        <iframe
+          className="w-[60vw] h-[60vh] shadow-3xl "
+          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+        ></iframe>
+      </div>
 
       <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-3xl">
         <span>SUPPLEMENTAL SOLUTIONS</span>
       </div>
       <div className="mt-[2rem] flex justify-center">
         <img className=" h-auto w-[80vw]" src={solMap} alt="" />
+      </div>
+      <div className="w-[100vw] my-[2rem] flex justify-center items-center">
+        <iframe
+          className="w-[60vw] h-[60vh] shadow-3xl "
+          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+        ></iframe>
       </div>
 
       <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-3xl">
@@ -86,6 +101,12 @@ const Solutions = () => {
           className="w-[50vw] h-auto lg:mt-[-5rem] ml-[25vw]"
           alt=""
         />
+      </div>
+      <div className="w-[100vw] my-[2rem] flex justify-center items-center">
+        <iframe
+          className="w-[60vw] h-[60vh] shadow-3xl "
+          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+        ></iframe>
       </div>
 
       <Footer />

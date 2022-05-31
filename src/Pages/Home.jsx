@@ -22,14 +22,11 @@ import laptop2 from "../assets/laptop2.png";
 import iso from "../assets/iso.png";
 import sm from "../assets/sm.png";
 import footerimg1 from "../assets/footerimg1.png";
-import dashBorder from "../assets/dash-border.png";
-import board from "../assets/board.png";
-import lgDashBorder from "../assets/dash-border-lg.png";
-import submit from "../assets/submit.png";
-
 import { Parallax } from "react-scroll-parallax";
-import { Circle } from "@mui/icons-material";
 import Slider from "../Components/Slider";
+import Form from "../Components/Form";
+import { Tween, ScrollTrigger, Reveal } from "react-gsap";
+import { gsap } from "gsap";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -56,7 +53,7 @@ const Home = () => {
 
   return (
     <div
-      className="bg-[#dbdbdb] w-[100vw] overflow-hidden"
+      className="bg-[#dbdbdb] w-[100%] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar highlight={"home"} />
@@ -64,27 +61,40 @@ const Home = () => {
         <Slider />
       </div>
 
-      <div className=" mt-[4rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">
-        <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
-        <span>DISTRIBUTION PLATFORM</span>
-      </div>
+      <Reveal repeat>
+        <Tween
+          from={{ opacity: 0, transform: "translate3d(-100px, 0, 0)" }}
+          to={{ opacity: 1, transform: "translate3d(0px, 0, 0)" }}
+          ease="back.out(1.4)"
+        >
+          <div className="mt-[4rem] text-red-700 md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
+            <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
+            <span>DISTRIBUTION PLATFORM</span>
+          </div>
+        </Tween>
+      </Reveal>
 
-      <div className=" mt-[4rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
-        Eupheus Learning is positioned as the ‘largest, school-focused
-        distribution platform in India’ and is already present in “One out of
-        Four Premium Private Schools of India”. The company is focused on
-        bridging the gap between in-classroom and at home learning by offering
-        pedagogically differentiated technology-led solutions in the K–12 space
-      </div>
+      <Reveal repeat>
+        <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} duration={2}>
+          <div className=" mt-[4rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
+            Eupheus Learning is positioned as the ‘largest, school-focused
+            distribution platform in India’ and is already present in “One out
+            of Four Premium Private Schools of India”. The company is focused on
+            bridging the gap between in-classroom and at home learning by
+            offering pedagogically differentiated technology-led solutions in
+            the K–12 space
+          </div>
+        </Tween>
+      </Reveal>
 
-      <Parallax translateX={[-20, 0]} scale={[0.75, 1]}>
-        <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-6xl text-4xl">
+      <Parallax translateX={[-20, 10]} scale={[0.75, 1]}>
+        <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
           <span>EUPHEUS LEARNING -</span>
           <span>THE LIGHTHOUSE OF </span>
           <span>TRANSFORMATION IN SCHOOLS</span>
         </div>
       </Parallax>
-      <div className="mt-[5rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 lg:ml-[13vw] sm:ml-[8vw]">
+      <div className="mt-[5rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 2xl:ml-[18vw] lg:ml-[13vw] sm:ml-[8vw]">
         <Parallax translateX={["-100px", "0px"]} scale={[0.75, 1]}>
           <img
             src={firstSectionLighthouse}
@@ -118,20 +128,31 @@ const Home = () => {
         </Parallax>
       </div>
 
-      <Parallax translateX={[-50, 20]} scale={[0.75, 1]}>
-        <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-6xl text-4xl">
-          <span>THE POWER OF THE WIDEST</span>
-          <span>CURRICULUM CATALOGUE</span>
-        </div>
-      </Parallax>
-      <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
-        With its Classroom-first and Curriculum-focused approach, Eupheus
-        Learning aims to reach 10 million kids in India through its curriculum
-        and specially curated educational offerings in Kinaesthetic Learning,
-        Reading Enhancement, STEM/ STEAM, and English language learning via
-        exclusive tie-ups with award-winning education technology companies from
-        across the world.
-      </div>
+      <Reveal repeat>
+        <Tween
+          from={{ opacity: 0, transform: "translate3d(-100px, 0, 0)" }}
+          to={{ opacity: 1, transform: "translate3d(0px, 0, 0)" }}
+          ease="back.out(1.4)"
+        >
+          <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
+            <span>THE POWER OF THE WIDEST</span>
+            <span>CURRICULUM CATALOGUE</span>
+          </div>
+        </Tween>
+      </Reveal>
+
+      <Reveal repeat>
+        <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} duration={2}>
+          <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
+            With its Classroom-first and Curriculum-focused approach, Eupheus
+            Learning aims to reach 10 million kids in India through its
+            curriculum and specially curated educational offerings in
+            Kinaesthetic Learning, Reading Enhancement, STEM/ STEAM, and English
+            language learning via exclusive tie-ups with award-winning education
+            technology companies from across the world.
+          </div>
+        </Tween>
+      </Reveal>
       <Parallax translateX={[100, -50]}>
         <img
           src={power}
@@ -140,16 +161,32 @@ const Home = () => {
         />
       </Parallax>
       <div className="flex gap-4 items-center w-[100vw] justify-center pl-6 mt-[2.5rem]">
-        <h3 className="text-gray-700 md:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw]">
+        <h3 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw]">
           Empower your children beyond books and boards that can prepare them
           for the unprecedented challenges of tomorrow.
         </h3>
-        <Parallax rotate={[180, 570]}>
-          <img src={image1} className="w-[40vw] h-auto" alt="" />
-        </Parallax>
+        {/* <Parallax rotate={[180, 570]}> */}
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}
+            to={{ opacity: 1, transform: "translate3d(0, 0px, 0)" }}
+            ease="back.out(1.4)"
+          >
+            <img src={image1} className="w-[40vw] h-auto" alt="" />
+          </Tween>
+        </Reveal>
+        {/* </Parallax> */}
       </div>
       <div className="mt-[2.5rem] w-[100vw] justify-center items-center flex flex-col gap-4">
-        <img src={book} className="w-[8rem] ml-[30vw] h-auto" alt="" />
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}
+            to={{ opacity: 1, transform: "translate3d(0, 0px, 0)" }}
+            ease="back.out(1.4)"
+          >
+            <img src={book} className="w-[8rem] ml-[30vw] h-auto" alt="" />
+          </Tween>
+        </Reveal>
         <div className="flex gap-4">
           <Parallax translateX={[-50, 30]}>
             <div className=" relative">
@@ -189,12 +226,12 @@ const Home = () => {
         <img src={reading} className="w-[10rem] sm:w-[25vw] h-auto" alt="" />
         <img src={robot} className="w-[10rem] sm:w-[25vw] h-auto" alt="" />
       </div>
-      <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
+      <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] mt-[5rem]">
         <span>
-          <h1 className=" text-red-700 md:text-4xl text-3xl  font-bold">
+          <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
             PERSONALISATION REMEDIAL SERVICE
           </h1>
-          <h1 className="text-red-500 md:text-4xl text-3xl font-semibold">
+          <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl font-semibold">
             TO GAIN AN EDGE IN THE FUTURE
           </h1>
         </span>
@@ -206,7 +243,7 @@ const Home = () => {
               alt=""
             />
           </Parallax>
-          <h1 className="text-gray-700 md:text-2xl text-sm w-[35vw]">
+          <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm-sm w-[35vw]">
             Eupheus Learning acquired ClassKlap that offers the NEP-based
             curriculum, seamless schooling, and various programs to make schools
             and students future-ready. Embrace the new-age learning to gain an
@@ -214,17 +251,17 @@ const Home = () => {
           </h1>
         </div>
       </div>
-      <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] pl-[2rem] pr-[1rem] mt-[5rem]">
+      <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] pr-[1rem] mt-[5rem]">
         <span>
-          <h1 className=" text-red-700 md:text-4xl text-3xl  font-bold">
+          <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl  font-bold">
             REVOLUTIONIZING SCHOOLS WITH
           </h1>
-          <h1 className="text-red-500 md:text-4xl text-3xl  font-semibold">
+          <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl  font-semibold">
             THE 21ST CENTURY SCHOOL OS
           </h1>
         </span>
 
-        <h1 className=" md:mt-[2.5rem] mb-[5rem] text-gray-700 lg:w-[50vw] md:w-[70vw]  md:text-2xl text-xl">
+        <h1 className=" md:mt-[2.5rem] mb-[5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm">
           Schools need assistance on ‘content management’, ‘learning
           management’, ‘enterprise resource planning’, ‘financial management’,
           ‘communication management’, etc. and there are disparate solutions
@@ -244,31 +281,33 @@ const Home = () => {
             MITRA
           </span>
         </h1> */}
-        <img
-          className="   md:ml-[10vw]  sm:ml-0 sm-p-[1rem]  lg:ml-[10vw]"
-          src={sm}
-          alt=""
-        />
-        <img
-          className="mt-[1rem] w-[80vw] h-auto md:ml-[10vw] ml-[10vw]"
-          src={schoolmitra}
-          alt=""
-        />
+        <div className="W-[100VW] flex justify-center">
+          <img
+            className="md:ml-[10vw] absolute sm:top-[5rem] top-[3rem] sm:left-0 left-[2rem] sm:w-fit w-[50%] sm:pl-[2rem] lg:ml-[18vw]"
+            src={sm}
+            alt=""
+          />
+          <img
+            className="mt-[1rem] sm:w-auto w-full h-auto sm:h-[100vh] md:ml-[10vw] sm:ml-[10vw]"
+            src={schoolmitra}
+            alt=""
+          />
+        </div>
       </div>
-      <div className="flex gap-7 flex-col md:ml-[12vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
+      <div className="flex gap-7 flex-col md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] mt-[5rem] w-[100vw]">
         <span>
-          <h1 className=" text-red-700 md:text-4xl text-3xl font-bold">
+          <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
             COMPETITIONS
           </h1>
         </span>
-        <div className="flex items-center md:gap-[7rem] gap-[2rem] ">
-          <div className="flex flex-col pt-2 gap-4">
-            <h1 className="text-gray-700 md:text-2xl text-sm w-[35vw]">
+        <div className="flex items-start md:gap-[7rem] gap-[2rem]">
+          <div className="flex flex-col pt-2 mt-[2rem] gap-4">
+            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
               Eupheus Learning hosts several national and international events
               to promote the cause of better learning, effective teaching &
               wholesome improvement in the education systems across the world.
             </h1>
-            <h1 className="text-gray-700 md:text-2xl text-sm w-[35vw]">
+            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
               Unique school outreach initiatives like “Story Telling Sessions”,
               “Olympiad” and “Coding Competitions” have created differentiation
               for the company in this highly competitive and contested education
@@ -284,7 +323,7 @@ const Home = () => {
           </Parallax>
         </div>
       </div>
-      <div className="flex md:gap-[7rem] gap-[2rem] items-center md:ml-[12vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
+      <div className="flex md:gap-[7rem] gap-[2rem] items-center md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
         <Parallax translateX={[-50, 20]}>
           <img
             src={play}
@@ -299,7 +338,7 @@ const Home = () => {
               className="md:w-[20vw] w-[30vw] h-auto"
               alt=""
             />
-            <h1 className="text-gray-700 md:text-2xl text-sm w-[35vw]">
+            <h1 className="text-gray-700 mt-[3rem] lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
               Code2Win is a National-level Coding Competition for students from
               Grade 1 to 12. This gamified environment enables young minds to
               develop their competency and encourages them to ‘learn’,
@@ -309,13 +348,13 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-1 flex-col md:ml-[12vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
+      <div className="flex gap-1 flex-col md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
         <span>
           <img src={iso} alt="" />
         </span>
-        <div className="flex gap-[3rem] items-center">
+        <div className="flex gap-[3rem] items-start">
           <div className="flex flex-col gap-4">
-            <h1 className="text-gray-700 md:text-2xl text-sm w-[35vw]">
+            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl mt-[3rem] text-sm w-[35vw]">
               Olympiad is a gateway to real international exposure for Indian
               students from different schools and boards. It truly strengthens
               their ability to comprehend the subject better and compete at a
@@ -331,7 +370,6 @@ const Home = () => {
           </Parallax>
         </div>
       </div>
-     
 
       <div className="w-[100vw] my-[4rem] flex justify-center items-center">
         <iframe
@@ -340,111 +378,7 @@ const Home = () => {
         ></iframe>
       </div>
 
-         <div className="w-[100vw] my-[4rem] flex justify-center mt-[5rem]">
-        <div className="bg-white rounded-r-3xl drop-shadow-2xl px-[5rem] py-[5rem]">
-          <form className="flex flex-col gap-[3rem]">
-            <div className="flex gap-2 justify-between items-center">
-              <input type="radio" name="info" />
-              <lable className="sm:text-3xl text-sm font-semibold">
-                PRINCIPAL/SCHOOL
-              </lable>
-              <input type="radio" name="info" />
-              <lable className="sm:text-3xl text-sm font-semibold">
-                TEACHER
-              </lable>
-              <input type="radio" name="info" />
-              <lable className="sm:text-3xl text-sm font-semibold">
-                PARENTS/STUDENT
-              </lable>
-            </div>
-            <div className="flex sm:gap-[4rem] gap-4 items-center">
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">
-                    FIRST AND LAST NAME
-                  </h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">ADDRESS</h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">
-                    ZIP / CITY
-                  </h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">PHONE</h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">E-MAIL</h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-              </div>
-              <img src={board} className="w-[25vw] h-[25vw]" alt="" />
-            </div>
-            <div>
-              <h1 className="sm:text-3xl text-base font-semibold">QUERY</h1>
-              <div
-                className="px-8 py-6 bg-no-repeat w-full sm:h-[20vh] h-[10vh]"
-                style={{
-                  backgroundImage: `url(${lgDashBorder})`,
-                  backgroundSize: "100% 100%",
-                }}
-              >
-                <input type="text" className=" outline-none w-full" />
-              </div>
-            </div>
-            <button>
-              <img src={submit} className=" sm:w-auto w-[40vw]" alt="" />
-            </button>
-          </form>
-        </div>
-      </div>
-
+      <Form />
 
       <div className="w-[100vw] lg:px-[9rem] items-center px-[3rem] py-[2rem] flex justify-between bg-[#f5ab1d]">
         <div className=" flex flex-col gap-4">

@@ -9,7 +9,7 @@ const Navbar = ({ highlight }) => {
   const navigate = useNavigate();
   return (
     <div
-      className={`lg:px-16 md:px-4 gap-4 sm:px-16 fixed z-50 lg:h-[13vh] md:h-[15vh] sm:h-[20vh]   px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
+      className={`lg:px-16 md:px-4 gap-4 sm:px-16 fixed z-50 lg:h-[13vh] md:h-[15vh] sm:h-[20vh]  px-6 py-4 flex flex-col md:flex-row items-center justify-between bg-[#dbdbdb] w-[100vw]`}
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <img
@@ -19,7 +19,7 @@ const Navbar = ({ highlight }) => {
       />
 
       <div
-        className="flex lg:gap-16 md:gap-8 sm:gap-16 gap-4 md:mr-12 mt-6 bg-no-repeat"
+        className="flex lg:gap-[5.5rem] 2xl:gap-[8rem] md:w-[60%] md:gap-8 sm:gap-16 gap-4 md:mr-12 mt-6 bg-no-repeat"
         style={{ backgroundImage: `url(${menuLine})` }}
       >
         <div className=" flex flex-col   gap-1 justify-center items-center">
@@ -34,7 +34,7 @@ const Navbar = ({ highlight }) => {
               onClick={() => navigate("/")}
             />
           )}
-          <span className="text-xs sm:text-base flex gap-1">
+          <span className="text-xs sm:text-base 2xl:text-2xl flex gap-1">
             <span>Why</span>
             <span>Eupheus</span>
           </span>
@@ -52,7 +52,7 @@ const Navbar = ({ highlight }) => {
             />
           )}
 
-          <span className="text-xs sm:text-base flex gap-1">
+          <span className="text-xs sm:text-base 2xl:text-2xl flex gap-1">
             <span>About</span>
             <span>Us</span>
           </span>
@@ -70,22 +70,9 @@ const Navbar = ({ highlight }) => {
             />
           )}
 
-          <span className="text-xs sm:text-base">Solutions</span>
+          <span className="text-xs sm:text-base 2xl:text-2xl">Solutions</span>
         </div>
-        <div className=" flex flex-col gap-1 justify-center items-center">
-          {highlight === "demo" ? (
-            <Circle
-              className="!text-[0.9rem] text-red-800 cursor-pointer"
-              onClick={() => navigate("/demo")}
-            />
-          ) : (
-            <CircleOutlined
-              className="!text-[0.9rem] cursor-pointer"
-              onClick={() => navigate("/demo")}
-            />
-          )}
-          <span className="text-xs sm:text-base">Demo</span>
-        </div>
+
         <div className=" flex flex-col gap-1 justify-center items-center">
           {highlight === "events" ? (
             <Circle
@@ -98,7 +85,7 @@ const Navbar = ({ highlight }) => {
               onClick={() => navigate("/events")}
             />
           )}
-          <span className="text-xs sm:text-base">Events</span>
+          <span className="text-xs sm:text-base 2xl:text-2xl">Competiton</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
           {highlight === "media" ? (
@@ -112,7 +99,7 @@ const Navbar = ({ highlight }) => {
               onClick={() => navigate("/media")}
             />
           )}
-          <span className="text-xs sm:text-base">Media</span>
+          <span className="text-xs sm:text-base 2xl:text-2xl">Media</span>
         </div>
       </div>
     </div>
