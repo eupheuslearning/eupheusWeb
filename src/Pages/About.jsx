@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import PeopleSlider from "../Components/PeopleSlider";
@@ -17,8 +17,6 @@ import second from "../assets/about/2.png";
 import third from "../assets/about/3.png";
 import fourth from "../assets/about/4.png";
 import card from "../assets/card.png";
-import { Tween, ScrollTrigger, Reveal } from "react-gsap";
-import { gsap } from "gsap";
 
 export default function About() {
   return (
@@ -241,6 +239,7 @@ export default function About() {
               </div>
             </div>
           </div>
+          <div className="box"></div>
           <div
             className="py-[7rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[48rem] 2xl:h-[53rem]"
             style={{
