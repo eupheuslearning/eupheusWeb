@@ -11,6 +11,9 @@ import { Parallax } from "react-scroll-parallax";
 import gsap from "gsap";
 
 const Solutions = () => {
+  useEffect(() => {
+    document.title = "Solutions - Eupheus";
+  }, []);
   return (
     <div
       className="bg-[#dbdbdb] overflow-hidden"

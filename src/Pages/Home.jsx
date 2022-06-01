@@ -34,6 +34,10 @@ const Home = () => {
   const navigate = useNavigate();
   const timeout = useRef(null);
 
+  useEffect(() => {
+    document.title = "Eupheus Learning";
+  }, []);
+
   const resetTime = () => {
     if (timeout.current) {
       clearTimeout(timeout.current);

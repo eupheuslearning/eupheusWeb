@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import GoToTop from "../Components/Top";
 import Banner_1 from "../assets/banner2.png";
@@ -14,6 +14,9 @@ import Footer from "../Components/Footer";
 import Form from "../Components/Form";
 
 const Demo = () => {
+  useEffect(() => {
+    document.title = "Demo - Eupheus";
+  }, []);
   return (
     <div
       className="bg-[#dbdbdb] overflow-hidden"

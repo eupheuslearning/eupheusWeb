@@ -23,6 +23,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About Us - Eupheus";
+  }, []);
   return (
     <div
       className="bg-[#dbdbdb] overflow-hidden"

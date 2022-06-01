@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import GoToTop from "../Components/Top";
@@ -15,6 +15,9 @@ import img1 from "../assets/eventAsset1.png";
 import img2 from "../assets/eventAsset2.png";
 
 export default function Events() {
+  useEffect(() => {
+    document.title = "Competitions - Eupheus";
+  }, []);
   return (
     <>
       <div

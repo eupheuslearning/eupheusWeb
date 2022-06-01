@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import GoToTop from "../Components/Top";
@@ -9,6 +9,9 @@ import AwardTimeline from "../Components/AwardTimeline";
 import NewsTimeline from "../Components/NewsTimeline";
 
 export default function Media() {
+  useEffect(() => {
+    document.title = "News - Eupheus";
+  }, []);
   return (
     <div
       className="bg-[#dbdbdb] overflow-hidden"
