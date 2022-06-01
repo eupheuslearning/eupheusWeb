@@ -17,6 +17,7 @@ import laptop from "../assets/laptop.png";
 import schoolmitra from "../assets/schoolmitra.png";
 import trophy from "../assets/trophy.png";
 import code2win from "../assets/code2win.png";
+import classK from "../assets/classclap.png";
 import play from "../assets/play.png";
 import laptop2 from "../assets/laptop2.png";
 import iso from "../assets/iso.png";
@@ -243,11 +244,18 @@ const Home = () => {
         </span>
         <div className="flex md:gap-[7rem] gap-[2rem] items-center">
           <Parallax translateX={[-50, 20]}>
-            <img
-              src={laptop}
-              className="w-[43vw] h-[40vh] sm:w-[25vw] sm:h-auto"
-              alt=""
-            />
+            <div className=" relative">
+              <img
+                src={laptop}
+                className="w-[43vw] h-[40vh] sm:w-[25vw] sm:h-auto"
+                alt=""
+              />
+              <img
+                src={classK}
+                className=" absolute -top-2 w-[40%] h-auto"
+                alt=""
+              />
+            </div>
           </Parallax>
           <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm-sm w-[35vw]">
             Eupheus Learning acquired ClassKlap that offers the NEP-based

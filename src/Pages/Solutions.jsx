@@ -21,14 +21,14 @@ const Solutions = () => {
     >
       <Navbar highlight={"solutions"} />
       <div className="sm:h-[100vh] relative w-[100vw]  ">
-        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10">
+        {/* <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10">
           <h1 className=" text-black-700 md:text-3xl text-base font-extrabold ">
             THE POWER OF THE
           </h1>
           <h1 className="text-black-500 md:text-3xl text-sm font-semibold">
             WIDEST CATALOGUE OF OFFERINGS
           </h1>
-        </div>
+        </div> */}
         <img
           className="sm:h-[100vh] h-[50vh] sm:mt-0 mt-[24vh] object-cover w-[100vw]"
           src={solutionBanner}

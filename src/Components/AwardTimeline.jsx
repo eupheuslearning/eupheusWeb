@@ -34,7 +34,7 @@ export default function AwardTimeline() {
         {first ? (
           <div className=" w-full justify-around px-4 bg-transparent flex gap-3">
             <img
-              src={certtificate8}
+              src={certtificate11}
               className="w-[16rem] h-auto object-cover"
               alt=""
             />
@@ -43,8 +43,9 @@ export default function AwardTimeline() {
               className="w-[16rem] h-auto object-cover"
               alt=""
             />
+
             <img
-              src={certtificate11}
+              src={certtificate8}
               className="w-[16rem] h-auto object-cover"
               alt=""
             />
