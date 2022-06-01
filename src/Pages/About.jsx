@@ -12,11 +12,15 @@ import img4 from "../assets/about/Asset 15@3x.png";
 import img5 from "../assets/about/Asset 16@3x.png";
 import img6 from "../assets/about/Asset 17@3x.png";
 import img7 from "../assets/about/Asset 37@3x.png";
+
 import first from "../assets/about/1.png";
 import second from "../assets/about/2.png";
 import third from "../assets/about/3.png";
 import fourth from "../assets/about/4.png";
 import card from "../assets/card.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   return (

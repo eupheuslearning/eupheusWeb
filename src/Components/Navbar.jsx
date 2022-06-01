@@ -85,7 +85,7 @@ const Navbar = ({ highlight }) => {
               onClick={() => navigate("/events")}
             />
           )}
-          <span className="text-xs sm:text-base 2xl:text-2xl">Competiton</span>
+          <span className="text-xs sm:text-base 2xl:text-2xl">Competitons</span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
           {highlight === "media" ? (
@@ -99,7 +99,7 @@ const Navbar = ({ highlight }) => {
               onClick={() => navigate("/media")}
             />
           )}
-          <span className="text-xs sm:text-base 2xl:text-2xl">Media</span>
+          <span className="text-xs sm:text-base 2xl:text-2xl">News</span>
         </div>
       </div>
     </div>

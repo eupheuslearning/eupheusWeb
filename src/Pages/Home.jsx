@@ -89,8 +89,8 @@ const Home = () => {
 
       <Parallax translateX={[-20, 10]} scale={[0.75, 1]}>
         <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
-          <span>EUPHEUS LEARNING -</span>
-          <span>THE LIGHTHOUSE OF </span>
+          <span>EUPHEUS LEARNING THE LIGHTHOUSE OF</span>
+
           <span>TRANSFORMATION IN SCHOOLS</span>
         </div>
       </Parallax>
@@ -350,7 +350,7 @@ const Home = () => {
       </div>
       <div className="flex gap-1 flex-col md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
         <span>
-          <img src={iso} alt="" />
+          <img src={iso} className="md:w-[20vw] w-[30vw] h-auto" alt="" />
         </span>
         <div className="flex gap-[3rem] items-start">
           <div className="flex flex-col gap-4">
