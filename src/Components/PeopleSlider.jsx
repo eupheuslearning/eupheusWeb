@@ -15,7 +15,7 @@ import p13 from "../assets/about/Asset 30@3x.png";
 import p14 from "../assets/about/Asset 31@3x.png";
 import p15 from "../assets/about/Asset 32@3x.png";
 import p16 from "../assets/about/Asset 33@3x.png";
-import p17 from "../assets/about/Asset 38@3x.JPG";
+import p17 from "../assets/about/k.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
