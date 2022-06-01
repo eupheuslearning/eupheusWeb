@@ -388,7 +388,7 @@ const Home = () => {
       <div className="w-[100vw] my-[4rem] flex justify-center items-center">
         <iframe
           className="sm:w-[60vw] sm:h-[60vh] w-[80vw] h-[40vh]"
-          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+          src="https://youtu.be/VRdUjcdI8-Y"
         ></iframe>
       </div>
 
