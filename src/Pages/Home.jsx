@@ -27,9 +27,11 @@ import Slider from "../Components/Slider";
 import Form from "../Components/Form";
 import { Tween, ScrollTrigger, Reveal } from "react-gsap";
 import { gsap } from "gsap";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
+  const navigate = useNavigate();
   const timeout = useRef(null);
 
   const resetTime = () => {
@@ -381,19 +383,21 @@ const Home = () => {
       <Form />
 
       <div className="w-[100vw] lg:px-[9rem] items-center px-[3rem] py-[2rem] flex justify-between bg-[#f5ab1d]">
-        <div className=" flex flex-col gap-4">
-          <div className="flex flex-col gap-1">
+        <div className=" flex flex-col gap-2">
+          {/* <div
+            className="flex flex-col gap-1"
+            onClick={() =>
+              navigate(
+                "https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms"
+              )
+            }
+          >
             <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Avocado App Helps Students Practice
+              Eupheus Learning acquires ClassKlap for $19 million
             </span>
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Maths And Science To Perfection
-            </span>
-            <span className="md:text-base text-xs text-red-700">
-              December 17, 2018
-            </span>
-          </div>
-          <div className="flex flex-col gap-1">
+          </div> */}
+
+          {/* <div className="flex flex-col gap-1">
             <span className="lg:text-xl md:text-base sm:text-sm text-white">
               Learn Coding In A Fun And
             </span>
@@ -403,7 +407,25 @@ const Home = () => {
             <span className="md:text-base text-xs text-red-700">
               November 15, 2017
             </span>
-          </div>
+          </div> */}
+          <a href="https://www.vccircle.com/lightrock-india-funded-eupheus-learning-buys-saas-platform-schoolmitra">
+            <span className="lg:text-xl md:text-base sm:text-sm text-white">
+              <span>Lightrock India-funded Eupheus Learning buys</span>
+              <br />
+              <span>SaaS platform SchoolMitra</span>
+            </span>
+          </a>
+          <span className="md:text-base text-xs text-red-700">
+            Feb 15, 2022
+          </span>
+          <a href="https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms">
+            <span className="lg:text-xl md:text-base sm:text-sm text-white">
+              Eupheus Learning acquires ClassKlap for $19 million
+            </span>
+          </a>
+          <span className="md:text-base text-xs text-red-700">
+            Sep 21, 2021
+          </span>
         </div>
         <img
           src={footerimg1}

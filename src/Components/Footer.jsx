@@ -41,9 +41,7 @@ const Footer = () => {
         <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[25vw] items-center">
           <span className="text-white sm:text-xl text-base">GET IN TOUCH</span>
           <div className="flex flex-col gap-1">
-            <span className="text-white sm:text-sm text-xs">
-              +91 85265 25846
-            </span>
+            <span className="text-white sm:text-sm text-xs">01161400200</span>
             <span className="text-white sm:text-sm text-xs">
               info@eupheus.in
             </span>
