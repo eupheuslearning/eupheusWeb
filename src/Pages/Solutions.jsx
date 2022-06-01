@@ -83,7 +83,7 @@ const Solutions = () => {
       <div className="w-[100vw] my-[2rem] flex justify-center items-center">
         <iframe
           className="w-[60vw] h-[60vh] shadow-3xl "
-          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+          src="https://youtu.be/TFBDy2-eGEo"
         ></iframe>
       </div>
 
@@ -111,7 +111,7 @@ const Solutions = () => {
       <div className="w-[100vw] my-[2rem] flex justify-center items-center">
         <iframe
           className="w-[60vw] h-[60vh] shadow-3xl "
-          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+          src="https://youtu.be/0urmsIvVQM0"
         ></iframe>
       </div>
 
