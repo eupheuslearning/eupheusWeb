@@ -85,7 +85,9 @@ const Navbar = ({ highlight }) => {
               onClick={() => navigate("/events")}
             />
           )}
-          <span className="text-xs sm:text-base 2xl:text-2xl">Competitons</span>
+          <span className="text-xs sm:text-base 2xl:text-2xl">
+            Competitions
+          </span>
         </div>
         <div className=" flex flex-col gap-1 justify-center items-center">
           {highlight === "media" ? (

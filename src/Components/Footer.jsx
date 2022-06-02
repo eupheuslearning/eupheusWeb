@@ -32,10 +32,19 @@ const Footer = () => {
             </span>
           </div>
           <div className="flex gap-2">
-            <Facebook className=" !text-[2rem]" />
-            <Twitter className=" !text-[2rem]" />
-            <LinkedIn className=" !text-[2rem]" />
-            <YouTube className=" !text-[2rem]" />
+            <a href="https://www.facebook.com/Eupheuslearning/">
+              <Facebook className=" !text-[2rem]" />
+            </a>
+            <a href="https://twitter.com/eupheuslearning">
+              <Twitter className=" !text-[2rem]" />
+            </a>
+            <a href="https://in.linkedin.com/company/eupheus-learning">
+              <LinkedIn className=" !text-[2rem]" />
+            </a>
+
+            <a href="https://www.youtube.com/c/EupheusLearning">
+              <YouTube className=" !text-[2rem]" />
+            </a>
           </div>
         </div>
         <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[25vw] items-center">

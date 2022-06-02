@@ -13,4 +13,11 @@
       .awssld--organic-arrows {
             height: auto;
       }
-    }
+}
+
+
+
+.awssld__bullets {
+      z-index: 50 !important;
+      bottom: 1rem !important;
+}
