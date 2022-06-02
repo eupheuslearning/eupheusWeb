@@ -282,10 +282,9 @@ const Home = () => {
               </div>
             </Parallax>
             <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm pr-2 w-[90vw]">
-              Eupheus Learning acquired ClassKlap that offers the NEP-based
-              curriculum, seamless schooling, and various programs to make
-              schools and students future-ready. Embrace the new-age learning to
-              gain an edge in the future.
+              ClassKlap offers the NEP-based curriculum, seamless schooling, and
+              various programs to make schools and students future-ready.
+              Embrace the new-age learning to gain an edge in the future.
             </h1>
           </div>
         ) : (
@@ -305,10 +304,9 @@ const Home = () => {
               </div>
             </Parallax>
             <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
-              Eupheus Learning acquired ClassKlap that offers the NEP-based
-              curriculum, seamless schooling, and various programs to make
-              schools and students future-ready. Embrace the new-age learning to
-              gain an edge in the future.
+              ClassKlap offers the NEP-based curriculum, seamless schooling, and
+              various programs to make schools and students future-ready.
+              Embrace the new-age learning to gain an edge in the future.
             </h1>
           </div>
         )}

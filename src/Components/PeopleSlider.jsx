@@ -118,7 +118,8 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             VP, HEAD TECHNOLOGY
           </span>
-          <a href="www.linkedin.com/in/pritam-kumar-71861b57">
+
+          <a href="https://www.linkedin.com/in/pritam-kumar-71861b57">
             <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
               <LinkedIn /> <span>Linkedin</span>
             </button>

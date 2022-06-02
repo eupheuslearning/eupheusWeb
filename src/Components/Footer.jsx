@@ -53,7 +53,7 @@ const Footer = () => {
           <span className="text-white sm:text-xl text-base">GET IN TOUCH</span>
           <div className="flex flex-col gap-1">
             <span className="text-white sm:text-sm text-xs">
-              <PhoneAndroid className="text-black" /> 01161400200
+              <PhoneAndroid className="text-black" /> 011-61400200
             </span>
             <span className="text-white sm:text-sm text-xs">
               <Email className="text-black" /> info@eupheus.in
