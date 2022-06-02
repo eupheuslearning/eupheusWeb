@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import PeopleSlider from "../Components/PeopleSlider";
+import { LinkedIn } from "@mui/icons-material";
+
 import GoToTop from "../Components/Top";
 import Banner_1 from "../assets/aboutBanner.png";
 import grayBg from "../assets/grayBg.png";
@@ -139,6 +141,11 @@ export default function About() {
             Asia, Executive. He holds a master’s degree in chemical engineering
             from the University of Illinois, Chicago, US.
           </div>
+          <a href="https://www.linkedin.com/in/sarveshwar-sarvesh-shrivastava-4b4986/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
           <div className="flex flex-col gap-12 relative">
@@ -167,6 +174,11 @@ export default function About() {
             last assignment was Vice President – K12 at Encyclopaedia Britannica
             South Asia. He holds a bachelor’s degree in commerce.
           </div>
+          <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
           <div className="flex flex-col gap-12 relative">
@@ -195,6 +207,11 @@ export default function About() {
             Britannica. He holds a post graduate diploma in marketing from T.A.
             Pai Management Institute.
           </div>
+          <a href="https://www.linkedin.com/in/amkapoor/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
       </div>
 

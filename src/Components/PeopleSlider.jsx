@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { LinkedIn } from "@mui/icons-material";
 import p1 from "../assets/about/Asset 18@3x.png";
 import p2 from "../assets/about/Asset 19@3x.png";
 import p3 from "../assets/about/Asset 20@3x.png";
@@ -58,6 +59,14 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             VP, ISFO OLYMPIAD
           </span>
+          <span className=" text-gray-600 sm:text-sm text-xs">
+            & SPECIAL PROJECTS
+          </span>
+          <a href="https://www.linkedin.com/in/reena-puri-phd-86a42159">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -70,6 +79,11 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">VP, HUMAN</span>
           <span className=" text-gray-600 sm:text-sm text-xs">RESOURCES</span>
+          <a href="https://www.linkedin.com/in/ranjitsingh6/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -86,6 +100,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             VP, FINANCE & ACCOUNTS
           </span>
+          <a href="https://www.linkedin.com/in/sukhvinder-singh-bhatia-424884b6/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -99,6 +118,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             VP, HEAD TECHNOLOGY
           </span>
+          <a href="www.linkedin.com/in/pritam-kumar-71861b57">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <div className="border-2 border-solid border-[#f5ab1d]">
@@ -115,6 +139,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             Chief Growth Officer
           </span>
+          <a href="https://www.linkedin.com/in/kapil-chanana-3903834/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -128,6 +157,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             AVP TRAINING
           </span>
+          <a href="https://www.linkedin.com/in/lokesh-darira-48677550/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -141,6 +175,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             VP DIGITAL SALES (INDIA)
           </span>
+          <a href="https://www.linkedin.com/in/rajivrazdan/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -155,6 +194,11 @@ const PeopleSlider = () => {
           <span className="text-gray-600 sm:text-sm text-xs">
             SALES (EXPORTS)
           </span>
+          <a href="https://www.linkedin.com/in/rajiv-bajaj-ba0974a/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -171,6 +215,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             INDIA & MIDDLE EAST)
           </span>
+          <a href="https://www.linkedin.com/in/rajneesh-grewal-b2983720/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
 
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
@@ -186,6 +235,11 @@ const PeopleSlider = () => {
             VP SALES (PUNJAB,
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">HP1, J&K)</span>
+          <a href="https://www.linkedin.com/in/vijay-paul-322b5054/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -200,6 +254,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             (WEST BENGAL, NEPAL)
           </span>
+          <a href="https://www.linkedin.com/in/abhijit-sen-57010537/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -212,8 +271,13 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
           <span className=" text-gray-600 sm:text-sm text-xs">
-            (MAHARASHTRA)
+            (MAHARASHTRA, CHHATTISGARH)
           </span>
+          <a href="https://www.linkedin.com/in/ashok-yeligeti-286425aa/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -228,6 +292,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             (DELHI NCR AND GCC)
           </span>
+          <a href="https://www.linkedin.com/in/lalit-sharma-9807b520/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -240,8 +309,13 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">AVP SALES</span>
           <span className=" text-gray-600 sm:text-sm text-xs">
-            (AP2,TELANGANA, KERALA)
+            (AP,TELANGANA, KERALA)
           </span>
+          <a href="https://www.linkedin.com/in/nehal-ather-97284981/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -257,6 +331,11 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
           <span className=" text-gray-600 sm:text-sm text-xs">(NORTHEAST)</span>
+          <a href="https://www.linkedin.com/in/ramesh-choudhury-3b886b8/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
@@ -271,6 +350,11 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             (ODISHA, CHHATTISGARH)
           </span>
+          <a href="https://www.linkedin.com/in/ranjan-samal-061105151/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <div className="border-2 border-solid border-[#f5ab1d]">
@@ -282,8 +366,13 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
           <span className=" text-gray-600 sm:text-sm text-xs">
-            (UP, UK4, BIHAR, JH)
+            (UP, UK, BIHAR, JH)
           </span>
+          <a href="https://www.linkedin.com/in/sanjeetmukherjee/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
       </div>
     </div>

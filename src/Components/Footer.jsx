@@ -1,6 +1,7 @@
 import React from "react";
 import logWhite from "../assets/logoWhite.png";
 import phone from "../assets/phone.png";
+import { Email, PhoneAndroid } from "@mui/icons-material";
 
 import {
   Facebook,
@@ -27,32 +28,35 @@ const Footer = () => {
             <span className="text-white sm:text-sm text-xs">
               Privacy Policy
             </span>
+            <span className="text-white sm:text-sm text-xs">Career</span>
             <span className="text-white sm:text-sm text-xs">
               Terms & Conditions
             </span>
           </div>
           <div className="flex gap-2">
             <a href="https://www.facebook.com/Eupheuslearning/">
-              <Facebook className=" !text-[2rem]" />
+              <Facebook className=" sm:!text-[2rem]" />
             </a>
             <a href="https://twitter.com/eupheuslearning">
-              <Twitter className=" !text-[2rem]" />
+              <Twitter className=" sm:!text-[2rem]" />
             </a>
             <a href="https://in.linkedin.com/company/eupheus-learning">
-              <LinkedIn className=" !text-[2rem]" />
+              <LinkedIn className=" sm:!text-[2rem]" />
             </a>
 
             <a href="https://www.youtube.com/c/EupheusLearning">
-              <YouTube className=" !text-[2rem]" />
+              <YouTube className=" sm:!text-[2rem]" />
             </a>
           </div>
         </div>
-        <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[25vw] items-center">
+        <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[29vw] items-center">
           <span className="text-white sm:text-xl text-base">GET IN TOUCH</span>
           <div className="flex flex-col gap-1">
-            <span className="text-white sm:text-sm text-xs">01161400200</span>
             <span className="text-white sm:text-sm text-xs">
-              info@eupheus.in
+              <PhoneAndroid className="text-black" /> 01161400200
+            </span>
+            <span className="text-white sm:text-sm text-xs">
+              <Email className="text-black" /> info@eupheus.in
             </span>
           </div>
         </div>
