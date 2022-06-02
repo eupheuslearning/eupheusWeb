@@ -33,27 +33,27 @@ export default function About() {
     >
       <Navbar highlight={"about"} />
       <div className="sm:h-[100vh] relative w-[100vw]  ">
-        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10">
-          <h1 className=" text-black-700 md:text-3xl text-base ont-extrabold  ">
+        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[2rem] right-[5vw]  lg:right-[60vh] z-10">
+          <h1 className=" text-black-700 md:text-3xl text-sm ont-extrabold  ">
             WELCOME TO THE LIGHTHOUSE OF
           </h1>
-          <h1 className="text-black-500 md:text-3xl text-sm font-bold">
+          <h1 className="text-black-500 md:text-3xl text-xs font-bold">
             TRANSFORMATION
           </h1>
         </div>
         <img
-          className="sm:h-[100vh] h-[50vh] sm:mt-0 mt-[24vh] object-cover w-[100vw]"
+          className="sm:h-[100vh] h-auto sm:mt-0 mt-[9rem] object-cover w-[100vw]"
           src={Banner_1}
           alt=""
         />
       </div>
 
-      <div className="flex flex-col gap-4 md:mb-[30vh] mb-[5rem] relative">
-        <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
+      <div className="flex flex-col gap-4 md:mb-[30vh] sm:my-[4rem] my-[1rem] relative">
+        <div className=" text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
           <span>OUR VISION</span>
         </div>
 
-        <div className=" text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
+        <div className=" text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] sm:pr-0 pr-4 lg:text-lg 2xl:text-2xl text-sm">
           To be the lighthouse of transformation in Schools. We will be the
           change makers inside schools by transforming them to become the 21st
           Century Schools and democratizing access to quality education for
@@ -64,13 +64,13 @@ export default function About() {
         </div>
         <img
           src={img1}
-          className="sm:absolute sm:right-[13rem] right-[12rem] object-cover  top-[8rem] sm:w-[60vw] w-[100vw] h-auto"
+          className="sm:absolute sm:right-[13rem] right-[12rem] object-cover  top-[4rem] sm:w-[60vw] w-[100vw] h-auto"
           alt=""
         />
       </div>
 
-      <div className="flex gap-4 items-center w-[100vw] justify-start pl-[12vw] md:mt-[40vh]">
-        <h3 className="text-gray-700 md:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw] flex flex-col gap-6">
+      <div className="flex gap-4 items-center w-[100vw] justify-start sm:pl-[12vw] pl-[5vw] md:mt-[40vh]">
+        <h3 className="text-gray-700 md:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw] flex flex-col gap-4">
           <span className="font-extrabold text-base lg:text-xl 2xl:text-4xl text-red-700">
             OUR MISSION
           </span>
@@ -84,7 +84,7 @@ export default function About() {
         <img src={img2} className="md:w-[40vw] w-[60vw] h-auto" alt="" />
       </div>
 
-      <div className="flex flex-col gap-8 mb-[40vh] relative">
+      <div className="flex flex-col gap-8 sm:mb-[40vh] relative">
         <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
           <span>MEET THE GUIDING LIGHT</span>
         </div>
@@ -108,8 +108,8 @@ export default function About() {
         />
       </div>
 
-      <div className="flex gap-3 w-[100vw] px-[5vw]">
-        <div className="flex flex-col gap-7 w-[30vw] items-start">
+      <div className="flex sm:flex-row flex-col gap-3 w-[100vw] px-[5vw]">
+        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
           <div className="flex flex-col gap-12 relative">
             <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
               <span className="text-gray-800 font-bold">
@@ -140,7 +140,7 @@ export default function About() {
             from the University of Illinois, Chicago, US.
           </div>
         </div>
-        <div className="flex flex-col gap-7 w-[30vw] items-start">
+        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
           <div className="flex flex-col gap-12 relative">
             <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
               <span className="text-gray-800 font-bold">
@@ -168,7 +168,7 @@ export default function About() {
             South Asia. He holds a bachelor’s degree in commerce.
           </div>
         </div>
-        <div className="flex flex-col gap-7 w-[30vw] items-start">
+        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
           <div className="flex flex-col gap-12 relative">
             <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
               <span className="text-gray-800 font-bold">AMIT KAPOOR,</span>
@@ -223,7 +223,7 @@ export default function About() {
         </div>
         <div className="flex sm:flex-row flex-col justify-around">
           <div
-            className="py-[7rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[47rem] 2xl:h-[53rem]"
+            className="sm:py-[7rem] py-[4rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[47rem] 2xl:h-[53rem] h-[36rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -248,7 +248,7 @@ export default function About() {
           </div>
           <div className="box"></div>
           <div
-            className="py-[7rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[48rem] 2xl:h-[53rem]"
+            className="sm:py-[7rem] py-[3rem] h-[37rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[48rem] 2xl:h-[53rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
@@ -275,14 +275,14 @@ export default function About() {
         </div>
         <div className="flex sm:flex-row flex-col justify-around">
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[55rem] 2xl:h-[72rem]"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[55rem] 2xl:h-[72rem] h-[51rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
             }}
           >
             <div className="flex flex-col gap-8 pl-7 items-center">
-              <div className="text-yellow-500 font-bold pt-[10vh] text-base lg:text-xl 2xl:text-4xl">
+              <div className="text-yellow-500 font-bold sm:pt-[10vh] pt-[3rem] text-base lg:text-xl 2xl:text-4xl">
                 UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
                 (2021)
               </div>
@@ -305,14 +305,14 @@ export default function About() {
           </div>
 
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[64rem] 2xl:h-[78rem]"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[64rem] 2xl:h-[78rem] h-[60rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
             }}
           >
             <div className="flex flex-col gap-8 w-[100%] pl-7 items-center">
-              <span className="text-yellow-500 pt-[10vh] font-bold text-base lg:text-xl 2xl:text-4xl">
+              <span className="text-yellow-500 sm:pt-[10vh] pt-[3rem] font-bold text-base lg:text-xl 2xl:text-4xl">
                 UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
                 (2021)
               </span>

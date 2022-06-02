@@ -64,7 +64,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar highlight={"home"} />
-      <div className="sm:mt-0 mt-[24vh]">
+      <div className="sm:mt-0 mt-[9rem]">
         <Slider />
       </div>
 
@@ -83,7 +83,7 @@ const Home = () => {
 
       <Reveal repeat>
         <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} duration={2}>
-          <div className=" mt-[4rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
+          <div className=" sm:mt-[4rem] mt-[1rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
             Eupheus Learning is positioned as the ‘largest, school-focused
             distribution platform in India’ and is already present in “One out
             of Four Premium Private Schools of India”. The company is focused on
@@ -95,21 +95,21 @@ const Home = () => {
       </Reveal>
 
       <Parallax translateX={[-20, 10]} scale={[0.75, 1]}>
-        <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
+        <div className=" sm:mt-[8rem] mt-[3rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
           <span>EUPHEUS LEARNING THE LIGHTHOUSE OF</span>
 
           <span>TRANSFORMATION IN SCHOOLS</span>
         </div>
       </Parallax>
-      <div className="mt-[5rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 2xl:ml-[18vw] lg:ml-[13vw] sm:ml-[8vw]">
-        <Parallax translateX={["-100px", "0px"]} scale={[0.75, 1]}>
+      <div className="sm:mt-[5rem] mt-[2rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 2xl:ml-[18vw] lg:ml-[13vw] sm:ml-[8vw]">
+        <Parallax translateX={["-100px", "120px"]} scale={[0.75, 1]}>
           <img
             src={firstSectionLighthouse}
             className="sm:w-[35vw] w-[80vw] h-auto"
             alt=""
           />
         </Parallax>
-        <Parallax translateX={["100px", "0px"]} scale={[0.75, 1]}>
+        <Parallax translateX={["100px", "-100px"]} scale={[0.75, 1]}>
           <img
             src={firstSectionSchool}
             className="sm:w-[35vw] w-[80vw]h-auto"
@@ -118,7 +118,7 @@ const Home = () => {
         </Parallax>
       </div>
 
-      <div className="mt-[5rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 justify-center">
+      <div className="sm:mt-[5rem] mt-[2rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 justify-center">
         <Parallax rotateY={[180, 570]}>
           <img
             src={section2schools}
@@ -141,7 +141,7 @@ const Home = () => {
           to={{ opacity: 1, transform: "translate3d(0px, 0, 0)" }}
           ease="back.out(1.4)"
         >
-          <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
+          <div className=" sm:mt-[8rem] mt-[3rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
             <span>THE POWER OF THE WIDEST</span>
             <span>CURRICULUM CATALOGUE</span>
           </div>
@@ -195,11 +195,15 @@ const Home = () => {
           </Tween>
         </Reveal>
         <div className="flex gap-4">
-          <Parallax translateX={[-50, 30]}>
+          <Parallax translateX={[-50, 50]}>
             <div className=" relative">
-              <img src={card} className="w-[20rem] h-auto" alt="" />
+              <img
+                src={card}
+                className="sm:w-[20rem] w-[24rem] h-auto"
+                alt=""
+              />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
-                <div className="text-yellow-500 font-bold lg:text-2xl  md:text-6xl sm:text-xl">
+                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-xl text-sm">
                   CURRICULAR CONTENT
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] ">
@@ -211,11 +215,15 @@ const Home = () => {
               </div>
             </div>
           </Parallax>
-          <Parallax translateX={[50, -30]}>
+          <Parallax translateX={[50, -50]}>
             <div className=" relative">
-              <img src={card} className="w-[21.3rem] h-auto" alt="" />
+              <img
+                src={card}
+                className="sm:w-[21.3rem] w-[25rem] h-auto"
+                alt=""
+              />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
-                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-4xl">
+                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-4xl text-sm">
                   SUPPLEMENTAL CONTENT
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] sm:w-[15rem] w-[10rem]">
@@ -265,7 +273,7 @@ const Home = () => {
           </h1>
         </div>
       </div>
-      <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] pr-[1rem] mt-[5rem]">
+      <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] pr-[1rem] sm:mt-[5rem] mt-[3rem]">
         <span>
           <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl  font-bold">
             REVOLUTIONIZING SCHOOLS WITH
@@ -275,7 +283,7 @@ const Home = () => {
           </h1>
         </span>
 
-        <h1 className=" md:mt-[2.5rem] mb-[5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm">
+        <h1 className=" md:mt-[2.5rem] sm:mb-[5rem] mb-[1rem] text-gray-700 lg:w-[50vw] md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm">
           Schools need assistance on ‘content management’, ‘learning
           management’, ‘enterprise resource planning’, ‘financial management’,
           ‘communication management’, etc. and there are disparate solutions
@@ -288,7 +296,7 @@ const Home = () => {
           of a school alike – Principals, Teachers, Students and Parents.
         </h1>
       </div>
-      <div className=" relative mt-[3rem]">
+      <div className=" relative sm:mt-[3rem] mt-[1rem]">
         {/* <h1 className=" lg:text-4xl text-3xl text-blue-800 font-bold absolute sm:top-0 -top-4 lg:left-[15vw] md:left-[10vw] left-[5vw] ">
           SCHOOL
           <span className="lg:text-4xl text-3xl text-[#f5ab1d] font-bold">
@@ -308,7 +316,7 @@ const Home = () => {
           />
         </div>
       </div>
-      <div className="flex gap-7 flex-col md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] mt-[5rem] w-[100vw]">
+      <div className="flex gap-7 flex-col md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] sm:mt-[5rem] mt-[1rem] w-[100vw]">
         <span>
           <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
             COMPETITIONS
@@ -388,9 +396,7 @@ const Home = () => {
       <div className="w-[100vw] my-[4rem] flex justify-center items-center">
         <iframe
           className="sm:w-[60vw] sm:h-[60vh] w-[80vw] h-[40vh]"
-
           src="https://www.youtube.com/embed/VRdUjcdI8-Y"
-
         ></iframe>
       </div>
 

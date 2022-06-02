@@ -41,12 +41,12 @@ const PeopleSlider = () => {
   //   );
   // }, []);
   return (
-    <div className=" flex w-[100vw] justify-center items-center">
+    <div className="flex w-[100vw] justify-center items-center">
       <div
         ref={sliderRef}
-        className="grid grid-cols-4 grid-rows-5 w-fit gap-8 people px-4 h-fit overflow-hidden"
+        className="grid sm:grid-cols-4 sm:grid-rows-5 grid-cols-2 grid-rows-9 w-fit gap-8 people sm:px-4 px-1 h-fit overflow-hidden"
       >
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p1}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -59,7 +59,7 @@ const PeopleSlider = () => {
             VP, ISFO OLYMPIAD
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p2}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -71,7 +71,7 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">VP, HUMAN</span>
           <span className=" text-gray-600 sm:text-sm text-xs">RESOURCES</span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[35vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p3}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -87,7 +87,7 @@ const PeopleSlider = () => {
             VP, FINANCE & ACCOUNTS
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p4}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -100,11 +100,11 @@ const PeopleSlider = () => {
             VP, HEAD TECHNOLOGY
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <div className="border-2 border-solid border-[#f5ab1d]">
             <img
               src={p17}
-              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[8rem]"
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
               alt=""
             />
           </div>
@@ -116,7 +116,7 @@ const PeopleSlider = () => {
             Chief Growth Officer
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p5}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -129,7 +129,7 @@ const PeopleSlider = () => {
             AVP TRAINING
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p6}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -142,7 +142,7 @@ const PeopleSlider = () => {
             VP DIGITAL SALES (INDIA)
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p7}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -156,7 +156,7 @@ const PeopleSlider = () => {
             SALES (EXPORTS)
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p8}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -173,7 +173,7 @@ const PeopleSlider = () => {
           </span>
         </div>
 
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p9}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -187,7 +187,7 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">HP1, J&K)</span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p10}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -201,7 +201,7 @@ const PeopleSlider = () => {
             (WEST BENGAL, NEPAL)
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p11}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -215,7 +215,7 @@ const PeopleSlider = () => {
             (MAHARASHTRA)
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p12}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -229,7 +229,7 @@ const PeopleSlider = () => {
             (DELHI NCR AND GCC)
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[35vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p13}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -243,7 +243,7 @@ const PeopleSlider = () => {
             (AP2,TELANGANA, KERALA)
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p14}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -258,7 +258,7 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
           <span className=" text-gray-600 sm:text-sm text-xs">(NORTHEAST)</span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[35vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p15}
             className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
@@ -272,7 +272,7 @@ const PeopleSlider = () => {
             (ODISHA, CHHATTISGARH)
           </span>
         </div>
-        <div className="flex flex-col items-center sm:w-[16vw] w-[30vw]">
+        <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <div className="border-2 border-solid border-[#f5ab1d]">
             <img src={p16} className="p-2 grayscale w-full h-auto" alt="" />
           </div>

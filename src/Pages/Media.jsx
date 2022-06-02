@@ -29,7 +29,7 @@ export default function Media() {
           </h1>
         </div> */}
         <img
-          className="sm:h-[100vh] h-[50vh] sm:mt-0 mt-[24vh] object-cover w-[100vw]"
+          className="sm:h-[100vh] h-auto sm:mt-0 mt-[9rem] object-cover w-[100vw]"
           src={Banner_1}
           alt=""
         />

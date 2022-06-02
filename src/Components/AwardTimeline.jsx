@@ -22,7 +22,7 @@ export default function AwardTimeline() {
       <div className="flex flex-col gap-4 w-[100vw] items-center ">
         <div
           onClick={() => setFirst(!first)}
-          className="text-black flex cursor-pointer justify-around items-center w-[40%] text-2xl rounded-md p-4 bg-[#f5ab1d]"
+          className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
         >
           <span>Awards In 2022</span>
           <KeyboardArrowDown
@@ -35,18 +35,18 @@ export default function AwardTimeline() {
           <div className=" w-full justify-around px-4 bg-transparent flex gap-3">
             <img
               src={certtificate11}
-              className="w-[16rem] h-auto object-cover"
+              className="sm:w-[16rem] w-[7.5rem] h-auto object-cover"
               alt=""
             />
             <img
               src={certtificate9}
-              className="w-[16rem] h-auto object-cover"
+              className="sm:w-[16rem] w-[7.5rem] h-auto object-cover"
               alt=""
             />
 
             <img
               src={certtificate8}
-              className="w-[16rem] h-auto object-cover"
+              className="sm:w-[16rem] w-[7.5rem] h-auto object-cover"
               alt=""
             />
           </div>
@@ -55,7 +55,7 @@ export default function AwardTimeline() {
       <div className="flex flex-col gap-4 w-[100vw] items-center">
         <div
           onClick={() => setSecond(!second)}
-          className="text-black flex cursor-pointer justify-around items-center w-[40%] text-2xl rounded-md p-4 bg-[#f5ab1d]"
+          className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
         >
           <span>Awards In 2021</span>
           <KeyboardArrowDown
@@ -65,8 +65,12 @@ export default function AwardTimeline() {
           />
         </div>
         {second ? (
-          <div className=" w-full justify-around px-4 bg-transparent flex gap-3">
-            <img src={certtificate3} className="h-[8rem] w-auto" alt="" />
+          <div className=" w-full justify-around px-4 bg-transparent flex sm:flex-row flex-col gap-3">
+            <img
+              src={certtificate3}
+              className="sm:h-[8rem] h-[6rem] w-auto"
+              alt=""
+            />
             <img src={certtificate4} className="h-[8rem] w-auto" alt="" />
           </div>
         ) : null}
@@ -74,7 +78,7 @@ export default function AwardTimeline() {
       <div className="flex flex-col gap-4 w-[100vw] items-center">
         <div
           onClick={() => setThird(!third)}
-          className="text-black flex cursor-pointer justify-around items-center w-[40%] text-2xl rounded-md p-4 bg-[#f5ab1d]"
+          className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
         >
           <span>Awards In 2020</span>
           <KeyboardArrowDown
@@ -85,24 +89,28 @@ export default function AwardTimeline() {
         </div>
         {third ? (
           <div className="flex flex-col gap-4">
-            <div className=" w-full justify-around px-4 bg-transparent flex gap-3">
-              <img src={certtificate3} className="h-[8rem] w-auto" alt="" />
+            <div className=" w-full justify-around px-4 bg-transparent flex sm:flex-row flex-col gap-3">
+              <img
+                src={certtificate3}
+                className="sm:h-[8rem] h-[6rem] w-auto"
+                alt=""
+              />
               <img src={certtificate4} className="h-[8rem] w-auto" alt="" />
             </div>
             <div className="w-full justify-around px-4 bg-transparent flex gap-3">
               <img
                 src={certtificate5}
-                className="w-[20rem] h-auto object-cover"
+                className="sm:w-[20rem] w-[7.8rem] h-auto object-cover"
                 alt=""
               />
               <img
                 src={certtificate6}
-                className="w-[16rem] h-auto object-cover"
+                className="sm:w-[16rem] w-[7rem] h-auto object-cover"
                 alt=""
               />
               <img
                 src={certtificate7}
-                className="w-[16rem] h-auto object-cover"
+                className="sm:w-[16rem] w-[7rem] h-auto object-cover"
                 alt=""
               />
             </div>
@@ -112,7 +120,7 @@ export default function AwardTimeline() {
       <div className="flex flex-col gap-4 w-[100vw] items-center">
         <div
           onClick={() => setFourth(!fourth)}
-          className="text-black flex cursor-pointer justify-around items-center w-[40%] text-2xl rounded-md p-4 bg-[#f5ab1d]"
+          className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
         >
           <span>Awards In 2019</span>
           <KeyboardArrowDown
@@ -123,14 +131,18 @@ export default function AwardTimeline() {
         </div>
         {fourth ? (
           <div className=" w-full justify-around px-4 bg-transparent flex gap-3">
-            <img src={certtificate3} className="h-[14rem] w-auto" alt="" />
+            <img
+              src={certtificate3}
+              className="sm:h-[14rem] h-[6rem] w-auto"
+              alt=""
+            />
           </div>
         ) : null}
       </div>
       <div className="flex flex-col gap-4 w-[100vw] items-center">
         <div
           onClick={() => setFifth(!fifth)}
-          className="text-black flex cursor-pointer justify-around items-center w-[40%] text-2xl rounded-md p-4 bg-[#f5ab1d]"
+          className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
         >
           <span>Awards In 2018</span>
           <KeyboardArrowDown
@@ -140,9 +152,17 @@ export default function AwardTimeline() {
           />
         </div>
         {fifth ? (
-          <div className=" w-full justify-around px-4 bg-transparent flex gap-3">
-            <img src={certtificate1} className="w-[24rem] h-auto" alt="" />
-            <img src={certtificate2} className="w-[28rem] h-auto" alt="" />
+          <div className=" w-full justify-around px-4 bg-transparent flex sm:gap-3 gap-1">
+            <img
+              src={certtificate1}
+              className="sm:w-[24rem] w-[11rem] h-auto"
+              alt=""
+            />
+            <img
+              src={certtificate2}
+              className="sm:w-[28rem] w-[13rem] h-auto"
+              alt=""
+            />
           </div>
         ) : null}
       </div>

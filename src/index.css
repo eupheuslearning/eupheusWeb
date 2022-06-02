@@ -7,3 +7,10 @@
 .awssld__content img {
       object-fit: fill !important;
 }
+
+
+@media only screen and (max-width: 500px) {
+      .awssld--organic-arrows {
+            height: auto;
+      }
+    }
