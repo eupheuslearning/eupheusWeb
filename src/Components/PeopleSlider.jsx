@@ -1,21 +1,21 @@
 import React, { useEffect } from "react";
 import { LinkedIn } from "@mui/icons-material";
-import p1 from "../assets/about/Asset 18@3x.png";
-import p2 from "../assets/about/Asset 19@3x.png";
+import p1 from "../assets/about/Reena.jpg";
+import p2 from "../assets/about/Ranjit.jpg";
 import p3 from "../assets/about/Asset 20@3x.png";
 import p4 from "../assets/about/Asset 21@3x.png";
-import p5 from "../assets/about/Asset 22@3x.png";
-import p6 from "../assets/about/Asset 23@3x.png";
+import p5 from "../assets/about/Lokesh.jpg";
+import p6 from "../assets/about/RajivR.jpg";
 import p7 from "../assets/about/RajivB.jpg";
 import p8 from "../assets/about/Asset 25@3x.png";
 import p9 from "../assets/about/Asset 26@3x.png";
-import p10 from "../assets/about/Asset 27@3x.png";
-import p11 from "../assets/about/Asset 28@3x.png";
-import p12 from "../assets/about/Asset 29@3x.png";
-import p13 from "../assets/about/Asset 30@3x.png";
-import p14 from "../assets/about/Asset 31@3x.png";
-import p15 from "../assets/about/Ranjan.JPG";
-import p16 from "../assets/about/Asset 33@3x.png";
+import p10 from "../assets/about/Abhijit.jpg";
+import p11 from "../assets/about/Ashok.jpg";
+import p12 from "../assets/about/Lalit.jpg";
+import p13 from "../assets/about/Nehal.jpg";
+import p14 from "../assets/about/Ramesh.jpg";
+import p15 from "../assets/about/Ranjan.jpg";
+import p16 from "../assets/about/Sanjeet.jpg";
 import p17 from "../assets/about/k.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -48,11 +48,13 @@ const PeopleSlider = () => {
         className="grid sm:grid-cols-4 sm:grid-rows-5 grid-cols-2 grid-rows-9 w-fit gap-8 people sm:px-4 px-1 h-fit overflow-hidden"
       >
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p10}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p10}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             ABHIJIT SEN
           </span>
@@ -67,11 +69,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p11}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p11}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             ASHOK YELIGETI
           </span>
@@ -107,11 +111,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p12}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p12}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             LALIT KUMAR
           </span>
@@ -126,11 +132,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p5}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p5}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             LOKESH DARIRA
           </span>
@@ -144,11 +152,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p13}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p13}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             NEHAL ATHER
           </span>
@@ -165,7 +175,7 @@ const PeopleSlider = () => {
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p4}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
+            className="border-2 p-2 border-solid border-[#f5ab1d] w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
             alt=""
           />
           <span className=" font-bold sm:text-base text-xs text-gray-800">
@@ -182,11 +192,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p7}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p7}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             RAJIV BAJAJ
           </span>
@@ -201,11 +213,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p6}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p6}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             RAJIV RAZDAN
           </span>
@@ -221,7 +235,7 @@ const PeopleSlider = () => {
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p8}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
+            className="border-2 p-2 border-solid border-[#f5ab1d] w-full  2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
             alt=""
           />
           <span className=" font-bold sm:text-base text-xs text-gray-800">
@@ -240,11 +254,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p14}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p14}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             RAMESH K
           </span>
@@ -260,11 +276,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p15}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p15}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             RANJAN K SAMAL
           </span>
@@ -279,11 +297,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p2}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p2}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className=" font-bold sm:text-base text-xs text-gray-800">
             RANJIT SINGH
           </span>
@@ -296,11 +316,13 @@ const PeopleSlider = () => {
           </a>
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
-          <img
-            src={p1}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
-            alt=""
-          />
+          <div className="border-2 border-solid border-[#f5ab1d]">
+            <img
+              src={p1}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
+          </div>
           <span className="font-bold sm:text-base text-xs text-gray-800">
             DR. REENA PURI
           </span>
@@ -318,7 +340,11 @@ const PeopleSlider = () => {
         </div>
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <div className="border-2 border-solid border-[#f5ab1d]">
-            <img src={p16} className="p-2 grayscale w-full h-auto" alt="" />
+            <img
+              src={p16}
+              className="p-2 grayscale w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
+              alt=""
+            />
           </div>
 
           <span className=" font-bold sm:text-base text-xs text-gray-800">
@@ -338,7 +364,7 @@ const PeopleSlider = () => {
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p3}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
+            className="border-2 p-2 border-solid border-[#f5ab1d]  w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
             alt=""
           />
           <span className=" font-bold sm:text-base text-xs text-gray-800">
@@ -360,7 +386,7 @@ const PeopleSlider = () => {
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <img
             src={p9}
-            className="border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto"
+            className="border-2 p-2 border-solid border-[#f5ab1d] w-full 2xl:h-[19rem] sm:h-[13.5rem] h-[9.5rem]"
             alt=""
           />
           <span className=" font-bold sm:text-base text-xs text-gray-800">

@@ -281,11 +281,18 @@ const Home = () => {
                 />
               </div>
             </Parallax>
-            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm pr-2 w-[90vw]">
-              ClassKlap offers the NEP-based curriculum, seamless schooling, and
-              various programs to make schools and students future-ready.
-              Embrace the new-age learning to gain an edge in the future.
-            </h1>
+            <div className="flex flex-col gap-2 items-end">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm pr-2 w-[90vw]">
+                ClassKlap offers the NEP-based curriculum, seamless schooling,
+                and various programs to make schools and students future-ready.
+                Embrace the new-age learning to gain an edge in the future.
+              </h1>
+              <a href="https://www.classklap.com/">
+                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 rounded-md mr-6">
+                  Know More
+                </button>
+              </a>
+            </div>
           </div>
         ) : (
           <div className="flex md:gap-[7rem] gap-[2rem] items-center">
@@ -303,11 +310,18 @@ const Home = () => {
                 />
               </div>
             </Parallax>
-            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
-              ClassKlap offers the NEP-based curriculum, seamless schooling, and
-              various programs to make schools and students future-ready.
-              Embrace the new-age learning to gain an edge in the future.
-            </h1>
+            <div className="flex flex-col gap-2 items-end">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
+                ClassKlap offers the NEP-based curriculum, seamless schooling,
+                and various programs to make schools and students future-ready.
+                Embrace the new-age learning to gain an edge in the future.
+              </h1>
+              <a href="https://www.classklap.com/">
+                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 rounded-md mr-6">
+                  Know More
+                </button>
+              </a>
+            </div>
           </div>
         )}
       </div>
@@ -336,35 +350,39 @@ const Home = () => {
                 />
               </div>
             </Parallax>
-            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[90vw] pr-2">
-              Schools need assistance on ‘content management’, ‘learning
-              management’, ‘enterprise resource planning’, ‘financial
-              management’, ‘communication management’, etc. and there are
-              disparate solutions existing in the marketplace which make matters
-              worse for a school. SchoolMitra (a company acquired by Eupheus
-              Learning), a home grown SaaS company offering digital school
-              management system has introduced The 21st Century School OS which
-              unifies ERP (enterprise resource planning), LMS (learning
-              management system) and CMS (content management system) on a single
-              sign-on, benefitting all stakeholders of a school alike –
-              Principals, Teachers, Students and Parents.
-            </h1>
+            <div className="flex flex-col gap-2 items-end">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[90vw] pr-2">
+                SchoolMitra a home grown SaaS company offering digital school
+                management system has introduced The 21st Century School OS
+                which unifies ERP (enterprise resource planning), LMS (learning
+                management system) and CMS (content management system) on a
+                single sign-on, benefitting all stakeholders of a school alike –
+                Principals, Teachers, Students and Parents.
+              </h1>
+              <a href="https://www.schoolmitra.com/">
+                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 mr-6 rounded-md">
+                  Know More
+                </button>
+              </a>
+            </div>
           </div>
         ) : (
           <div className="flex md:gap-[7rem] gap-[2rem] items-center">
-            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
-              Schools need assistance on ‘content management’, ‘learning
-              management’, ‘enterprise resource planning’, ‘financial
-              management’, ‘communication management’, etc. and there are
-              disparate solutions existing in the marketplace which make matters
-              worse for a school. SchoolMitra (a company acquired by Eupheus
-              Learning), a home grown SaaS company offering digital school
-              management system has introduced The 21st Century School OS which
-              unifies ERP (enterprise resource planning), LMS (learning
-              management system) and CMS (content management system) on a single
-              sign-on, benefitting all stakeholders of a school alike –
-              Principals, Teachers, Students and Parents.
-            </h1>
+            <div className="flex flex-col gap-2 items-end">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
+                SchoolMitra a home grown SaaS company offering digital school
+                management system has introduced The 21st Century School OS
+                which unifies ERP (enterprise resource planning), LMS (learning
+                management system) and CMS (content management system) on a
+                single sign-on, benefitting all stakeholders of a school alike –
+                Principals, Teachers, Students and Parents.
+              </h1>
+              <a href="https://www.schoolmitra.com/">
+                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 mr-6 rounded-md">
+                  Know More
+                </button>
+              </a>
+            </div>
             <Parallax translateX={[100, -115]}>
               <div className=" relative">
                 <img
@@ -435,44 +453,23 @@ const Home = () => {
 
       {/* <Form /> */}
 
-      <div className="w-[100vw] lg:px-[9rem] items-center px-[3rem] py-[2rem] flex justify-between bg-[#f5ab1d]">
-        <div className=" flex flex-col gap-2">
-          {/* <div
-            className="flex flex-col gap-1"
-            onClick={() =>
-              navigate(
-                "https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms"
-              )
-            }
-          >
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Eupheus Learning acquires ClassKlap for $19 million
-            </span>
-          </div> */}
-
-          {/* <div className="flex flex-col gap-1">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Learn Coding In A Fun And
-            </span>
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Interactive Manner!
-            </span>
-            <span className="md:text-base text-xs text-red-700">
-              November 15, 2017
-            </span>
-          </div> */}
+      <div className="w-[100vw] items-center px-[2vw] py-[2rem] grid grid-rows-2 grid-cols-3 gap-[2rem] justify-between bg-[#f5ab1d]">
+        <div className="flex w-[30vw] flex-col gap-2">
           <a href="https://www.vccircle.com/lightrock-india-funded-eupheus-learning-buys-saas-platform-schoolmitra">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              <span>Lightrock India-funded Eupheus Learning buys</span>
-              <br />
-              <span>SaaS platform SchoolMitra</span>
+            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
+              <span>
+                Lightrock India-funded Eupheus Learning buys SaaS platform
+                SchoolMitra
+              </span>
             </span>
           </a>
           <span className="md:text-base text-xs text-red-700">
             Feb 15, 2022
           </span>
+        </div>
+        <div className=" flex w-[30vw] flex-col gap-2">
           <a href="https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
+            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
               Eupheus Learning acquires ClassKlap for $19 million
             </span>
           </a>
@@ -480,11 +477,50 @@ const Home = () => {
             Sep 21, 2021
           </span>
         </div>
-        <img
-          src={footerimg1}
-          className="md:w-[30vw] w-[20vw] hidden sm:block h-[10vh] md:h-auto"
-          alt=""
-        />
+        <div className=" flex w-[30vw] flex-col gap-2">
+          <a href="https://www.apnnews.com/eupheus-learning-signs-mou-with-varthana-to-make-school-financing-and-21st-century-education-solutions-accessible-to-more-schools-in-india/">
+            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
+              Eupheus Learning signs MoU with Varthana to make school financing
+              and 21st century education solutions accessible to more schools in
+              India
+            </span>
+          </a>
+          <span className="md:text-base text-xs text-red-700">
+            Jan 11, 2022
+          </span>
+        </div>
+        <div className=" flex w-[30vw] flex-col gap-2">
+          <a href="https://www.cnbctv18.com/business/most-trusted-brands-of-india-2021-8791541.htm">
+            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
+              Eupheus Learning - Most Trusted Brands Of India 2021
+            </span>
+          </a>
+          <span className="md:text-base text-xs text-red-700">
+            Apr 12, 2021
+          </span>
+        </div>
+        <div className=" flex w-[30vw] flex-col gap-2">
+          <a href="https://economictimes.indiatimes.com/industry/services/education/eupheus-learning-collaborates-with-global-education-solutions-to-help-students-develop-competencies/articleshow/85295893.cms">
+            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
+              Eupheus Learning collaborates with Global Education Solutions to
+              help students develop competencies
+            </span>
+          </a>
+          <span className="md:text-base text-xs text-red-700">
+            Aug 13, 2021
+          </span>
+        </div>
+        <div className=" flex w-[30vw] flex-col gap-2">
+          <a href="https://economictimes.indiatimes.com/tech/funding/edtech-startup-eupheus-learning-raises-10-million-from-lightrock-india/articleshow/86198785.cms?from=mdr">
+            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
+              Edtech startup Eupheus Learning raises $10 million from Lightrock
+              India
+            </span>
+          </a>
+          <span className="md:text-base text-xs text-red-700">
+            Sep 14, 2021
+          </span>
+        </div>
       </div>
       <Footer />
       <GoToTop />
