@@ -25,8 +25,8 @@ export default function IFSO() {
         className="bg-[#dbdbdb] overflow-hidden"
         style={{ backgroundImage: `url(${grayBg})` }}
       >
-        <Navbar />
-        <div className="sm:h-[100vh] relative w-[100vw]  ">
+        <Navbar highlight={"events"} />
+        {/* <div className="sm:h-[100vh] relative w-[100vw]  ">
           <div className=" absolute  lg:top-[18vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[1rem] right-[5vw]  lg:right-[50vh] z-10">
             <h1 className=" text-black-700 md:text-3xl text-xs  ">
               PROMOTING BETTER LEARNING,
@@ -39,12 +39,7 @@ export default function IFSO() {
               NATIONAL AND GLOBAL EVENTS
             </h1>
           </div>
-          <img
-            className="sm:h-[100vh] h-auto sm:mt-0 mt-[9rem] object-cover w-[100vw]"
-            src={Banner_1}
-            alt=""
-          />
-        </div>
+        </div> */}
         {/* <div className=" sm:my-[5rem] my-[1rem] text-gray-700 text-left lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
           Every year, Eupheus Learning hosts several national and global events
           to promote the purpose of better learning, effective teaching &amp;
@@ -174,7 +169,7 @@ export default function IFSO() {
           </div>
         </div> */}
 
-        <div className="sm:my-[5rem] my-[1rem]">
+        <div className="sm:my-[10rem] my-[1rem]">
           <img
             src={isfo}
             className="sm:w-[430px] w-[16rem] my-[2rem]  md:ml-[12vw] ml-[5vw] h-auto"
