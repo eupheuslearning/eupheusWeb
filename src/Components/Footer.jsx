@@ -49,7 +49,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[29vw] items-center">
+        <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[30vw] items-center">
           <span className="text-white sm:text-xl text-base">GET IN TOUCH</span>
           <div className="flex flex-col gap-1">
             <span className="text-white sm:text-sm text-xs">

@@ -6,6 +6,7 @@ import Banner_1 from "../assets/eventBanner.png";
 import power from "../assets/power.png";
 import grayBg from "../assets/grayBg.png";
 import isfo from "../assets/iso.png";
+import c2w from "../assets/code2win.png";
 import eventLast from "../assets/img01.png";
 import winner from "../assets/wiiner.png";
 import java from "../assets/java.png";
@@ -13,8 +14,10 @@ import python from "../assets/python.png";
 import class1 from "../assets/class1.png";
 import img1 from "../assets/eventAsset1.png";
 import img2 from "../assets/eventAsset2.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Events() {
+  const navigate = useNavigate();
   useEffect(() => {
     document.title = "Competitions - Eupheus";
   }, []);
@@ -50,7 +53,23 @@ export default function Events() {
           wholesome development in the education systems across the world.
         </div>
 
-        <div className="mt-[5rem] mb-[1rem] flex items-start gap-8 relative">
+        <div className="sm:my-[5rem] my-[2rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 justify-center items-center">
+          <img
+            src={isfo}
+            onClick={() => navigate("/ifso")}
+            className="sm:w-[30vw] cursor-pointer hover:scale-90 transition-all duration-150 ease-linear w-[40vw] h-auto object-cover"
+            alt=""
+          />
+
+          <img
+            src={c2w}
+            onClick={() => navigate("/code2win")}
+            className="sm:w-[35vw] cursor-pointer hover:scale-90 transition-all duration-150 ease-linear w-[40vw] h-auto"
+            alt=""
+          />
+        </div>
+
+        {/* <div className="mt-[5rem] mb-[1rem] flex items-start gap-8 relative">
           <div>
             <div className="text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-5xl text-base">
               <span className="font-bold ">GAMIFIED WAY OF</span>
@@ -157,9 +176,9 @@ export default function Events() {
               <img src={python} className="sm:h-[70vh] h-[40vh]" alt="" />
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className="sm:my-[5rem] my-[1rem]">
+        {/* <div className="sm:my-[5rem] my-[1rem]">
           <img
             src={isfo}
             className="sm:w-[430px] w-[16rem] my-[2rem]  md:ml-[12vw] ml-[5vw] h-auto"
@@ -213,7 +232,7 @@ export default function Events() {
 
         <div className="flex justify-center">
           <img src={winner} className="sm:w-auto w-[100vw]" alt="" />
-        </div>
+        </div> */}
 
         <Footer />
         <GoToTop />

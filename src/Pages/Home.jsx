@@ -217,7 +217,7 @@ const Home = () => {
                 className="sm:w-[20rem] w-[24rem] h-auto"
                 alt=""
               />
-              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
+              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
                 <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-xl text-sm">
                   CURRICULAR CONTENT
                 </div>
@@ -237,7 +237,7 @@ const Home = () => {
                 className="sm:w-[21.3rem] w-[25.1rem] h-auto"
                 alt=""
               />
-              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
+              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
                 <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-4xl text-sm">
                   SUPPLEMENTAL CONTENT
                 </div>

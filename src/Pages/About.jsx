@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import PeopleSlider from "../Components/PeopleSlider";
@@ -28,6 +28,7 @@ export default function About() {
   useEffect(() => {
     document.title = "About Us - Eupheus";
   }, []);
+
   return (
     <div
       className="bg-[#dbdbdb] overflow-hidden"
@@ -240,88 +241,6 @@ export default function About() {
         </div>
         <div className="flex sm:flex-row flex-col justify-around">
           <div
-            className="sm:py-[7rem] py-[4rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[47rem] 2xl:h-[53rem] h-[36rem]"
-            style={{
-              backgroundImage: `url(${card})`,
-              backgroundSize: "100% 100%",
-            }}
-          >
-            <div className="flex flex-col items-center gap-8">
-              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl">
-                SIXTH SENSE VENTURES (2018)
-              </div>
-              <img src={first} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 pl-6 lg:text-lg 2xl:text-2xl text-sm w-full">
-                Sixth Sense Ventures is India’s first domestic, consumer-centric
-                venture fund, founded by Nikhil Vora (Ex-Managing Director of
-                IDFC Securities), who is regarded as one of the strongest
-                analytical minds in the country. They like to back “first
-                generation” entrepreneurs and are flexible regards the stage and
-                size of investments as long as the business addresses the
-                consumer needs “more efficiently”, be it products, services,
-                distribution, analytics, etc.
-              </div>
-            </div>
-          </div>
-          <div className="box"></div>
-          <div
-            className="sm:py-[7rem] py-[3rem] h-[37rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[48rem] 2xl:h-[53rem]"
-            style={{
-              backgroundImage: `url(${card})`,
-              backgroundSize: "100% 100%",
-            }}
-          >
-            <div className="flex flex-col items-center gap-8">
-              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl">
-                YUJ VENTURES (2020)
-              </div>
-              <img src={second} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 lg:text-lg pl-6 2xl:text-2xl text-sm w-full">
-                Yuj Ventures is the private investing arm of the Yuj platform.
-                Backed by the family office of Sid Yog, Founding Partner of a
-                global investment firm, The Xander Group Inc., Yuj Ventures
-                invests in new and innovative ideas and companies; helps rapidly
-                growing companies scale in emerging markets; and enables
-                networks, alliances and joint ventures that support emerging
-                markets’ entry. The firm has invested in companies across India,
-                Hong Kong, Singapore, the United States, Russia, Latin America,
-                and the United Kingdom.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="flex sm:flex-row flex-col justify-around">
-          <div
-            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[55rem] 2xl:h-[72rem] h-[51rem]"
-            style={{
-              backgroundImage: `url(${card})`,
-              backgroundSize: "100% 100%",
-            }}
-          >
-            <div className="flex flex-col gap-8 pl-7 items-center">
-              <div className="text-yellow-500 font-bold sm:pt-[10vh] pt-[3rem] text-base lg:text-xl 2xl:text-4xl">
-                UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
-                (2021)
-              </div>
-              <img src={third} className="w-[50%] h-auto" alt="" />
-              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-full">
-                United Education Company is a Kuwaiti shareholding company
-                registered and incorporated in Kuwait on 18th February 2003 with
-                a paid-up capital of KD 10 million to capitalize on
-                opportunities in the educational sector. The Company commenced
-                its operations in 2004 with establishing The American University
-                of Kuwait. In 2012 it established The American United School and
-                acquired Al-Rayan Holding Company with its 6 schools with a
-                total combined capacity of over 12,500 students, offering
-                different curriculums to cater to the local market's diverse
-                demographic composition. The company will continue to seek
-                opportunities in the educational sector and expand its asset
-                base within the GCC region.
-              </div>
-            </div>
-          </div>
-
-          <div
             className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[64rem] 2xl:h-[78rem] h-[60rem]"
             style={{
               backgroundImage: `url(${card})`,
@@ -353,6 +272,87 @@ export default function About() {
                 company. They also can invest significantly higher amounts in
                 situations that offer a compelling fit to their investment
                 thesis and mission.
+              </div>
+            </div>
+          </div>
+          <div
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[55rem] 2xl:h-[72rem] h-[51rem]"
+            style={{
+              backgroundImage: `url(${card})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <div className="flex flex-col gap-8 pl-7 items-center">
+              <div className="text-yellow-500 font-bold sm:pt-[10vh] pt-[3rem] text-base lg:text-xl 2xl:text-4xl">
+                UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
+                (2021)
+              </div>
+              <img src={third} className="w-[50%] h-auto" alt="" />
+              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-full">
+                United Education Company is a Kuwaiti shareholding company
+                registered and incorporated in Kuwait on 18th February 2003 with
+                a paid-up capital of KD 10 million to capitalize on
+                opportunities in the educational sector. The Company commenced
+                its operations in 2004 with establishing The American University
+                of Kuwait. In 2012 it established The American United School and
+                acquired Al-Rayan Holding Company with its 6 schools with a
+                total combined capacity of over 12,500 students, offering
+                different curriculums to cater to the local market's diverse
+                demographic composition. The company will continue to seek
+                opportunities in the educational sector and expand its asset
+                base within the GCC region.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex sm:flex-row flex-col justify-around">
+          {/* <div className="box"></div> */}
+          <div
+            className="sm:py-[7rem] py-[3rem] h-[37rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[48rem] 2xl:h-[53rem]"
+            style={{
+              backgroundImage: `url(${card})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <div className="flex flex-col items-center gap-8">
+              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl">
+                YUJ VENTURES (2020)
+              </div>
+              <img src={second} className="w-[50%] h-auto" alt="" />
+              <div className="text-gray-700 lg:text-lg pl-6 2xl:text-2xl text-sm w-full">
+                Yuj Ventures is the private investing arm of the Yuj platform.
+                Backed by the family office of Sid Yog, Founding Partner of a
+                global investment firm, The Xander Group Inc., Yuj Ventures
+                invests in new and innovative ideas and companies; helps rapidly
+                growing companies scale in emerging markets; and enables
+                networks, alliances and joint ventures that support emerging
+                markets’ entry. The firm has invested in companies across India,
+                Hong Kong, Singapore, the United States, Russia, Latin America,
+                and the United Kingdom.
+              </div>
+            </div>
+          </div>
+          <div
+            className="sm:py-[7rem] py-[4rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[47rem] 2xl:h-[53rem] h-[36rem]"
+            style={{
+              backgroundImage: `url(${card})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <div className="flex flex-col items-center gap-8">
+              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl">
+                SIXTH SENSE VENTURES (2018)
+              </div>
+              <img src={first} className="w-[50%] h-auto" alt="" />
+              <div className="text-gray-700 pl-6 lg:text-lg 2xl:text-2xl text-sm w-full">
+                Sixth Sense Ventures is India’s first domestic, consumer-centric
+                venture fund, founded by Nikhil Vora (Ex-Managing Director of
+                IDFC Securities), who is regarded as one of the strongest
+                analytical minds in the country. They like to back “first
+                generation” entrepreneurs and are flexible regards the stage and
+                size of investments as long as the business addresses the
+                consumer needs “more efficiently”, be it products, services,
+                distribution, analytics, etc.
               </div>
             </div>
           </div>

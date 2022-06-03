@@ -6,6 +6,8 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Media from "./Pages/Media";
+import IFSO from "./Pages/IFSO";
+import Code2Win from "./Pages/Code2Win";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/events" element={<Events/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/media" element={<Media/>}/>
+        <Route path="/ifso" element={<IFSO/>}/>
+        <Route path="/code2win" element={<Code2Win/>}/>
         </Routes>
         </BrowserRouter>
       </ParallaxProvider>
