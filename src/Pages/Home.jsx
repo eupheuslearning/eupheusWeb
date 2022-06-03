@@ -478,6 +478,18 @@ const Home = () => {
           </span>
         </div>
         <div className=" flex w-[30vw] flex-col gap-2">
+          <a href="https://economictimes.indiatimes.com/industry/services/education/eupheus-learning-collaborates-with-global-education-solutions-to-help-students-develop-competencies/articleshow/85295893.cms">
+            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
+              Eupheus Learning collaborates with Global Education Solutions to
+              help students develop competencies
+            </span>
+          </a>
+          <span className="md:text-base text-xs text-red-700">
+            Aug 13, 2021
+          </span>
+        </div>
+
+        <div className=" flex w-[30vw] flex-col gap-2">
           <a href="https://www.apnnews.com/eupheus-learning-signs-mou-with-varthana-to-make-school-financing-and-21st-century-education-solutions-accessible-to-more-schools-in-india/">
             <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
               Eupheus Learning signs MoU with Varthana to make school financing
@@ -490,27 +502,6 @@ const Home = () => {
           </span>
         </div>
         <div className=" flex w-[30vw] flex-col gap-2">
-          <a href="https://www.cnbctv18.com/business/most-trusted-brands-of-india-2021-8791541.htm">
-            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
-              Eupheus Learning - Most Trusted Brands Of India 2021
-            </span>
-          </a>
-          <span className="md:text-base text-xs text-red-700">
-            Apr 12, 2021
-          </span>
-        </div>
-        <div className=" flex w-[30vw] flex-col gap-2">
-          <a href="https://economictimes.indiatimes.com/industry/services/education/eupheus-learning-collaborates-with-global-education-solutions-to-help-students-develop-competencies/articleshow/85295893.cms">
-            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
-              Eupheus Learning collaborates with Global Education Solutions to
-              help students develop competencies
-            </span>
-          </a>
-          <span className="md:text-base text-xs text-red-700">
-            Aug 13, 2021
-          </span>
-        </div>
-        <div className=" flex w-[30vw] flex-col gap-2">
           <a href="https://economictimes.indiatimes.com/tech/funding/edtech-startup-eupheus-learning-raises-10-million-from-lightrock-india/articleshow/86198785.cms?from=mdr">
             <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
               Edtech startup Eupheus Learning raises $10 million from Lightrock
@@ -519,6 +510,16 @@ const Home = () => {
           </a>
           <span className="md:text-base text-xs text-red-700">
             Sep 14, 2021
+          </span>
+        </div>
+        <div className=" flex w-[30vw] flex-col gap-2">
+          <a href="https://www.cnbctv18.com/business/most-trusted-brands-of-india-2021-8791541.htm">
+            <span className="lg:text-xl md:text-base sm:text-sm text-xs text-white">
+              Eupheus Learning - Most Trusted Brands Of India 2021
+            </span>
+          </a>
+          <span className="md:text-base text-xs text-red-700">
+            Apr 12, 2021
           </span>
         </div>
       </div>
