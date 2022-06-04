@@ -123,7 +123,7 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">AVP SALES</span>
           <span className=" text-gray-600 sm:text-sm text-xs">
-            (DELHI NCR AND GCC)
+            (DELHI NCR, KERALA AND GCC)
           </span>
           <a href="https://www.linkedin.com/in/lalit-sharma-9807b520/">
             <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
@@ -164,7 +164,7 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">AVP SALES</span>
           <span className=" text-gray-600 sm:text-sm text-xs">
-            (AP,TELANGANA, KERALA)
+            (AP & TELANGANA)
           </span>
           <a href="https://www.linkedin.com/in/nehal-ather-97284981/">
             <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
@@ -288,7 +288,7 @@ const PeopleSlider = () => {
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
           <span className=" text-gray-600 sm:text-sm text-xs">
-            (ODISHA, CHHATTISGARH)
+            (ODISHA)
           </span>
           <a href="https://www.linkedin.com/in/ranjan-samal-061105151/">
             <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
@@ -395,7 +395,7 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             VP SALES (PUNJAB,
           </span>
-          <span className=" text-gray-600 sm:text-sm text-xs">HP1, J&K)</span>
+          <span className=" text-gray-600 sm:text-sm text-xs">HIMACHAL PRADESH, J&K)</span>
           <a href="https://www.linkedin.com/in/vijay-paul-322b5054/">
             <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
               <LinkedIn /> <span>Linkedin</span>
