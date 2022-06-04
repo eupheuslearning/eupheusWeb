@@ -249,8 +249,7 @@ export default function About() {
           >
             <div className="flex flex-col gap-8 w-[100%] pl-7 items-center">
               <span className="text-yellow-500 sm:pt-[10vh] pt-[3rem] font-bold text-base lg:text-xl 2xl:text-4xl">
-                UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
-                (2021)
+                LIGHTROCK INDIA (2021)
               </span>
 
               <img src={fourth} className="w-[50%] h-auto" alt="" />
