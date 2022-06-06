@@ -14,7 +14,8 @@ const Navbar = ({ highlight }) => {
     >
       <img
         src={logo}
-        className="md:w-auto md:h-[4rem] w-[10rem] h-[3rem]"
+        onClick={() => navigate("/")}
+        className="md:w-auto cursor-pointer md:h-[4rem] w-[10rem] h-[3rem]"
         alt=""
       />
 

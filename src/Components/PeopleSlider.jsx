@@ -23,46 +23,43 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PeopleSlider = () => {
   const sliderRef = React.useRef(null);
-  useEffect(() => {
-    const el = sliderRef.current;
-    // gsap.fromTo(
-    //   el,
-    //   { translateX: 0 },
-    //   {
-    //     translateX: "-100%",
-    //     scrollTrigger: {
-    //       trigger: el,
-    //       pin: true,
-    //       start: "top top",
-    //       end: "bottom center",
-    //       scrub: 2,
-    //       markers: true,
-    //     },
-    //   }
-    // );
-    // gsap.fromTo(
-    //   el.
-    //   {
-    //     opacity: 0,
-    //     y: -20,
-    //   },
-    //   {
-    //     opacity: 1,
-    //     y: 0,
-    //     scrollTrigger: {
-    //       trigger: el.querySelector(".ref"),
-    //       start: "top top",
-    //       end: "bottom center",
-    //       scrub: true,
-    //     },
-    //   }
-    // );
-  }, []);
+  // useEffect(() => {
+  //   const el = sliderRef.current;
+  //   // gsap.fromTo(
+  //   //   el,
+  //   //   { translateX: 0 },
+  //   //   {
+  //   //     translateX: "-100%",
+  //   //     scrollTrigger: {
+  //   //       trigger: el,
+  //   //       pin: true,
+  //   //       start: "top top",
+  //   //       end: "bottom center",
+  //   //       scrub: 2,
+  //   //       markers: true,
+  //   //     },
+  //   //   }
+  //   // );
+  //   // gsap.fromTo(
+  //   //   el.
+  //   //   {
+  //   //     opacity: 0,
+  //   //     y: -20,
+  //   //   },
+  //   //   {
+  //   //     opacity: 1,
+  //   //     y: 0,
+  //   //     scrollTrigger: {
+  //   //       trigger: el.querySelector(".ref"),
+  //   //       start: "top top",
+  //   //       end: "bottom center",
+  //   //       scrub: true,
+  //   //     },
+  //   //   }
+  //   // );
+  // }, []);
   return (
-    <div
-      ref={sliderRef}
-      className="flex w-[100vw] element justify-center items-center"
-    >
+    <div ref={sliderRef} className="flex w-[100vw] justify-center items-center">
       <div className="grid sm:grid-cols-4 ref sm:grid-rows-5 grid-cols-2 grid-rows-9 w-fit gap-8 people sm:px-4 px-1 h-fit overflow-hidden">
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <div className="border-2 border-solid border-[#f5ab1d]">
@@ -304,9 +301,7 @@ const PeopleSlider = () => {
             RANJAN K SAMAL
           </span>
           <span className=" text-gray-600 sm:text-sm text-xs">VP SALES</span>
-          <span className=" text-gray-600 sm:text-sm text-xs">
-            (ODISHA)
-          </span>
+          <span className=" text-gray-600 sm:text-sm text-xs">(ODISHA)</span>
           <a href="https://www.linkedin.com/in/ranjan-samal-061105151/">
             <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
               <LinkedIn /> <span>Linkedin</span>
@@ -412,7 +407,9 @@ const PeopleSlider = () => {
           <span className=" text-gray-600 sm:text-sm text-xs">
             VP SALES (PUNJAB,
           </span>
-          <span className=" text-gray-600 sm:text-sm text-xs">HIMACHAL PRADESH, J&K)</span>
+          <span className=" text-gray-600 sm:text-sm text-xs">
+            HIMACHAL PRADESH, J&K)
+          </span>
           <a href="https://www.linkedin.com/in/vijay-paul-322b5054/">
             <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
               <LinkedIn /> <span>Linkedin</span>
