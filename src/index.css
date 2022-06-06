@@ -21,3 +21,7 @@
       z-index: 50 !important;
       bottom: 1rem !important;
 }
+
+.awssld__bullets button {
+      background: rgb(185, 28, 28) !important;
+}
