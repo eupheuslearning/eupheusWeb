@@ -23,30 +23,47 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PeopleSlider = () => {
   const sliderRef = React.useRef(null);
-  // useEffect(() => {
-  //   const el = sliderRef.current;
-  //   gsap.fromTo(
-  //     el,
-  //     { translateX: 0 },
-  //     {
-  //       translateX: "-100%",
-  //       scrollTrigger: {
-  //         trigger: el,
-
-  //         pin: true,
-  //         start: "100px center",
-  //         end: "1200px bottom",
-  //         scrub: 2,
-  //       },
-  //     }
-  //   );
-  // }, []);
+  useEffect(() => {
+    const el = sliderRef.current;
+    // gsap.fromTo(
+    //   el,
+    //   { translateX: 0 },
+    //   {
+    //     translateX: "-100%",
+    //     scrollTrigger: {
+    //       trigger: el,
+    //       pin: true,
+    //       start: "top top",
+    //       end: "bottom center",
+    //       scrub: 2,
+    //       markers: true,
+    //     },
+    //   }
+    // );
+    // gsap.fromTo(
+    //   el.
+    //   {
+    //     opacity: 0,
+    //     y: -20,
+    //   },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     scrollTrigger: {
+    //       trigger: el.querySelector(".ref"),
+    //       start: "top top",
+    //       end: "bottom center",
+    //       scrub: true,
+    //     },
+    //   }
+    // );
+  }, []);
   return (
-    <div className="flex w-[100vw] justify-center items-center">
-      <div
-        ref={sliderRef}
-        className="grid sm:grid-cols-4 sm:grid-rows-5 grid-cols-2 grid-rows-9 w-fit gap-8 people sm:px-4 px-1 h-fit overflow-hidden"
-      >
+    <div
+      ref={sliderRef}
+      className="flex w-[100vw] element justify-center items-center"
+    >
+      <div className="grid sm:grid-cols-4 ref sm:grid-rows-5 grid-cols-2 grid-rows-9 w-fit gap-8 people sm:px-4 px-1 h-fit overflow-hidden">
         <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
           <div className="border-2 border-solid border-[#f5ab1d]">
             <img
