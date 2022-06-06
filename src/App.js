@@ -8,6 +8,7 @@ import About from "./Pages/About";
 import Media from "./Pages/Media";
 import IFSO from "./Pages/IFSO";
 import Code2Win from "./Pages/Code2Win";
+import Curriculum from "./Pages/Curriculum";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/media" element={<Media/>}/>
         <Route path="/ifso" element={<IFSO/>}/>
         <Route path="/code2win" element={<Code2Win/>}/>
+        <Route path="/curriculum" element={<Curriculum/>}/>
         </Routes>
         </BrowserRouter>
       </ParallaxProvider>

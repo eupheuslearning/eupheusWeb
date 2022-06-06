@@ -116,7 +116,7 @@ const Home = () => {
           <span>TRANSFORMATION IN SCHOOLS</span>
         </div>
       </Parallax>
-      <div className="sm:mt-[5rem] mt-[2rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 2xl:ml-[18vw] lg:ml-[13vw] sm:ml-[8vw]">
+      {/* <div className="sm:mt-[5rem] mt-[2rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 2xl:ml-[18vw] lg:ml-[13vw] sm:ml-[8vw]">
         <Parallax translateX={["-100px", "120px"]} scale={[0.75, 1]}>
           <img
             src={firstSectionLighthouse}
@@ -131,9 +131,9 @@ const Home = () => {
             alt=""
           />
         </Parallax>
-      </div>
+      </div> */}
 
-      <div className="sm:mt-[5rem] mt-[2rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 justify-center">
+      <div className="sm:mt-[5rem] mt-[2rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 items-center justify-center">
         <Parallax rotateY={[180, 570]}>
           <img
             src={section2schools}
@@ -141,6 +141,14 @@ const Home = () => {
             alt=""
           />
         </Parallax>
+        <Parallax rotateY={[180, 570]}>
+          <img
+            src={firstSectionLighthouse}
+            className="sm:w-[25vw] w-[40vw] h-auto object-cover"
+            alt=""
+          />
+        </Parallax>
+
         <Parallax rotateY={[180, 570]}>
           <img
             src={section2students}

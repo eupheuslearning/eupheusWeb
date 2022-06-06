@@ -44,7 +44,7 @@ const Footer = () => {
               <LinkedIn className=" sm:!text-[2rem]" />
             </a>
 
-            <a href="https://www.youtube.com/c/EupheusLearning">
+            <a href="https://www.youtube.com/channel/UCCANr2d0iWusG9A0yFO93ag">
               <YouTube className=" sm:!text-[2rem]" />
             </a>
           </div>

@@ -7,10 +7,12 @@ import solImg2 from "../assets/sol-img2.png";
 import solMap from "../assets/sol-map.png";
 import Footer from "../Components/Footer";
 import img3 from "../assets/sol-img3.png";
-import { Parallax } from "react-scroll-parallax";
-import gsap from "gsap";
+// import { Parallax } from "react-scroll-parallax";
+// import gsap from "gsap";
+import { useNavigate } from "react-router-dom";
 
 const Solutions = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     document.title = "Solutions - Eupheus";
   }, []);
@@ -65,7 +67,12 @@ const Solutions = () => {
         <span>PRE-PRIMARY TO GRADE 8</span>
       </div>
       <div className="mt-[2rem] flex justify-center">
-        <img className=" h-auto w-[60vw]" src={solImg2} alt="" />
+        <img
+          onClick={() => navigate("/curriculum")}
+          className=" h-auto w-[50vw] cursor-pointer hover:scale-90 transition-all duration-150 ease-linear"
+          src={solImg2}
+          alt=""
+        />
       </div>
       <div className="w-[100vw] my-[2rem] flex justify-center items-center">
         <iframe
@@ -78,7 +85,11 @@ const Solutions = () => {
         <span>SUPPLEMENTAL SOLUTIONS</span>
       </div>
       <div className="mt-[2rem] flex justify-center">
-        <img className=" h-auto w-[80vw]" src={solMap} alt="" />
+        <img
+          className=" h-auto cursor-pointer hover:scale-90 transition-all duration-150 ease-linear w-[70vw]"
+          src={solMap}
+          alt=""
+        />
       </div>
       <div className="w-[100vw] my-[2rem] flex justify-center items-center">
         <iframe

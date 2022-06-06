@@ -337,7 +337,7 @@ export default function About() {
             </div>
           </div>
           <div
-            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[55rem] 2xl:h-[72rem] h-[51rem]"
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[58rem] 2xl:h-[75rem] h-[54rem]"
             style={{
               backgroundImage: `url(${card})`,
               backgroundSize: "100% 100%",
