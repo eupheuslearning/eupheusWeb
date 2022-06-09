@@ -86,6 +86,7 @@ const Solutions = () => {
       </div>
       <div className="mt-[2rem] flex justify-center">
         <img
+          onClick={() => navigate("/digital")}
           className=" h-auto cursor-pointer hover:scale-90 transition-all duration-150 ease-linear w-[70vw]"
           src={solMap}
           alt=""
