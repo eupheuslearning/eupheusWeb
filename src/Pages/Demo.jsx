@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import GoToTop from "../Components/Top";
 import Banner_1 from "../assets/banner2.png";
@@ -11,8 +11,12 @@ import submit from "../assets/submit.png";
 import { Parallax } from "react-scroll-parallax";
 
 import Footer from "../Components/Footer";
+import Form from "../Components/Form";
 
 const Demo = () => {
+  useEffect(() => {
+    document.title = "Demo - Eupheus";
+  }, []);
   return (
     <div
       className="bg-[#dbdbdb] overflow-hidden"
@@ -35,110 +39,7 @@ const Demo = () => {
         />
       </div>
 
-      <div className="w-[100vw] flex justify-center mt-[5rem]">
-        <div className="bg-white rounded-r-3xl drop-shadow-2xl px-[5rem] py-[5rem]">
-          <form className="flex flex-col gap-[3rem]">
-            <div className="flex gap-2 justify-between items-center">
-              <input type="radio" name="info" />
-              <lable className="sm:text-3xl text-sm font-semibold">
-                PRINCIPAL/SCHOOL
-              </lable>
-              <input type="radio" name="info" />
-              <lable className="sm:text-3xl text-sm font-semibold">
-                TEACHER
-              </lable>
-              <input type="radio" name="info" />
-              <lable className="sm:text-3xl text-sm font-semibold">
-                PARENTS/STUDENT
-              </lable>
-            </div>
-            <div className="flex sm:gap-[4rem] gap-4 items-center">
-              <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">
-                    FIRST AND LAST NAME
-                  </h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">ADDRESS</h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">
-                    ZIP / CITY
-                  </h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">PHONE</h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h1 className="sm:text-3xl text-sm font-semibold">E-MAIL</h1>
-                  <div
-                    className="sm:p-4 p-1 bg-no-repeat sm:w-[30vw] w-[60vw] sm:h-auto h-[6vh]"
-                    style={{
-                      backgroundImage: `url(${dashBorder})`,
-                      backgroundSize: "100% 100%",
-                    }}
-                  >
-                    <input type="text" className=" outline-none w-full" />
-                  </div>
-                </div>
-              </div>
-              <img src={board} className="w-[25vw] h-[25vw]" alt="" />
-            </div>
-            <div>
-              <h1 className="sm:text-3xl text-base font-semibold">QUERY</h1>
-              <div
-                className="px-8 py-6 bg-no-repeat w-full sm:h-[20vh] h-[10vh]"
-                style={{
-                  backgroundImage: `url(${lgDashBorder})`,
-                  backgroundSize: "100% 100%",
-                }}
-              >
-                <input type="text" className=" outline-none w-full" />
-              </div>
-            </div>
-            <button>
-              <img src={submit} className=" sm:w-auto w-[40vw]" alt="" />
-            </button>
-          </form>
-        </div>
-      </div>
+      <Form />
 
       <Parallax translateX={[-50, 30]} scale={[1, 1]}>
         <div className=" mt-[10rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col md:text-5xl text-3xl">

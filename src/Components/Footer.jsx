@@ -1,12 +1,12 @@
 import React from "react";
 import logWhite from "../assets/logoWhite.png";
 import phone from "../assets/phone.png";
-
+import { Email, PhoneAndroid } from "@mui/icons-material";
 
 import {
   Facebook,
   Twitter,
-  Instagram,
+  LinkedIn,
   YouTube,
   Circle,
 } from "@mui/icons-material";
@@ -14,9 +14,7 @@ import {
 const Footer = () => {
   return (
     <>
-      
-
-      <div className="bg-red-600 w-[100vw] lg:px-[9rem] items-start sm:px-[3rem] px-4 py-[2rem] flex justify-between ">
+      <div className="bg-red-600 w-[100vw] lg:px-[9rem] items-start sm:px-[3rem] px-4 py-[2rem] flex justify-between h-fit ">
         <div className="flex flex-col gap-3 sm:w-[20vw] w-[25vw]">
           <img src={logWhite} className="object-cover w-full" alt="" />
           <span className="text-white sm:text-sm text-xs w-full">
@@ -24,59 +22,42 @@ const Footer = () => {
             Mathura Road, Near Sarita Vihar Metro Station, New Delhi – 110044
           </span>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[25vw] items-center">
           <span className="text-white sm:text-xl text-base">USEFUL LINKS</span>
           <div className="flex flex-col gap-1">
-            <span className="text-white sm:text-sm text-xs">Properties</span>
-            <span className="text-white sm:text-sm text-xs">New Books</span>
             <span className="text-white sm:text-sm text-xs">
-              Awards & Recognitions
-            </span>
-            <span className="text-white sm:text-sm text-xs">News</span>
-            <span className="text-white sm:text-sm text-xs">Press Release</span>
-            <span className="text-white sm:text-sm text-xs">
-              Terms And Conditions
+              Privacy Policy
             </span>
             <span className="text-white sm:text-sm text-xs">Career</span>
+            <span className="text-white sm:text-sm text-xs">
+              Terms & Conditions
+            </span>
           </div>
           <div className="flex gap-2">
-            <Facebook />
-            <Twitter />
-            <Instagram />
-            <YouTube />
+            <a href="https://www.facebook.com/Eupheuslearning/">
+              <Facebook className=" sm:!text-[2rem]" />
+            </a>
+            <a href="https://twitter.com/eupheuslearning">
+              <Twitter className=" sm:!text-[2rem]" />
+            </a>
+            <a href="https://in.linkedin.com/company/eupheus-learning">
+              <LinkedIn className=" sm:!text-[2rem]" />
+            </a>
+
+            <a href="https://www.youtube.com/channel/UCCANr2d0iWusG9A0yFO93ag">
+              <YouTube className=" sm:!text-[2rem]" />
+            </a>
           </div>
         </div>
-        <div className="flex flex-col gap-3 w-[30vw]">
-          <span className="text-white sm:text-xl text-base">NEWSLETTER</span>
+        <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[30vw] items-center">
+          <span className="text-white sm:text-xl text-base">GET IN TOUCH</span>
           <div className="flex flex-col gap-1">
             <span className="text-white sm:text-sm text-xs">
-              Be the first to know about the latest news.
+              <PhoneAndroid className="text-black" /> 011-61400200
             </span>
-            <input
-              type="text"
-              placeholder="E-mail...."
-              className=" bg-white sm:px-4 px-2 placeholder:text-sm sm:placeholder:text-base sm:py-1 sm:w-[20vw] w-[30vw] rounded-md outline-none"
-            />
-          </div>
-          <div className="flex gap-4 items-center w-full">
-            <div className="flex flex-col gap-3 w-[12vw]">
-              <span className="text-white sm:text-xl text-base w-[30vw]">
-                GET IN TOUCH
-              </span>
-              <div className="flex flex-col gap-1">
-                <span className="text-white sm:text-sm text-xs w-[30vw]">
-                  +91 85265 25846
-                </span>
-                <span className="text-white sm:text-sm text-xs w-[30vw]">
-                  info@eupheus.in
-                </span>
-              </div>
-            </div>
-            <img
-              src={phone}
-              className="w-[15vw] h-auto hidden sm:block"
-              alt=""
-            />
+            <span className="text-white sm:text-sm text-xs">
+              <Email className="text-black" /> info@eupheus.in
+            </span>
           </div>
         </div>
       </div>

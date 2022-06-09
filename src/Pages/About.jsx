@@ -1,73 +1,85 @@
-import React, { useRef } from 'react'
-import Navbar from '../Components/Navbar'
-import { Tween, ScrollTrigger, Reveal } from 'react-gsap'
-import { gsap } from 'gsap'
+import React, { useEffect, useRef, useState } from "react";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import PeopleSlider from "../Components/PeopleSlider";
+import { LinkedIn } from "@mui/icons-material";
 
-import Footer from '../Components/Footer'
-import GoToTop from '../Components/Top'
-import Banner_1 from '../assets/aboutBanner.png'
-import grayBg from '../assets/grayBg.png'
-import img1 from '../assets/about/Asset 35@3x.png'
-import img2 from '../assets/about/Asset 34@3x.png'
-import img3 from '../assets/about/Asset 36@3x.png'
-import img4 from '../assets/about/Asset 15@3x.png'
-import img5 from '../assets/about/Asset 16@3x.png'
-import img6 from '../assets/about/Asset 17@3x.png'
-import img7 from '../assets/about/Asset 37@3x.png'
-import first from '../assets/about/1.png'
-import second from '../assets/about/2.png'
-import third from '../assets/about/3.png'
-import fourth from '../assets/about/4.png'
-import card from '../assets/card.png'
+import GoToTop from "../Components/Top";
+import Banner_1 from "../assets/aboutBanner.png";
+import grayBg from "../assets/grayBg.png";
+import img1 from "../assets/about/Asset 35@3x.png";
+import img2 from "../assets/about/Asset 34@3x.png";
+import img3 from "../assets/about/Asset 36@3x.png";
+import img4 from "../assets/about/Asset 15@3x.png";
+import img5 from "../assets/about/Asset 16@3x.png";
+import img6 from "../assets/about/Asset 17@3x.png";
+import img7 from "../assets/about/Asset 37@3x.png";
 
-import p1 from '../assets/about/Asset 18@3x.png'
-import p2 from '../assets/about/Asset 19@3x.png'
-import p3 from '../assets/about/Asset 20@3x.png'
-import p4 from '../assets/about/Asset 21@3x.png'
-import p5 from '../assets/about/Asset 22@3x.png'
-import p6 from '../assets/about/Asset 23@3x.png'
-import p7 from '../assets/about/Asset 24@3x.png'
-import p8 from '../assets/about/Asset 25@3x.png'
-import p9 from '../assets/about/Asset 26@3x.png'
-import p10 from '../assets/about/Asset 27@3x.png'
-import p11 from '../assets/about/Asset 28@3x.png'
-import p12 from '../assets/about/Asset 29@3x.png'
-import p13 from '../assets/about/Asset 30@3x.png'
-import p14 from '../assets/about/Asset 31@3x.png'
-import p15 from '../assets/about/Asset 32@3x.png'
-import p16 from '../assets/about/Asset 33@3x.png'
-import { Parallax } from 'react-scroll-parallax'
-import { Controller, Scene } from 'react-scrollmagic'
+import img8 from "../assets/about/1.png";
+import img9 from "../assets/about/2.png";
+import img10 from "../assets/about/3.png";
+import img11 from "../assets/about/4.png";
+import card from "../assets/card.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function About() {
+  gsap.registerPlugin(ScrollTrigger);
+  const [first, setFirst] = useState(true);
+  const [second, setSecond] = useState(true);
+  const [third, setThird] = useState(true);
+  // const ref = useRef(null);
+  useEffect(() => {
+    document.title = "About Us - Eupheus";
+    // const element = ref.current;
+    // gsap.fromTo(
+    //   element.querySelector(".element"),
+    //   {
+    //     opacity: 0,
+    //     y: -20,
+    //   },
+    //   {
+    //     opacity: 1,
+    //     y: 0,
+    //     scrollTrigger: {
+    //       trigger: element.querySelector(".element"),
+    //       start: "top top",
+    //       end: "bottom center",
+    //       scrub: true,
+    //       markers: true,
+    //     },
+    //   }
+    // );
+  }, []);
+
   return (
     <div
-      className='bg-[#dbdbdb] overflow-hidden'
+      className="bg-[#dbdbdb] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
-      <Navbar highlight={'about'} />
-      <div className='sm:h-[100vh] relative w-[100vw]  '>
-        <div className=' absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[8vh] right-[5vw]  lg:right-[60vh] z-10'>
-          <h1 className=' text-black-700 md:text-3xl text-base ont-extrabold  '>
+      <Navbar highlight={"about"} />
+      <div className="sm:h-[100vh] relative w-[100vw]  ">
+        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[2rem] right-[5vw]  lg:right-[60vh] z-10">
+          <h1 className=" text-black-700 md:text-3xl text-sm ont-extrabold  ">
             WELCOME TO THE LIGHTHOUSE OF
           </h1>
-          <h1 className='text-black-500 md:text-3xl text-sm font-bold'>
+          <h1 className="text-black-500 md:text-3xl text-xs font-bold">
             TRANSFORMATION
           </h1>
         </div>
         <img
-          className='sm:h-[100vh] h-[50vh] sm:mt-0 mt-[24vh] object-cover w-[100vw]'
+          className="sm:h-[100vh] h-auto sm:mt-0 mt-[9rem] object-cover w-[100vw]"
           src={Banner_1}
-          alt=''
+          alt=""
         />
       </div>
 
-      <div className='flex flex-col gap-4 mb-[30vh] relative'>
-        <h1 className=' mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold md:text-4xl text-xl'>
-          OUR VISION
-        </h1>
+      <div className="flex flex-col gap-4 md:mb-[30vh] sm:my-[4rem] my-[1rem] relative">
+        <div className=" text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
+          <span>OUR VISION</span>
+        </div>
 
-        <div className=' text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl'>
+        <div className=" text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] sm:pr-0 pr-4 lg:text-lg 2xl:text-2xl text-sm">
           To be the lighthouse of transformation in Schools. We will be the
           change makers inside schools by transforming them to become the 21st
           Century Schools and democratizing access to quality education for
@@ -78,83 +90,77 @@ export default function About() {
         </div>
         <img
           src={img1}
-          className='sm:absolute sm:right-[5vw] bottom-0 object-cover 2xl:top-[10vh] xl:top-[36vh] lg:top-[55vh] md:top-[50vh] sm:w-[70vw] w-[100vw] h-auto'
-          alt=''
+          className="sm:absolute sm:right-[13rem] right-[12rem] object-cover  top-[4rem] sm:w-[60vw] w-[100vw] h-auto"
+          alt=""
         />
       </div>
 
-      <div className='flex gap-4 items-center w-[100vw] justify-center pl-6 mt-[35vh]'>
-        <h3 className='text-gray-700 md:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw] flex flex-col gap-6'>
-          <span className='font-extrabold md:text-4xl text-xl text-red-700'>
+      <div className="flex gap-4 items-center w-[100vw] justify-start sm:pl-[12vw] pl-[5vw] md:mt-[40vh]">
+        <h3 className="text-gray-700 md:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw] flex flex-col gap-4">
+          <span className="font-extrabold text-base lg:text-xl 2xl:text-4xl text-red-700">
             OUR MISSION
           </span>
 
-          <span>
+          <span className=" text-gray-700  lg:text-lg 2xl:text-2xl text-sm">
             To become the largest school focused distribution platform in India.
             And then globally.
           </span>
         </h3>
 
-        <img src={img2} className='w-[40vw] h-auto' alt='' />
+        <img src={img2} className="md:w-[40vw] w-[60vw] h-auto" alt="" />
       </div>
 
-      <Reveal repeat>
-        <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} duration={2}>
-          <div className=' mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold md:text-4xl text-xl'>
-            <span>THIS HEADING IS FADING IN</span>
-          </div>
-        </Tween>
-      </Reveal>
-
-      <Reveal repeat>
-        <Tween
-          from={{ opacity: 0, transform: 'translate3d(-100px, 0, 0)' }}
-          to={{ opacity: 1, transform: 'translate3d(100px, 0, 0)' }}
-          ease='back.out(1.4)'
-        >
-          <div className=' mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold md:text-4xl text-xl'>
-            <span>This headline is coming from left</span>
-          </div>
-        </Tween>
-      </Reveal>
-
-      <div className='flex flex-col gap-8 mb-[40vh] relative'>
-        <div className=' mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold md:text-4xl text-xl'>
+      <div className="flex flex-col gap-8 sm:mb-[40vh] relative">
+        <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
           <span>MEET THE GUIDING LIGHT</span>
         </div>
 
-        <div className=' text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl'>
+        <div className=" text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
           The brand of Proficiency Learning Solutions Private Limited, Eupheus
           Learning started its operations in June 2017. Based in New Delhi, it
           was bootstrapped by about 40 members who joined the 3-founding member
           team to create a new category in the Indian education market.
         </div>
 
-        <div className=' text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl'>
+        <div className=" text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
           The founding team comprises creative minds with experience of more
           than 120 man-years in starting up and turning around businesses in the
           Education and Training space.
         </div>
         <img
           src={img3}
-          className='sm:absolute right-[3vw] bottom-0 object-cover xl:top-[25vh] 2xl:top-[2vh] lg:top-[37vh] md:top-[50vh] top-[23vh] sm:w-[70vw] w-[100vw] h-auto'
-          alt=''
+          className="sm:absolute right-[3vw] bottom-0 object-cover top-[5rem] sm:w-[70vw] w-[100vw] h-auto"
+          alt=""
         />
       </div>
 
-      <div className='flex sm:flex-row flex-col gap-7 items-center'>
-        <div className='flex flex-col gap-12 sm:mb-[30vh] relative'>
-          <div className=' mt-[4rem] lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-3xl text-xl'>
-            <span className='text-gray-800 font-bold'>
-              SARVESH SHRIVASTAVA,
-            </span>
-            <br />
-            <span className='text-gray-600 font-semibold'>
-              FOUNDER AND MANAGING DIRECTOR
-            </span>
-          </div>
+      <div className="flex sm:flex-row flex-col gap-3 w-[100vw] px-[5vw]">
+        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
+          <div className="flex flex-col gap-12 relative">
+            <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
+              <span className="text-gray-800 font-bold">
+                SARVESH SHRIVASTAVA,
+              </span>
+              <br />
+              <span className="text-gray-600 font-semibold">
+                FOUNDER AND MANAGING DIRECTOR
+              </span>
+            </div>
 
-          <div className=' text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl'>
+            <img
+              src={img4}
+              className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
+              alt=""
+            />
+          </div>
+          <div
+            className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
+            style={{
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: `${first ? "5" : "100"}`,
+            }}
+          >
             Sarvesh brings with him more than 32 years’ experience in education
             and IT sectors, during which he has held progressive leadership
             positions in organizations such as General Electric, Corning,
@@ -166,27 +172,44 @@ export default function About() {
             Asia, Executive. He holds a master’s degree in chemical engineering
             from the University of Illinois, Chicago, US.
           </div>
+          <button
+            className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+            onClick={() => setFirst(!first)}
+          >
+            {first ? "Read More" : "Read Less"}
+          </button>
+          <a href="https://www.linkedin.com/in/sarveshwar-sarvesh-shrivastava-4b4986/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
-        <img
-          src={img4}
-          className='sm:w-[25vw] w-[60vw] shadow-2xl h-auto'
-          alt=''
-        />
-      </div>
+        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
+          <div className="flex flex-col gap-12 relative">
+            <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
+              <span className="text-gray-800 font-bold">
+                VED PRAKASH KHATTRI,
+              </span>
+              <br />
+              <span className="text-gray-600 font-semibold">
+                CO-FOUNDER AND DIRECTOR
+              </span>
+            </div>
 
-      <div className='flex sm:flex-row flex-col gap-7 items-center'>
-        <div className='flex flex-col gap-12 sm:mb-[30vh] relative'>
-          <div className=' mt-[4rem] lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-3xl text-xl'>
-            <span className='text-gray-800 font-bold'>
-              VED PRAKASH KHATTRI,
-            </span>
-            <br />
-            <span className='text-gray-600 font-semibold'>
-              CO-FOUNDER AND DIRECTOR
-            </span>
+            <img
+              src={img5}
+              className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
+              alt=""
+            />
           </div>
-
-          <div className=' text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl'>
+          <div
+            className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
+            style={{
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: `${second ? "5" : "100"}`,
+            }}
+          >
             Ved has about 26 years’ sales experience in the K12 publishing
             industry space. He has held progressive positions with Suman
             Prakashan, Ratna Sagar, Oxford University Press and Encyclopaedia
@@ -195,25 +218,42 @@ export default function About() {
             last assignment was Vice President – K12 at Encyclopaedia Britannica
             South Asia. He holds a bachelor’s degree in commerce.
           </div>
+          <button
+            className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+            onClick={() => setSecond(!second)}
+          >
+            {second ? "Read More" : "Read Less"}
+          </button>
+          <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
-        <img
-          src={img5}
-          className='sm:w-[25vw] w-[60vw] shadow-2xl h-auto'
-          alt=''
-        />
-      </div>
+        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
+          <div className="flex flex-col gap-12 relative">
+            <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
+              <span className="text-gray-800 font-bold">AMIT KAPOOR,</span>
+              <br />
+              <span className="text-gray-600 font-semibold">
+                CO-FOUNDER AND DIRECTOR
+              </span>
+            </div>
 
-      <div className='flex sm:flex-row flex-col gap-7 items-center'>
-        <div className='flex flex-col gap-12 sm:mb-[30vh] relative'>
-          <div className=' mt-[4rem] lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-3xl text-xl'>
-            <span className='text-gray-800 font-bold'>AMIT KAPOOR,</span>
-            <br />
-            <span className='text-gray-600 font-semibold'>
-              CO-FOUNDER AND DIRECTOR
-            </span>
+            <img
+              src={img6}
+              className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
+              alt=""
+            />
           </div>
-
-          <div className=' text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl'>
+          <div
+            className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
+            style={{
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: `${third ? "5" : "100"}`,
+            }}
+          >
             Amit has more than 19 years’ experience in sales and marketing
             across Education, Training & Entertainment industries covering
             Indian and International markets. His stints at NIIT, Palador
@@ -224,330 +264,58 @@ export default function About() {
             Britannica. He holds a post graduate diploma in marketing from T.A.
             Pai Management Institute.
           </div>
+          <button
+            className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+            onClick={() => setThird(!third)}
+          >
+            {third ? "Read More" : "Read Less"}
+          </button>
+          <a href="https://www.linkedin.com/in/amkapoor/">
+            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+              <LinkedIn /> <span>Linkedin</span>
+            </button>
+          </a>
         </div>
-        <img
-          src={img6}
-          className='sm:w-[25vw] w-[60vw] shadow-2xl h-auto'
-          alt=''
-        />
       </div>
 
       {/* persons */}
 
-      <div className='flex flex-col gap-4 mb-[30vh] relative'>
-        <div className='hi mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold md:text-4xl text-xl'>
+      <div className="flex flex-col gap-4 mb-[3rem] relative">
+        <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
           <span>MEET OUR HEROES OF CHANGE</span>
         </div>
 
-        <div className=' text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl'>
+        <div className=" text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
           We are a team of dedicated professionals bringing relevant and
           creative solutions to make a difference in education in India. Get in
           touch! Let’s bring a new dawn of learning together.
         </div>
-        <img src={img7} className='' alt='' />
 
-        <ScrollTrigger
-          start='100px center'
-          end='1000px center'
-          markers
-          scrub={0.5}
-          pin={true}
-        >
-          <Tween
-            to={{
-              x: '-100vw',
-            }}
-          >
-            <div className='flex w-fit px-12 h-[1000px] gap-6 sm:flex-nowrap flex-wrap'>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-              <div className='flex flex-col items-center w-[12rem]'>
-                <img
-                  src={p1}
-                  className='border-2 p-2 border-solid border-[#f5ab1d] w-full h-auto'
-                  alt=''
-                />
-                <span className='font-bold sm:text-base text-xs text-gray-800'>
-                  DR. REENA PURI
-                </span>
-                <span className=' text-gray-600 sm:text-sm text-xs'>
-                  VP, ISFO OLYMPIAD
-                </span>
-              </div>
-            </div>
-          </Tween>
-        </ScrollTrigger>
+        <img src={img7} className="" alt="" />
       </div>
+      <PeopleSlider />
 
       {/* investers section */}
 
-      <div className=' flex flex-col w-[100vw] md:px-[12vw] px-[5vw] gap-[3rem]'>
-        <div className=' mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] font-extrabold md:text-4xl text-xl'>
+      <div className=" flex flex-col w-[100vw] md:px-[12vw] px-[5vw] gap-[3rem]">
+        <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
           MEET OUR INVESTORS
         </div>
-        <div className='flex sm:flex-row flex-col justify-around'>
+        <div className="flex sm:flex-row flex-col justify-around">
           <div
-            className='py-[7rem] px-[2rem] bg-no-repeat sm:w-[35vw] w-full min-h-[55vw] max-h-fit'
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[64rem] 2xl:h-[78rem] h-[60rem]"
             style={{
               backgroundImage: `url(${card})`,
-              backgroundSize: '100% 100%',
+              backgroundSize: "100% 100%",
             }}
           >
-            <div className='flex flex-col items-center gap-4'>
-              <div className='text-yellow-500 font-bold lg:text-2xl sm:text-xl text-sm'>
-                SIXTH SENSE VENTURES (2018)
-              </div>
-              <img src={first} className='w-[50%] h-auto' alt='' />
-              <div className='text-gray-700 sm:text-xl text-xs w-full'>
-                Sixth Sense Ventures is India’s first domestic, consumer-centric
-                venture fund, founded by Nikhil Vora (Ex-Managing Director of
-                IDFC Securities), who is regarded as one of the strongest
-                analytical minds in the country. They like to back “first
-                generation” entrepreneurs and are flexible regards the stage and
-                size of investments as long as the business addresses the
-                consumer needs “more efficiently”, be it products, services,
-                distribution, analytics, etc.
-              </div>
-            </div>
-          </div>
-          <div
-            className='py-[7rem] px-[2rem] bg-no-repeat sm:w-[35vw] w-full'
-            style={{
-              backgroundImage: `url(${card})`,
-              backgroundSize: '100% 100%',
-            }}
-          >
-            <div className='flex flex-col items-center gap-4'>
-              <div className='text-yellow-500 font-bold lg:text-2xl sm:text-xl text-sm'>
-                YUJ VENTURES (2020)
-              </div>
-              <img src={second} className='w-[50%] h-auto' alt='' />
-              <div className='text-gray-700 sm:text-xl text-xs w-full'>
-                Yuj Ventures is the private investing arm of the Yuj platform.
-                Backed by the family office of Sid Yog, Founding Partner of a
-                global investment firm, The Xander Group Inc., Yuj Ventures
-                invests in new and innovative ideas and companies; helps rapidly
-                growing companies scale in emerging markets; and enables
-                networks, alliances and joint ventures that support emerging
-                markets’ entry. The firm has invested in companies across India,
-                Hong Kong, Singapore, the United States, Russia, Latin America,
-                and the United Kingdom.
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className='flex sm:flex-row flex-col justify-around'>
-          <div
-            className='py-[1rem] px-[2rem] bg-no-repeat sm:w-[37vw] w-full sm:min-h-[69vw] min-h-[130vw] max-h-fit'
-            style={{
-              backgroundImage: `url(${card})`,
-              backgroundSize: '100% 100%',
-            }}
-          >
-            <div className='flex flex-col gap-4 items-center'>
-              <div className='text-yellow-500 font-bold lg:text-2xl pt-[10vh] sm:text-xl text-sm'>
-                UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
-                (2021)
-              </div>
-              <img src={third} className='w-[50%] h-auto' alt='' />
-              <div className='text-gray-700 sm:text-xl text-xs w-full'>
-                United Education Company is a Kuwaiti shareholding company
-                registered and incorporated in Kuwait on 18th February 2003 with
-                a paid-up capital of KD 10 million to capitalize on
-                opportunities in the educational sector. The Company commenced
-                its operations in 2004 with establishing The American University
-                of Kuwait. In 2012 it established The American United School and
-                acquired Al-Rayan Holding Company with its 6 schools with a
-                total combined capacity of over 12,500 students, offering
-                different curriculums to cater to the local market's diverse
-                demographic composition. The company will continue to seek
-                opportunities in the educational sector and expand its asset
-                base within the GCC region.
-              </div>
-            </div>
-          </div>
+            <div className="flex flex-col gap-8 w-[100%] pl-7 items-center">
+              <span className="text-yellow-500 sm:pt-[10vh] pt-[3rem] font-bold text-base lg:text-xl 2xl:text-4xl">
+                LIGHTROCK INDIA (2021)
+              </span>
 
-          <div
-            className='py-[1rem] px-[2rem] bg-no-repeat sm:w-[37vw] w-full sm:min-h-[78vw] min-h-[142vw] max-h-fit'
-            style={{
-              backgroundImage: `url(${card})`,
-              backgroundSize: '100% 100%',
-            }}
-          >
-            <div className='flex flex-col gap-4 items-center'>
-              <div className='text-yellow-500 pt-[10vh] font-bold lg:text-2xl sm:text-xl text-sm'>
-                UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
-                (2021)
-              </div>
-              <img src={fourth} className='w-[50%] h-auto' alt='' />
-              <div className='text-gray-700 sm:text-xl text-xs w-full'>
+              <img src={img11} className="w-[50%] h-auto" alt="" />
+              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-full">
                 Lightrock provides patient capital and business-building support
                 to world-class entrepreneurs across three key themes - Unlocking
                 human potential, equitably; Building resource efficiency,
@@ -568,11 +336,92 @@ export default function About() {
               </div>
             </div>
           </div>
+          <div
+            className="py-[1rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[58rem] 2xl:h-[75rem] h-[54rem]"
+            style={{
+              backgroundImage: `url(${card})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <div className="flex flex-col gap-8 pl-7 items-center">
+              <div className="text-yellow-500 font-bold sm:pt-[10vh] pt-[3rem] text-base lg:text-xl 2xl:text-4xl">
+                UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
+                (2021)
+              </div>
+              <img src={img10} className="w-[50%] h-auto" alt="" />
+              <div className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-full">
+                United Education Company is a Kuwaiti shareholding company
+                registered and incorporated in Kuwait on 18th February 2003 with
+                a paid-up capital of KD 10 million to capitalize on
+                opportunities in the educational sector. The Company commenced
+                its operations in 2004 with establishing The American University
+                of Kuwait. In 2012 it established The American United School and
+                acquired Al-Rayan Holding Company with its 6 schools with a
+                total combined capacity of over 12,500 students, offering
+                different curriculums to cater to the local market's diverse
+                demographic composition. The company will continue to seek
+                opportunities in the educational sector and expand its asset
+                base within the GCC region.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="flex sm:flex-row flex-col justify-around">
+          {/* <div className="box"></div> */}
+          <div
+            className="sm:py-[7rem] py-[3rem] h-[37rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[48rem] 2xl:h-[53rem]"
+            style={{
+              backgroundImage: `url(${card})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <div className="flex flex-col items-center gap-8">
+              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl">
+                YUJ VENTURES (2020)
+              </div>
+              <img src={img9} className="w-[50%] h-auto" alt="" />
+              <div className="text-gray-700 lg:text-lg pl-6 2xl:text-2xl text-sm w-full">
+                Yuj Ventures is the private investing arm of the Yuj platform.
+                Backed by the family office of Sid Yog, Founding Partner of a
+                global investment firm, The Xander Group Inc., Yuj Ventures
+                invests in new and innovative ideas and companies; helps rapidly
+                growing companies scale in emerging markets; and enables
+                networks, alliances and joint ventures that support emerging
+                markets’ entry. The firm has invested in companies across India,
+                Hong Kong, Singapore, the United States, Russia, Latin America,
+                and the United Kingdom.
+              </div>
+            </div>
+          </div>
+          <div
+            className="sm:py-[7rem] py-[4rem] px-[2rem] bg-no-repeat sm:w-[50rem] w-full lg:h-[47rem] 2xl:h-[53rem] h-[36rem]"
+            style={{
+              backgroundImage: `url(${card})`,
+              backgroundSize: "100% 100%",
+            }}
+          >
+            <div className="flex flex-col items-center gap-8">
+              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl">
+                SIXTH SENSE VENTURES (2018)
+              </div>
+              <img src={img8} className="w-[50%] h-auto" alt="" />
+              <div className="text-gray-700 pl-6 lg:text-lg 2xl:text-2xl text-sm w-full">
+                Sixth Sense Ventures is India’s first domestic, consumer-centric
+                venture fund, founded by Nikhil Vora (Ex-Managing Director of
+                IDFC Securities), who is regarded as one of the strongest
+                analytical minds in the country. They like to back “first
+                generation” entrepreneurs and are flexible regards the stage and
+                size of investments as long as the business addresses the
+                consumer needs “more efficiently”, be it products, services,
+                distribution, analytics, etc.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
       <Footer />
       <GoToTop />
     </div>
-  )
+  );
 }
