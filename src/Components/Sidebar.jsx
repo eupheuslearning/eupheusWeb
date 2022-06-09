@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 const Sidebar = ({ sOpen, setSopen, type, setPage }) => {
   const [pp, setPp] = useState(false);
   const [cbse, setCbse] = useState(false);
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(sOpen);
 
   const [hidden, setHidden] = useState(null);
 
