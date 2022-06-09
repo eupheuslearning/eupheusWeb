@@ -455,6 +455,7 @@ const Sidebar = ({ sOpen, setSopen, type, setPage }) => {
                 >
                   <Circle className={`!text-[.7rem] text-[#c96161]`} />
                   <h1
+                    onClick={() => handleChangePage("primo")}
                     className={`pl-9 text-[#c96161] font-bold transition-all ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
                   >
                     Primo
