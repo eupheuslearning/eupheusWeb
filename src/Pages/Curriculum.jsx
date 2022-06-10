@@ -6,6 +6,8 @@ import Footer from "../Components/Footer";
 import duck from "../assets/curriculum/duck.png";
 import Sidebar from "../Components/Sidebar";
 import Zoom from "../Components/Curriculum/prePrimary/Zoom";
+import AlphaFun from "../Components/Curriculum/prePrimary/AlphaFun";
+import DotDash from "../Components/Curriculum/prePrimary/DotDash";
 
 const Curriculum = () => {
   const [sOpen, setSopen] = useState(true);
@@ -44,6 +46,12 @@ const Curriculum = () => {
         break;
       case "zoom":
         return <Zoom sOpen={sOpen} />;
+        break;
+      case "alpha_fun":
+        return <AlphaFun sOpen={sOpen} />;
+        break;
+      case "dot_dash":
+        return <DotDash sOpen={sOpen} />;
         break;
 
       default:
