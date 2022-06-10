@@ -111,6 +111,7 @@ const Sidebar = ({ sOpen, setSopen, type, setPage }) => {
                     >
                       <Circle className={`!text-[.7rem] text-[#c96161]`} />
                       <h1
+                        onClick={() => handleChangePage("alpha_fun")}
                         className={`pl-9 text-[#c96161] transition-all font-bold ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
                       >
                         Alpha Fun
@@ -121,6 +122,7 @@ const Sidebar = ({ sOpen, setSopen, type, setPage }) => {
                     >
                       <Circle className={`!text-[.7rem] text-[#c96161]`} />
                       <h1
+                        onClick={() => handleChangePage("dot_dash")}
                         className={`pl-9 text-[#c96161] font-bold transition-all ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
                       >
                         Dot & Dash
@@ -455,6 +457,7 @@ const Sidebar = ({ sOpen, setSopen, type, setPage }) => {
                 >
                   <Circle className={`!text-[.7rem] text-[#c96161]`} />
                   <h1
+                    onClick={() => handleChangePage("primo")}
                     className={`pl-9 text-[#c96161] font-bold transition-all ease-linear duration-200  py-2 bg-transparent cursor-pointer`}
                   >
                     Primo

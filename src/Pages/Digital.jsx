@@ -5,8 +5,8 @@ import grayBg from "../assets/grayBg.png";
 import Footer from "../Components/Footer";
 import owl from "../assets/digital/owl.png";
 import Sidebar from "../Components/Sidebar";
-import Zoom from "../Components/Curriculum/prePrimary/Zoom";
 import Step from "../Components/Digital/Step";
+import Primo from "../Components/Digital/Primo";
 
 const Digital = () => {
   const [sOpen, setSopen] = useState(true);
@@ -45,6 +45,9 @@ const Digital = () => {
         break;
       case "step":
         return <Step sOpen={sOpen} />;
+        break;
+      case "primo":
+        return <Primo sOpen={sOpen} />;
         break;
 
       default:
