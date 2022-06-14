@@ -4,9 +4,6 @@ import Footer from "../Components/Footer";
 import GoToTop from "../Components/Top";
 import Banner_1 from "../assets/mediaBanner.png";
 import grayBg from "../assets/grayBg.png";
-
-// import AwardTimeline from "../Components/AwardTimeline";
-// import NewsTimeline from "../Components/NewsTimeline";
 import { useNavigate } from "react-router-dom";
 
 import img1 from "../assets/news/1.png";
@@ -37,12 +34,19 @@ export default function Media() {
         <img
           onClick={() => navigate("/awards")}
           src={img1}
-          className="w-[20%] cursor-pointer my-8 h-auto"
+          className="w-[20%] hover:-translate-y-4 transition-all duration-200 ease-linear cursor-pointer my-8 h-auto"
           alt=""
         />
-
-        <img src={img2} className="w-[20%] cursor-pointer my-8 h-auto" alt="" />
-        <img src={img3} className="w-[20%] cursor-pointer my-8 h-auto" alt="" />
+        <img
+          src={img2}
+          className="w-[20%] hover:-translate-y-4 transition-all duration-200 ease-linear cursor-pointer my-8 h-auto"
+          alt=""
+        />
+        <img
+          src={img3}
+          className="w-[20%] hover:-translate-y-4 transition-all duration-200 ease-linear cursor-pointer my-8 h-auto"
+          alt=""
+        />
       </div>
 
       <Footer />
