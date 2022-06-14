@@ -25,7 +25,9 @@ const Navbar = ({ highlight }) => {
       >
         <div
           onClick={() => navigate("/")}
-          className=" flex flex-col cursor-pointer text-red-800 font-semibold  gap-1 justify-center items-center"
+          className={` flex flex-col cursor-pointer ${
+            highlight === "home" ? "text-red-800" : null
+          } font-semibold  gap-1 justify-center items-center`}
         >
           {highlight === "home" ? (
             <Circle
@@ -45,7 +47,9 @@ const Navbar = ({ highlight }) => {
         </div>
         <div
           onClick={() => navigate("/about")}
-          className=" flex flex-col cursor-pointer text-red-800 font-semibold gap-1 justify-center items-center"
+          className={` flex flex-col cursor-pointer ${
+            highlight === "about" ? "text-red-800" : null
+          } font-semibold gap-1 justify-center items-center`}
         >
           {highlight === "about" ? (
             <Circle
@@ -66,7 +70,9 @@ const Navbar = ({ highlight }) => {
         </div>
         <div
           onClick={() => navigate("/solutions")}
-          className=" flex flex-col gap-1 cursor-pointer text-red-800 font-semibold justify-center items-center"
+          className={`flex flex-col ${
+            highlight === "solutions" ? "text-red-800" : null
+          } gap-1 cursor-pointer font-semibold justify-center items-center`}
         >
           {highlight === "solutions" ? (
             <Circle
@@ -84,8 +90,9 @@ const Navbar = ({ highlight }) => {
         </div>
 
         <div
-          onClick={() => navigate("/events")}
-          className=" flex flex-col gap-1 cursor-pointer text-red-800 font-semibold justify-center items-center"
+          className={`flex flex-col gap-1 group relative cursor-pointer ${
+            highlight === "events" ? "text-red-800" : null
+          } font-semibold justify-center items-center`}
         >
           {highlight === "events" ? (
             <Circle
@@ -98,13 +105,37 @@ const Navbar = ({ highlight }) => {
               onClick={() => navigate("/events")}
             />
           )}
-          <span className="text-xs sm:text-base 2xl:text-2xl">
+          <span
+            onClick={() => navigate("/events")}
+            className="text-xs sm:text-base 2xl:text-2xl"
+          >
             Competitions
           </span>
+          <div
+            style={{ backgroundImage: `url(${grayBg})` }}
+            className="absolute bg-[#dbdbdb] group-hover:top-[3rem] top-[4rem] delay-150 rounded-md flex justify-center px-[2rem] py-[1rem] transition-all duration-[400] ease-linear sm:block hidden group-hover:visible group-hover:opacity-100 invisible opacity-0"
+          >
+            <div className="flex flex-col gap-2">
+              <h1
+                onClick={() => navigate("/ifso")}
+                className="hover:translate-x-2 transition-all duration-200 ease-linear"
+              >
+                ISFO
+              </h1>
+
+              <h1
+                onClick={() => navigate("/code2win")}
+                className="hover:translate-x-2 transition-all duration-200 ease-linear"
+              >
+                Code2Win
+              </h1>
+            </div>
+          </div>
         </div>
         <div
-          onClick={() => navigate("/media")}
-          className=" flex flex-col gap-1 cursor-pointer text-red-800 font-semibold justify-center items-center"
+          className={`flex flex-col relative gap-1 group cursor-pointer ${
+            highlight === "media" ? "text-red-800" : null
+          } font-semibold justify-center items-center`}
         >
           {highlight === "media" ? (
             <Circle
@@ -117,7 +148,32 @@ const Navbar = ({ highlight }) => {
               onClick={() => navigate("/media")}
             />
           )}
-          <span className="text-xs sm:text-base 2xl:text-2xl">News</span>
+          <span
+            onClick={() => navigate("/media")}
+            className="text-xs sm:text-base 2xl:text-2xl"
+          >
+            News
+          </span>
+          <div
+            style={{ backgroundImage: `url(${grayBg})` }}
+            className="absolute bg-[#dbdbdb] group-hover:top-[3rem] top-[4rem] delay-150 rounded-md flex justify-center px-[2rem] py-[1rem] transition-all duration-[400] ease-linear sm:block hidden group-hover:visible group-hover:opacity-100 invisible opacity-0"
+          >
+            <div className="flex flex-col gap-2">
+              <h1
+                onClick={() => navigate("/awards")}
+                className="hover:translate-x-2 transition-all duration-200 ease-linear"
+              >
+                Awards
+              </h1>
+
+              <h1 className="hover:translate-x-2 transition-all duration-200 ease-linear">
+                News
+              </h1>
+              <h1 className="hover:translate-x-2 transition-all duration-200 ease-linear">
+                Press
+              </h1>
+            </div>
+          </div>
         </div>
       </div>
     </div>
