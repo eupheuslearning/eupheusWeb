@@ -172,15 +172,18 @@ export default function AwardTimeline() {
       <div class="p-4 mt-4">
         <div class="container">
           <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
-            <div class="flex md:contents">
+            <div class="flex md:contents relative">
               <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+                  2022
+                </div>
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
                 <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#f5ab1d] shadow text-center"></div>
               </div>
 
-              <div className="flex flex-col gap-4 w-[100vw] items-start my-8">
+              <div className="flex flex-col gap-4 sm:w-[100vw] items-start my-8">
                 <div
                   onClick={() => setFirst(!first)}
                   className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
@@ -217,6 +220,9 @@ export default function AwardTimeline() {
 
             <div class="flex md:contents">
               <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+                  2021
+                </div>
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
@@ -255,6 +261,9 @@ export default function AwardTimeline() {
 
             <div class="flex md:contents">
               <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+                  2020
+                </div>
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
@@ -311,6 +320,9 @@ export default function AwardTimeline() {
             </div>
             <div class="flex md:contents">
               <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+                  2019
+                </div>
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
@@ -342,6 +354,9 @@ export default function AwardTimeline() {
             </div>
             <div class="flex md:contents">
               <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+                  2018
+                </div>
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>

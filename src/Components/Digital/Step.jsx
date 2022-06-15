@@ -29,6 +29,12 @@ const Step = ({ sOpen }) => {
           children can play simultaneously.
         </span>
       </div>
+      <div className="w-full my-[2rem] flex justify-center items-center">
+        <iframe
+          className="sm:w-[60%] w-[90%] sm:h-[60vh] h-[30vh] shadow-3xl"
+          src="https://www.youtube.com/embed/To0xlXtnhJs"
+        ></iframe>
+      </div>
       <div className="flex sm:flex-row flex-col gap-6 sm:px-0 px-3 items-center justify-center mt-[2rem] w-full">
         <div className="flex flex-col sm:w-5/12 w-full">
           <span className="px-3 ml-8 py-1 text-white font-semibold bg-purple-700 rounded-t-lg w-fit">

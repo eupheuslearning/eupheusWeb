@@ -135,7 +135,7 @@ export default function About() {
       </div>
 
       <div className="flex sm:flex-row flex-col gap-3 w-[100vw] px-[5vw]">
-        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
+        <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
           <div className="flex flex-col gap-12 relative">
             <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
               <span className="text-gray-800 font-bold">
@@ -172,19 +172,21 @@ export default function About() {
             Asia, Executive. He holds a master’s degree in chemical engineering
             from the University of Illinois, Chicago, US.
           </div>
-          <button
-            className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
-            onClick={() => setFirst(!first)}
-          >
-            {first ? "Read More" : "Read Less"}
-          </button>
-          <a href="https://www.linkedin.com/in/sarveshwar-sarvesh-shrivastava-4b4986/">
-            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
-              <LinkedIn /> <span>Linkedin</span>
+          <div className="flex gap-3 w-full pr-8 justify-end items-center">
+            <a href="https://www.linkedin.com/in/sarveshwar-sarvesh-shrivastava-4b4986/">
+              <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+                <LinkedIn /> <span>Linkedin</span>
+              </button>
+            </a>
+            <button
+              className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+              onClick={() => setFirst(!first)}
+            >
+              {first ? "Read More" : "Read Less"}
             </button>
-          </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
+        <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
           <div className="flex flex-col gap-12 relative">
             <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
               <span className="text-gray-800 font-bold">
@@ -218,17 +220,19 @@ export default function About() {
             last assignment was Vice President – K12 at Encyclopaedia Britannica
             South Asia. He holds a bachelor’s degree in commerce.
           </div>
-          <button
-            className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
-            onClick={() => setSecond(!second)}
-          >
-            {second ? "Read More" : "Read Less"}
-          </button>
-          <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
-            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
-              <LinkedIn /> <span>Linkedin</span>
+          <div className="flex gap-3 w-full pr-8 justify-end items-center">
+            <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
+              <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+                <LinkedIn /> <span>Linkedin</span>
+              </button>
+            </a>
+            <button
+              className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+              onClick={() => setSecond(!second)}
+            >
+              {second ? "Read More" : "Read Less"}
             </button>
-          </a>
+          </div>
         </div>
         <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
           <div className="flex flex-col gap-12 relative">
@@ -264,17 +268,19 @@ export default function About() {
             Britannica. He holds a post graduate diploma in marketing from T.A.
             Pai Management Institute.
           </div>
-          <button
-            className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
-            onClick={() => setThird(!third)}
-          >
-            {third ? "Read More" : "Read Less"}
-          </button>
-          <a href="https://www.linkedin.com/in/amkapoor/">
-            <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
-              <LinkedIn /> <span>Linkedin</span>
+          <div className="flex gap-3 w-full pr-8 justify-end items-center">
+            <a href="https://www.linkedin.com/in/amkapoor/">
+              <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+                <LinkedIn /> <span>Linkedin</span>
+              </button>
+            </a>
+            <button
+              className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+              onClick={() => setThird(!third)}
+            >
+              {third ? "Read More" : "Read Less"}
             </button>
-          </a>
+          </div>
         </div>
       </div>
 

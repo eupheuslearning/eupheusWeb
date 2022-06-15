@@ -69,10 +69,9 @@ const Navbar = ({ highlight }) => {
           </span>
         </div>
         <div
-          onClick={() => navigate("/solutions")}
           className={`flex flex-col ${
             highlight === "solutions" ? "text-red-800" : null
-          } gap-1 cursor-pointer font-semibold justify-center items-center`}
+          } gap-1 cursor-pointer relative group font-semibold justify-center items-center`}
         >
           {highlight === "solutions" ? (
             <Circle
@@ -86,7 +85,32 @@ const Navbar = ({ highlight }) => {
             />
           )}
 
-          <span className="text-xs sm:text-base 2xl:text-2xl">Solutions</span>
+          <span
+            onClick={() => navigate("/solutions")}
+            className="text-xs sm:text-base 2xl:text-2xl"
+          >
+            Solutions
+          </span>
+          <div
+            style={{ backgroundImage: `url(${grayBg})` }}
+            className="absolute bg-[#dbdbdb] group-hover:top-[3rem] top-[4rem] delay-150 rounded-md flex justify-center px-[2rem] py-[1rem] transition-all duration-[400] ease-linear sm:block hidden group-hover:visible group-hover:opacity-100 invisible opacity-0"
+          >
+            <div className="flex flex-col gap-2">
+              <h1
+                onClick={() => navigate("/curriculum")}
+                className="hover:translate-x-2 transition-all duration-200 ease-linear"
+              >
+                Curriculum
+              </h1>
+
+              <h1
+                onClick={() => navigate("/digital")}
+                className="hover:translate-x-2 transition-all duration-200 ease-linear"
+              >
+                Suplimental
+              </h1>
+            </div>
+          </div>
         </div>
 
         <div
@@ -120,14 +144,14 @@ const Navbar = ({ highlight }) => {
                 onClick={() => navigate("/ifso")}
                 className="hover:translate-x-2 transition-all duration-200 ease-linear"
               >
-                ISFO
+                Olympiad
               </h1>
 
               <h1
                 onClick={() => navigate("/code2win")}
                 className="hover:translate-x-2 transition-all duration-200 ease-linear"
               >
-                Code2Win
+                Coding
               </h1>
             </div>
           </div>
@@ -167,10 +191,10 @@ const Navbar = ({ highlight }) => {
               </h1>
 
               <h1 className="hover:translate-x-2 transition-all duration-200 ease-linear">
-                News
+                Articles
               </h1>
               <h1 className="hover:translate-x-2 transition-all duration-200 ease-linear">
-                Press
+                Announcements
               </h1>
             </div>
           </div>

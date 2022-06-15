@@ -90,6 +90,12 @@ export default function Code2Win() {
             alt=""
           />
         </div>
+        <div className="w-[100vw] my-[2rem] flex justify-center items-center">
+          <iframe
+            className="sm:w-[60vw] w-[90vw] sm:h-[60vh] h-[30vh] shadow-3xl"
+            src="https://www.youtube.com/embed/xK7cPVGKajQ"
+          ></iframe>
+        </div>
 
         <div className="sm:my-[5rem]">
           <div className="grid lg:grid-cols-2">
