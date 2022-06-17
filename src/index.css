@@ -2,117 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&family=Oswald:wght@200;300&family=Permanent+Marker&family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 .awssld__content img {
-      object-fit: fill !important;
+  object-fit: fill !important;
 }
-
 
 @media only screen and (max-width: 500px) {
-      .awssld--organic-arrows {
-            height: auto;
-      }
+  .awssld--organic-arrows {
+    height: auto;
+  }
 }
 
-
-
 .awssld__bullets {
-      z-index: 50 !important;
-      bottom: 1rem !important;
+  z-index: 50 !important;
+  bottom: 1rem !important;
 }
 
 .awssld__bullets button {
-      background: rgb(185, 28, 28) !important;
+  background: rgb(185, 28, 28) !important;
 }
-
 
 /* Scrollbar style */
 /* width */
 ::-webkit-scrollbar {
-      width: 10px;
-    }
-    
-    /* Track */
-    ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px grey; 
-      border-radius: 10px;
-    }
-     
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #8d8989; 
-      border-radius: 10px;
-    }
-    
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #8d8989; 
-    }
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
 
-    /* down arrow */
-    /* .container {
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8d8989;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8d8989;
+}
+
+/* down arrow */
+/* .container {
       position: relative;
       width: 24px;
       height: 24px;
     } */
-    
-    .chevron {
-      position: absolute;
-     
-      width: 75px;
-      height: 16px;
-      opacity: 0;
-      transform: scale3d(0.5, 0.5, 0.5);
-      animation: move 3s ease-out infinite;
-    }
-    
-    .chevron:first-child {
-      animation: move 3s ease-out 1s infinite;
-     
-    }
-    
-    .chevron:nth-child(2) {
-      animation: move 3s ease-out 2s infinite;
-    }
-    
-    .chevron:before,
-    .chevron:after {
-      content: ' ';
-      position: absolute;
-      top: 0;
-      height: 100%;
-      width: 51%;
-      background: #f5ab1d;
-    }
-    
-    .chevron:before {
-      left: 0;
-      transform: skew(0deg, 30deg);
-    }
-    
-    .chevron:after {
-      right: 0;
-      width: 50%;
-      transform: skew(0deg, -30deg);
-    }
-    
-    @keyframes move {
-      25% {
-        opacity: 1;
-    
-      }
-      33% {
-        opacity: 1;
-        transform: translateY(30px);
-      }
-      67% {
-        opacity: 1;
-        transform: translateY(40px);
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
-      }
-    }
+
+.chevron {
+  position: absolute;
+
+  width: 75px;
+  height: 16px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #f5ab1d;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}

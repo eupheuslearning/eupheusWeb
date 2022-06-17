@@ -5,6 +5,9 @@ module.exports = {
       screens: {
         '3xl': '1870px',
       },
+      fontFamily: {
+        Pmarks: ['Permanent Marker', 'cursive'],
+      },
     },
   },
   plugins: [],
