@@ -31,12 +31,6 @@ const Curriculum = () => {
     >
       <Navbar highlight={"solutions"} />
       <div className="w-[100vw] flex flex-col gap-[2rem]">
-        {/* <Sidebar
-          sOpen={sOpen}
-          setSopen={setSopen}
-          type={"curriculum"}
-          setPage={setPage}
-        /> */}
         <img
           src={banner}
           className="w-full sm:pt-8 pt-[8rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]"
@@ -45,63 +39,70 @@ const Curriculum = () => {
         <div className="w-full grid sm:grid-rows-2 grid-rows-3 sm:grid-cols-3 grid-cols-2 gap-[3rem] sm:px-[3rem] px-2 pb-8">
           <span
             onClick={() => navigate("/curriculer/pre_primary")}
-            className=" w-full flex justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-Pmarks"
+            className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
               className="w-1/2 transition-all duration-200 ease-linear hover:-translate-y-2"
               src={pp}
               alt=""
             />
+            <span>Pre Primary</span>
           </span>
           <span
             // onClick={() => setIndex("pp")}
-            className=" w-full flex justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-Pmarks"
+            className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
               className="w-1/2 transition-all duration-200 ease-linear hover:-translate-y-2"
               src={cbse}
               alt=""
             />
+            <span>CBSE Solutions</span>
           </span>
           <span
             // onClick={() => setIndex("pp")}
-            className=" w-full flex justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-Pmarks"
+            className=" w-full flex justify-center flex-col gap-2 cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
               className="w-1/2 transition-all duration-200 ease-linear hover:-translate-y-2"
               src={icse}
               alt=""
             />
+            <span>ICSE Solutions</span>
           </span>
           <span
             // onClick={() => setIndex("pp")}
-            className=" w-full flex justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-Pmarks"
+            className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
               className="w-1/2 transition-all duration-200 ease-linear hover:-translate-y-2"
               src={ref}
               alt=""
             />
+            <span>Reference</span>
           </span>
           <span
             // onClick={() => setIndex("pp")}
-            className=" w-full flex justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-Pmarks"
+            className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
               className="w-1/2 transition-all duration-200 ease-linear hover:-translate-y-2"
               src={skillDev}
               alt=""
             />
+            <span>Skill Development</span>
+            <span>Solutions</span>
           </span>
           <span
             // onClick={() => setIndex("pp")}
-            className=" w-full flex justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-Pmarks"
+            className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
               className="w-1/2 transition-all duration-200 ease-linear hover:-translate-y-2"
               src={state}
               alt=""
             />
+            <span>State Board Solutions</span>
           </span>
         </div>
       </div>
