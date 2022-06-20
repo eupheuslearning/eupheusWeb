@@ -100,7 +100,7 @@ const Navbar = ({ highlight }) => {
                 onClick={() => navigate("/curriculum")}
                 className="hover:translate-x-2 transition-all duration-200 ease-linear"
               >
-                Curriculum
+                Curricular
               </h1>
 
               <h1

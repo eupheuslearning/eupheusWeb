@@ -210,6 +210,13 @@ export default function AwardTimeline() {
                   <div class="chevron"></div>
                   <div class="chevron"></div>
                   <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      first ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {first ? (
                   <div className=" w-full sm:justify-start justify-around px-4 bg-transparent flex sm:gap-12 gap-2">
@@ -269,6 +276,13 @@ export default function AwardTimeline() {
                   <div class="chevron"></div>
                   <div class="chevron"></div>
                   <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      second ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {second ? (
                   <div className=" w-full justify-start px-4 bg-transparent flex sm:flex-row flex-col gap-12">
@@ -322,6 +336,13 @@ export default function AwardTimeline() {
                   <div class="chevron"></div>
                   <div class="chevron"></div>
                   <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      third ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {third ? (
                   <div className="flex flex-col gap-4">
@@ -392,6 +413,13 @@ export default function AwardTimeline() {
                   <div class="chevron"></div>
                   <div class="chevron"></div>
                   <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      fourth ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {fourth ? (
                   <div className=" w-full justify-start px-4 bg-transparent flex gap-3">
@@ -438,6 +466,13 @@ export default function AwardTimeline() {
                   <div class="chevron"></div>
                   <div class="chevron"></div>
                   <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      fifth ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {fifth ? (
                   <div className=" w-full sm:justify-start justify-around px-4 bg-transparent flex sm:gap-3 gap-1">

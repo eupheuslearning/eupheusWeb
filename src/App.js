@@ -11,6 +11,7 @@ import Code2Win from "./Pages/Code2Win";
 import Curriculum from "./Pages/Curriculum";
 import Digital from "./Pages/Digital";
 import Awards from "./Pages/Awards";
+import PrePrimary from "./Pages/PrePrimary";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/curriculum" element={<Curriculum/>}/>
         <Route path="/digital" element={<Digital/>}/>
         <Route path="/awards" element={<Awards/>}/>
+        <Route path="/curriculer/pre_primary" element={<PrePrimary/>}/>
         </Routes>
         </BrowserRouter>
       </ParallaxProvider>
