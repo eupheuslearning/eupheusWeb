@@ -6,7 +6,7 @@ import Banner_1 from "../assets/mediaBanner.png";
 import grayBg from "../assets/grayBg.png";
 
 import AwardTimeline from "../Components/AwardTimeline";
-import NewsTimeline from "../Components/NewsTimeline";
+// import NewsTimeline from "../Components/NewsTimeline";
 
 export default function Awards() {
   useEffect(() => {

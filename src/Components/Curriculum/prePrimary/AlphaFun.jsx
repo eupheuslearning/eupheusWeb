@@ -8,9 +8,7 @@ const AlphaFun = ({ sOpen }) => {
   return (
     <>
       <div
-        className={`w-full ${
-          sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        className={`w-full  flex flex-col sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
       >
         <img src={alphafun} className="w-full h-auto" alt="" />
         <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
