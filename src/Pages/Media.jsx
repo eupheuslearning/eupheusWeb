@@ -44,6 +44,7 @@ export default function Media() {
         />
         <img
           src={img3}
+          onClick={() => navigate("/news")}
           className="w-[15%] hover:-translate-y-4 transition-all duration-200 ease-linear cursor-pointer my-8 h-auto"
           alt=""
         />

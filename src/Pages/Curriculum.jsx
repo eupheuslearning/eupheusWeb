@@ -1,15 +1,9 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import GoToTop from "../Components/Top";
 import grayBg from "../assets/grayBg.png";
 import Footer from "../Components/Footer";
 import { useNavigate } from "react-router-dom";
-// import duck from "../assets/curriculum/duck.png";
-// import Sidebar from "../Components/Sidebar";
-// import Zoom from "../Components/Curriculum/prePrimary/Zoom";
-// import AlphaFun from "../Components/Curriculum/prePrimary/AlphaFun";
-// import DotDash from "../Components/Curriculum/prePrimary/DotDash";
-// import PrePrimary from "../Components/Curriculum/Index/PrePrimary";
 import pp from "../assets/curriculum/prePrimary.png";
 import cbse from "../assets/curriculum/cbse.png";
 import icse from "../assets/curriculum/icse.png";
@@ -49,7 +43,7 @@ const Curriculum = () => {
             <span>Pre Primary</span>
           </span>
           <span
-            // onClick={() => setIndex("pp")}
+            onClick={() => navigate("/curriculer/cbse")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
@@ -60,7 +54,7 @@ const Curriculum = () => {
             <span>CBSE Solutions</span>
           </span>
           <span
-            // onClick={() => setIndex("pp")}
+            onClick={() => navigate("/curriculer/icse")}
             className=" w-full flex justify-center flex-col gap-2 cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
@@ -71,7 +65,7 @@ const Curriculum = () => {
             <span>ICSE Solutions</span>
           </span>
           <span
-            // onClick={() => setIndex("pp")}
+            onClick={() => navigate("/curriculer/reference")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
@@ -82,7 +76,7 @@ const Curriculum = () => {
             <span>Reference</span>
           </span>
           <span
-            // onClick={() => setIndex("pp")}
+            onClick={() => navigate("/curriculer/skill_dev")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
@@ -94,7 +88,7 @@ const Curriculum = () => {
             <span>Solutions</span>
           </span>
           <span
-            // onClick={() => setIndex("pp")}
+            onClick={() => navigate("/curriculer/state_board_sol")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
