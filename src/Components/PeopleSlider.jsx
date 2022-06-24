@@ -126,7 +126,7 @@ const PeopleSlider = () => {
                     (MAHARASHTRA, CHHATTISGARH,
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    Karnataka)
+                    KARNATAKA)
                   </span>
                   <a href="https://www.linkedin.com/in/ashok-yeligeti-286425aa/">
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
@@ -460,7 +460,7 @@ const PeopleSlider = () => {
                     HIMACHAL PRADESH, J&K,
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    Tamil Nadu)
+                    TAMIL NADU)
                   </span>
                   <a href="https://www.linkedin.com/in/vijay-paul-322b5054/">
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
