@@ -11,7 +11,14 @@ import Code2Win from "./Pages/Code2Win";
 import Curriculum from "./Pages/Curriculum";
 import Digital from "./Pages/Digital";
 import Awards from "./Pages/Awards";
-import PrePrimary from "./Pages/PrePrimary";
+import PrePrimary from "./Pages/Curriculer/PrePrimary";
+import Cbse from "./Pages/Curriculer/CBSE";
+import Icse from "./Pages/Curriculer/ICSE";
+import SkillDev from "./Pages/Curriculer/SkillDev";
+import Reference from "./Pages/Curriculer/Reference";
+import StateBoard from "./Pages/Curriculer/StateBoard";
+import KinaestheticLearning from "./Pages/Digital/KinaestheticLearning";
+import News from "./Pages/News";
 
 function App() {
   return (
@@ -30,7 +37,16 @@ function App() {
         <Route path="/curriculum" element={<Curriculum/>}/>
         <Route path="/digital" element={<Digital/>}/>
         <Route path="/awards" element={<Awards/>}/>
+        <Route path="/news" element={<News/>}/>
+        {/* curriculer */}
         <Route path="/curriculer/pre_primary" element={<PrePrimary/>}/>
+        <Route path="/curriculer/cbse" element={<Cbse/>}/>
+        <Route path="/curriculer/icse" element={<Icse/>}/>
+        <Route path="/curriculer/skill_dev" element={<SkillDev/>}/>
+        <Route path="/curriculer/reference" element={<Reference/>}/>
+        <Route path="/curriculer/state_board_sol" element={<StateBoard/>}/>
+        {/* digital */}
+        <Route path="/digital/kinaesthetic_learning" element={<KinaestheticLearning/>}/>
         </Routes>
         </BrowserRouter>
       </ParallaxProvider>
