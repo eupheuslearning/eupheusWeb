@@ -23,19 +23,19 @@ import { Silver_bells } from "../../Components/Curriculum/cbse/Silver_bells";
 
 // icons
 import chemistryIcon from "../../assets/curriculum/icse/chemistryIcon.png";
-import GrCompVibesIcon from "../../assets/curriculum/icse/Gr&CompVibesIcon.png";
+import GrCompVibesIcon from "../../assets/curriculum/cbse/G&comVibes/Icon.png";
 import icsebiologyIcon from "../../assets/curriculum/icse/icsebiologyIcon.png";
 import icsemathIcon from "../../assets/curriculum/icse/icsemathIcon.png";
 import icsephysicsIcon from "../../assets/curriculum/icse/icsephysicsIcon.png";
 import NRRIcon from "../../assets/curriculum/icse/NRRIcon.png";
 import NRRscienceIcon from "../../assets/curriculum/icse/NRRscienceIcon.png";
 import radiantEVSIcon from "../../assets/curriculum/icse/radiantEVSIcon.png";
-import radiantwayIcon from "../../assets/curriculum/icse/radiantwayIcon.png";
-import silverbellIcon from "../../assets/curriculum/icse/silverbellIcon.png";
+import radiantwayIcon from "../../assets/curriculum/cbse/radiantWay2/Icon.png";
+import silverbellIcon from "../../assets/curriculum/cbse/silverbell/Icon.png";
 import simplifiedchemistryIcon from "../../assets/curriculum/icse/simplifiedchemistryIcon.png";
-import vibesengIcon from "../../assets/curriculum/icse/vibesengIcon.png";
+import vibesengIcon from "../../assets/curriculum/cbse/englishVibes/Icon.png";
 import wowcompubyteIcon from "../../assets/curriculum/icse/wowcompubyteIcon.png";
-import wowenglish from "../../assets/curriculum/icse/wowenglish.png";
+import wowenglish from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
 import wowmathIcon from "../../assets/curriculum/icse/wowmathIcon.png";
 import GramComIcon from "../../assets/curriculum/icse/gram&com.png";
 
@@ -55,101 +55,61 @@ const Icse = () => {
               onClick={() => setPage("chemistry9_10")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={chemistryIcon}
-                className="sm:h-[10rem] h-[5rem]  w-auto"
-                alt=""
-              />
+              <img src={chemistryIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("grammer_com_vibes")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={GrCompVibesIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={GrCompVibesIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("biology")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={icsebiologyIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={icsebiologyIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("math")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={icsemathIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={icsemathIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("physics")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={icsephysicsIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={icsephysicsIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("nrr")}
               className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={NRRIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={NRRIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("radiant_science")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={NRRscienceIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={NRRscienceIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("radiant_es")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={radiantEVSIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={radiantEVSIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("radiant_way")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={radiantwayIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={radiantwayIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("silverbells")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={silverbellIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={silverbellIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("chemistry6_8")}
@@ -157,7 +117,7 @@ const Icse = () => {
             >
               <img
                 src={simplifiedchemistryIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
+                className="w-[90%] h-auto"
                 alt=""
               />
             </span>
@@ -165,51 +125,31 @@ const Icse = () => {
               onClick={() => setPage("eng_vibes")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={vibesengIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={vibesengIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("compu_bytes")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={wowcompubyteIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={wowcompubyteIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("english")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={wowenglish}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={wowenglish} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("maths")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={wowmathIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={wowmathIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("grammer_com")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={GramComIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={GramComIcon} className="w-[90%] h-auto" alt="" />
             </span>
           </div>
         );

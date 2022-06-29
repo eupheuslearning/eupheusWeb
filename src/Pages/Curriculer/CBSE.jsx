@@ -22,21 +22,21 @@ import Wow_menta_maths from "../../Components/Curriculum/cbse/Wow_menta_maths";
 import Wow_science from "../../Components/Curriculum/cbse/Wow_science";
 
 // icons
-import wowEnglishIcon from "../../assets/curriculum/cbse/wowEnglish/wowEnglishIcon.png";
-import EnglishVibesIcon from "../../assets/curriculum/cbse/englishVibes/vibesIcon.png";
-import GComIcon from "../../assets/curriculum/cbse/G&Com/G&ComIcon.png";
-import GComVibesIcom from "../../assets/curriculum/cbse/G&comVibes/G&ComVibesIcon.png";
-import newRLRIcon from "../../assets/curriculum/cbse/newRLR/newRLRIcon.png";
-import newRwayIcon from "../../assets/curriculum/cbse/radiantWay2/radiantwayIcon.png";
-import myWorldMyEarthIcon from "../../assets/curriculum/cbse/myWorldMyEarth/myWorldMyEarthIcon.png";
-import WMIcon from "../../assets/curriculum/cbse/wowMath/WMIcon.png";
-import WowMMIcon from "../../assets/curriculum/cbse/wowMM/wowMMIcon.png";
-import WowScienceIcon from "../../assets/curriculum/cbse/wowScience/wowScienceIcon.png";
-import WowComBytesIcon from "../../assets/curriculum/cbse/wowComBytes/wowComBytesIcon.png";
-import ComAppIcon from "../../assets/curriculum/cbse/comApplication/comAppIcon.png";
-import vallariIcon from "../../assets/curriculum/cbse/vallari/vallariIcon.png";
-import subhrikaIcon from "../../assets/curriculum/cbse/surbhika/surbhikaIcon.png";
-import SilverbellIcon from "../../assets/curriculum/cbse/silverbell/silverbellIcon.png";
+import wowEnglishIcon from "../../assets/curriculum/cbse/wowEnglish/Icon.png";
+import EnglishVibesIcon from "../../assets/curriculum/cbse/englishVibes/Icon.png";
+import GComIcon from "../../assets/curriculum/cbse/G&Com/Icon.png";
+import GComVibesIcom from "../../assets/curriculum/cbse/G&comVibes/Icon.png";
+import newRLRIcon from "../../assets/curriculum/cbse/newRLR/Icon.png";
+import newRwayIcon from "../../assets/curriculum/cbse/radiantWay2/Icon.png";
+import myWorldMyEarthIcon from "../../assets/curriculum/cbse/myWorldMyEarth/Icon.png";
+import WMIcon from "../../assets/curriculum/cbse/wowMath/Icon.png";
+import WowMMIcon from "../../assets/curriculum/cbse/wowMM/Icon.png";
+import WowScienceIcon from "../../assets/curriculum/cbse/wowScience/Icon.png";
+import WowComBytesIcon from "../../assets/curriculum/cbse/wowComBytes/Icon.png";
+import ComAppIcon from "../../assets/curriculum/cbse/comApplication/Icon.png";
+import vallariIcon from "../../assets/curriculum/cbse/vallari/Icon.png";
+import subhrikaIcon from "../../assets/curriculum/cbse/surbhika/Icon.png";
+import SilverbellIcon from "../../assets/curriculum/cbse/silverbell/Icon.png";
 
 const Cbse = () => {
   //   const navigate = useNavigate();
@@ -54,151 +54,91 @@ const Cbse = () => {
               onClick={() => setPage("english")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={wowEnglishIcon}
-                className="sm:h-[10rem] h-[5rem]  w-auto"
-                alt=""
-              />
+              <img src={wowEnglishIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("english_vibes")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={EnglishVibesIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={EnglishVibesIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("grammer_com")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={GComIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={GComIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("grammer_com_vibes")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={GComVibesIcom}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={GComVibesIcom} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("new_radiant_literature")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={newRLRIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={newRLRIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("the_radiant_way")}
               className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={newRwayIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={newRwayIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("maths")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={WMIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={WMIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("mental_maths")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={WowMMIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={WowMMIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("science")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={WowScienceIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={WowScienceIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("compu_bytes")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={WowComBytesIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={WowComBytesIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("compu_app")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={ComAppIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={ComAppIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("vallari_hindi")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={vallariIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={vallariIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("surbhika")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={subhrikaIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={subhrikaIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("silver_bells")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={SilverbellIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={SilverbellIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("my_world_my_earth")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={myWorldMyEarthIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={myWorldMyEarthIcon} className="w-[90%] h-auto" alt="" />
             </span>
           </div>
         );

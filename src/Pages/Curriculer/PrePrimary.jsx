@@ -29,21 +29,13 @@ import Radiant_way from "../../Components/Curriculum/prePrimary/Radiant_way";
 // import  Silver_bells  from "../../Components/Curriculum/prePrimary/Silver_bells";
 
 // icons
-import zoomIcon from "../../assets/curriculum/zoom/zoomIcon.png";
-import AlphaIcon from "../../assets/curriculum/alphaFun/alphafunIcon.png";
-import DotIcon from "../../assets/curriculum/dotDash/dotdashIcon.png";
-import NumberMaxIcon from "../../assets/curriculum/numberMax/numbermaxIcon.png";
-import SplashIcon from "../../assets/curriculum/splash/splashIcon.png";
-import PitaraIcon from "../../assets/curriculum/pitara/pitaraIcon.png";
-import RadiantIcon from "../../assets/curriculum/radiantWay/radiantwayIcon.png";
-
-// images
-import img1 from "../../assets/curriculum/temp/1.png";
-import img2 from "../../assets/curriculum/temp/2.png";
-import img3 from "../../assets/curriculum/temp/3.png";
-import img4 from "../../assets/curriculum/temp/4.png";
-import img5 from "../../assets/curriculum/temp/5.png";
-import img6 from "../../assets/curriculum/temp/6.png";
+import zoomIcon from "../../assets/curriculum/zoom/Icon.png";
+import AlphaIcon from "../../assets/curriculum/alphaFun/Icon.png";
+import DotIcon from "../../assets/curriculum/dotDash/Icon.png";
+import NumberMaxIcon from "../../assets/curriculum/numberMax/Icon.png";
+import SplashIcon from "../../assets/curriculum/splash/Icon.png";
+import PitaraIcon from "../../assets/curriculum/pitara/Icon.png";
+import RadiantIcon from "../../assets/curriculum/radiantWay/Icon.png";
 
 const PrePrimary = () => {
   //   const navigate = useNavigate();
