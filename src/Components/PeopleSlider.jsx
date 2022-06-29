@@ -9,6 +9,7 @@ import p6 from "../assets/about/RajivR.png";
 import p7 from "../assets/about/RajivB.png";
 import p8 from "../assets/about/Asset 25@3x.png";
 import p9 from "../assets/about/Asset 26@3x.png";
+
 import p10 from "../assets/about/Abhijit.png";
 import p11 from "../assets/about/Ashok.png";
 import p12 from "../assets/about/Lalit.png";
