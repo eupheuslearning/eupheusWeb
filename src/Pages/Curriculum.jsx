@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import Navbar from "../Components/Navbar";
 import GoToTop from "../Components/Top";
 import grayBg from "../assets/grayBg.png";
@@ -14,9 +14,18 @@ import banner from "../assets/curriculum/banner.png";
 
 const Curriculum = () => {
   const navigate = useNavigate();
+  const myRef = useRef();
   useEffect(() => {
     document.title = "Solutions - Eupheus";
   }, []);
+
+  const scroll = () => {
+    myRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "nearest",
+    });
+  };
 
   return (
     <div
@@ -24,13 +33,24 @@ const Curriculum = () => {
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar highlight={"solutions"} />
-      <div className="w-[100vw] flex flex-col gap-[2rem]">
+      <div className="w-[100vw] flex relative flex-col gap-[2rem]">
+        <div className="w-full flex justify-center">
+          <button
+            onClick={scroll}
+            className="w-fit font-semibold sm:block hidden px-6 py-2 bg-red-800 text-gray-100 rounded-md absolute top-[80vh] hover:scale-105 active:scale-95 hover:shadow-lg transition-all duration-200 ease-linear"
+          >
+            Explore
+          </button>
+        </div>
         <img
           src={banner}
           className="w-full sm:pt-8 pt-[8rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]"
           alt=""
         />
-        <div className="w-full grid sm:grid-rows-2 grid-rows-3 sm:grid-cols-3 grid-cols-2 gap-[3rem] sm:px-[3rem] px-2 pb-8">
+        <div
+          ref={myRef}
+          className="w-full grid sm:grid-rows-2 grid-rows-3 sm:grid-cols-3 grid-cols-2 gap-[3rem] sm:px-[3rem] px-2 pb-8"
+        >
           <span
             onClick={() => navigate("/curriculer/pre_primary")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"

@@ -5,9 +5,8 @@ import GoToTop from "../../Components/Top";
 import grayBg from "../../assets/grayBg.png";
 import Footer from "../../Components/Footer";
 // import { useNavigate } from "react-router-dom";
-import Zoom from "../../Components/Curriculum/prePrimary/Zoom";
-import AlphaFun from "../../Components/Curriculum/prePrimary/AlphaFun";
-import DotDash from "../../Components/Curriculum/prePrimary/DotDash";
+import Eupheus_school_atlas from "../../Components/Curriculum/reference/Eupheus_school_atlas";
+import Young_set_deictionaries from "../../Components/Curriculum/reference/Young_set_deictionaries";
 
 // icons
 import atlasIcon from "../../assets/curriculum/Reference/atlasIcon.png";
@@ -26,7 +25,7 @@ const Reference = () => {
         return (
           <div className="w-full grid sm:grid-rows-5 grid-rows-7 sm:grid-cols-3 grid-cols-2 sm:gap-[4rem] gap-[2rem] sm:px-[3rem] px-4 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
             <span
-              onClick={() => setPage("zoom")}
+              onClick={() => setPage("atlas")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img
@@ -36,7 +35,7 @@ const Reference = () => {
               />
             </span>
             <span
-              onClick={() => setPage("alpha_fun")}
+              onClick={() => setPage("atlas")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img
@@ -46,7 +45,7 @@ const Reference = () => {
               />
             </span>
             <span
-              onClick={() => setPage("dot_dash")}
+              onClick={() => setPage("young_set")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img
@@ -58,27 +57,21 @@ const Reference = () => {
           </div>
         );
         break;
-      case "zoom":
+      case "atlas":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <Zoom />
+            <Eupheus_school_atlas />
           </div>
         );
         break;
-      case "alpha_fun":
+      case "young_set":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <AlphaFun />
+            <Young_set_deictionaries />
           </div>
         );
         break;
-      case "dot_dash":
-        return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <DotDash />
-          </div>
-        );
-        break;
+
       default:
         break;
     }
