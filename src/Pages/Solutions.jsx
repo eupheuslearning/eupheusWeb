@@ -7,10 +7,12 @@ import solImg2 from "../assets/sol-img2.png";
 import solMap from "../assets/sol-map.png";
 import Footer from "../Components/Footer";
 import img3 from "../assets/sol-img3.png";
-import { Parallax } from "react-scroll-parallax";
-import gsap from "gsap";
+// import { Parallax } from "react-scroll-parallax";
+// import gsap from "gsap";
+import { useNavigate } from "react-router-dom";
 
 const Solutions = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     document.title = "Solutions - Eupheus";
   }, []);
@@ -30,7 +32,7 @@ const Solutions = () => {
           </h1>
         </div> */}
         <img
-          className="sm:h-[100vh] h-[50vh] sm:mt-0 mt-[24vh] object-cover w-[100vw]"
+          className="sm:h-[100vh] h-auto sm:mt-0 mt-[9rem] object-cover w-[100vw]"
           src={solutionBanner}
           alt=""
         />
@@ -38,7 +40,7 @@ const Solutions = () => {
 
       {/* <div className="a w-12 h-12 bg-blue-700">gsap box</div> */}
 
-      <div className=" mt-[4rem] text-gray-700  md:mx-[12vw] mx-[5vw] md:text-2xl text-xl">
+      <div className=" sm:mt-[4rem] mt-[1rem] text-gray-700  md:mx-[12vw] mx-[5vw] md:text-2xl text-base">
         Eupheus Learning Group (combined entity of Eupheus Learning, ClassKlap
         and SchoolMitra), apart from their largest catalogue of curricular and
         co-curricular offerings mapped to CBSE and ICSE boards, has introduced
@@ -60,38 +62,48 @@ const Solutions = () => {
         with the increased digitalization appreciation of the modern world
       </div>
 
-      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-3xl">
+      <div className=" sm:mt-[8rem] mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-base">
         <span>COURSE BOOK SOLUTIONS FOR</span>
         <span>PRE-PRIMARY TO GRADE 8</span>
       </div>
       <div className="mt-[2rem] flex justify-center">
-        <img className=" h-auto w-[60vw]" src={solImg2} alt="" />
+        <img
+          onClick={() => navigate("/curriculum")}
+          className=" h-auto w-[50vw] cursor-pointer hover:scale-90 transition-all duration-150 ease-linear"
+          src={solImg2}
+          alt=""
+        />
       </div>
       <div className="w-[100vw] my-[2rem] flex justify-center items-center">
         <iframe
-          className="w-[60vw] h-[60vh] shadow-3xl "
+          className="sm:w-[60vw] w-[90vw] sm:h-[60vh] h-[30vh] shadow-3xl"
           src="https://www.youtube.com/embed/J2I1oTQ7p18"
         ></iframe>
       </div>
 
-      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-3xl">
+      <div className="sm:mt-[8rem] mt-[1rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-base">
         <span>SUPPLEMENTAL SOLUTIONS</span>
       </div>
       <div className="mt-[2rem] flex justify-center">
-        <img className=" h-auto w-[80vw]" src={solMap} alt="" />
+        <img
+          onClick={() => navigate("/digital")}
+          className=" h-auto cursor-pointer hover:scale-90 transition-all duration-150 ease-linear w-[70vw]"
+          src={solMap}
+          alt=""
+        />
       </div>
       <div className="w-[100vw] my-[2rem] flex justify-center items-center">
         <iframe
-          className="w-[60vw] h-[60vh] shadow-3xl "
-          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+          className="sm:w-[60vw] w-[90vw] sm:h-[60vh] h-[30vh] shadow-3xl"
+          src="https://www.youtube.com/embed/TFBDy2-eGEo"
         ></iframe>
       </div>
 
-      <div className=" mt-[8rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-3xl">
+      <div className="sm:mt-[8rem] mt-[1rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-base">
         <span>THE POWER OF THE 21ST CENTURY SCHOOL OS</span>
       </div>
-      <div className="grid lg:grid-cols-3  gap-2 mb-[5rem]">
-        <div className="mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-xl">
+      <div className="grid lg:grid-cols-3  gap-2 sm:mb-[5rem] mb-[1rem]">
+        <div className="mt-[2.5rem] text-gray-700 lg:w-[50vw] sm:pr-0 pr-[1rem] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-sm">
           The 21st Century School OS unifies ERP (enterprise resource planning),
           LMS (learning management system) and CMS (content management system)
           on a single sign-on, for all stakeholders of a school – parents,
@@ -110,8 +122,8 @@ const Solutions = () => {
       </div>
       <div className="w-[100vw] my-[2rem] flex justify-center items-center">
         <iframe
-          className="w-[60vw] h-[60vh] shadow-3xl "
-          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+          className="sm:w-[60vw] w-[90vw] sm:h-[60vh] h-[30vh] shadow-3xl"
+          src="https://www.youtube.com/embed/0urmsIvVQM0"
         ></iframe>
       </div>
 

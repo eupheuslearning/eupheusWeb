@@ -17,6 +17,7 @@ import laptop from "../assets/laptop.png";
 import schoolmitra from "../assets/schoolmitra.png";
 import trophy from "../assets/trophy.png";
 import code2win from "../assets/code2win.png";
+import classK from "../assets/classclap.png";
 import play from "../assets/play.png";
 import laptop2 from "../assets/laptop2.png";
 import iso from "../assets/iso.png";
@@ -33,10 +34,25 @@ const Home = () => {
   const [index, setIndex] = useState(0);
   const navigate = useNavigate();
   const timeout = useRef(null);
+  const [mobile, setMobile] = useState(true);
 
   useEffect(() => {
     document.title = "Eupheus Learning";
+    setWidth();
+    window.addEventListener("resize", setWidth);
+
+    return () => {
+      window.removeEventListener("resize", setWidth);
+    };
   }, []);
+
+  const setWidth = () => {
+    if (window.screen.width < 450) {
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  };
 
   const resetTime = () => {
     if (timeout.current) {
@@ -63,7 +79,7 @@ const Home = () => {
       style={{ backgroundImage: `url(${grayBg})` }}
     >
       <Navbar highlight={"home"} />
-      <div className="sm:mt-0 mt-[24vh]">
+      <div className="sm:mt-0 mt-[9rem]">
         <Slider />
       </div>
 
@@ -82,7 +98,7 @@ const Home = () => {
 
       <Reveal repeat>
         <Tween from={{ opacity: 0 }} to={{ opacity: 1 }} duration={2}>
-          <div className=" mt-[4rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
+          <div className=" sm:mt-[4rem] mt-[1rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
             Eupheus Learning is positioned as the ‘largest, school-focused
             distribution platform in India’ and is already present in “One out
             of Four Premium Private Schools of India”. The company is focused on
@@ -94,30 +110,30 @@ const Home = () => {
       </Reveal>
 
       <Parallax translateX={[-20, 10]} scale={[0.75, 1]}>
-        <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
+        <div className=" sm:mt-[8rem] mt-[3rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
           <span>EUPHEUS LEARNING THE LIGHTHOUSE OF</span>
 
           <span>TRANSFORMATION IN SCHOOLS</span>
         </div>
       </Parallax>
-      <div className="mt-[5rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 2xl:ml-[18vw] lg:ml-[13vw] sm:ml-[8vw]">
-        <Parallax translateX={["-100px", "0px"]} scale={[0.75, 1]}>
+      {/* <div className="sm:mt-[5rem] mt-[2rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 2xl:ml-[18vw] lg:ml-[13vw] sm:ml-[8vw]">
+        <Parallax translateX={["-100px", "120px"]} scale={[0.75, 1]}>
           <img
             src={firstSectionLighthouse}
             className="sm:w-[35vw] w-[80vw] h-auto"
             alt=""
           />
         </Parallax>
-        <Parallax translateX={["100px", "0px"]} scale={[0.75, 1]}>
+        <Parallax translateX={["100px", "-100px"]} scale={[0.75, 1]}>
           <img
             src={firstSectionSchool}
             className="sm:w-[35vw] w-[80vw]h-auto"
             alt=""
           />
         </Parallax>
-      </div>
+      </div> */}
 
-      <div className="mt-[5rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 justify-center">
+      <div className="sm:mt-[5rem] mt-[2rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 items-center justify-center">
         <Parallax rotateY={[180, 570]}>
           <img
             src={section2schools}
@@ -125,6 +141,14 @@ const Home = () => {
             alt=""
           />
         </Parallax>
+        <Parallax rotateY={[180, 570]}>
+          <img
+            src={firstSectionLighthouse}
+            className="sm:w-[25vw] w-[40vw] h-auto object-cover"
+            alt=""
+          />
+        </Parallax>
+
         <Parallax rotateY={[180, 570]}>
           <img
             src={section2students}
@@ -140,7 +164,7 @@ const Home = () => {
           to={{ opacity: 1, transform: "translate3d(0px, 0, 0)" }}
           ease="back.out(1.4)"
         >
-          <div className=" mt-[8rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
+          <div className=" sm:mt-[8rem] mt-[3rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
             <span>THE POWER OF THE WIDEST</span>
             <span>CURRICULUM CATALOGUE</span>
           </div>
@@ -159,7 +183,7 @@ const Home = () => {
           </div>
         </Tween>
       </Reveal>
-      <Parallax translateX={[100, -50]}>
+      <Parallax translateX={[100, -210]}>
         <img
           src={power}
           className="w-[50vw] h-auto mt-[2.5rem] ml-[25vw]"
@@ -194,14 +218,18 @@ const Home = () => {
           </Tween>
         </Reveal>
         <div className="flex gap-4">
-          <Parallax translateX={[-50, 30]}>
+          <Parallax translateX={[-50, 50]}>
             <div className=" relative">
-              <img src={card} className="w-[20rem] h-auto" alt="" />
-              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
-                <div className="text-yellow-500 font-bold lg:text-2xl  md:text-6xl sm:text-xl">
+              <img
+                src={card}
+                className="sm:w-[20rem] w-[24rem] h-auto"
+                alt=""
+              />
+              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
+                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-xl text-sm">
                   CURRICULAR CONTENT
                 </div>
-                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] ">
+                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
                   Eupheus Learning places learners at the heart of education.
                   Therefore, textbooks and syllabi are designed by subject
                   matter experts from across the globe and are mapped to CBSE
@@ -210,11 +238,15 @@ const Home = () => {
               </div>
             </div>
           </Parallax>
-          <Parallax translateX={[50, -30]}>
+          <Parallax translateX={[50, -50]}>
             <div className=" relative">
-              <img src={card} className="w-[21.3rem] h-auto" alt="" />
-              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[3rem] sm:pl-[2rem] pl-[1rem]">
-                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-4xl">
+              <img
+                src={card}
+                className="sm:w-[21.3rem] w-[25.1rem] h-auto"
+                alt=""
+              />
+              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
+                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-4xl text-sm">
                   SUPPLEMENTAL CONTENT
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] sm:w-[15rem] w-[10rem]">
@@ -232,6 +264,75 @@ const Home = () => {
         <img src={reading} className="w-[10rem] sm:w-[25vw] h-auto" alt="" />
         <img src={robot} className="w-[10rem] sm:w-[25vw] h-auto" alt="" />
       </div>
+      <div className="flex gap-4 flex-col w-fit items-end md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] mt-[5rem]">
+        <span>
+          <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold pr-2">
+            PERSONALISATION REMEDIAL SERVICE
+          </h1>
+          <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl font-semibold text-right pr-2">
+            TO GAIN AN EDGE IN THE FUTURE
+          </h1>
+        </span>
+        {mobile ? (
+          <div className="flex flex-col md:gap-[7rem] gap-2 items-center">
+            <Parallax translateX={[-50, 20]}>
+              <div className=" relative">
+                <img
+                  src={laptop}
+                  className="w-[43vw] h-[40vh] sm:w-[25vw] sm:h-auto"
+                  alt=""
+                />
+                <img
+                  src={classK}
+                  className=" absolute -top-3 sm:w-[40%] w-full sm:-left-0 -left-[4rem] h-auto"
+                  alt=""
+                />
+              </div>
+            </Parallax>
+            <div className="flex flex-col gap-2 items-end">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm pr-2 w-[90vw]">
+                ClassKlap offers the NEP-based curriculum, seamless schooling,
+                and various programs to make schools and students future-ready.
+                Embrace the new-age learning to gain an edge in the future.
+              </h1>
+              <a href="https://www.classklap.com/">
+                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 rounded-md mr-6">
+                  Know More
+                </button>
+              </a>
+            </div>
+          </div>
+        ) : (
+          <div className="flex md:gap-[7rem] gap-[2rem] items-center">
+            <Parallax translateX={[-50, 20]}>
+              <div className=" relative">
+                <img
+                  src={laptop}
+                  className="w-[43vw] h-[40vh] sm:w-[25vw] sm:h-auto"
+                  alt=""
+                />
+                <img
+                  src={classK}
+                  className=" absolute -top-2 w-[40%] h-auto"
+                  alt=""
+                />
+              </div>
+            </Parallax>
+            <div className="flex flex-col gap-2 items-end">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
+                ClassKlap offers the NEP-based curriculum, seamless schooling,
+                and various programs to make schools and students future-ready.
+                Embrace the new-age learning to gain an edge in the future.
+              </h1>
+              <a href="https://www.classklap.com/">
+                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 rounded-md mr-6">
+                  Know More
+                </button>
+              </a>
+            </div>
+          </div>
+        )}
+      </div>
       <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] mt-[5rem]">
         <span>
           <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
@@ -241,201 +342,200 @@ const Home = () => {
             TO GAIN AN EDGE IN THE FUTURE
           </h1>
         </span>
-        <div className="flex md:gap-[7rem] gap-[2rem] items-center">
-          <Parallax translateX={[-50, 20]}>
-            <img
-              src={laptop}
-              className="w-[43vw] h-[40vh] sm:w-[25vw] sm:h-auto"
-              alt=""
-            />
-          </Parallax>
-          <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm-sm w-[35vw]">
-            Eupheus Learning acquired ClassKlap that offers the NEP-based
-            curriculum, seamless schooling, and various programs to make schools
-            and students future-ready. Embrace the new-age learning to gain an
-            edge in the future.
-          </h1>
-        </div>
+        {mobile ? (
+          <div className="flex flex-col md:gap-[7rem] gap-2 items-center">
+            <Parallax translateX={[100, -130]}>
+              <div className=" relative">
+                <img
+                  src={schoolmitra}
+                  className="w-full h-[40vh] sm:w-[35vw] sm:h-auto"
+                  alt=""
+                />
+                <img
+                  src={sm}
+                  className=" absolute top-0 sm:w-[40%] w-[60vw] h-auto"
+                  alt=""
+                />
+              </div>
+            </Parallax>
+            <div className="flex flex-col gap-2 items-end">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[90vw] pr-2">
+                SchoolMitra a home grown SaaS company offering digital school
+                management system has introduced The 21st Century School OS
+                which unifies ERP (enterprise resource planning), LMS (learning
+                management system) and CMS (content management system) on a
+                single sign-on, benefitting all stakeholders of a school alike –
+                Principals, Teachers, Students and Parents.
+              </h1>
+              <a href="https://www.schoolmitra.com/">
+                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 mr-6 rounded-md">
+                  Know More
+                </button>
+              </a>
+            </div>
+          </div>
+        ) : (
+          <div className="flex md:gap-[7rem] gap-[2rem] items-center">
+            <div className="flex flex-col gap-2 items-end">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
+                SchoolMitra a home grown SaaS company offering digital school
+                management system has introduced The 21st Century School OS
+                which unifies ERP (enterprise resource planning), LMS (learning
+                management system) and CMS (content management system) on a
+                single sign-on, benefitting all stakeholders of a school alike –
+                Principals, Teachers, Students and Parents.
+              </h1>
+              <a href="https://www.schoolmitra.com/">
+                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 mr-6 rounded-md">
+                  Know More
+                </button>
+              </a>
+            </div>
+            <Parallax translateX={[100, -115]}>
+              <div className=" relative">
+                <img
+                  src={schoolmitra}
+                  className="w-[43vw] h-[40vh] sm:w-[35vw] sm:h-auto"
+                  alt=""
+                />
+                <img
+                  src={sm}
+                  className=" absolute top-0 w-[40%] h-auto"
+                  alt=""
+                />
+              </div>
+            </Parallax>
+          </div>
+        )}
       </div>
-      <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] pr-[1rem] mt-[5rem]">
-        <span>
-          <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl  font-bold">
-            REVOLUTIONIZING SCHOOLS WITH
-          </h1>
-          <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl  font-semibold">
-            THE 21ST CENTURY SCHOOL OS
-          </h1>
-        </span>
-
-        <h1 className=" md:mt-[2.5rem] mb-[5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm">
-          Schools need assistance on ‘content management’, ‘learning
-          management’, ‘enterprise resource planning’, ‘financial management’,
-          ‘communication management’, etc. and there are disparate solutions
-          existing in the marketplace which make matters worse for a school.
-          SchoolMitra (a company acquired by Eupheus Learning), a home grown
-          SaaS company offering digital school management system has introduced
-          The 21st Century School OS which unifies ERP (enterprise resource
-          planning), LMS (learning management system) and CMS (content
-          management system) on a single sign-on, benefitting all stakeholders
-          of a school alike – Principals, Teachers, Students and Parents.
-        </h1>
-      </div>
-      <div className=" relative mt-[3rem]">
-        {/* <h1 className=" lg:text-4xl text-3xl text-blue-800 font-bold absolute sm:top-0 -top-4 lg:left-[15vw] md:left-[10vw] left-[5vw] ">
-          SCHOOL
-          <span className="lg:text-4xl text-3xl text-[#f5ab1d] font-bold">
-            MITRA
+      {/* <div className="flex flex-col w-[100vw]">
+        <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] pr-[1rem] sm:mt-[5rem] mt-[3rem]">
+          <span>
+            <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl  font-bold">
+              REVOLUTIONIZING SCHOOLS WITH
+            </h1>
+            <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl  font-semibold">
+              THE 21ST CENTURY SCHOOL OS
+            </h1>
           </span>
-        </h1> */}
-        <div className="W-[100VW] flex justify-center">
-          <img
-            className="md:ml-[10vw] absolute sm:top-[5rem] top-[3rem] sm:left-0 left-[2rem] sm:w-fit w-[50%] sm:pl-[2rem] lg:ml-[18vw]"
-            src={sm}
-            alt=""
-          />
-          <img
-            className="mt-[1rem] sm:w-auto w-full h-auto sm:h-[100vh] md:ml-[10vw] sm:ml-[10vw]"
-            src={schoolmitra}
-            alt=""
-          />
         </div>
-      </div>
-      <div className="flex gap-7 flex-col md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] mt-[5rem] w-[100vw]">
-        <span>
-          <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
-            COMPETITIONS
+        <div className="flex items-center w-[100vw]">
+          <h1 className=" md:mt-[2.5rem] md:ml-[12vw] 2xl:ml-[18vw] sm:mb-[5rem] mb-[1rem] text-gray-700 lg:w-[40vw] md:w-[70vw] w-[20vw] lg:text-lg 2xl:text-2xl text-sm">
+            Schools need assistance on ‘content management’, ‘learning
+            management’, ‘enterprise resource planning’, ‘financial management’,
+            ‘communication management’, etc. and there are disparate solutions
+            existing in the marketplace which make matters worse for a school.
+            SchoolMitra (a company acquired by Eupheus Learning), a home grown
+            SaaS company offering digital school management system has
+            introduced The 21st Century School OS which unifies ERP (enterprise
+            resource planning), LMS (learning management system) and CMS
+            (content management system) on a single sign-on, benefitting all
+            stakeholders of a school alike – Principals, Teachers, Students and
+            Parents.
           </h1>
-        </span>
-        <div className="flex items-start md:gap-[7rem] gap-[2rem]">
-          <div className="flex flex-col pt-2 mt-[2rem] gap-4">
-            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
-              Eupheus Learning hosts several national and international events
-              to promote the cause of better learning, effective teaching &
-              wholesome improvement in the education systems across the world.
-            </h1>
-            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
-              Unique school outreach initiatives like “Story Telling Sessions”,
-              “Olympiad” and “Coding Competitions” have created differentiation
-              for the company in this highly competitive and contested education
-              market.
-            </h1>
-          </div>
-          <Parallax translateX={[100, -100]}>
-            <img
-              src={trophy}
-              className="w-[43vw] h-auto sm:w-[20vw] sm:h-auto"
-              alt=""
-            />
+          <Parallax translateX={[100, -115]}>
+            <div className=" relative sm:mt-[3rem] mt-[1rem]">
+              <div>
+                <img
+                  className="absolute sm:top-[3rem] top-[2rem] sm:-left-[2rem] left-[2rem] sm:w-[60%] w-[50%] sm:pl-[2rem]"
+                  src={sm}
+                  alt=""
+                />
+                <img
+                  className="mt-[1rem] sm:w-auto w-full h-auto sm:h-[30rem]"
+                  src={schoolmitra}
+                  alt=""
+                />
+              </div>
+            </div>
           </Parallax>
         </div>
-      </div>
-      <div className="flex md:gap-[7rem] gap-[2rem] items-center md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
-        <Parallax translateX={[-50, 20]}>
-          <img
-            src={play}
-            className="w-[43vw] h-[40vh] sm:w-[25vw] sm:h-auto"
-            alt=""
-          />
-        </Parallax>
-        <div className="flex gap-[7rem]">
-          <div className="flex flex-col pt-4 gap-4">
-            <img
-              src={code2win}
-              className="md:w-[20vw] w-[30vw] h-auto"
-              alt=""
-            />
-            <h1 className="text-gray-700 mt-[3rem] lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
-              Code2Win is a National-level Coding Competition for students from
-              Grade 1 to 12. This gamified environment enables young minds to
-              develop their competency and encourages them to ‘learn’,
-              ‘participate’, ‘win scholarships’ and ‘get certificate’. Needless
-              to mention that they can choose Coding as a life skill too.
-            </h1>
-          </div>
-        </div>
-      </div>
-      <div className="flex gap-1 flex-col md:ml-[12vw] 2xl:ml-[18vw] md:wl-[5vw] pl-[2rem] mt-[5rem]">
-        <span>
-          <img src={iso} className="md:w-[20vw] w-[30vw] h-auto" alt="" />
-        </span>
-        <div className="flex gap-[3rem] items-start">
-          <div className="flex flex-col gap-4">
-            <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl mt-[3rem] text-sm w-[35vw]">
-              Olympiad is a gateway to real international exposure for Indian
-              students from different schools and boards. It truly strengthens
-              their ability to comprehend the subject better and compete at a
-              global level.
-            </h1>
-          </div>
-          <Parallax translateX={[100, -80]}>
-            <img
-              src={laptop2}
-              className="w-[43vw] h-[40vh] sm:w-[25vw] sm:h-auto"
-              alt=""
-            />
-          </Parallax>
-        </div>
-      </div>
+      </div> */}
 
       <div className="w-[100vw] my-[4rem] flex justify-center items-center">
         <iframe
           className="sm:w-[60vw] sm:h-[60vh] w-[80vw] h-[40vh]"
-          src="https://www.youtube.com/embed/J2I1oTQ7p18"
+          src="https://www.youtube.com/embed/VRdUjcdI8-Y"
         ></iframe>
       </div>
 
-      <Form />
+      {/* <Form /> */}
 
-      <div className="w-[100vw] lg:px-[9rem] items-center px-[3rem] py-[2rem] flex justify-between bg-[#f5ab1d]">
-        <div className=" flex flex-col gap-2">
-          {/* <div
-            className="flex flex-col gap-1"
-            onClick={() =>
-              navigate(
-                "https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms"
-              )
-            }
-          >
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Eupheus Learning acquires ClassKlap for $19 million
-            </span>
-          </div> */}
-
-          {/* <div className="flex flex-col gap-1">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Learn Coding In A Fun And
-            </span>
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Interactive Manner!
-            </span>
+      <div className="w-[100vw] items-center px-[2vw] py-[2rem] grid grid-rows-1 grid-cols-3 gap-[2rem] justify-between bg-[#f5ab1d]">
+        <div className="flex flex-col gap-3">
+          <div className="flex w-[30vw] flex-col gap-2">
+            <a href="https://www.vccircle.com/lightrock-india-funded-eupheus-learning-buys-saas-platform-schoolmitra">
+              <span className=" sm:text-sm text-xs text-white">
+                <span>
+                  Lightrock India-funded Eupheus Learning buys SaaS platform
+                  SchoolMitra
+                </span>
+              </span>
+            </a>
             <span className="md:text-base text-xs text-red-700">
-              November 15, 2017
+              Feb 15, 2022
             </span>
-          </div> */}
-          <a href="https://www.vccircle.com/lightrock-india-funded-eupheus-learning-buys-saas-platform-schoolmitra">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              <span>Lightrock India-funded Eupheus Learning buys</span>
-              <br />
-              <span>SaaS platform SchoolMitra</span>
+          </div>
+          <div className=" flex w-[30vw] flex-col gap-2">
+            <a href="https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms">
+              <span className="sm:text-sm text-xs text-white">
+                Eupheus Learning acquires ClassKlap for $19 million
+              </span>
+            </a>
+            <span className="md:text-base text-xs text-red-700">
+              Sep 21, 2021
             </span>
-          </a>
-          <span className="md:text-base text-xs text-red-700">
-            Feb 15, 2022
-          </span>
-          <a href="https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms">
-            <span className="lg:text-xl md:text-base sm:text-sm text-white">
-              Eupheus Learning acquires ClassKlap for $19 million
+          </div>
+          <div className=" flex w-[30vw] flex-col gap-2">
+            <a href="https://economictimes.indiatimes.com/industry/services/education/eupheus-learning-collaborates-with-global-education-solutions-to-help-students-develop-competencies/articleshow/85295893.cms">
+              <span className=" sm:text-sm text-xs text-white">
+                Eupheus Learning collaborates with Global Education Solutions to
+                help students develop competencies
+              </span>
+            </a>
+            <span className="md:text-base text-xs text-red-700">
+              Aug 13, 2021
             </span>
-          </a>
-          <span className="md:text-base text-xs text-red-700">
-            Sep 21, 2021
-          </span>
+          </div>
         </div>
-        <img
-          src={footerimg1}
-          className="md:w-[30vw] w-[20vw] hidden sm:block h-[10vh] md:h-auto"
-          alt=""
-        />
+
+        <div className="flex flex-col gap-3">
+          <div className=" flex w-[30vw] flex-col gap-2">
+            <a href="https://www.apnnews.com/eupheus-learning-signs-mou-with-varthana-to-make-school-financing-and-21st-century-education-solutions-accessible-to-more-schools-in-india/">
+              <span className=" sm:text-sm text-xs text-white">
+                Eupheus Learning signs MoU with Varthana to make school
+                financing and 21st century education solutions accessible to
+                more schools in India
+              </span>
+            </a>
+            <span className="md:text-base text-xs text-red-700">
+              Jan 11, 2022
+            </span>
+          </div>
+          <div className=" flex w-[30vw] flex-col gap-2">
+            <a href="https://economictimes.indiatimes.com/tech/funding/edtech-startup-eupheus-learning-raises-10-million-from-lightrock-india/articleshow/86198785.cms?from=mdr">
+              <span className="sm:text-sm text-xs text-white">
+                Edtech startup Eupheus Learning raises $10 million from
+                Lightrock India
+              </span>
+            </a>
+            <span className="md:text-base text-xs text-red-700">
+              Sep 14, 2021
+            </span>
+          </div>
+          <div className=" flex w-[30vw] flex-col gap-2">
+            <a href="https://www.cnbctv18.com/business/most-trusted-brands-of-india-2021-8791541.htm">
+              <span className="sm:text-sm text-xs text-white">
+                Eupheus Learning - Most Trusted Brands Of India 2021
+              </span>
+            </a>
+            <span className="md:text-base text-xs text-red-700">
+              Apr 12, 2021
+            </span>
+          </div>
+        </div>
+
+        <img src={footerimg1} alt="" />
       </div>
       <Footer />
       <GoToTop />
