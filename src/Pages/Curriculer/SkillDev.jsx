@@ -5,9 +5,13 @@ import GoToTop from "../../Components/Top";
 import grayBg from "../../assets/grayBg.png";
 import Footer from "../../Components/Footer";
 // import { useNavigate } from "react-router-dom";
-import Zoom from "../../Components/Curriculum/prePrimary/Zoom";
-import AlphaFun from "../../Components/Curriculum/prePrimary/AlphaFun";
-import DotDash from "../../Components/Curriculum/prePrimary/DotDash";
+import Handwriting from "../../Components/Curriculum/skillDev/Handwriting";
+import Merry_go_round from "../../Components/Curriculum/skillDev/Merry_go_round";
+import Time_to_learn_arts from "../../Components/Curriculum/skillDev/Time_to_learn_arts";
+import Value_first from "../../Components/Curriculum/skillDev/Value_first";
+import Wow_art_carft from "../../Components/Curriculum/skillDev/Wow_art_carft";
+import Wow_mind_map from "../../Components/Curriculum/skillDev/Wow_mind_map";
+import Wow_within_worlds from "../../Components/Curriculum/skillDev/Wow_within_worlds";
 
 // icons
 import artIcon from "../../assets/curriculum/skillDev/artIcon.png";
@@ -31,7 +35,7 @@ const SkillDev = () => {
         return (
           <div className="w-full grid sm:grid-rows-5 grid-rows-7 sm:grid-cols-3 grid-cols-2 sm:gap-[4rem] gap-[2rem] sm:px-[3rem] px-4 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
             <span
-              onClick={() => setPage("zoom")}
+              onClick={() => setPage("art")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img
@@ -41,7 +45,7 @@ const SkillDev = () => {
               />
             </span>
             <span
-              onClick={() => setPage("alpha_fun")}
+              onClick={() => setPage("gk")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img
@@ -51,7 +55,7 @@ const SkillDev = () => {
               />
             </span>
             <span
-              onClick={() => setPage("dot_dash")}
+              onClick={() => setPage("handwriting")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img
@@ -60,28 +64,40 @@ const SkillDev = () => {
                 alt=""
               />
             </span>
-            <span className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
+            <span
+              onClick={() => setPage("merrygo")}
+              className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+            >
               <img
                 src={merrygoIcon}
                 className="sm:h-[10rem] h-[5rem]   w-auto"
                 alt=""
               />
             </span>
-            <span className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
+            <span
+              onClick={() => setPage("mindmap")}
+              className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+            >
               <img
                 src={mindmapIcon}
                 className="sm:h-[10rem] h-[5rem]   w-auto"
                 alt=""
               />
             </span>
-            <span className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
+            <span
+              onClick={() => setPage("value")}
+              className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+            >
               <img
                 src={valueIcon}
                 className="sm:h-[10rem] h-[5rem]   w-auto"
                 alt=""
               />
             </span>
-            <span className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold">
+            <span
+              onClick={() => setPage("artCraft")}
+              className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+            >
               <img
                 src={wowartIcon}
                 className="sm:h-[10rem] h-[5rem]   w-auto"
@@ -91,24 +107,52 @@ const SkillDev = () => {
           </div>
         );
         break;
-      case "zoom":
+      case "art":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <Zoom />
+            <Time_to_learn_arts />
           </div>
         );
         break;
-      case "alpha_fun":
+      case "gk":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <AlphaFun />
+            <Wow_within_worlds />
           </div>
         );
         break;
-      case "dot_dash":
+      case "handwriting":
         return (
           <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <DotDash />
+            <Handwriting />
+          </div>
+        );
+        break;
+      case "artCraft":
+        return (
+          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+            <Wow_art_carft />
+          </div>
+        );
+        break;
+      case "value":
+        return (
+          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+            <Value_first />
+          </div>
+        );
+        break;
+      case "merrygo":
+        return (
+          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+            <Merry_go_round />
+          </div>
+        );
+        break;
+      case "mindmap":
+        return (
+          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+            <Wow_mind_map />
           </div>
         );
         break;

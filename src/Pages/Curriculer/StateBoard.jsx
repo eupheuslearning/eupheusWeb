@@ -5,22 +5,22 @@ import GoToTop from "../../Components/Top";
 import grayBg from "../../assets/grayBg.png";
 import Footer from "../../Components/Footer";
 // import { useNavigate } from "react-router-dom";
-import Zoom from "../../Components/Curriculum/prePrimary/Zoom";
-import AlphaFun from "../../Components/Curriculum/prePrimary/AlphaFun";
-import DotDash from "../../Components/Curriculum/prePrimary/DotDash";
+import Nector from "../../Components/Curriculum/stateBoard/Nector";
+import Nector_second from "../../Components/Curriculum/stateBoard/Nector_second";
 
 // icons
 import nectorIcon from "../../assets/curriculum/stateBoard/nectarIcon.png";
-import balalIcon from "../../assets/curriculum/stateBoard/balalIcon.png";
-import iniyalIcon from "../../assets/curriculum/stateBoard/iniyalIcon.png";
-import kalikaIcon from "../../assets/curriculum/stateBoard/kalikaIcon.png";
-import kampuIcon from "../../assets/curriculum/stateBoard/kampuIcon.png";
-import kannadaIcon from "../../assets/curriculum/stateBoard/kannadaIcon.png";
-import rachnaIcon from "../../assets/curriculum/stateBoard/rachnaIcon.png";
-import RkannadaIcon from "../../assets/curriculum/stateBoard/RkannadaIcon.png";
-import sumadhuraIcon from "../../assets/curriculum/stateBoard/sumadhuraIcon.png";
-import telaguIcon from "../../assets/curriculum/stateBoard/telaguIcon.png";
-import telegucopyIcon from "../../assets/curriculum/stateBoard/telegucopyIcon.png";
+import nector2Icon from "../../assets/curriculum/stateBoard/nectar2Icon.png";
+// import balalIcon from "../../assets/curriculum/stateBoard/balalIcon.png";
+// import iniyalIcon from "../../assets/curriculum/stateBoard/iniyalIcon.png";
+// import kalikaIcon from "../../assets/curriculum/stateBoard/kalikaIcon.png";
+// import kampuIcon from "../../assets/curriculum/stateBoard/kampuIcon.png";
+// import kannadaIcon from "../../assets/curriculum/stateBoard/kannadaIcon.png";
+// import rachnaIcon from "../../assets/curriculum/stateBoard/rachnaIcon.png";
+// import RkannadaIcon from "../../assets/curriculum/stateBoard/RkannadaIcon.png";
+// import sumadhuraIcon from "../../assets/curriculum/stateBoard/sumadhuraIcon.png";
+// import telaguIcon from "../../assets/curriculum/stateBoard/telaguIcon.png";
+// import telegucopyIcon from "../../assets/curriculum/stateBoard/telegucopyIcon.png";
 
 const StateBoard = () => {
   //   const navigate = useNavigate();
@@ -35,7 +35,7 @@ const StateBoard = () => {
         return (
           <div className="w-full grid sm:grid-rows-5 grid-rows-7 sm:grid-cols-3 grid-cols-2 sm:gap-[4rem] gap-[2rem] sm:px-[3rem] px-4 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
             <span
-              onClick={() => setPage("zoom")}
+              onClick={() => setPage("nector1")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img
@@ -45,16 +45,16 @@ const StateBoard = () => {
               />
             </span>
             <span
-              onClick={() => setPage("alpha_fun")}
+              onClick={() => setPage("nector2")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img
-                src={nectorIcon}
+                src={nector2Icon}
                 className="sm:h-[10rem] h-[5rem]   w-auto"
                 alt=""
               />
             </span>
-            <span
+            {/* <span
               onClick={() => setPage("dot_dash")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
@@ -126,31 +126,25 @@ const StateBoard = () => {
                 className="sm:h-[10rem] h-[5rem]   w-auto"
                 alt=""
               />
-            </span>
+            </span> */}
           </div>
         );
         break;
-      case "zoom":
+      case "nector1":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <Zoom />
+            <Nector />
           </div>
         );
         break;
-      case "alpha_fun":
+      case "nector2":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <AlphaFun />
+            <Nector_second />
           </div>
         );
         break;
-      case "dot_dash":
-        return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <DotDash />
-          </div>
-        );
-        break;
+
       default:
         break;
     }

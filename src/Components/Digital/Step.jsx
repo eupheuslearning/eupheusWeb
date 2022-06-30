@@ -3,6 +3,7 @@ import { Circle } from "@mui/icons-material";
 import img1 from "../../assets/digital/stepAndLearn/2.png";
 import img2 from "../../assets/digital/stepAndLearn/3.png";
 import img3 from "../../assets/digital/stepAndLearn/4.png";
+import GoToTop from "../Top";
 
 const Step = ({ sOpen }) => {
   return (
@@ -85,6 +86,7 @@ const Step = ({ sOpen }) => {
         </div>
       </div>
       <img src={img3} className="mt-[1rem]" alt="" />
+      <GoToTop />
     </div>
   );
 };

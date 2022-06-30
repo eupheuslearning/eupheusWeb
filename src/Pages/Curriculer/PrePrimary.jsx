@@ -29,13 +29,13 @@ import Radiant_way from "../../Components/Curriculum/prePrimary/Radiant_way";
 // import  Silver_bells  from "../../Components/Curriculum/prePrimary/Silver_bells";
 
 // icons
-import zoomIcon from "../../assets/curriculum/zoom/zoomIcon.png";
-import AlphaIcon from "../../assets/curriculum/alphaFun/alphafunIcon.png";
-import DotIcon from "../../assets/curriculum/dotDash/dotdashIcon.png";
-import NumberMaxIcon from "../../assets/curriculum/numberMax/numbermaxIcon.png";
-import SplashIcon from "../../assets/curriculum/splash/splashIcon.png";
-import PitaraIcon from "../../assets/curriculum/pitara/pitaraIcon.png";
-import RadiantIcon from "../../assets/curriculum/radiantWay/radiantwayIcon.png";
+import zoomIcon from "../../assets/curriculum/zoom/Icon.png";
+import AlphaIcon from "../../assets/curriculum/alphaFun/Icon.png";
+import DotIcon from "../../assets/curriculum/dotDash/Icon.png";
+import NumberMaxIcon from "../../assets/curriculum/numberMax/Icon.png";
+import SplashIcon from "../../assets/curriculum/splash/Icon.png";
+import PitaraIcon from "../../assets/curriculum/pitara/Icon.png";
+import RadiantIcon from "../../assets/curriculum/radiantWay/Icon.png";
 
 const PrePrimary = () => {
   //   const navigate = useNavigate();
@@ -53,45 +53,91 @@ const PrePrimary = () => {
               onClick={() => setPage("zoom")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={zoomIcon} className="h-[70%] w-auto" alt="" />
+              <img src={zoomIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("alpha_fun")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={AlphaIcon} alt="" />
+              <img src={AlphaIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("dot_dash")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={DotIcon} alt="" />
+              <img src={DotIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("number_max")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={NumberMaxIcon} alt="" />
+              <img src={NumberMaxIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("splash")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={SplashIcon} alt="" />
+              <img src={SplashIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("pitara")}
               className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={PitaraIcon} alt="" />
+              <img src={PitaraIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("radiant_way")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={RadiantIcon} alt="" />
+              <img src={RadiantIcon} className="w-[90%] h-auto" alt="" />
             </span>
           </div>
+          // <div className="w-full h-[100vh] flex justify-center items-center">
+          //   <div className="w-[2rem] h-[2rem] relative rounded-full bg-red-800">
+          //     <span
+          //       onClick={() => setPage("zoom")}
+          //       className=" w-[10rem] h-auto hover:-translate-y-2 absolute -top-[7rem] left-[10rem] transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+          //     >
+          //       <img src={zoomIcon} alt="" />
+          //     </span>
+          //     <span
+          //       onClick={() => setPage("alpha_fun")}
+          //       className=" w-[10rem] h-auto hover:-translate-y-2 absolute -top-[13rem] -left-[10rem] transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+          //     >
+          //       <img src={AlphaIcon} alt="" />
+          //     </span>
+          //     <span
+          //       onClick={() => setPage("number_max")}
+          //       className=" w-[10rem] h-auto hover:-translate-y-2 absolute -top-[5rem] right-[11rem] transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+          //     >
+          //       <img src={NumberMaxIcon} alt="" />
+          //     </span>
+          //     <span
+          //       onClick={() => setPage("dot_dash")}
+          //       className=" w-[10rem] h-auto hover:-translate-y-2 absolute -bottom-[13rem] -left-[4rem] transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+          //     >
+          //       <img src={DotIcon} alt="" />
+          //     </span>
+          //     <span
+          //       onClick={() => setPage("splash")}
+          //       className=" w-[10rem] h-auto hover:-translate-y-2 absolute -top-[13rem] left-[5rem] transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+          //     >
+          //       <img src={SplashIcon} alt="" />
+          //     </span>
+          //     <span
+          //       onClick={() => setPage("pitara")}
+          //       className=" w-[10rem] h-auto hover:-translate-y-2 absolute -bottom-[7rem] left-[9rem] transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+          //     >
+          //       <img src={PitaraIcon} alt="" />
+          //     </span>
+          //     <span
+          //       onClick={() => setPage("radiant_way")}
+          //       className=" w-[10rem] h-auto hover:-translate-y-2 absolute -bottom-[8rem] right-[8rem] transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+          //     >
+          //       <img src={RadiantIcon} alt="" />
+          //     </span>
+          //   </div>
+          // </div>
         );
         break;
       case "zoom":

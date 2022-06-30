@@ -19,6 +19,10 @@ import Reference from "./Pages/Curriculer/Reference";
 import StateBoard from "./Pages/Curriculer/StateBoard";
 import KinaestheticLearning from "./Pages/Digital/KinaestheticLearning";
 import News from "./Pages/News";
+import Coding from "./Pages/Digital/Coding";
+import Reading from "./Pages/Digital/Reading";
+import LifeSkill from "./Pages/Digital/LifeSkill";
+import Entrepreneurship from "./Pages/Digital/Entrepreneurship";
 
 function App() {
   return (
@@ -47,6 +51,10 @@ function App() {
         <Route path="/curriculer/state_board_sol" element={<StateBoard/>}/>
         {/* digital */}
         <Route path="/digital/kinaesthetic_learning" element={<KinaestheticLearning/>}/>
+        <Route path="/digital/coding" element={<Coding/>}/>
+        <Route path="/digital/reading" element={<Reading/>}/>
+        <Route path="/digital/life_skill" element={<LifeSkill/>}/>
+        <Route path="/digital/entrepreneurship" element={<Entrepreneurship/>}/>
         </Routes>
         </BrowserRouter>
       </ParallaxProvider>
