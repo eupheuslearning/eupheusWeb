@@ -193,7 +193,12 @@ const Navbar = ({ highlight }) => {
               <h1 className='hover:translate-x-2 transition-all duration-200 ease-linear'>
                 Articles
               </h1>
-              <h1 className='hover:translate-x-2 transition-all duration-200 ease-linear'>
+
+              <h1
+                onClick={() => navigate("/news")}
+                className="hover:translate-x-2 transition-all duration-200 ease-linear"
+              >
+
                 Announcements
               </h1>
             </div>

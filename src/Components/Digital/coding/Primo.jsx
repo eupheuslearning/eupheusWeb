@@ -1,14 +1,15 @@
 import React from "react";
 import { Circle } from "@mui/icons-material";
-import img1 from "../../assets/digital/primo/5.png";
-import img2 from "../../assets/digital/primo/6.png";
-import img3 from "../../assets/digital/primo/7.png";
-import img4 from "../../assets/digital/primo/13.png";
-import img5 from "../../assets/digital/primo/8.png";
-import img6 from "../../assets/digital/primo/9.png";
-import img7 from "../../assets/digital/primo/10.png";
-import img8 from "../../assets/digital/primo/11.png";
-import img9 from "../../assets/digital/primo/12.png";
+import img1 from "../../../assets/digital/primo/5.png";
+import img2 from "../../../assets/digital/primo/6.png";
+import img3 from "../../../assets/digital/primo/7.png";
+import img4 from "../../../assets/digital/primo/13.png";
+import img5 from "../../../assets/digital/primo/8.png";
+import img6 from "../../../assets/digital/primo/9.png";
+import img7 from "../../../assets/digital/primo/10.png";
+import img8 from "../../../assets/digital/primo/11.png";
+import img9 from "../../../assets/digital/primo/12.png";
+import GoToTop from "../../Top";
 
 const Primo = ({ sOpen }) => {
   return (
@@ -99,6 +100,7 @@ const Primo = ({ sOpen }) => {
           </span>
         </div>
       </div>
+      <GoToTop />
     </div>
   );
 };

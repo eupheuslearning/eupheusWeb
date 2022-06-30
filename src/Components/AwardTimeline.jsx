@@ -20,7 +20,10 @@ export default function AwardTimeline() {
   return (
     <>
       {/* <div className="flex flex-col gap-4 justify-center items-center my-8">
-        <div className="flex flex-col gap-4 w-[100vw] items-center ">
+        <div
+          className={`flex flex-col gap-4 w-[100vw] items-center transition-all duration-200 ease-linear`}
+          style={{ height: `${first ? "calc(100% + 1px)" : "5rem"}` }}
+        >
           <div
             onClick={() => setFirst(!first)}
             className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
@@ -173,18 +176,19 @@ export default function AwardTimeline() {
         <div class="container">
           <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
             <div class="flex md:contents relative">
-              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="col-start-2 col-end-4 sm:mr-10 md:mx-auto relative">
                 <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2022
                 </div>
+
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
                 <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#f5ab1d] shadow text-center"></div>
               </div>
 
-              <div className="flex flex-col gap-4 sm:w-[100vw] items-start my-8">
-                <div
+              <div className="flex flex-col gap-4 w-[100vw] items-start my-[5rem] relative">
+                {/* <div
                   onClick={() => setFirst(!first)}
                   className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
                 >
@@ -194,6 +198,25 @@ export default function AwardTimeline() {
                       first ? "rotate-180" : null
                     } transition-all duration-150 ease-linear`}
                   />
+                </div> */}
+                <div
+                  onClick={() => setFirst(!first)}
+                  className={`${
+                    first ? null : "absolute"
+                  } -top-8 transition-all duration-[400] ease-linear sm:w-[40%] w-[85%] flex justify-center ${
+                    first ? "rotate-[180deg] mt-4" : null
+                  } cursor-pointer`}
+                >
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      first ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {first ? (
                   <div className=" w-full sm:justify-start justify-around px-4 bg-transparent flex sm:gap-12 gap-2">
@@ -219,7 +242,7 @@ export default function AwardTimeline() {
             </div>
 
             <div class="flex md:contents">
-              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="col-start-2 col-end-4 sm:mr-10 md:mx-auto relative">
                 <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2021
                 </div>
@@ -230,8 +253,8 @@ export default function AwardTimeline() {
                   <i class="fas fa-check-circle text-white"></i>
                 </div>
               </div>
-              <div className="flex flex-col gap-4 w-[100vw] items-start my-8">
-                <div
+              <div className="flex flex-col gap-4 relative w-[100vw] items-start my-[5rem]">
+                {/* <div
                   onClick={() => setSecond(!second)}
                   className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
                 >
@@ -241,6 +264,25 @@ export default function AwardTimeline() {
                       second ? "rotate-180" : null
                     } transition-all duration-150 ease-linear`}
                   />
+                </div> */}
+                <div
+                  onClick={() => setSecond(!second)}
+                  className={`${
+                    second ? null : "absolute"
+                  } -top-8 transition-all duration-[400] ease-linear sm:w-[40%] w-[85%] flex justify-center ${
+                    second ? "rotate-[180deg] mt-4" : null
+                  } cursor-pointer`}
+                >
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      second ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {second ? (
                   <div className=" w-full justify-start px-4 bg-transparent flex sm:flex-row flex-col gap-12">
@@ -260,7 +302,7 @@ export default function AwardTimeline() {
             </div>
 
             <div class="flex md:contents">
-              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="col-start-2 col-end-4 sm:mr-10 mr-[1.5rem] md:mx-auto relative">
                 <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2020
                 </div>
@@ -271,8 +313,8 @@ export default function AwardTimeline() {
                   <i class="fas fa-times-circle text-white"></i>
                 </div>
               </div>
-              <div className="flex flex-col gap-4 w-[100vw] items-start my-8">
-                <div
+              <div className="flex flex-col gap-4 w-[100vw] relative items-start my-[5rem]">
+                {/* <div
                   onClick={() => setThird(!third)}
                   className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
                 >
@@ -282,6 +324,25 @@ export default function AwardTimeline() {
                       third ? "rotate-180" : null
                     } transition-all duration-150 ease-linear`}
                   />
+                </div> */}
+                <div
+                  onClick={() => setThird(!third)}
+                  className={`${
+                    third ? null : "absolute"
+                  } -top-8 transition-all duration-[400] ease-linear sm:w-[40%] w-[85%] flex justify-center ${
+                    third ? "rotate-[180deg] mt-4" : null
+                  } cursor-pointer`}
+                >
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      third ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {third ? (
                   <div className="flex flex-col gap-4">
@@ -297,7 +358,7 @@ export default function AwardTimeline() {
                         alt=""
                       />
                     </div>
-                    <div className="w-full justify-around px-4 bg-transparent flex gap-3">
+                    <div className="w-full justify-around px-4 bg-transparent flex sm:gap-3">
                       <img
                         src={certtificate5}
                         className="sm:w-[20rem] w-[7.8rem] h-auto object-cover"
@@ -319,7 +380,7 @@ export default function AwardTimeline() {
               </div>
             </div>
             <div class="flex md:contents">
-              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="col-start-2 col-end-4 sm:mr-10 mr-[1.5rem] md:mx-auto relative">
                 <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2019
                 </div>
@@ -329,8 +390,8 @@ export default function AwardTimeline() {
                 <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#f5ab1d] shadow text-center"></div>
               </div>
 
-              <div className="flex flex-col gap-4 w-[100vw] items-start my-8">
-                <div
+              <div className="flex flex-col gap-4 relative w-[100vw] items-start my-[5rem]">
+                {/* <div
                   onClick={() => setFourth(!fourth)}
                   className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
                 >
@@ -340,6 +401,25 @@ export default function AwardTimeline() {
                       fourth ? "rotate-180" : null
                     } transition-all duration-150 ease-linear`}
                   />
+                </div> */}
+                <div
+                  onClick={() => setFourth(!fourth)}
+                  className={`${
+                    fourth ? null : "absolute"
+                  } -top-8 transition-all duration-[400] ease-linear sm:w-[40%] w-[85%] flex justify-center ${
+                    fourth ? "rotate-[180deg] mt-4" : null
+                  } cursor-pointer`}
+                >
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      fourth ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {fourth ? (
                   <div className=" w-full justify-start px-4 bg-transparent flex gap-3">
@@ -353,7 +433,7 @@ export default function AwardTimeline() {
               </div>
             </div>
             <div class="flex md:contents">
-              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="col-start-2 col-end-4 sm:mr-10 mr-[0.5rem] md:mx-auto relative">
                 <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2018
                 </div>
@@ -363,8 +443,8 @@ export default function AwardTimeline() {
                 <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#f5ab1d] shadow text-center"></div>
               </div>
 
-              <div className="flex flex-col gap-4 w-[100vw] items-start my-8">
-                <div
+              <div className="flex flex-col gap-4 relative w-[100vw] items-start my-[5rem]">
+                {/* <div
                   onClick={() => setFifth(!fifth)}
                   className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
                 >
@@ -374,6 +454,25 @@ export default function AwardTimeline() {
                       fifth ? "rotate-180" : null
                     } transition-all duration-150 ease-linear`}
                   />
+                </div> */}
+                <div
+                  onClick={() => setFifth(!fifth)}
+                  className={`${
+                    fifth ? null : "absolute"
+                  } -top-8 transition-all duration-[400] ease-linear sm:w-[40%] w-[85%] flex justify-center ${
+                    fifth ? "rotate-[180deg] mt-4" : null
+                  } cursor-pointer`}
+                >
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      fifth ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    Click Here
+                  </span>
                 </div>
                 {fifth ? (
                   <div className=" w-full sm:justify-start justify-around px-4 bg-transparent flex sm:gap-3 gap-1">
