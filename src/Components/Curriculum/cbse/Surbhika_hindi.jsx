@@ -16,13 +16,18 @@ export const Surbhika_hindi = ({ sOpen }) => {
         <img src={wowmaths} className="w-full h-auto" alt="" />
         <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
           <span className="sm:w-4/5 w-full">
-            <span className="text-[#3283c5] font-semibold">Silver Bells</span>
-            &nbsp; is a revised series of five poetry books that covers beloved
-            children’s poems and classical poetry by renowned poets both old and
-            new. This package has been extremely popular with students and
-            teachers of all schools that include the teaching of poetry in their
-            curriculum. It is used by schools following the ICSE, CBSE, and
-            State Boards.
+            <span className="text-[#3283c5] font-semibold">
+              सुरभिका हिंदी व्याक्रण-माला
+            </span>
+            माध्यमिक कक्षाओं के विद्यार्थीयो के लिए की गई है। इसके निर्माण में
+            इस बात का विशेष ध्यान रखा गया है की विद्यार्थी नियमो, परिभाषाओ में न
+            उलझकर व्याकरण का व्यवारिक उपयोग के प्रयोग से विषय को बोधगम्य एवं
+            रुचिकर बनाने का प्रयास किया गया है।
+            <br />
+            इस व्याकरण-माला की विशिष्टा इसके अभयासो के वैविध्य में भी है। अंतत्य
+            संछिप्त तथा बहुविकल्पीय प्रशनो का निर्माण इस प्रकार किया गया है,
+            जिससे सम्बंदित पाठ के ज्ञान का समुच्य आकलन किया जा सके, कोई प्रश्
+            छूटे नहीं।
           </span>
           <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#72b2e7] py-2">
             <div className="flex flex-col gap-[2px] ">
