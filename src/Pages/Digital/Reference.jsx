@@ -8,8 +8,12 @@ import Footer from "../../Components/Footer";
 import Step from "../../Components/Digital/Step";
 
 // icons
-import stepIcon from "../../assets/digital/stepAndLearn/7.png";
-const KinaestheticLearning = () => {
+import img1 from "../../assets/digital/worldbook/1.png";
+import img2 from "../../assets/digital/worldbook/1.png";
+import WorldBook from "../../Components/Digital/reference/Worldbook";
+import WorldeBook from "../../Components/Digital/reference/Worldebook";
+
+const ReferenceDigital = () => {
   //   const navigate = useNavigate();
   const [page, setPage] = useState("default");
   useEffect(() => {
@@ -22,18 +26,31 @@ const KinaestheticLearning = () => {
         return (
           <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
             <span
-              onClick={() => setPage("step")}
+              onClick={() => setPage("world")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={stepIcon} className="h-[70%] w-auto" alt="" />
+              <img src={img1} className="h-[70%] w-auto" alt="" />
+            </span>
+            <span
+              onClick={() => setPage("world_e")}
+              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+            >
+              <img src={img2} className="h-[70%] w-auto" alt="" />
             </span>
           </div>
         );
         break;
-      case "step":
+      case "world":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <Step />
+            <WorldBook />
+          </div>
+        );
+        break;
+      case "world_e":
+        return (
+          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+            <WorldeBook />
           </div>
         );
         break;
@@ -52,7 +69,7 @@ const KinaestheticLearning = () => {
         {page === "default" ? null : (
           <button
             onClick={() => setPage("default")}
-            className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
+            className="pr-8 pl-6 py-2 font-semibold bg-[#dbdbdb] flex text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
           >
             <ArrowBackIosNew /> Back
           </button>
@@ -67,4 +84,4 @@ const KinaestheticLearning = () => {
   );
 };
 
-export default KinaestheticLearning;
+export default ReferenceDigital;
