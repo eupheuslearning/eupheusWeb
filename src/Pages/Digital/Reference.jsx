@@ -5,14 +5,15 @@ import GoToTop from "../../Components/Top";
 import grayBg from "../../assets/grayBg.png";
 import Footer from "../../Components/Footer";
 // import { useNavigate } from "react-router-dom";
-import Primo from "../../Components/Digital/coding/Primo";
-import Robo_garden from "../../Components/Digital/coding/Robo_garden";
+import Step from "../../Components/Digital/Step";
 
 // icons
-import img1 from "../../assets/digital/primo/14.png";
-import img2 from "../../assets/digital/roboGarden/13.png";
+import img1 from "../../assets/digital/worldbook/1.png";
+import img2 from "../../assets/digital/worldbook/1.png";
+import WorldBook from "../../Components/Digital/reference/Worldbook";
+import WorldeBook from "../../Components/Digital/reference/Worldebook";
 
-const Coding = () => {
+const ReferenceDigital = () => {
   //   const navigate = useNavigate();
   const [page, setPage] = useState("default");
   useEffect(() => {
@@ -25,13 +26,13 @@ const Coding = () => {
         return (
           <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
             <span
-              onClick={() => setPage("primo")}
+              onClick={() => setPage("world")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img src={img1} className="h-[70%] w-auto" alt="" />
             </span>
             <span
-              onClick={() => setPage("roboGarden")}
+              onClick={() => setPage("world_e")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img src={img2} className="h-[70%] w-auto" alt="" />
@@ -39,17 +40,17 @@ const Coding = () => {
           </div>
         );
         break;
-      case "primo":
+      case "world":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <Primo />
+            <WorldBook />
           </div>
         );
         break;
-      case "roboGarden":
+      case "world_e":
         return (
           <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
-            <Robo_garden />
+            <WorldeBook />
           </div>
         );
         break;
@@ -83,4 +84,4 @@ const Coding = () => {
   );
 };
 
-export default Coding;
+export default ReferenceDigital;

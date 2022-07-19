@@ -23,8 +23,15 @@ import Coding from "./Pages/Digital/Coding";
 import Reading from "./Pages/Digital/Reading";
 import LifeSkill from "./Pages/Digital/LifeSkill";
 import Entrepreneurship from "./Pages/Digital/Entrepreneurship";
+import ReferenceDigital from "./Pages/Digital/Reference";
+import Language from "./Pages/Digital/Language";
+import AdminLogin from "./Pages/AdminLogin";
+import AdminCreateNews from "./Pages/AdminCreateNews";
+
+import {useSelector} from 'react-redux'
 
 function App() {
+  const Admin = useSelector((state) => state.auth.admin);
   return (
     <div>
       <ParallaxProvider>
@@ -55,6 +62,11 @@ function App() {
         <Route path="/digital/reading" element={<Reading/>}/>
         <Route path="/digital/life_skill" element={<LifeSkill/>}/>
         <Route path="/digital/entrepreneurship" element={<Entrepreneurship/>}/>
+        <Route path="/digital/reference" element={<ReferenceDigital/>}/>
+        <Route path="/digital/language" element={<Language/>}/>
+        {/* Admin */}
+        <Route path="/admin/login" element={<AdminLogin/>}/>
+        <Route path="/admin/create/news" element={Admin ? <AdminCreateNews/> : <AdminLogin/>}/>
         </Routes>
         </BrowserRouter>
       </ParallaxProvider>

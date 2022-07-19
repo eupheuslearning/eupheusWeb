@@ -8,7 +8,7 @@ import Footer from "../../Components/Footer";
 import Step from "../../Components/Digital/Step";
 
 // icons
-import stepIcon from "../../assets/digital/stepAndLearn/2.png";
+import stepIcon from "../../assets/digital/stepAndLearn/7.png";
 const KinaestheticLearning = () => {
   //   const navigate = useNavigate();
   const [page, setPage] = useState("default");

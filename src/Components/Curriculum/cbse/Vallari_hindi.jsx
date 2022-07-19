@@ -15,14 +15,10 @@ export const Vallari_hindi = () => {
         <img src={wowmaths} className="w-full h-auto" alt="" />
         <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
           <span className="sm:w-4/5 w-full">
-            <span className="text-[#f3934e] font-semibold"> WOW! Maths</span>
-            &nbsp; for CBSE is a comprehensive programme for 1-8 learners based
-            on the innovative and effective teaching and learning practices of
-            Singapore. The programme incorporates the{" "}
-            <b>Singapore Bar Model Method</b> (a pedagogical strategy recognized
-            globally and ranked the highest in TIMSS) and heuristics
-            (problem-solving strategies) intricately woven with the guidelines
-            of the <b>NCF 2005</b> (CBSE) .
+            <span className="text-[#f3934e] font-semibold">‘वल्लरी’</span>
+            &nbsp; पाठमाला पाठ्य-पुस्तक एवं अभ्यास पुस्तिका का सम्मिलित रूप है।
+            इसवेफ निर्माण में राष्ट्रय पाठ्यचर्या वेफ दिशानिर्देशों का परिपालन
+            किया गया है। ‘वल्लरी’ पाठमाला की वुफछ विशेषताएँ इस प्रकार हैं।-
           </span>
           <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#cdcd35] py-2">
             <div className="flex flex-col gap-[2px] ">
@@ -38,14 +34,14 @@ export const Vallari_hindi = () => {
             </div>
             <div className="flex flex-col gap-[2px]">
               <span className="text-white font-semibold">Price</span>
-              <span className="text-black font-semibold">435</span>
-              <span className="text-black font-semibold">445</span>
-              <span className="text-black font-semibold">460</span>
-              <span className="text-black font-semibold">495</span>
-              <span className="text-black font-semibold">505</span>
-              <span className="text-black font-semibold">530</span>
-              <span className="text-black font-semibold">530</span>
-              <span className="text-black font-semibold">530</span>
+              <span className="text-black font-semibold">290</span>
+              <span className="text-black font-semibold">300</span>
+              <span className="text-black font-semibold">300</span>
+              <span className="text-black font-semibold">300</span>
+              <span className="text-black font-semibold">300</span>
+              <span className="text-black font-semibold">325</span>
+              <span className="text-black font-semibold">325</span>
+              <span className="text-black font-semibold">325</span>
             </div>
           </div>
         </div>
@@ -57,19 +53,23 @@ export const Vallari_hindi = () => {
             <ul className="px-2 py-1 w-full rounded-md bg-[#ffff9b] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                <b>Course Books:</b> Based on the CPA approach, they are
-                enriched with 15 unique features like real-life examples,
-                creative concept visualizations, critical thinking questions and
-                other support activities that make learning of Maths an
-                enjoyable and engaging learning experience.
+                राष्ट्रीय पाठ्यचर्या वेफ नवीनतम दिशानिर्देशानुसार निर्मित
+                पाठमाला
+              </li>
+              <li>
+                <Circle className="!text-[0.5rem] text-black" /> &nbsp; कक्षा
+                वेफ स्तरानुसार रोचक, मूल्यपरख, विविध् विधओं से सम्पन्न पाठ्य
+                सामग्री
               </li>
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp;
-                <b>Work Books:</b>
-                Adopt a learner-centric approach to reinforce skills. Include a
-                series of well-formulated questions including challengers,
-                graded from lower to higher order of difficulty, to trigger
-                thinking and reasoning skills.
+                अध्यापकों वेफ लिए सहायक पुस्तिका
+              </li>
+              <li>
+                <Circle className="!text-[0.5rem] text-black" /> &nbsp; अतिरिक्त
+                कार्य-पत्रिकाएँ (worksheets) उपलब्ध्। विद्यार्थियों-शिक्षकों
+                द्वारा दिए गए सुझावों वेफ अनुसार कार्य-पत्रिकाओं (worksheets) का
+                सतत् नवीनीकरण।
               </li>
             </ul>
           </div>

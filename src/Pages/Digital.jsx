@@ -112,7 +112,7 @@ const Curriculum = () => {
             <span>Entrepreneurship</span>
           </span>
           <span
-            // onClick={() => navigate("/curriculer/state_board_sol")}
+            onClick={() => navigate("/digital/reference")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
@@ -123,7 +123,7 @@ const Curriculum = () => {
             <span> Reference/Digital Library</span>
           </span>
           <span
-            // onClick={() => navigate("/curriculer/state_board_sol")}
+            onClick={() => navigate("/digital/language")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
