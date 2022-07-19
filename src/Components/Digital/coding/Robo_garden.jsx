@@ -11,17 +11,17 @@ const Robo_garden = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col  bg-[#d4f2fa] sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
       >
         <div className="flex sm:flex-row flex-col justify-around gap-2 w-full px-4 items-center">
           <div className="flex flex-col items-center gap-4 sm:w-[30%] w-full">
             <span className="font-bold">Coding Program</span>
             <img src={img1} className="w-full h-auto" alt="" />
-            <h1 className="text-white font-semibold px-3 rounded-md py-1 bg-green-700">
+            <h1 className="w-full sm:w-[50%] md:w-full text-white text-center font-semibold px-3 py-1 bg-green-700">
               For Primary to Senior Levels
             </h1>
           </div>
-          <span className="sm:w-3/5 w-full font-semibold">
+          <span className="sm:w-3/5 w-full font-semibold  text-justify">
             In today’s digital world, the ability to code is as fundamental as
             the ability to count or read. <br /> <br />
             Coding is key to developing 21st century literacy that helps build
@@ -34,7 +34,7 @@ const Robo_garden = ({ sOpen }) => {
           </span>
         </div>
         <div className="flex sm:flex-row flex-col justify-around gap-2 w-full px-4 items-center">
-          <span className="sm:w-full w-full font-semibold">
+          <span className="sm:w-full w-full font-semibold  text-justify">
             RoboGarden is an easy-to-understand, hands-on educational platform
             where students learn by doing. RoboGarden teaches coding literacy
             without the need for a tech guru for guidance. It is a cloud-based
@@ -46,7 +46,7 @@ const Robo_garden = ({ sOpen }) => {
             <img src={img2} className="mt-[1rem]" alt="" />
           </div>
           <div className="flex flex-col sm:w-6/12 w-full ">
-            <span className="px-3 ml-3 py-1 bg-[#018f35] rounded-t-lg w-fit">
+            <span className="px-3 ml-3 py-1 bg-[#018f35] rounded-t-lg w-fit text-white">
               KEY FEATURES
             </span>
 
@@ -87,11 +87,11 @@ const Robo_garden = ({ sOpen }) => {
               </li>
             </ul>
 
-            <div className="flex flex-col sm:w-[80%] w-full bg-[#018f35] rounded-lg mt-4 m-auto">
-              <ul className="px-2 py-1 w-full rounded-md border-[#018f35] border-2 ">
-                <span className="text-white text-center font-bold">
-                  Content Overview
-                </span>
+            <div className="flex flex-col sm:w-[75%] w-full bg-[#018f35] rounded-lg mt-4 sm:ml-16">
+              <span className="text-white font-bold text-center pt-2">
+                Content Overview
+              </span>
+              <ul className="px-2 py-1 w-full rounded-lg border-[#018f35] border-2 text-white ">
                 <li>
                   <Circle className="!text-[0.5rem]" /> &nbsp;Blockly and
                   Textual

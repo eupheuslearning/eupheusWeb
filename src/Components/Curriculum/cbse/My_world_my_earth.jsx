@@ -12,11 +12,11 @@ const My_world_my_earth = ({ sOpen }) => {
         <div
           className={`w-full ${
             sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-          } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+          } flex flex-col sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
         >
           <img src={englishvibes} className="w-full h-auto" alt="" />
-          <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-            <span className="sm:w-4/5 w-full">
+          <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0 items-center">
+            <span className="sm:w-4/5 w-full text-justify">
               The &nbsp;
               <span className="text-[#f4a267] font-semibold">
                 My World My Earth—Environmental Studies
@@ -50,10 +50,10 @@ const My_world_my_earth = ({ sOpen }) => {
               <img src={book1} className="w-[80%] h-auto" alt="" />
             </div>
             <div className="flex flex-col sm:w-[50%] w-full m-4">
-              <span className="px-3 ml-3 py-1 bg-[#f4a267] rounded-t-lg w-fit text-white">
+              <span className="px-3 ml-3 py-1 bg-[#ce7433] rounded-t-lg w-fit text-white">
                 KEY FEATURES
               </span>
-              <ul className="px-2 py-1 w-full rounded-md bg-[#ffc59b] text-black">
+              <ul className="px-2 py-1 w-full rounded-md bg-[#f2d4bf] text-black">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp; Look
                   forward helps students to think about the topic before moving
@@ -88,11 +88,11 @@ const My_world_my_earth = ({ sOpen }) => {
               </ul>
             </div>
           </div>
-          <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
-            <div className="flex flex-col sm:w-6/12 w-full">
+          <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full mb-2">
+            <div className="flex flex-col sm:w-6/12 w-[50%]">
               <img src={book2} className="w-[80%] h-auto" alt="" />
             </div>
-            <div className="flex flex-col sm:w-[50%] w-full">
+            <div className="flex flex-col sm:w-[50%] w-[50%]">
               <img src={book3} className="w-[80%] h-auto" alt="" />
             </div>
           </div>

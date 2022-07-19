@@ -59,7 +59,7 @@ const English_vibes = ({ sOpen }) => {
             <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
               KEY FEATURES
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+            <ul className="px-2 py-1 w-full rounded-md bg-[#f7d2ee] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp; Learning
                 language through literary tools—eclectic literary selection that
@@ -108,7 +108,7 @@ const English_vibes = ({ sOpen }) => {
             <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
               PRACTICE BOOK
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+            <ul className="px-2 py-1 w-full rounded-md bg-[#f7d2ee] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp; Linked
                 unit-wise with the related coursebook
@@ -132,7 +132,7 @@ const English_vibes = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
                 PRACTICE BOOK
               </span>
-              <ul className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+              <ul className="px-2 py-1 w-full rounded-md bg-[#f7d2ee] text-black">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp; Help
                   teachers to complete the course in a 180-day schedule
@@ -153,7 +153,7 @@ const English_vibes = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
                 PRACTICE BOOK
               </span>
-              <ul className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+              <ul className="px-2 py-1 w-full rounded-md bg-[#f7d2ee] text-black">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp;
                   Coursebooks supported by a state-of-the-art learning

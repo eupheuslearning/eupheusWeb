@@ -38,71 +38,43 @@ const SkillDev = () => {
               onClick={() => setPage("art")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={artIcon}
-                className="sm:h-[10rem] h-[5rem]  w-auto"
-                alt=""
-              />
+              <img src={artIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("gk")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={gkIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={gkIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("handwriting")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={handwritingIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={handwritingIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("merrygo")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={merrygoIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={merrygoIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("mindmap")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={mindmapIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={mindmapIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("value")}
               className=" w-ful hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={valueIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={valueIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("artCraft")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={wowartIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={wowartIcon} className="w-[90%] h-auto" alt="" />
             </span>
           </div>
         );

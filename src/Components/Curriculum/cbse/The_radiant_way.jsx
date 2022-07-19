@@ -11,13 +11,13 @@ const The_radiant_way = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
       >
         <img src={englishvibes} className="w-full h-auto" alt="" />
         <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
           <span className="sm:w-4/5 w-full">
             The &nbsp;
-            <span className="text-[#8aba71] font-semibold">
+            <span className="text-[#67c634] font-semibold">
               The Radiant Way
             </span>
             —First Step to Fourth Step series is a combination of the phonic and
@@ -50,7 +50,7 @@ const The_radiant_way = ({ sOpen }) => {
             <img src={book1} className="w-[80%] h-auto" alt="" />
           </div>
           <div className="flex flex-col sm:w-[50%] w-full m-4">
-            <span className="px-3 ml-3 py-1 bg-[#8aba71] rounded-t-lg w-fit text-white">
+            <span className="px-3 ml-3 py-1 bg-[#619943] rounded-t-lg w-fit text-white">
               KEY FEATURES
             </span>
             <ul className="px-2 py-1 w-full rounded-md bg-[#c4ffa5] text-black">

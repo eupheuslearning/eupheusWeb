@@ -28,7 +28,7 @@ const Wow_english = ({ sOpen }) => {
           <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#2f8b2d] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
-              <span className="text-black font-semibold">Book 1</span>
+              <span className="text-black font-semibold ">Book 1</span>
               <span className="text-black font-semibold">Book 2</span>
               <span className="text-black font-semibold">Book 3</span>
               <span className="text-black font-semibold">Book 4</span>
@@ -53,7 +53,7 @@ const Wow_english = ({ sOpen }) => {
 
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-4/12 w-full">
-            <span className="px-3 ml-3 py-1 bg-[#1f531e] rounded-t-lg w-fit">
+            <span className="px-3 ml-3 py-1 bg-[#1f531e] rounded-t-lg w-fit text-white">
               TEACHER RESOURCE KIT
             </span>
             <ul className="px-2 py-1 w-full rounded-md bg-[#2f8b2d] text-white">
@@ -81,7 +81,7 @@ const Wow_english = ({ sOpen }) => {
             </ul>
           </div>
           <div className="flex flex-col sm:w-[30%] w-full">
-            <span className="px-3 ml-3 py-1 bg-[#1f531e] rounded-t-lg w-fit">
+            <span className="px-3 ml-3 py-1 bg-[#1f531e] rounded-t-lg w-fit text-white">
               TEXTBOOK
             </span>
             <ul className="px-2 py-1 w-full rounded-md bg-[#2f8b2d] text-white">
@@ -101,7 +101,7 @@ const Wow_english = ({ sOpen }) => {
             </ul>
           </div>
           <div className="flex flex-col sm:w-[28%] w-full">
-            <span className="px-3 ml-3 py-1 bg-[#1f531e] rounded-t-lg w-fit">
+            <span className="px-3 ml-3 py-1 bg-[#1f531e] rounded-t-lg w-fit text-white">
               WORKBOOK
             </span>
             <ul className="px-2 py-1 w-full rounded-md bg-[#2f8b2d] text-white">
@@ -155,7 +155,7 @@ const Wow_english = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 border-[#2f8b2d] border-2 rounded-t-lg w-fit">
                 TEXTBOOK
               </span>
-              <ul className="px-2 py-1 w-full rounded-l-lg bg-[#2f8b2d] text-white">
+              <ul className="px-2 py-1 w-full rounded-l-lg bg-[#2f8b2d] text-white text-justify">
                 <li>
                   <span className="text-xs p-2"> TEST FOR AGES 8-10</span>
                 </li>{" "}
@@ -183,7 +183,7 @@ const Wow_english = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1  border-[#2f8b2d] border-2 rounded-t-lg w-fit">
                 TEXTBOOK
               </span>
-              <ul className="px-2 py-1 w-full rounded-r-lg bg-[#1f531e] text-white">
+              <ul className="px-2 py-4 w-full rounded-r-lg bg-[#1f531e] text-white text-justify">
                 <li>
                   <span className="text-xs p-2">TEST FOR AGES 11-14 </span>
                 </li>

@@ -12,19 +12,19 @@ const Fiction_express = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
       >
-        <div className="grid grid-cols-3">
+        <div className="  grid grid-cols-1 grid-row-3 md:grid-cols-3">
           <div className="col-span-2">
             <div className=" grid grid-cols-2">
               <div className=" m-4">
                 <span className="font-bold">Coding Program</span>
                 <img src={img1} className="w-full h-auto" alt="" />
-                <h1 className="text-white font-semibold px-3 rounded-md py-1 bg-green-700">
+                <h1 className="w-full  text-white text-center font-semibold sm:text-1 px-3 py-1 bg-[#20cae8]">
                   For Primary to Senior Levels
                 </h1>
               </div>
-              <div className="text-justify">
+              <div className="flex text-justify px-4 w-full sm:w-full">
                 Reading plays a central role in a child’s education and keeping
                 this need in mind, we have collaborated with Fiction Express by
                 Boolino, Europe’s leading and innovative book platform, to
@@ -33,11 +33,11 @@ const Fiction_express = ({ sOpen }) => {
               </div>
             </div>
             <div>
-              <span className="px-3 ml-3 py-1 bg-[#018f35] rounded-t-lg w-fit">
+              <span className="px-3 ml-3 py-1 text-white bg-[#20cae8] rounded-t-lg w-fit">
                 KEY FEATURES
               </span>
 
-              <ul className="px-2 py-1 w-full rounded-md border-[#018f35] border-2">
+              <ul className="px-2 py-1 w-full rounded-md border-[#20cae8] border-2">
                 <li>
                   <Circle className="!text-[0.5rem]" /> &nbsp; Age-appropriate:
                   3 levels of live books
@@ -68,18 +68,22 @@ const Fiction_express = ({ sOpen }) => {
             </div>
           </div>
           <div className="">
-            <h1 className="text-2xl m-2 font-bold text-blue-600">
+            <h1 className="text-2xl m-2 font-bol text-[#20cae8]">
               A New Way To Enjoy Reading
             </h1>
             <span>
-              <img src={img3} className="w-full h-auto" alt="" />
+              <img
+                src={img3}
+                className=" h-auto w-[40%] sm:[50%] md:w-full "
+                alt=""
+              />
             </span>
           </div>
         </div>
-        <div className="w-full h-10 bg-blue-400 flex items-center justify-center m-3">
-          <span className="font-bold text-white">Our 6-step methodology</span>
+        <div className="w-full h-10  flex items-center  bg-[#20cae8] justify-center ">
+          <span className="font-bold text-white ">Our 6-step methodology</span>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-1">
+        <div className="grid grid-cols-3 lg:grid-cols-3 grid-rows-1">
           <div className=" p-3 m-3 border-2 rounded-lg border-[skyblue] bg-white  ">
             <p className="text-xl">Read </p>
 
@@ -147,8 +151,8 @@ const Fiction_express = ({ sOpen }) => {
             </p>
           </div>
         </div>
-        <div className="w-full m-4 p-5 bg-blue-400 ">
-          <span className="font-bold text-white">
+        <div className="w-full rounded-md p-5 bg-[#20cae8] ">
+          <span className="font-bold text-white ">
             <Circle className="!text-[0.5rem]" />
             88% parents with kids aged 6–17 say it is extremely important for
             their children to read books for fun.
@@ -159,7 +163,7 @@ const Fiction_express = ({ sOpen }) => {
             An overwhelming majority of children (87%) say they would read more
             if they could find more books that they like.{" "}
           </span>
-          <span className="flex justify-end text-white font-bold">
+          <span className="flex justify-end text-white font-bold pr-4">
             *Kids & Family Reading Report
           </span>
         </div>
