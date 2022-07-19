@@ -12,11 +12,11 @@ const Wow_science = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
       >
         <img src={englishvibes} className="w-full h-auto" alt="" />
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-          <span className="sm:w-4/5 w-full">
+        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0 items-center">
+          <span className="sm:w-4/5 w-full text-justify">
             A series of eight course books,&nbsp;
             <span className="text-[#033f88] font-semibold">WOW! Science</span>
             &nbsp; aims to ensure effective learning with the help of an
@@ -33,7 +33,7 @@ const Wow_science = ({ sOpen }) => {
             science was been intricately woven with the guidelines of NCF and
             syllabus listed by various boards.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#9dc9ff] py-2">
+          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#71aaf0] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -59,11 +59,11 @@ const Wow_science = ({ sOpen }) => {
           </div>
         </div>
         <div className="flex flex-col px-4 sm:px-0 w-full ">
-          <span className="px-3 ml-3 py-1 bg-[#033f88] rounded-t-lg w-fit text-white">
+          <span className="px-3 ml-1 py-1 bg-[#033f88] rounded-t-lg w-fit text-white">
             KEY FEATURES
           </span>
-          <div className="flex flex-row  items-center w-[90%] bg-[#9dc9ff] rounded justify-center">
-            <div className="bg-[#9dc9ff] sm:w-1/2 w-full sm:flex-col">
+          <div className="flex flex-row  items-center w-[90%] bg-[#bcd4f2] rounded-lg justify-center">
+            <div className="bg-[#bcd4f2] sm:w-1/2 w-full sm:flex-col">
               <ul className="px-2 py-1  rounded-md  text-black ">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp;The{" "}
@@ -79,7 +79,7 @@ const Wow_science = ({ sOpen }) => {
                 </li>
               </ul>
             </div>
-            <div className="bg-[#9dc9ff] sm:w-1/2 w-full sm:flex-col">
+            <div className="bg-[#bcd4f2] sm:w-1/2 w-full sm:flex-col">
               <ul className="px-2 py-1  rounded-md  text-black ">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp;The The

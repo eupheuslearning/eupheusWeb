@@ -12,11 +12,11 @@ export const Wow_compu_bytes = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
       >
         <img src={englishvibes} className="w-full h-auto" alt="" />
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-          <span className="sm:w-4/5 w-full">
+        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0 items-center">
+          <span className="sm:w-4/5 w-full text-justify">
             <span className="text-[#8f4099] font-semibold">
               WOW! Compu-Bytes,
             </span>
@@ -41,7 +41,7 @@ export const Wow_compu_bytes = ({ sOpen }) => {
               and emerging technologies and so on.
             </span>
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#f4a0ff] py-2">
+          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#b849c0] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -68,10 +68,10 @@ export const Wow_compu_bytes = ({ sOpen }) => {
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-[50%] w-full m-4">
-            <span className="px-3 ml-3 py-1 bg-[#8f4099] rounded-t-lg w-fit text-white">
+            <span className="px-3 ml-3 py-1 bg-[#5a2d6c] rounded-t-lg w-fit text-white">
               KEY FEATURES
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#f4a0ff] text-black">
+            <ul className="px-2 py-1 w-full rounded-md bg-[#e4baea] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp;
                 <b>LEARNING OBJECTIVES:</b> Goals to be achieved by the end of
@@ -108,10 +108,10 @@ export const Wow_compu_bytes = ({ sOpen }) => {
             </ul>
           </div>
           <div className="flex flex-col sm:w-6/12 w-full">
-            <span className="px-3 ml-3 py-1 bg-[#8f4099] rounded-t-lg w-fit text-white">
+            <span className="px-3 ml-3 py-1 bg-[#5a2d6c] rounded-t-lg w-fit text-white">
               KIDS CORNER
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#f4a0ff] text-black">
+            <ul className="px-2 py-1 w-full rounded-md bg-[#e4baea] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp;
                 <b>HANDS-ON ACTIVITY:</b> Word search, crossword
@@ -149,8 +149,8 @@ export const Wow_compu_bytes = ({ sOpen }) => {
           </div>
           <div className="flex flex-row items-center sm:w-5/12 w-full">
             <div className="m-3 flex flex-col  flex-end w-full">
-              <div className=" w-full rounded-md">
-                <img src={book4} className="rounded-md h-auto" alt="" />
+              <div className=" w-[90%] rounded-md mb-8">
+                <img src={book4} className="rounded-md  h-auto" alt="" />
               </div>
             </div>
           </div>

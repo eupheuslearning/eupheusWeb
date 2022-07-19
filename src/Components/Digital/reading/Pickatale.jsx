@@ -23,17 +23,17 @@ const Pickatale = ({ sOpen }) => {
     <div
       className={`w-full ${
         sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-      } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+      } flex flex-col sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
     >
       <div className="flex sm:flex-row flex-col justify-around gap-2 w-full px-4 items-center">
         <div className="flex flex-col items-center gap-4 sm:w-[30%] w-full">
           <span className="font-semibold">Kinaesthetic Learning</span>
           <img src={Icon} className="w-full h-auto" alt="" />
-          <h1 className="text-white font-semibold px-3 rounded-md py-1 bg-purple-700">
+          <h1 className="sm:w-full md:w-full text-white text-center font-semibold px-2 sm:px-4 md:px-0 py-1 bg-[#1d71b2]">
             For Pre-Primary & Primary Levels
           </h1>
         </div>
-        <span className="sm:w-3/5 w-full font-semibold">
+        <span className="sm:w-3/5 w-full font-semibold text-justify ">
           <span className="flex justify-end">
             {/* <img src={img1} className="w-[30%] h-auto" alt="" /> */}
           </span>
@@ -51,10 +51,10 @@ const Pickatale = ({ sOpen }) => {
       </div>
       <div className="flex sm:flex-row flex-col gap-6 sm:px-0 px-3 items-center justify-center mt-[2rem] w-full">
         <div className="flex flex-col sm:w-[90%] w-full">
-          <span className="px-3 ml-3 py-1 bg-[#f4a267] rounded-t-lg w-fit text-white">
+          <span className="px-3 ml-3 py-1 bg-[#1d71b2] rounded-t-lg w-fit text-white">
             KEY FEATURES
           </span>
-          <div className="border-[#ffc59b] flex sm:flex-row flex-col border-2 rounded-md">
+          <div className="border-[#1d71b2] flex sm:flex-row flex-col border-2 rounded-md">
             <div className="flex flex-col sm:w-1/2 w-full">
               <ul className="px-2 py-1 w-full   text-black ">
                 <li>
@@ -91,7 +91,7 @@ const Pickatale = ({ sOpen }) => {
         </div>
       </div>
       <div className="flex w-full flex-col">
-        <img src={img3} className="w-full  h-auto" alt="" />
+        <img src={img3} className="w-full  h-auto  rounded-lg" alt="" />
       </div>
       <div className="flex w-[100%] flex-col">
         <div className="flex flex-row flex-wrap justify-center px-4">
@@ -109,8 +109,8 @@ const Pickatale = ({ sOpen }) => {
           <img src={img17} className="w-[15%]  h-auto p-1" alt="" />
         </div>
       </div>
-      <div className="flex w-full bg-[skyblue] p-4 rounded-lg">
-        <span className="text-white text-lg">
+      <div className="flex w-full bg-[#1d71b2] p-4 rounded-lg my-4">
+        <span className="text-white text-lg text-center">
           Bringing creativity, entertainment, and technology together to deliver
           an exciting and engaging learning experience by interacting and
           connecting with stories

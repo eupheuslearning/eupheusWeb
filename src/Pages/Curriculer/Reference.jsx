@@ -28,31 +28,19 @@ const Reference = () => {
               onClick={() => setPage("atlas")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={atlasIcon}
-                className="sm:h-[10rem] h-[5rem]  w-auto"
-                alt=""
-              />
+              <img src={atlasIcon} className="w-[60%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("atlas")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={atlasIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={atlasIcon} className="w-[60%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("young_set")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={chamberIcon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={chamberIcon} className="w-[90%] h-auto" alt="" />
             </span>
           </div>
         );

@@ -134,7 +134,7 @@ const Curriculum = () => {
             <span>Language Learning</span>
           </span>
           <span
-            // onClick={() => navigate("/curriculer/state_board_sol")}
+            onClick={() => navigate("/digital/assessments")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
@@ -145,7 +145,7 @@ const Curriculum = () => {
             <span>Assessments</span>
           </span>
           <span
-            // onClick={() => navigate("/curriculer/state_board_sol")}
+            onClick={() => navigate("/digital/steam")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
@@ -156,7 +156,7 @@ const Curriculum = () => {
             <span>STEAM</span>
           </span>
           <span
-            // onClick={() => navigate("/curriculer/state_board_sol")}
+            onClick={() => navigate("/digital/Properties")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img
@@ -167,7 +167,7 @@ const Curriculum = () => {
             <span>Properties</span>
           </span>
           <span
-            // onClick={() => navigate("/curriculer/state_board_sol")}
+            onClick={() => navigate("/digital/SpecialInitiatives")}
             className=" w-full flex flex-col gap-2 justify-center cursor-pointer items-center rounded-md sm:text-[2rem] text-sm font-semibold"
           >
             <img

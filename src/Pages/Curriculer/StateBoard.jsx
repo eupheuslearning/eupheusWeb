@@ -38,21 +38,13 @@ const StateBoard = () => {
               onClick={() => setPage("nector1")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={nectorIcon}
-                className="sm:h-[10rem] h-[5rem]  w-auto"
-                alt=""
-              />
+              <img src={nectorIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
               onClick={() => setPage("nector2")}
               className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={nector2Icon}
-                className="sm:h-[10rem] h-[5rem]   w-auto"
-                alt=""
-              />
+              <img src={nector2Icon} className="w-[90%] h-auto" alt="" />
             </span>
             {/* <span
               onClick={() => setPage("dot_dash")}
