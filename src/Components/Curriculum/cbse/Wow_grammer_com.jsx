@@ -12,7 +12,7 @@ const Wow_grammer_com = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:pl-[3rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <img src={wow_com} className="w-full h-auto" alt="" />
         <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
@@ -56,7 +56,7 @@ const Wow_grammer_com = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 bg-[#5a427e] rounded-t-lg w-fit text-white">
                 KEY FEATURES
               </span>
-              <ul className="px-2 py-1 w-full rounded-md bg-[#8972ac] text-black">
+              <ul className="px-2 py-1 w-full rounded-md bg-[#c7b1e9] text-black">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp; Help
                   Spiralling curriculum design
@@ -98,21 +98,21 @@ const Wow_grammer_com = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 bg-[#5a427e] rounded-t-lg w-fit text-white">
                 SUPPLEMENTED WITH
               </span>
-              <div className="px-2 py-1 w-full flex rounded-t-lg bg-[#8972ac] text-black">
+              <div className="px-2 py-1 w-full flex rounded-t-lg bg-[#c7b1e9] text-black">
                 <div className="flex flex-col items-center w-1/2 rounded-l-lg ">
                   <img src={girl} className="h-auto" alt="" />
                 </div>
-                <div className="flex flex-col justify-center w-1/2 bg-[#a18fbb] ">
+                <div className="flex flex-col justify-center w-1/2 bg-[#c7b1e9] ">
                   <img src={fiction} className="h-auto w-40 " alt="" />
                   <p className="">For inculcating the habit of reading</p>
                 </div>
               </div>
-              <div className="px-2 py-1 w-full flex justify-items-center bg-[#8972ac]">
-                <h1 className="bg-[#5a427e] m-4  rounded-full p-2 w-[80%] text-center">
+              <div className="pl-2 sm:pl-12 py-1 w-full flex justify-items-center bg-[#c7b1e9]">
+                <h1 className="bg-[#5a427e] m-4  font-bold rounded-full p-2 w-[80%] text-center text-white ">
                   Our 6-step methodology
                 </h1>
               </div>
-              <div className="px-2 py-1 w-full flex bg-[#8972ac]">
+              <div className="px-2 py-1 w-full flex bg-[#c7b1e9]">
                 <div className="flex flex-col  w-1/2 p-3 m-3 border-2 rounded-lg border-[skyblue] bg-white  ">
                   <p className="text-xl">Read </p>
 
@@ -136,7 +136,7 @@ const Wow_grammer_com = ({ sOpen }) => {
                   </p>
                 </div>
               </div>
-              <div className="px-2 py-1 w-full flex bg-[#8972ac]">
+              <div className="px-2 py-1 w-full flex bg-[#c7b1e9]">
                 <div className="flex flex-col w-1/2 m-3 p-3 border-2 rounded-lg border-[skyblue] bg-white">
                   <p className="text-xl">ANSWER </p>
 
@@ -160,7 +160,7 @@ const Wow_grammer_com = ({ sOpen }) => {
                   </p>
                 </div>
               </div>
-              <div className="px-2 py-1 w-full flex rounded-b-lg bg-[#8972ac]">
+              <div className="px-2 py-1 w-full flex rounded-b-lg bg-[#c7b1e9]">
                 <div className="flex flex-col w-1/2 m-3 p-3 border-2 rounded-lg border-[skyblue] bg-white">
                   <p className="text-xl">ENJOY </p>
 
