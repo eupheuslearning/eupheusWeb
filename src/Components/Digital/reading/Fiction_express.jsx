@@ -12,7 +12,7 @@ const Fiction_express = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } sm:px-[2rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <div className="  grid grid-cols-1 grid-row-3 md:grid-cols-3">
           <div className="col-span-2">

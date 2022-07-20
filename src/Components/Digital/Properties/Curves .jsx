@@ -11,7 +11,7 @@ const Curves = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col  bg-white sm:px-[2rem] sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col  bg-white sm:px-[2rem] sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <div className="flex sm:flex-row flex-col relative justify-start gap-2 w-full items-start">
           <img src={img2} className="w-full" alt="" />

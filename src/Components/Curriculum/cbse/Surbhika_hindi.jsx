@@ -11,7 +11,7 @@ export const Surbhika_hindi = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:px-[2rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <img src={wowmaths} className="w-full h-auto" alt="" />
 
@@ -29,7 +29,6 @@ export const Surbhika_hindi = ({ sOpen }) => {
             संछिप्त तथा बहुविकल्पीय प्रशनो का निर्माण इस प्रकार किया गया है,
             जिससे सम्बंदित पाठ के ज्ञान का समुच्य आकलन किया जा सके, कोई प्रश्
             छूटे नहीं।
-
           </span>
           <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#72b2e7] py-2">
             <div className="flex flex-col gap-[2px] ">

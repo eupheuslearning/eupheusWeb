@@ -124,15 +124,17 @@ const StateBoard = () => {
         break;
       case "nector1":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Nector />
+            <GoToTop />
           </div>
         );
         break;
       case "nector2":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Nector_second />
+            <GoToTop />
           </div>
         );
         break;
@@ -151,9 +153,10 @@ const StateBoard = () => {
         {page === "default" ? null : (
           <button
             onClick={() => setPage("default")}
-            className="pr-8 pl-6 py-2 font-semibold bg-[#dbdbdb] flex text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
+            className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
           >
-            <ArrowBackIosNew /> Back
+            <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
+            <span className="mb-[0.1rem]">Back</span>
           </button>
         )}
         {handlePage()}

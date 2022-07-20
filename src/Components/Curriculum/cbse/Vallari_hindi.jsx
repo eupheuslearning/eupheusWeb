@@ -10,7 +10,7 @@ export const Vallari_hindi = () => {
   return (
     <>
       <div
-        className={`w-full  flex flex-col sm:px-[2rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        className={`w-full  flex flex-col sm:px-[2rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <img src={wowmaths} className="w-full h-auto" alt="" />
 
@@ -20,7 +20,6 @@ export const Vallari_hindi = () => {
             &nbsp; पाठमाला पाठ्य-पुस्तक एवं अभ्यास पुस्तिका का सम्मिलित रूप है।
             इसवेफ निर्माण में राष्ट्रय पाठ्यचर्या वेफ दिशानिर्देशों का परिपालन
             किया गया है। ‘वल्लरी’ पाठमाला की वुफछ विशेषताएँ इस प्रकार हैं।-
-
           </span>
           <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#eded9d] py-2">
             <div className="flex flex-col gap-[2px] ">
