@@ -156,106 +156,121 @@ const Icse = () => {
         break;
       case "chemistry9_10":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Chemistry9_10 />
+            <GoToTop />
           </div>
         );
         break;
       case "chemistry6_8":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Chemistry6_8 />
+            <GoToTop />
           </div>
         );
         break;
       case "math":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Icse_mathsmatics />
+            <GoToTop />
           </div>
         );
         break;
       case "biology":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Iscebiology />
+            <GoToTop />
           </div>
         );
         break;
       case "physics":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Icse_physics />
+            <GoToTop />
           </div>
         );
         break;
       case "compu_bytes":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Icse_wow_compu_bytes />
+            <GoToTop />
           </div>
         );
         break;
       case "grammer_com":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Icse_wow_grammer_com />
+            <GoToTop />
           </div>
         );
         break;
       case "nrr":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <New_radiant_reader />
+            <GoToTop />
           </div>
         );
         break;
       case "radiant_es":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Radiant_enviromental_studies />
+            <GoToTop />
           </div>
         );
         break;
       case "radiant_science":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <New_radiant_science />
+            <GoToTop />
           </div>
         );
         break;
       case "grammer_com_vibes":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Grammer_com_vibes />
+            <GoToTop />
           </div>
         );
         break;
       case "eng_vibes":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <English_vibes />
+            <GoToTop />
           </div>
         );
         break;
       case "silverbells":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Silver_bells />
+            <GoToTop />
           </div>
         );
         break;
       case "maths":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Wow_maths />
+            <GoToTop />
           </div>
         );
         break;
       case "english":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Wow_english />
+            <GoToTop />
           </div>
         );
         break;
@@ -273,9 +288,10 @@ const Icse = () => {
         {page === "default" ? null : (
           <button
             onClick={() => setPage("default")}
-            className="pr-8 pl-6 py-2 font-semibold bg-[#dbdbdb] flex text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
+            className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
           >
-            <ArrowBackIosNew /> Back
+            <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
+            <span className="mb-[0.1rem]">Back</span>
           </button>
         )}
         {handlePage()}

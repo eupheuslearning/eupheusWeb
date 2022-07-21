@@ -14,12 +14,12 @@ const Grammer_com_vibes = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:px-[2rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <img src={wow_com} className="w-full h-auto" alt="" />
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-          <span className="sm:w-4/5 w-full">
-            <span className="text-[#5a237f] font-semibold">
+        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0 items-center">
+          <span className="sm:w-4/5 w-full text-justify">
+            <span className="text-[#ee4d9b] font-semibold">
               Grammar and Composition Vibes!
             </span>
             for classes 1 to 8 has been developed to address the need for a
@@ -31,7 +31,7 @@ const Grammer_com_vibes = ({ sOpen }) => {
             learning by providing core, supplemental, and home learning
             solutions on the same platform.
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#ec92bd] py-2">
+          <div className="flex gap-4 rounded-md w-fit ml-4 px-3 justify-center bg-[#ec92bd] py-2">
             <div className="flex flex-col gap-[2px] ">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
@@ -63,7 +63,7 @@ const Grammer_com_vibes = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 bg-[#ee4d9b] rounded-t-lg w-fit text-white">
                 KEY FEATURES
               </span>
-              <ul className="px-2 py-1 w-full rounded-md bg-[#ec92bd] text-black">
+              <ul className="px-2 py-1 w-full rounded-md bg-[#fbdaea] text-black">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp;
                   Spiralling gradation of grammar concepts enabling easy
@@ -122,21 +122,21 @@ const Grammer_com_vibes = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 bg-[#ee4d9b] rounded-t-lg w-fit text-white">
                 SUPPLEMENTED WITH
               </span>
-              <div className="w-full flex rounded-t-lg bg-[#ec92bd] text-black">
+              <div className="w-full flex rounded-t-lg bg-[#fbdaea] text-black">
                 <div className="flex flex-col items-center w-1/2 rounded-l-lg ">
                   <img src={girl} className="h-auto rounded-l-lg" alt="" />
                 </div>
-                <div className="flex flex-col justify-center w-1/2  ">
+                <div className="flex flex-col justify-center w-1/2 ml-4 ">
                   <img src={fiction} className="h-auto w-40 " alt="" />
                   <p className="">For inculcating the habit of reading</p>
                 </div>
               </div>
-              <div className="px-2 py-1 w-full flex items-center bg-[#ec92bd]">
-                <h1 className="bg-[#ee4d9b] m-auto   rounded-full p-2 w-[80%] text-center">
+              <div className="px-2 py-1 w-full flex items-center bg-[#fbdaea]">
+                <h1 className="bg-[#ee4d9b] m-auto  font-bold  rounded-full p-2 w-[80%] text-center text-white">
                   Our 6-step methodology
                 </h1>
               </div>
-              <div className="px-2 py-1 w-full flex bg-[#ec92bd]">
+              <div className="px-2 py-1 w-full flex bg-[#fbdaea]">
                 <div className="flex flex-col  w-1/2 p-3 m-3 border-2 rounded-lg border-[skyblue] bg-white  ">
                   <p className="text-xl">Read </p>
 
@@ -160,7 +160,7 @@ const Grammer_com_vibes = ({ sOpen }) => {
                   </p>
                 </div>
               </div>
-              <div className="px-2 py-1 w-full flex bg-[#ec92bd]">
+              <div className="px-2 py-1 w-full flex bg-[#fbdaea]">
                 <div className="flex flex-col w-1/2 m-3 p-3 border-2 rounded-lg border-[skyblue] bg-white">
                   <p className="text-xl">ANSWER </p>
 
@@ -184,7 +184,7 @@ const Grammer_com_vibes = ({ sOpen }) => {
                   </p>
                 </div>
               </div>
-              <div className="px-2 py-1 w-full flex rounded-b-lg bg-[#ec92bd]">
+              <div className="px-2 py-1 w-full flex rounded-b-lg bg-[#fbdaea]">
                 <div className="flex flex-col w-1/2 m-3 p-3 border-2 rounded-lg border-[skyblue] bg-white">
                   <p className="text-xl">ENJOY </p>
 
@@ -213,20 +213,20 @@ const Grammer_com_vibes = ({ sOpen }) => {
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-[40%] w-full ">
-            <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white justify-end">
+            <span className="px-3 ml-3 py-1 bg-[#ee4d9b] rounded-t-lg w-fit text-white justify-end">
               TEACHER SUPPORT
             </span>
-            <p className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+            <p className="px-2 py-1 w-full rounded-md bg-[#fbdaea] text-black">
               Teacher’s Manual includes sample lesson plans and the complete
               answer key
             </p>
           </div>
-          <div className="flex flex-col sm:w-6/12 w-full">
-            <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
+          <div className="flex flex-col sm:w-6/12 w-full m-4">
+            <span className="px-3 ml-3 py-1 bg-[#ee4d9b] rounded-t-lg w-fit text-white">
               PRACTICE BOOK
             </span>
 
-            <div className="flex w-full px-2 py-1 rounded-md bg-[#ffb2ec]">
+            <div className="flex w-full px-2 py-1 rounded-md bg-[#fbdaea] ">
               <div className="flex flex-row">
                 <ul className=" text-black">
                   <li>

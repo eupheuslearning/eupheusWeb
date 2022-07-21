@@ -1,8 +1,8 @@
 import Home from "./Pages/Home";
 // import Demo from "./Pages/Demo";
-import Solutions from './Pages/Solutions'
+import Solutions from "./Pages/Solutions";
 import Events from "./Pages/Events";
-import { ParallaxProvider } from 'react-scroll-parallax';
+import { ParallaxProvider } from "react-scroll-parallax";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Media from "./Pages/Media";
@@ -24,7 +24,21 @@ import Reading from "./Pages/Digital/Reading";
 import LifeSkill from "./Pages/Digital/LifeSkill";
 import Entrepreneurship from "./Pages/Digital/Entrepreneurship";
 
+import ReferenceDigital from "./Pages/Digital/Reference";
+import Language from "./Pages/Digital/Language";
+import AdminLogin from "./Pages/AdminLogin";
+import AdminCreateNews from "./Pages/AdminCreateNews";
+
+import {useSelector} from 'react-redux'
+
+import Assessment from "./Pages/Digital/Assessments";
+import Steam from "./Pages/Digital/Steam";
+import SpecialInitiatives from "./Pages/Digital/SpecialInitiatives";
+import Properties from "./Pages/Digital/Properties";
+
+
 function App() {
+  const Admin = useSelector((state) => state.auth.admin);
   return (
     <div>
       <ParallaxProvider>
@@ -55,11 +69,25 @@ function App() {
         <Route path="/digital/reading" element={<Reading/>}/>
         <Route path="/digital/life_skill" element={<LifeSkill/>}/>
         <Route path="/digital/entrepreneurship" element={<Entrepreneurship/>}/>
+        <Route path="/digital/reference" element={<ReferenceDigital/>}/>
+        <Route path="/digital/language" element={<Language/>}/>
+        <Route path="/digital/assessments" element={<Assessment />} />
+            <Route path="/digital/steam" element={<Steam />} />
+            <Route path="/digital/Properties" element={<Properties />} />
+            <Route
+              path="/digital/SpecialInitiatives"
+              element={<SpecialInitiatives />}
+            />
+        {/* Admin */}
+        <Route path="/admin/login" element={<AdminLogin/>}/>
+        <Route path="/admin/create/news" element={Admin ? <AdminCreateNews/> : <AdminLogin/>}/>
         </Routes>
+
+ 
         </BrowserRouter>
       </ParallaxProvider>
     </div>
-  )
+  );
 }
 
 export default App;

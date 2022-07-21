@@ -10,7 +10,7 @@ const English_vibes = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:pl-[3rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <img src={englishvibes} className="w-full h-auto" alt="" />
         <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
@@ -59,7 +59,7 @@ const English_vibes = ({ sOpen }) => {
             <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
               KEY FEATURES
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+            <ul className="px-2 py-1 w-full rounded-md bg-[#f7d2ee] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp; Learning
                 language through literary tools—eclectic literary selection that
@@ -108,7 +108,7 @@ const English_vibes = ({ sOpen }) => {
             <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
               PRACTICE BOOK
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+            <ul className="px-2 py-1 w-full rounded-md bg-[#f7d2ee] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp; Linked
                 unit-wise with the related coursebook
@@ -132,7 +132,7 @@ const English_vibes = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
                 PRACTICE BOOK
               </span>
-              <ul className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+              <ul className="px-2 py-1 w-full rounded-md bg-[#f7d2ee] text-black">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp; Help
                   teachers to complete the course in a 180-day schedule
@@ -153,7 +153,7 @@ const English_vibes = ({ sOpen }) => {
               <span className="px-3 ml-3 py-1 bg-[#b42b92] rounded-t-lg w-fit text-white">
                 PRACTICE BOOK
               </span>
-              <ul className="px-2 py-1 w-full rounded-md bg-[#ffb2ec] text-black">
+              <ul className="px-2 py-1 w-full rounded-md bg-[#f7d2ee] text-black">
                 <li>
                   <Circle className="!text-[0.5rem] text-black" /> &nbsp;
                   Coursebooks supported by a state-of-the-art learning
