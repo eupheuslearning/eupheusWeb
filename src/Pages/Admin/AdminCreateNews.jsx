@@ -1,12 +1,12 @@
 import React from "react";
-import dashBorder from "../assets/dash-border.png";
-import board from "../assets/board.png";
-import lgDashBorder from "../assets/dash-border-lg.png";
-import submit from "../assets/submit.png";
+import dashBorder from "../../assets/dash-border.png";
+import board from "../../assets/board.png";
+import lgDashBorder from "../../assets/dash-border-lg.png";
+import submit from "../../assets/submit.png";
 import axios from "axios";
 import { useFormik } from "formik";
 import { useState } from "react";
-import Date from "../Components/Date";
+import Date from "../../Components/Date";
 
 const AdminCreateNews = () => {
   const formik = useFormik({

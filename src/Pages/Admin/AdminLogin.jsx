@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import dashBorder from "../assets/dash-border.png";
+import dashBorder from "../../assets/dash-border.png";
 import Cookies from "js-cookie";
-import submit from "../assets/submit.png";
+import submit from "../../assets/submit.png";
 import axios from "axios";
 import { useFormik } from "formik";
 import { useDispatch } from "react-redux";
-import { authActions } from "../Store/auth";
+import { authActions } from "../../Store/auth";
 import { useNavigate } from "react-router-dom";
 import Alert from "@mui/material/Alert";
-import Loader from "../Components/Loader";
+import Loader from "../../Components/Loader";
 
 const AdminLogin = () => {
   const [showError, setShowError] = useState("");
