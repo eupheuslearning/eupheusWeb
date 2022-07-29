@@ -13,7 +13,7 @@ const Wow_maths = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:px-[2rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <img src={wowmaths} className="w-full h-auto" alt="" />
         <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
@@ -54,7 +54,7 @@ const Wow_maths = ({ sOpen }) => {
         </div>
         <div className="flex sm:flex-row flex-col gap-2 px-4 sm:px-0 items-center w-full">
           <div className="flex flex-col sm:w-6/12 w-full">
-            <span className="px-3 ml-3 py-1 bg-[#f3934e] rounded-t-lg w-fit text-white">
+            <span className="px-3 ml-3 py-1 bg-[#e2792e] rounded-t-lg w-fit text-white">
               KEY FEATURES
             </span>
             <ul className="px-2 py-1 w-full rounded-md bg-[#ffc59b] text-black">
@@ -77,7 +77,7 @@ const Wow_maths = ({ sOpen }) => {
             </ul>
           </div>
           <div className="flex flex-col sm:w-[50%] w-full m-4">
-            <span className="px-3 ml-3 py-1 bg-[#f3934e] rounded-t-lg w-fit text-white">
+            <span className="px-3 ml-3 py-1 bg-[#e2792e] rounded-t-lg w-fit text-white">
               TEACHER SUPPORT
             </span>
             <ul className="px-2 py-1 w-full rounded-md bg-[#ffc59b] text-black">

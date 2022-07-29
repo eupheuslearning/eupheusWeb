@@ -2,6 +2,7 @@ import React from "react";
 import logWhite from "../assets/logoWhite.png";
 import phone from "../assets/phone.png";
 import { Email, PhoneAndroid } from "@mui/icons-material";
+import { useNavigate } from "react-router-dom";
 
 import {
   Facebook,
@@ -12,6 +13,7 @@ import {
 } from "@mui/icons-material";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
       <div className="bg-red-600 w-[100vw] lg:px-[9rem] items-start sm:px-[3rem] px-4 py-[2rem] flex justify-between h-fit ">
@@ -25,11 +27,17 @@ const Footer = () => {
         <div className="flex flex-col mt-[1.5rem] gap-3 sm:w-[20vw] w-[25vw] items-center">
           <span className="text-white sm:text-xl text-base">USEFUL LINKS</span>
           <div className="flex flex-col gap-1">
-            <span className="text-white sm:text-sm text-xs">
+            <span
+              onClick={() => navigate("/privacy_policy")}
+              className="text-white sm:text-sm text-xs cursor-pointer"
+            >
               Privacy Policy
             </span>
             <span className="text-white sm:text-sm text-xs">Career</span>
-            <span className="text-white sm:text-sm text-xs">
+            <span
+              onClick={() => navigate("/term_and_condition")}
+              className="text-white sm:text-sm text-xs cursor-pointer"
+            >
               Terms & Conditions
             </span>
           </div>

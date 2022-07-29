@@ -219,7 +219,10 @@ const Home = () => {
         </Reveal>
         <div className="flex gap-4">
           <Parallax translateX={[-50, 50]}>
-            <div className=" relative">
+            <div
+              className=" relative cursor-pointer"
+              onClick={() => navigate("/curriculum")}
+            >
               <img
                 src={card}
                 className="sm:w-[20rem] w-[24rem] h-auto"
@@ -239,7 +242,10 @@ const Home = () => {
             </div>
           </Parallax>
           <Parallax translateX={[50, -50]}>
-            <div className=" relative">
+            <div
+              className=" relative cursor-pointer"
+              onClick={() => navigate("/digital")}
+            >
               <img
                 src={card}
                 className="sm:w-[21.3rem] w-[25.1rem] h-auto"

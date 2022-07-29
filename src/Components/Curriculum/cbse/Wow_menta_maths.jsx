@@ -12,11 +12,11 @@ const Wow_menta_maths = ({ sOpen }) => {
       <div
         className={`w-full ${
           sOpen ? "w-0 sm:w-full fixed sm:static -right-[100%]" : "w-full"
-        } flex flex-col sm:pl-[3rem] bg-white sm:pt-4 transition-all duration-200 ease-linear pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[20vh] gap-4`}
+        } flex flex-col sm:px-[2rem] bg-white sm:pt-0 transition-all duration-200 ease-linear pt-[9.5rem] lg:mt-[15vh] md:mt-[14vh] sm:mt-[20vh] gap-4`}
       >
         <img src={wowmaths} className="w-full h-auto" alt="" />
-        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0">
-          <span className="sm:w-4/5 w-full">
+        <div className="flex sm:flex-row flex-col gap-1 w-full px-4 sm:px-0  items-center">
+          <span className="sm:w-4/5 w-full text-justify">
             <span className="text-[#009b89] font-semibold">
               {" "}
               WOW! Maths Maths,
@@ -38,8 +38,8 @@ const Wow_menta_maths = ({ sOpen }) => {
             include more advanced methods of approaching the problems specially
             through Vedic Maths
           </span>
-          <div className="flex gap-4 rounded-md w-fit px-3 justify-center bg-[#82fff0] py-2">
-            <div className="flex flex-col gap-[4px] ">
+          <div className="flex gap-4 rounded-md w-fit px-3 justify-center  bg-[#009b89]  py-2">
+            <div className="flex flex-col gap-[4px] item-center">
               <span className="text-white font-semibold">Title</span>
               <span className="text-black font-semibold">Book 1</span>
               <span className="text-black font-semibold">Book 2</span>
@@ -68,7 +68,7 @@ const Wow_menta_maths = ({ sOpen }) => {
             <span className="px-3 ml-3 py-1 bg-[#009b89] rounded-t-lg w-fit text-white">
               WOW FACT
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#82fff0] text-black">
+            <ul className="px-2 py-1 w-full rounded-md bg-[#b2f3eb] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp; Strategy
                 based information to give an insight as to where the listed
@@ -80,7 +80,7 @@ const Wow_menta_maths = ({ sOpen }) => {
             <span className="px-3 ml-3 py-1 bg-[#009b89] rounded-t-lg w-fit text-white">
               TEACHER SUPPORT
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#82fff0] text-black">
+            <ul className="px-2 py-1 w-full rounded-md  bg-[#b2f3eb] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp;
                 Challenging higher order questions that trigger analytical
@@ -93,7 +93,7 @@ const Wow_menta_maths = ({ sOpen }) => {
             <span className="px-3 ml-3 py-1 bg-[#009b89] rounded-t-lg w-fit text-white">
               PRACTICE TIME
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#82fff0] text-black">
+            <ul className="px-2 py-1 w-full rounded-md  bg-[#b2f3eb] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp; Added
                 after a set of strategies. Includes practice from a collection
@@ -106,7 +106,7 @@ const Wow_menta_maths = ({ sOpen }) => {
             <span className="px-3 ml-3 py-1 bg-[#009b89] rounded-t-lg w-fit text-white">
               TEACHING TIP
             </span>
-            <ul className="px-2 py-1 w-full rounded-md bg-[#82fff0] text-black">
+            <ul className="px-2 py-1 w-full rounded-md  bg-[#b2f3eb] text-black">
               <li>
                 <Circle className="!text-[0.5rem] text-black" /> &nbsp; Includes
                 suggestions/ ideas for teachers and parents, to support the
