@@ -60,7 +60,7 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
             <Route path="/term_and_condition" element={<TermAndCondition />} />
-            <Route path="/toefl_payment" element={<Payment />} />
+            {/* <Route path="/toefl_payment" element={<Payment />} /> */}
             {/* curriculer */}
             <Route path="/curriculer/pre_primary" element={<PrePrimary />} />
             <Route path="/curriculer/cbse" element={<Cbse />} />
@@ -93,11 +93,11 @@ function App() {
               element={<SpecialInitiatives />}
             />
             {/* Admin */}
-            <Route path="/admin/login" element={<AdminLogin />} />
+            {/* <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin/create/news"
               element={Admin ? <AdminCreateNews /> : <AdminLogin />}
-            />
+            /> */}
           </Routes>
         </BrowserRouter>
       </ParallaxProvider>

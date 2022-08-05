@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import dashBorder from "../../assets/dash-border.png";
 import Cookies from "js-cookie";
-import submit from "../../assets/submit.png";
 import axios from "axios";
 import { useFormik } from "formik";
 import { useDispatch } from "react-redux";
@@ -9,6 +7,8 @@ import { authActions } from "../../Store/auth";
 import { useNavigate } from "react-router-dom";
 import Alert from "@mui/material/Alert";
 import Loader from "../../Components/Loader";
+import { TextField } from "@mui/material";
+import BasicButton from "../../Components/Material/Button";
 
 const AdminLogin = () => {
   const [showError, setShowError] = useState("");
@@ -40,7 +40,7 @@ const AdminLogin = () => {
 
     onSubmit: async (values) => {
       setLoading(true);
-      const res = await axios.post("http://localhost:3000/auth/login", values);
+      const res = await axios.post("http://localhost:4000/auth/login", values);
       if (res.data.err) {
         setShowError(`${res.data.err}`);
         setTimeout(() => {
@@ -66,77 +66,41 @@ const AdminLogin = () => {
       >
         <Alert severity="error">{showError}</Alert>
       </div>
-      <div className="bg-white rounded-r-3xl drop-shadow-2xl sm:px-[3rem] px-[1rem] 2xl:py-[5rem] lg:py-[3rem] sm:py-[2rem] py-[2rem]">
-        <form
-          className="flex flex-col gap-[3rem]"
-          onSubmit={formik.handleSubmit}
-        >
-          <div className="flex sm:gap-[4rem] gap-4 items-center">
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col gap-4 w-full">
-                <h1 className="sm:text-3xl text-sm font-semibold">Email</h1>
-                <div
-                  className="sm:p-4 p-1 bg-no-repeat lg:w-[30vw] md:w-[20rem] w-[60vw] sm:h-auto h-[6vh]"
-                  style={{
-                    backgroundImage: `url(${dashBorder})`,
-                    backgroundSize: "100% 100%",
-                  }}
-                >
-                  <input
-                    type="text"
-                    value={formik.values.email}
-                    onChange={formik.handleChange}
-                    name="email"
-                    onBlur={formik.handleBlur}
-                    className=" outline-none w-full pl-2"
-                    placeholder="Enter email"
-                  />
-                  {formik.touched.email && formik.errors.email ? (
-                    <div className=" text-xs text-red-500">
-                      {formik.errors.email}
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-              <div className="flex flex-col gap-4">
-                <h1 className="sm:text-3xl text-sm font-semibold">Password</h1>
-                <div
-                  className="sm:p-4 p-1 bg-no-repeat lg:w-[30vw] md:w-[100%] w-[60vw] sm:h-auto h-[6vh]"
-                  style={{
-                    backgroundImage: `url(${dashBorder})`,
-                    backgroundSize: "100% 100%",
-                  }}
-                >
-                  <input
-                    type="password"
-                    value={formik.values.password}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    name="password"
-                    className=" outline-none w-full pl-2"
-                    placeholder="Enter password"
-                  />
-                  {formik.touched.password && formik.errors.password ? (
-                    <div className=" text-xs text-red-500">
-                      {formik.errors.password}
-                    </div>
-                  ) : null}
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <button
-            onClick={formik.handleSubmit}
-            disabled={loading}
-            type="button"
-          >
-            <img
-              src={submit}
-              className=" sm:w-auto w-[40vw] sm:ml-0 ml-4"
-              alt=""
-            />
-          </button>
+      <div className="w-full h-[100vh] flex justify-center items-center">
+        <form
+          onSubmit={formik.handleSubmit}
+          className={`flex flex-col transition-all duration-300 ease-linear lg:w-[40%] md:w-[70%] w-[90%] rounded-md shadow-2xl 2xl:gap-[4rem] sm:gap-[1.5rem] gap-[1rem] bg-slate-100 px-[3rem] pb-8 sm:pt-8 pt-8`}
+        >
+          <h1 className="text-red-800 font-bold text-lg">
+            Sign In To Your Account
+          </h1>
+
+          <TextField
+            error={formik.errors.email && formik.touched.email}
+            value={formik.values.email}
+            id="standard-basic"
+            name="email"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            label="Email"
+            helperText={formik.touched.email ? formik.errors.email : null}
+            variant="standard"
+          />
+          <TextField
+            error={formik.errors.password && formik.touched.password}
+            value={formik.values.password}
+            id="standard-basic"
+            name="password"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            label="Password"
+            helperText={formik.touched.password ? formik.errors.password : null}
+            variant="standard"
+          />
+          <div onClick={formik.handleSubmit}>
+            <BasicButton text={"Sign In"} bgColor={"rgb(153 27 27)"} />
+          </div>
         </form>
       </div>
     </div>

@@ -107,7 +107,7 @@ const Navbar = ({ highlight }) => {
                 onClick={() => navigate("/digital")}
                 className="hover:translate-x-2 transition-all duration-200 ease-linear"
               >
-                Suplimental
+                Supplemental
               </h1>
             </div>
           </div>

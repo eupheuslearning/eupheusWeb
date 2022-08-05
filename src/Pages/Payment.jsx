@@ -167,12 +167,6 @@ const Payment = () => {
           <div onClick={formik.handleSubmit}>
             <BasicButton text={"Pay"} bgColor={"rgb(153 27 27)"} />
           </div>
-          {/* <div
-            className={`${detailsFilled ? "block" : "hidden"}`}
-            onClick={displayRazorpay}
-          >
-            <BasicButton text={"Pay"} bgColor={"rgb(153 27 27)"} />
-          </div> */}
         </form>
       </div>
       <Backdrop
