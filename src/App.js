@@ -37,6 +37,7 @@ import SpecialInitiatives from "./Pages/Digital/SpecialInitiatives";
 import Properties from "./Pages/Digital/Properties";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermAndCondition from "./Pages/TermAndCondition";
+import Payment from "./Pages/Payment";
 
 function App() {
   const Admin = useSelector((state) => state.auth.admin);
@@ -59,6 +60,7 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
             <Route path="/term_and_condition" element={<TermAndCondition />} />
+            <Route path="/toefl_payment" element={<Payment />} />
             {/* curriculer */}
             <Route path="/curriculer/pre_primary" element={<PrePrimary />} />
             <Route path="/curriculer/cbse" element={<Cbse />} />

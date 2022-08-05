@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* font family */
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&family=Oswald:wght@200;300&family=Permanent+Marker&family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500;600&family=Oswald:wght@200;300&family=Permanent+Marker&family=Roboto:wght@300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
 
 .awssld__content img {
   object-fit: fill !important;
@@ -74,7 +74,7 @@
 
 .chevron:before,
 .chevron:after {
-  content: ' ';
+  content: " ";
   position: absolute;
   top: 0;
   height: 100%;
@@ -110,7 +110,6 @@
     transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
   }
 }
-
 
 /* preloader */
 .lds-roller {
@@ -198,4 +197,11 @@
   }
 }
 
+/* text field material ui */
+.css-1ptx2yq-MuiInputBase-root-MuiInput-root:after {
+  border-bottom: 2px solid rgb(153, 27, 27) !important ;
+}
 
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: rgb(153, 27, 27) !important;
+}

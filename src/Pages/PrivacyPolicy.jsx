@@ -209,7 +209,12 @@ const PrivacyPolicy = () => {
             payment options, profile information, and purchase history in the
             "Your Account" section of the website. To request access to personal
             information that is not available through Your Account you can
-            submit a request to info@eupheus.in.
+            submit a request to{" "}
+            <a href="mailto:info@eupheus.in">
+              <span className="hover:text-red-700 cursor-pointer transition-all duration-200 ease-linear">
+                info@eupheus.in.
+              </span>
+            </a>
           </span>
         </span>
         <span>

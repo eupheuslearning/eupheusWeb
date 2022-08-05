@@ -29,6 +29,7 @@ import Form from "../Components/Form";
 import { Tween, ScrollTrigger, Reveal } from "react-gsap";
 import { gsap } from "gsap";
 import { useNavigate } from "react-router-dom";
+import BasicButton from "../Components/Material/Button";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
@@ -302,9 +303,7 @@ const Home = () => {
                 Embrace the new-age learning to gain an edge in the future.
               </h1>
               <a href="https://www.classklap.com/">
-                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 rounded-md mr-6">
-                  Know More
-                </button>
+                <BasicButton text={"know More"} bgColor={"rgb(185 28 28)"} />
               </a>
             </div>
           </div>
@@ -331,9 +330,7 @@ const Home = () => {
                 Embrace the new-age learning to gain an edge in the future.
               </h1>
               <a href="https://www.classklap.com/">
-                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 rounded-md mr-6">
-                  Know More
-                </button>
+                <BasicButton text={"know More"} bgColor={"rgb(185 28 28)"} />
               </a>
             </div>
           </div>
@@ -374,9 +371,7 @@ const Home = () => {
                 Principals, Teachers, Students and Parents.
               </h1>
               <a href="https://www.schoolmitra.com/">
-                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 mr-6 rounded-md">
-                  Know More
-                </button>
+                <BasicButton text={"Know More"} bgColor={"rgb(185 28 28)"} />
               </a>
             </div>
           </div>
@@ -392,9 +387,7 @@ const Home = () => {
                 Principals, Teachers, Students and Parents.
               </h1>
               <a href="https://www.schoolmitra.com/">
-                <button className="px-2 mt-2 active:scale-95 bg-red-600 text-gray-300 mr-6 rounded-md">
-                  Know More
-                </button>
+                <BasicButton text={"Know More"} bgColor={"rgb(185 28 28)"} />
               </a>
             </div>
             <Parallax translateX={[100, -115]}>

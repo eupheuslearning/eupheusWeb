@@ -67,18 +67,20 @@ const Reading = () => {
       className="bg-[#dbdbdb] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
-      <Navbar highlight={"solutions"} />
-      <div className="w-[100vw] flex flex-col gap-[2rem]">
-        {page === "default" ? null : (
-          <button
-            onClick={() => setPage("default")}
-            className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
-          >
-            <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
-            <span className="mb-[0.1rem]">Back</span>
-          </button>
-        )}
-        {handlePage()}
+      <div className="min-h-[100vh]">
+        <Navbar highlight={"solutions"} />
+        <div className="w-[100vw] flex flex-col gap-[2rem]">
+          {page === "default" ? null : (
+            <button
+              onClick={() => setPage("default")}
+              className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
+            >
+              <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
+              <span className="mb-[0.1rem]">Back</span>
+            </button>
+          )}
+          {handlePage()}
+        </div>
       </div>
       <div className="sticky bottom-0">
         <Footer />
