@@ -38,6 +38,7 @@ import Properties from "./Pages/Digital/Properties";
 import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermAndCondition from "./Pages/TermAndCondition";
 import Payment from "./Pages/Payment";
+import SchoolsDetails from "./Pages/SchoolsDetails";
 
 function App() {
   const Admin = useSelector((state) => state.auth.admin);
@@ -60,7 +61,8 @@ function App() {
             <Route path="/news" element={<News />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
             <Route path="/term_and_condition" element={<TermAndCondition />} />
-            {/* <Route path="/toefl_payment" element={<Payment />} /> */}
+            <Route path="/toefl_payment" element={<Payment />} />
+            <Route path="/search_school" element={<SchoolsDetails />} />
             {/* curriculer */}
             <Route path="/curriculer/pre_primary" element={<PrePrimary />} />
             <Route path="/curriculer/cbse" element={<Cbse />} />
@@ -93,11 +95,11 @@ function App() {
               element={<SpecialInitiatives />}
             />
             {/* Admin */}
-            {/* <Route path="/admin/login" element={<AdminLogin />} />
+            <Route path="/admin/login" element={<AdminLogin />} />
             <Route
               path="/admin/create/news"
               element={Admin ? <AdminCreateNews /> : <AdminLogin />}
-            /> */}
+            />
           </Routes>
         </BrowserRouter>
       </ParallaxProvider>

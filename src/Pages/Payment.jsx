@@ -7,15 +7,34 @@ import grayBg from "../assets/grayBg.png";
 import Footer from "../Components/Footer";
 import { useFormik } from "formik";
 import logo from "../assets/logo.png";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import TextField from "@mui/material/TextField";
 import Backdrop from "@mui/material/Backdrop";
 import CircularProgress from "@mui/material/CircularProgress";
 import Snackbars from "../Components/Material/SnackBar";
+import { useLayoutEffect } from "react";
+import Cookies from "js-cookie";
+import TransitionsModal from "../Components/Material/Model";
 
-const Payment = () => {
+const Payment = (props) => {
   const [open, setOpen] = useState(false);
+  // const [paymentError, setPaymentError] = useState(false);
   const snackbarRef = useRef();
+  const modelRef = useRef();
+  const [price, setPrice] = useState(null);
+  const paymentPrice = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (!Cookies.get("xc67eoa8")) {
+      navigate("/");
+    }
+    return () => {
+      // console.log("MyComponent onUnmount");
+      Cookies.remove("xc67eoa8");
+    };
+  }, []);
 
   const formik = useFormik({
     initialValues: {
@@ -74,9 +93,12 @@ const Payment = () => {
     // const data = await fetch("http://localhost:1337/razorpay", {
     //   method: "POST",
     // }).then((t) => t.json());
-    const data = await axios.get("http://localhost:4000/payment");
+    const data = await axios.post("http://localhost:4000/payment", {
+      // price: price,
+      price: paymentPrice.state.price,
+    });
 
-    console.log(data);
+    // console.log(data);
 
     const options = {
       key: process.env.RAZORPAY_KEY_ID,
@@ -101,7 +123,14 @@ const Payment = () => {
         );
         setOpen(false);
         if (response.razorpay_payment_id) {
-          snackbarRef.current.openSnackbar();
+          modelRef.current.openModel();
+          // setTimeout(() => {
+          //   navigate("/");
+          // }, 3000);
+        } else {
+          // setPaymentError(true);
+          modelRef.current.enableError();
+          modelRef.current.openModel();
         }
         // console.log(res.data);
       },
@@ -121,7 +150,8 @@ const Payment = () => {
       className="bg-[#dbdbdb] min-h-[100vh] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
-      <Snackbars ref={snackbarRef} errMessage={"Payment Successful"} />
+      {/* <Snackbars ref={snackbarRef} errMessage={"Payment Successful"} /> */}
+      <TransitionsModal ref={modelRef} />
       <Navbar highlight={"solutions"} />
       <div className="w-full h-[100vh] flex justify-center items-center">
         <form

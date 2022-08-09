@@ -38,7 +38,11 @@ const Snackbars = React.forwardRef((props, ref) => {
         onClose={handleClose}
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
       >
-        <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
+        <Alert
+          onClose={handleClose}
+          severity={props.error ? "error" : "success"}
+          sx={{ width: "100%" }}
+        >
           {props.errMessage}
         </Alert>
       </Snackbar>
