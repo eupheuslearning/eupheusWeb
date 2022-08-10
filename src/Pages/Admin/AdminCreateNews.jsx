@@ -28,8 +28,6 @@ const AdminCreateNews = () => {
     bucketName: "eup-static-img",
     dirName: "marketing_website_photos",
     region: "ap-south-1",
-    accessKeyId: "AKIAVYWPWVE2A4IWPL52",
-    secretAccessKey: "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",
   };
 
   const handleFileInput = (e) => {
