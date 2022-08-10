@@ -54,7 +54,7 @@ const AdminLogin = () => {
         Cookies.set("admin", `${res.data.token}`, { expires: 2 });
         Cookies.set("id", `${res.data.userId}`, { expires: 2 });
         dispatch(authActions.login());
-        navigate("/admin/create/news");
+        navigate("/admin/dashboard");
       }
       setLoading(false);
     },

@@ -69,6 +69,9 @@ const AdminCreateNews = () => {
     },
 
     onSubmit: async (values) => {
+      if (!Cookies.get("admin")) {
+        return navigate("/admin/login");
+      }
       if (!selectedFile) {
         return setModelError(true), snackbarRef.current.openSnackbar();
       }
@@ -177,7 +180,7 @@ const AdminCreateNews = () => {
             <div className="flex gap-[2rem] w-full items-center">
               <h1 className="font-semibold ">Select Thumbnail: </h1>
               <Button variant="contained" component="label">
-                Upload
+                Select
                 <input
                   hidden
                   accept="image/*"

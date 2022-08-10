@@ -39,6 +39,7 @@ import PrivacyPolicy from "./Pages/PrivacyPolicy";
 import TermAndCondition from "./Pages/TermAndCondition";
 import Payment from "./Pages/Payment";
 import SchoolsDetails from "./Pages/SchoolsDetails";
+import AdminDashBoard from "./Pages/Admin/AdminDashBoard";
 
 function App() {
   const Admin = useSelector((state) => state.auth.admin);
@@ -99,6 +100,10 @@ function App() {
             <Route
               path="/admin/create/news"
               element={Admin ? <AdminCreateNews /> : <AdminLogin />}
+            />
+            <Route
+              path="/admin/dashboard"
+              element={Admin ? <AdminDashBoard /> : <AdminLogin />}
             />
           </Routes>
         </BrowserRouter>
