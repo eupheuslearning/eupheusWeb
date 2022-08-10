@@ -65,10 +65,10 @@ const AdminDashBoard = () => {
         <img
           onClick={() => navigate("/")}
           src={logo}
-          className="absolute top-0 md:w-auto cursor-pointer md:h-[4rem] w-[10rem] h-[3rem] left-4"
+          className="absolute top-0 md:w-auto z-50 cursor-pointer md:h-[4rem] w-[10rem] h-[3rem] left-4"
           alt=""
         />
-        <div className="flex sm:flex-row flex-col sm:items-center items-end gap-3 absolute top-2 right-4">
+        <div className="flex sm:flex-row z-50 flex-col sm:items-center items-end gap-3 absolute top-2 right-4">
           <h1 className=" font-semibold text-xl">
             Hello, {userinfo && userinfo.username}
           </h1>
