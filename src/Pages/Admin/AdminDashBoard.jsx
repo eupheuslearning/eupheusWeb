@@ -10,6 +10,7 @@ import axios from "axios";
 import Snackbars from "../../Components/Material/SnackBar";
 import { useRef, useLayoutEffect } from "react";
 import Cookies from "js-cookie";
+import instance from "../../Instance";
 window.Buffer = window.Buffer || require("buffer").Buffer;
 
 const AdminDashBoard = () => {
@@ -23,7 +24,11 @@ const AdminDashBoard = () => {
 
   useLayoutEffect(() => {
     const getAllNews = async () => {
-      const newsRes = await axios.get("http://localhost:4000/news");
+      // const newsRes = await axios.get("http://localhost:4000/news");
+      const newsRes = await instance({
+        url: "news",
+        method: "get",
+      });
       setNews(newsRes.data);
     };
     getAllNews();
@@ -35,14 +40,21 @@ const AdminDashBoard = () => {
     }
     setOpen(true);
     try {
-      const res = await axios.delete(
-        `http://localhost:4000/news/${id.toString()}`,
-        {
-          headers: {
-            Authorization: `Bearer ${Cookies.get("admin")}`,
-          },
-        }
-      );
+      // const res = await axios.delete(
+      //   `http://localhost:4000/news/${id.toString()}`,
+      //   {
+      //     headers: {
+      //       Authorization: `Bearer ${Cookies.get("admin")}`,
+      //     },
+      //   }
+      // );
+      const res = await instance({
+        url: `news/${id.toString()}`,
+        method: "delete",
+        headers: {
+          Authorization: `Bearer ${Cookies.get("admin")}`,
+        },
+      });
       setTimeout(() => {
         window.location.reload();
       }, 1500);
@@ -52,6 +64,11 @@ const AdminDashBoard = () => {
 
     setOpen(false);
     snackbarRef.current.openSnackbar();
+  };
+
+  const handleLogout = () => {
+    dispatch(authActions.logout());
+    navigate("/admin/login");
   };
 
   return (
@@ -72,7 +89,7 @@ const AdminDashBoard = () => {
           <h1 className=" font-semibold text-xl">
             Hello, {userinfo && userinfo.username}
           </h1>
-          <div onClick={() => dispatch(authActions.logout())}>
+          <div onClick={handleLogout}>
             <BasicButton text={"Logout"} bgColor={"rgb(153 27 27)"} />
           </div>
         </div>

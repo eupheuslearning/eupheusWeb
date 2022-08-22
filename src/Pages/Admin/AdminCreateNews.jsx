@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 import { useFormik } from "formik";
 import Date from "../../Components/Date";
@@ -14,6 +14,8 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import Snackbars from "../../Components/Material/SnackBar";
 import { useRef } from "react";
+import AWS from "aws-sdk";
+import instance from "../../Instance";
 window.Buffer = window.Buffer || require("buffer").Buffer;
 
 const AdminCreateNews = () => {
@@ -28,11 +30,34 @@ const AdminCreateNews = () => {
     bucketName: "eup-static-img",
     dirName: "marketing_website_photos",
     region: "ap-south-1",
+    accessKeyId: "AKIAVYWPWVE2ETDEZFNY",
+    secretAccessKey: "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",
   };
 
   const handleFileInput = (e) => {
     setSelectedFile(e.target.files[0]);
   };
+
+  // useEffect(() => {
+  //   const getCred = async () => {
+  //     let region = "ap-south-1";
+  //     let secretName = "prod/eupheus-in/s3";
+  //     let secret;
+  //     let decodedBinarySecret;
+
+  //     let client = new AWS.SecretsManager({
+  //       region: region,
+  //     });
+  //     client.getSecretValue({ SecretId: secretName }, function (err, data) {
+  //       if (err) {
+  //         console.log(err);
+  //       } else {
+  //         console.log(data);
+  //       }
+  //     });
+  //   };
+  //   getCred();
+  // }, []);
 
   const formik = useFormik({
     initialValues: {
@@ -76,9 +101,26 @@ const AdminCreateNews = () => {
       setOpen(true);
       const s3res = await uploadFile(selectedFile, config);
       formik.values.imageUrl = s3res.location;
-      const res = await axios.post(
-        "http://localhost:4000/news",
-        {
+      // const res = await axios.post(
+      //   "http://localhost:4000/news",
+      //   {
+      //     headline: values.headline,
+      //     desc: values.desc,
+      //     date: values.Date,
+      //     link: values.link,
+      //     imgUrl: values.imageUrl,
+      //     createdBy: parseInt(values.createdBy),
+      //   },
+      //   {
+      //     headers: {
+      //       Authorization: `Bearer ${Cookies.get("admin")}`,
+      //     },
+      //   }
+      // );
+      const res = await instance({
+        url: "news",
+        method: "post",
+        data: {
           headline: values.headline,
           desc: values.desc,
           date: values.Date,
@@ -86,12 +128,10 @@ const AdminCreateNews = () => {
           imgUrl: values.imageUrl,
           createdBy: parseInt(values.createdBy),
         },
-        {
-          headers: {
-            Authorization: `Bearer ${Cookies.get("admin")}`,
-          },
-        }
-      );
+        headers: {
+          Authorization: `Bearer ${Cookies.get("admin")}`,
+        },
+      });
       if (res.status === 200) {
         setModelError(false);
         snackbarRef.current.openSnackbar();

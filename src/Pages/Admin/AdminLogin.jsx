@@ -9,6 +9,7 @@ import { Backdrop, CircularProgress, TextField } from "@mui/material";
 import BasicButton from "../../Components/Material/Button";
 import logo from "../../assets/logo.png";
 import Snackbars from "../../Components/Material/SnackBar";
+import instance from "../../Instance";
 
 const AdminLogin = () => {
   const [showError, setShowError] = useState("");
@@ -41,7 +42,12 @@ const AdminLogin = () => {
 
     onSubmit: async (values) => {
       setLoading(true);
-      const res = await axios.post("http://localhost:4000/auth/login", values);
+      // const res = await axios.post("http://localhost:4000/auth/login", values);
+      const res = await instance({
+        url: "auth/login",
+        method: "post",
+        data: values,
+      });
       // console.log(res);
       if (res.data.err) {
         setShowError(`${res.data.err}`);
@@ -106,6 +112,7 @@ const AdminLogin = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               label="Password"
+              type="password"
               helperText={
                 formik.touched.password ? formik.errors.password : null
               }

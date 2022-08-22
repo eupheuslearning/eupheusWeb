@@ -13,9 +13,10 @@ const authSlice = createSlice({
       state.admin = Cookies.get("admin");
     },
     logout(state) {
-      state.admin = false;
+      // state.admin = false;
+      Cookies.remove("admin");
+      Cookies.remove("id");
     },
-    
   },
 });
 
