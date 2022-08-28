@@ -118,9 +118,9 @@ const AdminLogin = () => {
               }
               variant="standard"
             />
-            <div onClick={formik.handleSubmit}>
+            <button type="submit" onClick={formik.handleSubmit}>
               <BasicButton text={"Sign In"} bgColor={"rgb(153 27 27)"} />
-            </div>
+            </button>
           </form>
           <Backdrop
             sx={{ color: "#fff", zIndex: (theme) => theme.zIndex.drawer + 1 }}

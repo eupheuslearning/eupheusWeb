@@ -14,12 +14,14 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import Snackbars from "../../Components/Material/SnackBar";
 import { useRef } from "react";
-import AWS from "aws-sdk";
+
 import instance from "../../Instance";
+import { useLayoutEffect } from "react";
 window.Buffer = window.Buffer || require("buffer").Buffer;
 
 const AdminCreateNews = () => {
   const userinfo = useAdminInfo();
+  const [cred, setCred] = useState([]);
   const [open, setOpen] = useState(false);
   const [modelError, setModelError] = useState(false);
   const snackbarRef = useRef();
@@ -30,34 +32,27 @@ const AdminCreateNews = () => {
     bucketName: "eup-static-img",
     dirName: "marketing_website_photos",
     region: "ap-south-1",
-    accessKeyId: "AKIAVYWPWVE2ETDEZFNY",
-    secretAccessKey: "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",
+    accessKeyId: cred.accessKey,
+    secretAccessKey: cred.secretKey,
   };
 
   const handleFileInput = (e) => {
     setSelectedFile(e.target.files[0]);
   };
 
-  // useEffect(() => {
-  //   const getCred = async () => {
-  //     let region = "ap-south-1";
-  //     let secretName = "prod/eupheus-in/s3";
-  //     let secret;
-  //     let decodedBinarySecret;
-
-  //     let client = new AWS.SecretsManager({
-  //       region: region,
-  //     });
-  //     client.getSecretValue({ SecretId: secretName }, function (err, data) {
-  //       if (err) {
-  //         console.log(err);
-  //       } else {
-  //         console.log(data);
-  //       }
-  //     });
-  //   };
-  //   getCred();
-  // }, []);
+  useLayoutEffect(() => {
+    const getCred = async () => {
+      const res = await instance({
+        url: "keys",
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${Cookies.get("admin")}`,
+        },
+      });
+      setCred(res.data);
+    };
+    getCred();
+  }, []);
 
   const formik = useFormik({
     initialValues: {
@@ -136,7 +131,7 @@ const AdminCreateNews = () => {
         setModelError(false);
         snackbarRef.current.openSnackbar();
       }
-      console.log(res);
+
       values.headline = "";
       values.desc = "";
       values.link = "";

@@ -8,6 +8,7 @@ import Footer from "../Components/Footer";
 import BasicButton from "../Components/Material/Button";
 import axios from "axios";
 import BasicPagination from "../Components/Material/Pagination";
+import instance from "../Instance";
 
 const News = () => {
   const [news, setNews] = useState([]);
@@ -63,7 +64,10 @@ const News = () => {
   useLayoutEffect(() => {
     document.title = "News - Eupheus";
     const getAllNews = async () => {
-      const newsRes = await axios.get("http://localhost:4000/news");
+      const newsRes = await instance({
+        url: "news",
+        method: "GET",
+      });
       let sortedNews = newsRes.data.sort(
         (a, b) =>
           new Date(...changeDate(b.date).split("/").reverse()) -
@@ -87,7 +91,7 @@ const News = () => {
       className="bg-[#dbdbdb] overflow-hidden"
       style={{ backgroundImage: `url(${grayBg})` }}
     >
-      <Navbar highlight={"solutions"} />
+      <Navbar highlight={"media"} />
       <div className="w-[100vw] py-[3rem] flex flex-col gap-[2rem] sm:px-[3rem] px-2 items-center justify-center sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
         {news.map((item) => {
           return (
