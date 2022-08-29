@@ -19,167 +19,14 @@ export default function AwardTimeline() {
   const [fifth, setFifth] = useState(false);
   return (
     <>
-      {/* <div className="flex flex-col gap-4 justify-center items-center my-8">
-        <div
-          className={`flex flex-col gap-4 w-[100vw] items-center transition-all duration-200 ease-linear`}
-          style={{ height: `${first ? "calc(100% + 1px)" : "5rem"}` }}
-        >
-          <div
-            onClick={() => setFirst(!first)}
-            className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-          >
-            <span>Awards In 2022</span>
-            <KeyboardArrowDown
-              className={`!text-[3rem] ${
-                first ? "rotate-180" : null
-              } transition-all duration-150 ease-linear`}
-            />
-          </div>
-          {first ? (
-            <div className=" w-full justify-around px-4 bg-transparent flex gap-3">
-              <img
-                src={certtificate11}
-                className="sm:w-[16rem] w-[7.5rem] h-auto object-cover"
-                alt=""
-              />
-              <img
-                src={certtificate9}
-                className="sm:w-[16rem] w-[7.5rem] h-auto object-cover"
-                alt=""
-              />
-
-              <img
-                src={certtificate8}
-                className="sm:w-[16rem] w-[7.5rem] h-auto object-cover"
-                alt=""
-              />
-            </div>
-          ) : null}
-        </div>
-        <div className="flex flex-col gap-4 w-[100vw] items-center">
-          <div
-            onClick={() => setSecond(!second)}
-            className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-          >
-            <span>Awards In 2021</span>
-            <KeyboardArrowDown
-              className={`!text-[3rem] ${
-                second ? "rotate-180" : null
-              } transition-all duration-150 ease-linear`}
-            />
-          </div>
-          {second ? (
-            <div className=" w-full justify-around px-4 bg-transparent flex sm:flex-row flex-col gap-3">
-              <img
-                src={certtificate3}
-                className="sm:h-[8rem] h-[6rem] w-auto"
-                alt=""
-              />
-              <img src={certtificate4} className="h-[8rem] w-auto" alt="" />
-            </div>
-          ) : null}
-        </div>
-        <div className="flex flex-col gap-4 w-[100vw] items-center">
-          <div
-            onClick={() => setThird(!third)}
-            className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-          >
-            <span>Awards In 2020</span>
-            <KeyboardArrowDown
-              className={`!text-[3rem] ${
-                third ? "rotate-180" : null
-              } transition-all duration-150 ease-linear`}
-            />
-          </div>
-          {third ? (
-            <div className="flex flex-col gap-4">
-              <div className=" w-full justify-around px-4 bg-transparent flex sm:flex-row flex-col gap-3">
-                <img
-                  src={certtificate3}
-                  className="sm:h-[8rem] h-[6rem] w-auto"
-                  alt=""
-                />
-                <img src={certtificate4} className="h-[8rem] w-auto" alt="" />
-              </div>
-              <div className="w-full justify-around px-4 bg-transparent flex gap-3">
-                <img
-                  src={certtificate5}
-                  className="sm:w-[20rem] w-[7.8rem] h-auto object-cover"
-                  alt=""
-                />
-                <img
-                  src={certtificate6}
-                  className="sm:w-[16rem] w-[7rem] h-auto object-cover"
-                  alt=""
-                />
-                <img
-                  src={certtificate7}
-                  className="sm:w-[16rem] w-[7rem] h-auto object-cover"
-                  alt=""
-                />
-              </div>
-            </div>
-          ) : null}
-        </div>
-        <div className="flex flex-col gap-4 w-[100vw] items-center">
-          <div
-            onClick={() => setFourth(!fourth)}
-            className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-          >
-            <span>Awards In 2019</span>
-            <KeyboardArrowDown
-              className={`!text-[3rem] ${
-                fourth ? "rotate-180" : null
-              } transition-all duration-150 ease-linear`}
-            />
-          </div>
-          {fourth ? (
-            <div className=" w-full justify-around px-4 bg-transparent flex gap-3">
-              <img
-                src={certtificate3}
-                className="sm:h-[14rem] h-[6rem] w-auto"
-                alt=""
-              />
-            </div>
-          ) : null}
-        </div>
-        <div className="flex flex-col gap-4 w-[100vw] items-center">
-          <div
-            onClick={() => setFifth(!fifth)}
-            className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[60%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-          >
-            <span>Awards In 2018</span>
-            <KeyboardArrowDown
-              className={`!text-[3rem] ${
-                fifth ? "rotate-180" : null
-              } transition-all duration-150 ease-linear`}
-            />
-          </div>
-          {fifth ? (
-            <div className=" w-full justify-around px-4 bg-transparent flex sm:gap-3 gap-1">
-              <img
-                src={certtificate1}
-                className="sm:w-[24rem] w-[11rem] h-auto"
-                alt=""
-              />
-              <img
-                src={certtificate2}
-                className="sm:w-[28rem] w-[13rem] h-auto"
-                alt=""
-              />
-            </div>
-          ) : null}
-        </div>
-      </div> */}
-
       <div class="p-4 mt-4">
         <div class="container">
           <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
             <div class="flex md:contents relative">
               <div class="col-start-2 col-end-4 sm:mr-10 md:mx-auto relative">
-                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+                {/* <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2022
-                </div>
+                </div> */}
 
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
@@ -187,18 +34,7 @@ export default function AwardTimeline() {
                 <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#f5ab1d] shadow text-center"></div>
               </div>
 
-              <div className="flex flex-col gap-4 w-[100vw] items-start my-[5rem] relative">
-                {/* <div
-                  onClick={() => setFirst(!first)}
-                  className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-                >
-                  <span>Awards In 2022</span>
-                  <KeyboardArrowDown
-                    className={`!text-[3rem] ${
-                      first ? "rotate-180" : null
-                    } transition-all duration-150 ease-linear`}
-                  />
-                </div> */}
+              <div className="flex flex-col gap-4 w-[100vw] md:items-start items-center my-[5rem] relative">
                 <div
                   onClick={() => setFirst(!first)}
                   className={`${
@@ -215,7 +51,7 @@ export default function AwardTimeline() {
                       first ? "rotate-[180deg]" : null
                     } font-bold text-lg`}
                   >
-                    Click Here
+                    2022
                   </span>
                 </div>
                 {first ? (
@@ -243,9 +79,9 @@ export default function AwardTimeline() {
 
             <div class="flex md:contents">
               <div class="col-start-2 col-end-4 sm:mr-10 md:mx-auto relative">
-                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+                {/* <div className="absolute font-semibold w-full h-full flex justify-center items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2021
-                </div>
+                </div> */}
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
@@ -253,18 +89,7 @@ export default function AwardTimeline() {
                   <i class="fas fa-check-circle text-white"></i>
                 </div>
               </div>
-              <div className="flex flex-col gap-4 relative w-[100vw] items-start my-[5rem]">
-                {/* <div
-                  onClick={() => setSecond(!second)}
-                  className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-                >
-                  <span>Awards In 2021</span>
-                  <KeyboardArrowDown
-                    className={`!text-[3rem] ${
-                      second ? "rotate-180" : null
-                    } transition-all duration-150 ease-linear`}
-                  />
-                </div> */}
+              <div className="flex flex-col gap-4 relative w-[100vw] md:items-start items-center my-[5rem]">
                 <div
                   onClick={() => setSecond(!second)}
                   className={`${
@@ -281,7 +106,7 @@ export default function AwardTimeline() {
                       second ? "rotate-[180deg]" : null
                     } font-bold text-lg`}
                   >
-                    Click Here
+                    2021
                   </span>
                 </div>
                 {second ? (
@@ -302,10 +127,10 @@ export default function AwardTimeline() {
             </div>
 
             <div class="flex md:contents">
-              <div class="col-start-2 col-end-4 sm:mr-10 mr-[1.5rem] md:mx-auto relative">
-                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+              <div class="col-start-2 col-end-4 sm:mr-10 md:mx-auto relative">
+                {/* <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2020
-                </div>
+                </div> */}
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
@@ -313,18 +138,7 @@ export default function AwardTimeline() {
                   <i class="fas fa-times-circle text-white"></i>
                 </div>
               </div>
-              <div className="flex flex-col gap-4 w-[100vw] relative items-start my-[5rem]">
-                {/* <div
-                  onClick={() => setThird(!third)}
-                  className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-                >
-                  <span>Awards In 2020</span>
-                  <KeyboardArrowDown
-                    className={`!text-[3rem] ${
-                      third ? "rotate-180" : null
-                    } transition-all duration-150 ease-linear`}
-                  />
-                </div> */}
+              <div className="flex flex-col gap-4 w-[100vw] relative md:items-start items-center my-[5rem]">
                 <div
                   onClick={() => setThird(!third)}
                   className={`${
@@ -341,7 +155,7 @@ export default function AwardTimeline() {
                       third ? "rotate-[180deg]" : null
                     } font-bold text-lg`}
                   >
-                    Click Here
+                    2020
                   </span>
                 </div>
                 {third ? (
@@ -380,28 +194,17 @@ export default function AwardTimeline() {
               </div>
             </div>
             <div class="flex md:contents">
-              <div class="col-start-2 col-end-4 sm:mr-10 mr-[1.5rem] md:mx-auto relative">
-                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+              <div class="col-start-2 col-end-4 sm:mr-10 md:mx-auto relative">
+                {/* <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2019
-                </div>
+                </div> */}
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
                 <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#f5ab1d] shadow text-center"></div>
               </div>
 
-              <div className="flex flex-col gap-4 relative w-[100vw] items-start my-[5rem]">
-                {/* <div
-                  onClick={() => setFourth(!fourth)}
-                  className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-                >
-                  <span>Awards In 2019</span>
-                  <KeyboardArrowDown
-                    className={`!text-[3rem] ${
-                      fourth ? "rotate-180" : null
-                    } transition-all duration-150 ease-linear`}
-                  />
-                </div> */}
+              <div className="flex flex-col gap-4 relative w-[100vw] md:items-start items-center my-[5rem]">
                 <div
                   onClick={() => setFourth(!fourth)}
                   className={`${
@@ -418,7 +221,7 @@ export default function AwardTimeline() {
                       fourth ? "rotate-[180deg]" : null
                     } font-bold text-lg`}
                   >
-                    Click Here
+                    2019
                   </span>
                 </div>
                 {fourth ? (
@@ -433,28 +236,17 @@ export default function AwardTimeline() {
               </div>
             </div>
             <div class="flex md:contents">
-              <div class="col-start-2 col-end-4 sm:mr-10 mr-[0.5rem] md:mx-auto relative">
-                <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+              <div class="col-start-2 col-end-4 sm:mr-10 md:mx-auto relative">
+                {/* <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
                   2018
-                </div>
+                </div> */}
                 <div class="h-full w-6 flex items-center justify-center">
                   <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
                 </div>
                 <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#f5ab1d] shadow text-center"></div>
               </div>
 
-              <div className="flex flex-col gap-4 relative w-[100vw] items-start my-[5rem]">
-                {/* <div
-                  onClick={() => setFifth(!fifth)}
-                  className="text-black flex cursor-pointer justify-around items-center sm:w-[40%] w-[85%] sm:text-2xl text-lg rounded-md sm:p-4 p-2 bg-[#f5ab1d]"
-                >
-                  <span>Awards In 2018</span>
-                  <KeyboardArrowDown
-                    className={`!text-[3rem] ${
-                      fifth ? "rotate-180" : null
-                    } transition-all duration-150 ease-linear`}
-                  />
-                </div> */}
+              <div className="flex flex-col gap-4 relative w-[100vw] md:items-start items-center my-[5rem]">
                 <div
                   onClick={() => setFifth(!fifth)}
                   className={`${
@@ -471,7 +263,7 @@ export default function AwardTimeline() {
                       fifth ? "rotate-[180deg]" : null
                     } font-bold text-lg`}
                   >
-                    Click Here
+                    2018
                   </span>
                 </div>
                 {fifth ? (

@@ -96,22 +96,7 @@ const AdminCreateNews = () => {
       setOpen(true);
       const s3res = await uploadFile(selectedFile, config);
       formik.values.imageUrl = s3res.location;
-      // const res = await axios.post(
-      //   "http://localhost:4000/news",
-      //   {
-      //     headline: values.headline,
-      //     desc: values.desc,
-      //     date: values.Date,
-      //     link: values.link,
-      //     imgUrl: values.imageUrl,
-      //     createdBy: parseInt(values.createdBy),
-      //   },
-      //   {
-      //     headers: {
-      //       Authorization: `Bearer ${Cookies.get("admin")}`,
-      //     },
-      //   }
-      // );
+
       const res = await instance({
         url: "news",
         method: "post",

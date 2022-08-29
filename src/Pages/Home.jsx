@@ -1,9 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import GoToTop from "../Components/Top";
 import grayBg from "../assets/grayBg.png";
-import firstSectionSchool from "../assets/first-section-school.174ed857.svg";
+// import firstSectionSchool from "../assets/first-section-school.174ed857.svg";
 import firstSectionLighthouse from "../assets/first-section-lighthouse.a0be8772.svg";
 import section2schools from "../assets/section2schools.png";
 import section2students from "../assets/section2students.png";
@@ -15,27 +15,92 @@ import robot from "../assets/robot.png";
 import reading from "../assets/reading.png";
 import laptop from "../assets/laptop.png";
 import schoolmitra from "../assets/schoolmitra.png";
-import trophy from "../assets/trophy.png";
-import code2win from "../assets/code2win.png";
+// import trophy from "../assets/trophy.png";
+// import code2win from "../assets/code2win.png";
 import classK from "../assets/classclap.png";
-import play from "../assets/play.png";
-import laptop2 from "../assets/laptop2.png";
-import iso from "../assets/iso.png";
+// import play from "../assets/play.png";
+// import laptop2 from "../assets/laptop2.png";
+// import iso from "../assets/iso.png";
 import sm from "../assets/sm.png";
 import footerimg1 from "../assets/footerimg1.png";
 import { Parallax } from "react-scroll-parallax";
 import Slider from "../Components/Slider";
-import Form from "../Components/Form";
+// import Form from "../Components/Form";
 import { Tween, ScrollTrigger, Reveal } from "react-gsap";
-import { gsap } from "gsap";
+// import { gsap } from "gsap";
 import { useNavigate } from "react-router-dom";
 import BasicButton from "../Components/Material/Button";
+import instance from "../Instance";
 
 const Home = () => {
   const [index, setIndex] = useState(0);
+  const [news, setNews] = useState([]);
   const navigate = useNavigate();
   const timeout = useRef(null);
   const [mobile, setMobile] = useState(true);
+
+  const changeDate = (date) => {
+    let month;
+    switch (date.split(" ")[0]) {
+      case "Jan":
+        month = "01";
+        break;
+      case "Feb":
+        month = "02";
+        break;
+      case "Mar":
+        month = "03";
+        break;
+      case "Apr":
+        month = "04";
+        break;
+      case "May":
+        month = "05";
+        break;
+      case "Jun":
+        return (month = "06");
+        break;
+      case "Jul":
+        month = "07";
+        break;
+      case "Aug":
+        month = "08";
+        break;
+      case "Sep":
+        month = "09";
+        break;
+      case "Oct":
+        month = "10";
+        break;
+      case "Nov":
+        month = "11";
+        break;
+      case "Dec":
+        month = "12";
+        break;
+
+      default:
+        break;
+    }
+    return `${date.split(" ")[1]}/${month}/${date.split(" ")[2]}`;
+  };
+
+  useLayoutEffect(() => {
+    const getAllNews = async () => {
+      const newsRes = await instance({
+        url: "news",
+        method: "GET",
+      });
+      let sortedNews = newsRes.data.sort(
+        (a, b) =>
+          new Date(...changeDate(b.date).split("/").reverse()) -
+          new Date(...changeDate(a.date).split("/").reverse())
+      );
+
+      setNews(sortedNews.slice(0, 6));
+    };
+    getAllNews();
+  }, []);
 
   useEffect(() => {
     document.title = "Eupheus Learning";
@@ -60,19 +125,6 @@ const Home = () => {
       clearTimeout(timeout.current);
     }
   };
-
-  // useEffect(() => {
-  //   resetTime();
-  //   timeout.current = setTimeout(() => {
-  //     setIndex((prev) => {
-  //       return prev === 2 ? 0 : prev + 1;
-  //     });
-  //   }, 3000);
-
-  //   return () => {
-  //     resetTime();
-  //   };
-  // }, [index]);
 
   return (
     <div
@@ -117,22 +169,6 @@ const Home = () => {
           <span>TRANSFORMATION IN SCHOOLS</span>
         </div>
       </Parallax>
-      {/* <div className="sm:mt-[5rem] mt-[2rem] sm:w-[60vw] w-[100vw] flex sm:gap-20 gap-3 2xl:ml-[18vw] lg:ml-[13vw] sm:ml-[8vw]">
-        <Parallax translateX={["-100px", "120px"]} scale={[0.75, 1]}>
-          <img
-            src={firstSectionLighthouse}
-            className="sm:w-[35vw] w-[80vw] h-auto"
-            alt=""
-          />
-        </Parallax>
-        <Parallax translateX={["100px", "-100px"]} scale={[0.75, 1]}>
-          <img
-            src={firstSectionSchool}
-            className="sm:w-[35vw] w-[80vw]h-auto"
-            alt=""
-          />
-        </Parallax>
-      </div> */}
 
       <div className="sm:mt-[5rem] mt-[2rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 items-center justify-center">
         <Parallax rotateY={[180, 570]}>
@@ -407,49 +443,6 @@ const Home = () => {
           </div>
         )}
       </div>
-      {/* <div className="flex flex-col w-[100vw]">
-        <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] pr-[1rem] sm:mt-[5rem] mt-[3rem]">
-          <span>
-            <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl  font-bold">
-              REVOLUTIONIZING SCHOOLS WITH
-            </h1>
-            <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl  font-semibold">
-              THE 21ST CENTURY SCHOOL OS
-            </h1>
-          </span>
-        </div>
-        <div className="flex items-center w-[100vw]">
-          <h1 className=" md:mt-[2.5rem] md:ml-[12vw] 2xl:ml-[18vw] sm:mb-[5rem] mb-[1rem] text-gray-700 lg:w-[40vw] md:w-[70vw] w-[20vw] lg:text-lg 2xl:text-2xl text-sm">
-            Schools need assistance on ‘content management’, ‘learning
-            management’, ‘enterprise resource planning’, ‘financial management’,
-            ‘communication management’, etc. and there are disparate solutions
-            existing in the marketplace which make matters worse for a school.
-            SchoolMitra (a company acquired by Eupheus Learning), a home grown
-            SaaS company offering digital school management system has
-            introduced The 21st Century School OS which unifies ERP (enterprise
-            resource planning), LMS (learning management system) and CMS
-            (content management system) on a single sign-on, benefitting all
-            stakeholders of a school alike – Principals, Teachers, Students and
-            Parents.
-          </h1>
-          <Parallax translateX={[100, -115]}>
-            <div className=" relative sm:mt-[3rem] mt-[1rem]">
-              <div>
-                <img
-                  className="absolute sm:top-[3rem] top-[2rem] sm:-left-[2rem] left-[2rem] sm:w-[60%] w-[50%] sm:pl-[2rem]"
-                  src={sm}
-                  alt=""
-                />
-                <img
-                  className="mt-[1rem] sm:w-auto w-full h-auto sm:h-[30rem]"
-                  src={schoolmitra}
-                  alt=""
-                />
-              </div>
-            </div>
-          </Parallax>
-        </div>
-      </div> */}
 
       <div className="w-[100vw] my-[4rem] flex justify-center items-center">
         <iframe
@@ -460,22 +453,24 @@ const Home = () => {
 
       {/* <Form /> */}
 
-      <div className="w-[100vw] items-center px-[2vw] py-[2rem] grid grid-rows-1 grid-cols-3 gap-[2rem] justify-between bg-[#f5ab1d]">
-        <div className="flex flex-col gap-3">
-          <div className="flex w-[30vw] flex-col gap-2">
-            <a href="https://www.vccircle.com/lightrock-india-funded-eupheus-learning-buys-saas-platform-schoolmitra">
-              <span className=" sm:text-sm text-xs text-white">
-                <span>
-                  Lightrock India-funded Eupheus Learning buys SaaS platform
-                  SchoolMitra
+      <div className="w-[100vw] items-center px-[2vw] py-[2rem] grid grid-rows-1 grid-cols-3 gap-[2rem] bg-[#f5ab1d]">
+        <div className="grid grid-cols-2 grid-rows-3 col-span-2 gap-3 w-full">
+          {news.map((item) => {
+            return (
+              <div className="flex w-[30vw] flex-col gap-2">
+                <a href={item.link} target="_blank">
+                  <span className=" sm:text-sm text-xs text-white">
+                    <span>{item.headline}</span>
+                  </span>
+                </a>
+                <span className="md:text-base text-xs text-red-700">
+                  {item.date}
                 </span>
-              </span>
-            </a>
-            <span className="md:text-base text-xs text-red-700">
-              Feb 15, 2022
-            </span>
-          </div>
-          <div className=" flex w-[30vw] flex-col gap-2">
+              </div>
+            );
+          })}
+
+          {/* <div className=" flex w-[30vw] flex-col gap-2">
             <a href="https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms">
               <span className="sm:text-sm text-xs text-white">
                 Eupheus Learning acquires ClassKlap for $19 million
@@ -496,9 +491,6 @@ const Home = () => {
               Aug 13, 2021
             </span>
           </div>
-        </div>
-
-        <div className="flex flex-col gap-3">
           <div className=" flex w-[30vw] flex-col gap-2">
             <a href="https://www.apnnews.com/eupheus-learning-signs-mou-with-varthana-to-make-school-financing-and-21st-century-education-solutions-accessible-to-more-schools-in-india/">
               <span className=" sm:text-sm text-xs text-white">
@@ -531,8 +523,12 @@ const Home = () => {
             <span className="md:text-base text-xs text-red-700">
               Apr 12, 2021
             </span>
-          </div>
+          </div> */}
         </div>
+
+        {/* <div className="flex flex-col gap-3"> */}
+
+        {/* </div> */}
 
         <img src={footerimg1} alt="" />
       </div>

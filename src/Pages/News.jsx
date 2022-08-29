@@ -6,7 +6,7 @@ import Footer from "../Components/Footer";
 // import { useNavigate } from "react-router-dom";
 // images
 import BasicButton from "../Components/Material/Button";
-import axios from "axios";
+// import axios from "axios";
 import BasicPagination from "../Components/Material/Pagination";
 import instance from "../Instance";
 
@@ -73,8 +73,7 @@ const News = () => {
           new Date(...changeDate(b.date).split("/").reverse()) -
           new Date(...changeDate(a.date).split("/").reverse())
       );
-      // console.log(changeDate("Feb 29 2001"));
-      // console.log(sortedNews);
+
       setAllNews(sortedNews);
       setNews(sortedNews.slice(0, 4));
       setCount(Math.ceil(newsRes.data.length / 4));
