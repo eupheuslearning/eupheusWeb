@@ -127,12 +127,12 @@ const AdminDashBoard = () => {
                     >
                       {item.headline}
                     </span>
-                    <div onClick={() => deleteNews(item.id)}>
+                    {/* <div onClick={() => deleteNews(item.id)}>
                       <BasicButton
                         text={"Delete"}
                         bgColor={"rgb(157, 27, 27)"}
                       />
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               );
