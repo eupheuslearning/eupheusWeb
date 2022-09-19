@@ -7,7 +7,7 @@ import grayBg from "../assets/grayBg.png";
 import Footer from "../Components/Footer";
 import { useFormik } from "formik";
 import logo from "../assets/logo.png";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 import TextField from "@mui/material/TextField";
 import Backdrop from "@mui/material/Backdrop";
@@ -16,29 +16,36 @@ import Snackbars from "../Components/Material/SnackBar";
 import { useLayoutEffect } from "react";
 import Cookies from "js-cookie";
 import TransitionsModal from "../Components/Material/Model";
+import instance from "../Instance";
 
 const Payment = (props) => {
   const [open, setOpen] = useState(false);
   // const [paymentError, setPaymentError] = useState(false);
   const snackbarRef = useRef();
   const modelRef = useRef();
-  const [price, setPrice] = useState(null);
+  const [school, setSchool] = useState({});
   const paymentPrice = useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (!Cookies.get("xc67eoa8")) {
-      navigate("/");
-    }
-    return () => {
-      // console.log("MyComponent onUnmount");
-      Cookies.remove("xc67eoa8");
+  const { coupen } = useParams();
+
+  useLayoutEffect(() => {
+    const getDetails = async () => {
+      const res = await instance({
+        url: `schools/${coupen}`,
+        method: "GET",
+      });
+      setSchool(res.data);
     };
+    getDetails();
   }, []);
 
   const formik = useFormik({
     initialValues: {
       userName: "",
+      parentName: "",
+      class: "",
+      section: "",
       email: "",
       phone: "",
     },
@@ -56,6 +63,15 @@ const Payment = (props) => {
       if (!formik.values.userName) {
         errors.userName = "Required";
       }
+      if (!formik.values.parentName) {
+        errors.parentName = "Required";
+      }
+      if (!formik.values.class) {
+        errors.class = "Required";
+      }
+      if (!formik.values.section) {
+        errors.section = "Required";
+      }
       //   phone
       if (!formik.values.phone) {
         errors.phone = "Required";
@@ -68,6 +84,7 @@ const Payment = (props) => {
 
     onSubmit: async (values) => {
       displayRazorpay();
+      console.log(values);
     },
   });
 
@@ -90,15 +107,11 @@ const Payment = (props) => {
   });
 
   const displayRazorpay = async () => {
-    // const data = await fetch("http://localhost:1337/razorpay", {
-    //   method: "POST",
-    // }).then((t) => t.json());
-    const data = await axios.post("http://localhost:4000/payment", {
-      // price: price,
-      price: paymentPrice.state.price,
+    const data = await instance({
+      url: "payment",
+      data: { price: paymentPrice.state.price },
+      method: "POST",
     });
-
-    // console.log(data);
 
     const options = {
       key: process.env.RAZORPAY_KEY_ID,
@@ -109,30 +122,28 @@ const Payment = (props) => {
       image: logo,
       order_id: data.data.id,
       handler: async function (response) {
-        // alert("PAYMENT ID ::" + response.razorpay_payment_id);
-        // alert("ORDER ID :: " + response.razorpay_order_id);
         setOpen(true);
-        const res = await axios.post(
-          "http://localhost:4000/payment/addPayment",
-          {
+
+        const res = await instance({
+          url: "payment/addPayment",
+          method: "POST",
+          data: {
             userName: formik.values.userName,
             email: formik.values.email,
+            parentName: formik.values.parentName,
+            section: formik.values.section,
+            class: formik.values.class,
             phone: formik.values.phone,
             paymentID: response.razorpay_payment_id,
-          }
-        );
+          },
+        });
         setOpen(false);
         if (response.razorpay_payment_id) {
           modelRef.current.openModel();
-          // setTimeout(() => {
-          //   navigate("/");
-          // }, 3000);
         } else {
-          // setPaymentError(true);
           modelRef.current.enableError();
           modelRef.current.openModel();
         }
-        // console.log(res.data);
       },
       prefill: {
         name: formik.values.userName,
@@ -153,9 +164,9 @@ const Payment = (props) => {
       {/* <Snackbars ref={snackbarRef} errMessage={"Payment Successful"} /> */}
       <TransitionsModal ref={modelRef} />
       <Navbar highlight={"solutions"} />
-      <div className="w-full h-[100vh] flex justify-center items-center">
+      <div className="w-full min-h-[100vh] flex justify-center items-center">
         <form
-          className={`flex flex-col transition-all duration-300 ease-linear lg:w-[40%] md:w-[70%] w-[90%] rounded-md shadow-2xl 2xl:gap-[4rem] sm:gap-[1.5rem] gap-[1rem] bg-slate-100 px-[3rem] pb-8 sm:pt-8 pt-8 mt-[9rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]`}
+          className={`flex flex-col transition-all duration-300 ease-linear lg:w-[40%] md:w-[70%] w-[90%] rounded-md shadow-2xl 2xl:gap-[4rem] sm:gap-[1.5rem] gap-[1rem] bg-slate-100 px-[3rem] pb-8 sm:pt-8 pt-8 mt-[10rem] mb-[2rem] lg:mt-[15vh] md:mt-[15vh] sm:mt-[21vh]`}
         >
           <h1 className="text-red-800 font-bold text-lg">
             Personal Information
@@ -167,8 +178,44 @@ const Payment = (props) => {
             name="userName"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
-            label="User Name"
+            label="Student Name"
             helperText={formik.touched.userName ? formik.errors.userName : null}
+            variant="standard"
+          />
+          <TextField
+            error={formik.errors.parentName && formik.touched.parentName}
+            value={formik.values.parentName}
+            id="standard-basic"
+            name="parentName"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            label="Parent Name"
+            helperText={
+              formik.touched.parentName ? formik.errors.parentName : null
+            }
+            variant="standard"
+          />
+          <TextField
+            error={formik.errors.class && formik.touched.class}
+            value={formik.values.class}
+            id="standard-basic"
+            name="class"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            label="Class"
+            type="number"
+            helperText={formik.touched.class ? formik.errors.class : null}
+            variant="standard"
+          />
+          <TextField
+            error={formik.errors.section && formik.touched.section}
+            value={formik.values.section}
+            id="standard-basic"
+            name="section"
+            onChange={formik.handleChange}
+            onBlur={formik.handleBlur}
+            label="Section"
+            helperText={formik.touched.section ? formik.errors.section : null}
             variant="standard"
           />
           <TextField
@@ -195,7 +242,10 @@ const Payment = (props) => {
             variant="standard"
           />
           <div onClick={formik.handleSubmit}>
-            <BasicButton text={"Pay"} bgColor={"rgb(153 27 27)"} />
+            <BasicButton
+              text={`Pay ₹${school.price}.00`}
+              bgColor={"rgb(153 27 27)"}
+            />
           </div>
         </form>
       </div>
