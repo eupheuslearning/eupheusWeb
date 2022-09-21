@@ -121,8 +121,13 @@ const Payment = () => {
       method: "POST",
     });
 
+    const razorpayKey = await instance({
+      url: "keys/razorpay",
+      method: "GET",
+    });
+
     const options = {
-      key: process.env.RAZORPAY_KEY_ID,
+      key: razorpayKey.data.key,
       currency: data.data.currency,
       amount: data.data.amount,
       name: "TOEFL",
