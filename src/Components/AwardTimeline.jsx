@@ -3,6 +3,9 @@ import { useState } from "react";
 import certtificate8 from "../assets/media/cer8.png";
 import certtificate9 from "../assets/media/cer9.png";
 import certtificate11 from "../assets/media/cer11.png";
+import certtificate12 from "../assets/media/cer12.png";
+import certtificate13 from "../assets/media/cer13.png";
+import certtificate14 from "../assets/media/cer14.png";
 import certtificate3 from "../assets/media/car3.png";
 import certtificate4 from "../assets/media/cer4.png";
 import certtificate5 from "../assets/media/cer5.png";
@@ -55,23 +58,43 @@ export default function AwardTimeline() {
                   </span>
                 </div>
                 {first ? (
-                  <div className=" w-full sm:justify-start justify-around px-4 bg-transparent flex sm:gap-12 gap-2">
-                    <img
-                      src={certtificate11}
-                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                      alt=""
-                    />
-                    <img
-                      src={certtificate9}
-                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                      alt=""
-                    />
+                  <div className=" w-full sm:justify-start justify-around px-4 bg-transparent flex flex-col sm:gap-12 gap-2">
+                    <div className="flex gap-2">
+                      <img
+                        src={certtificate12}
+                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                        alt=""
+                      />
+                      <img
+                        src={certtificate13}
+                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                        alt=""
+                      />
 
-                    <img
-                      src={certtificate8}
-                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                      alt=""
-                    />
+                      <img
+                        src={certtificate14}
+                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                        alt=""
+                      />
+                    </div>
+                    <div className="flex gap-2">
+                      <img
+                        src={certtificate11}
+                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                        alt=""
+                      />
+                      <img
+                        src={certtificate9}
+                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                        alt=""
+                      />
+
+                      <img
+                        src={certtificate8}
+                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                        alt=""
+                      />
+                    </div>
                   </div>
                 ) : null}
               </div>
