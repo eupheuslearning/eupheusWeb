@@ -40,6 +40,7 @@ import TermAndCondition from "./Pages/TermAndCondition";
 import Payment from "./Pages/Payment";
 import SchoolsDetails from "./Pages/SchoolsDetails";
 import AdminDashBoard from "./Pages/Admin/AdminDashBoard";
+import Oslite from "./Pages/Oslite";
 
 function App() {
   const Admin = useSelector((state) => state.auth.admin);
@@ -58,6 +59,7 @@ function App() {
             <Route path="/code2win" element={<Code2Win />} />
             <Route path="/curriculum" element={<Curriculum />} />
             <Route path="/digital" element={<Digital />} />
+            <Route path="/solution/oslite" element={<Oslite />} />
             <Route path="/awards" element={<Awards />} />
             <Route path="/news" element={<News />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
