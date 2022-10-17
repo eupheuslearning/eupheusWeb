@@ -91,6 +91,7 @@ const PrePrimary = () => {
             >
               <img src={RadiantIcon} className="w-[90%] h-auto" alt="" />
             </span>
+            <GoToTop />
           </div>
           // <div className="w-full h-[100vh] flex justify-center items-center">
           //   <div className="w-[2rem] h-[2rem] relative rounded-full bg-red-800">
@@ -142,50 +143,57 @@ const PrePrimary = () => {
         break;
       case "zoom":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Zoom />
+            <GoToTop />
           </div>
         );
         break;
       case "alpha_fun":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <AlphaFun />
+            <GoToTop />
           </div>
         );
         break;
       case "dot_dash":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <DotDash />
+            <GoToTop />
           </div>
         );
         break;
       case "number_max":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Number_maxx />
+            <GoToTop />
           </div>
         );
         break;
       case "splash":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Splash />
+            <GoToTop />
           </div>
         );
         break;
       case "pitara":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Pitara />
+            <GoToTop />
           </div>
         );
         break;
       case "radiant_way":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Radiant_way />
+            <GoToTop />
           </div>
         );
         break;
@@ -203,9 +211,10 @@ const PrePrimary = () => {
         {page === "default" ? null : (
           <button
             onClick={() => setPage("default")}
-            className="pr-8 pl-6 py-2 font-semibold bg-[#dbdbdb] flex text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
+            className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[15rem] lg:top-[11rem] top-[10rem] sm:left-[1rem] left-[0.4rem] rounded-md"
           >
-            <ArrowBackIosNew /> Back
+            <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
+            <span className="mb-[0.1rem]">Back</span>
           </button>
         )}
         {handlePage()}

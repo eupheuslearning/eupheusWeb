@@ -20,7 +20,7 @@ const Navbar = ({ highlight }) => {
       />
 
       <div
-        className="flex lg:gap-[5.2rem] 3xl:gap-[8rem] md:w-[60%] md:gap-8 sm:gap-16 gap-4 md:mr-12 mt-6 bg-no-repeat"
+        className="flex lg:gap-[5.2rem] 3xl:gap-[8rem] md:w-[60%] md:gap-8 sm:gap-16 gap-[3.1vw] md:mr-12 mt-6 bg-no-repeat"
         style={{ backgroundImage: `url(${menuLine})` }}
       >
         <div
@@ -107,7 +107,7 @@ const Navbar = ({ highlight }) => {
                 onClick={() => navigate("/digital")}
                 className="hover:translate-x-2 transition-all duration-200 ease-linear"
               >
-                Suplimental
+                Supplemental
               </h1>
             </div>
           </div>
@@ -190,9 +190,10 @@ const Navbar = ({ highlight }) => {
                 Awards
               </h1>
 
-              <h1 className="hover:translate-x-2 transition-all duration-200 ease-linear">
+              {/* <h1 className="hover:translate-x-2 transition-all duration-200 ease-linear">
                 Articles
-              </h1>
+              </h1> */}
+
               <h1
                 onClick={() => navigate("/news")}
                 className="hover:translate-x-2 transition-all duration-200 ease-linear"

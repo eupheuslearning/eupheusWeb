@@ -145,106 +145,121 @@ const Cbse = () => {
         break;
       case "compu_app":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Compu_app />
+            <GoToTop />
           </div>
         );
         break;
       case "english_vibes":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <English_vibes />
+            <GoToTop />
           </div>
         );
         break;
       case "grammer_com_vibes":
         return (
-          <div className="sm:pt-8 pt-[0rem] lg:mt-[0vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Grammer_com_vibes />
+            <GoToTop />
           </div>
         );
         break;
       case "my_world_my_earth":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <My_world_my_earth />
+            <GoToTop />
           </div>
         );
         break;
       case "new_radiant_literature":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <New_radiant_literature />
+            <GoToTop />
           </div>
         );
         break;
       case "silver_bells":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Silver_bells />
+            <GoToTop />
           </div>
         );
         break;
       case "surbhika":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Surbhika_hindi />
+            <GoToTop />
           </div>
         );
         break;
       case "the_radiant_way":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <The_radiant_way />
+            <GoToTop />
           </div>
         );
         break;
       case "vallari_hindi":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Vallari_hindi />
+            <GoToTop />
           </div>
         );
         break;
       case "compu_bytes":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Wow_compu_bytes />
+            <GoToTop />
           </div>
         );
         break;
       case "english":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Wow_english />
+            <GoToTop />
           </div>
         );
         break;
       case "grammer_com":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Wow_grammer_com />
+            <GoToTop />
           </div>
         );
         break;
       case "maths":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Wow_maths />
+            <GoToTop />
           </div>
         );
         break;
       case "mental_maths":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Wow_menta_maths />
+            <GoToTop />
           </div>
         );
         break;
       case "science":
         return (
-          <div className="sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+          <div className="sm:mt-4">
             <Wow_science />
+            <GoToTop />
           </div>
         );
         break;
@@ -263,9 +278,10 @@ const Cbse = () => {
         {page === "default" ? null : (
           <button
             onClick={() => setPage("default")}
-            className="pr-8 pl-6 py-2 font-semibold bg-[#dbdbdb] flex text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[8rem] lg:top-[11rem] top-[10rem] sm:left-[2rem] left-[0.4rem] rounded-md"
+            className="pr-4 pl-1 py-1 sm:pr-8 sm:pl-6 sm:py-2 font-semibold bg-[#dbdbdb] flex  text-base sm:text-lg gap-1 items-center !text-red-800 active:scale-90 transition-all duration-200 ease-linear fixed sm:top-[15rem] lg:top-[11rem] top-[10rem] sm:left-[1rem] left-[0.4rem] rounded-md"
           >
-            <ArrowBackIosNew /> Back
+            <ArrowBackIosNew className="!text-[1.2rem] sm:!text-[1.5rem]" />{" "}
+            <span className="mb-[0.1rem]">Back</span>
           </button>
         )}
         {handlePage()}
