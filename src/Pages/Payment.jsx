@@ -147,6 +147,7 @@ const Payment = () => {
             section: formik2.values.section,
             class: formik2.values.class,
             phone: formik2.values.phone.toString(),
+            SchoolId: schoolInfo.id,
             paymentID: response.razorpay_payment_id,
           },
         });
