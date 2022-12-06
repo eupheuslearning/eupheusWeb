@@ -206,6 +206,10 @@
   color: rgb(153, 27, 27) !important;
 }
 
+.MuiOutlinedInput-notchedOutline {
+  border-color: rgb(153, 27, 27) !important;
+}
+
 /* hide input number buttons */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

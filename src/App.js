@@ -41,6 +41,7 @@ import Payment from "./Pages/Payment";
 import SchoolsDetails from "./Pages/SchoolsDetails";
 import AdminDashBoard from "./Pages/Admin/AdminDashBoard";
 import Oslite from "./Pages/Oslite";
+import Unsubscribe from "./Pages/Unsubscribe";
 
 function App() {
   const Admin = useSelector((state) => state.auth.admin);
@@ -59,11 +60,12 @@ function App() {
             <Route path="/code2win" element={<Code2Win />} />
             <Route path="/curriculum" element={<Curriculum />} />
             <Route path="/digital" element={<Digital />} />
-            {/* <Route path="/solution/oslite" element={<Oslite />} /> */}
+            <Route path="/solution/oslite" element={<Oslite />} />
             <Route path="/awards" element={<Awards />} />
             <Route path="/news" element={<News />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
             <Route path="/term_and_condition" element={<TermAndCondition />} />
+            <Route path="/unsubscribe" element={<Unsubscribe />} />
             <Route path="/toefl_payment" element={<Payment />} />
             {/* <Route path="/toefl_payment" element={<SchoolsDetails />} />  */}
             {/* curriculer */}
