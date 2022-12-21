@@ -60,7 +60,7 @@ function App() {
             <Route path="/code2win" element={<Code2Win />} />
             <Route path="/curriculum" element={<Curriculum />} />
             <Route path="/digital" element={<Digital />} />
-            <Route path="/solution/oslite" element={<Oslite />} />
+            <Route path="/solutions/oslite" element={<Oslite />} />
             <Route path="/awards" element={<Awards />} />
             <Route path="/news" element={<News />} />
             <Route path="/privacy_policy" element={<PrivacyPolicy />} />
