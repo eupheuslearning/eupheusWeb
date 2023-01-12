@@ -327,7 +327,7 @@ const Home = () => {
                 />
                 <img
                   src={classK}
-                  className=" absolute -top-3 sm:w-[40%] w-full sm:-left-0 -left-[4rem] h-auto"
+                  className=" absolute -top-3 sm:w-[40%] w-[60%] sm:-left-0 -left-[4rem] h-auto"
                   alt=""
                 />
               </div>
@@ -354,7 +354,7 @@ const Home = () => {
                 />
                 <img
                   src={classK}
-                  className=" absolute -top-2 w-[40%] h-auto"
+                  className=" absolute -top-8 w-[40%] h-auto"
                   alt=""
                 />
               </div>
@@ -392,7 +392,7 @@ const Home = () => {
                 />
                 <img
                   src={sm}
-                  className=" absolute top-0 sm:w-[40%] w-[60vw] h-auto"
+                  className=" absolute top-0 sm:w-[40%] w-[31vw] h-auto"
                   alt=""
                 />
               </div>
