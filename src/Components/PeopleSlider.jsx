@@ -317,7 +317,7 @@ const PeopleSlider = () => {
                     CHOUDHARY
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP SALES
+                    AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     (NORTHEAST)
@@ -340,7 +340,7 @@ const PeopleSlider = () => {
                     RANJAN K SAMAL
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP SALES
+                    AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     (ODISHA)
@@ -410,7 +410,7 @@ const PeopleSlider = () => {
                     SANJEET MUKHERJEE
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP SALES
+                    AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     (UP, UK, BIHAR, JH)
