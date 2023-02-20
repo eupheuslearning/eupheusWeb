@@ -231,7 +231,7 @@ const PeopleSlider = () => {
                     PRITAM KUMAR
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP, HEAD TECHNOLOGY
+                    HEAD - TECHNOLOGY
                   </span>
 
                   <a href="https://www.linkedin.com/in/pritam-kumar-71861b57">
