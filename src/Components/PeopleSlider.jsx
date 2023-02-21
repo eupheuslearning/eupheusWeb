@@ -97,7 +97,7 @@ const PeopleSlider = () => {
                     ABHIJIT SEN
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP SALES
+                    Vice President - SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     (WEST BENGAL, NEPAL)
@@ -120,7 +120,7 @@ const PeopleSlider = () => {
                     ASHOK YELIGETI
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP SALES
+                    Vice President - SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     (MAHARASHTRA, CHHATTISGARH,
@@ -170,7 +170,7 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    (DELHI NCR, KERALA AND GCC)
+                    (East Delhi, Kerala)
                   </span>
                   <a href="https://www.linkedin.com/in/lalit-sharma-9807b520/">
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
