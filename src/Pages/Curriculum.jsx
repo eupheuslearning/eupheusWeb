@@ -60,7 +60,7 @@ const Curriculum = () => {
               src={pp}
               alt=""
             />
-            <span>Pre Primary</span>
+            <span>Pre-Primary</span>
           </span>
           <span
             onClick={() => navigate("/curriculer/cbse")}

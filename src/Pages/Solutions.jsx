@@ -41,25 +41,26 @@ const Solutions = () => {
       {/* <div className="a w-12 h-12 bg-blue-700">gsap box</div> */}
 
       <div className=" sm:mt-[4rem] mt-[1rem] text-gray-700  md:mx-[12vw] mx-[5vw] md:text-2xl text-base">
-        Eupheus Learning Group (combined entity of Eupheus Learning, ClassKlap
-        and SchoolMitra), apart from their largest catalogue of curricular and
-        co-curricular offerings mapped to CBSE and ICSE boards, has introduced
-        21st Century School OS which is a unified digital platform offering
-        content management system (CMS), enterprise resource planning (ERP) and
-        learning management system (LMS) through a single sign on, making lives
-        simpler for all stakeholders alike – principals, teachers, parents and
-        students.
+        Welcome to the world of comprehensive and innovative solutions for
+        Schools. Apart from the widest catalogue of curricular and supplemental
+        offerings which are mapped to CBSE and ICSE boards, there is 21st
+        Century School OS which is an integrated digital platform offering
+        content, learning management system (LMS) and enterprise resource
+        planning (ERP) through a single sign on.
         <br />
         <br />
         Eupheus is a pioneer when it comes to personalizing learning outcomes
         for a student, since the company believes that each student is unique.
         There’s a unique offering called ‘personalized remedial solution’ which
-        customizes remedial help for students thereby making them understand the
+        customizes revision aids for students thereby making them understand the
         subject at the topic level.
         <br />
         <br />
+        Automation and digitalization of Schools made easy by Eupheus Learning.
         The brand is focused on transforming schools into a 21st Century School
-        with the increased digitalization appreciation of the modern world
+        enabling them with digital library, 21st Century Skills oriented
+        programs and offering them tools and techniques to comply to the key
+        mandates of NEP 2020.
       </div>
 
       <div className=" sm:mt-[8rem] mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-base">
@@ -100,18 +101,22 @@ const Solutions = () => {
       </div>
 
       <div className="sm:mt-[8rem] mt-[1rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-base">
-        <span>THE POWER OF THE 21ST CENTURY SCHOOL OS</span>
+        <span>
+          THE POWER OF
+          <br />
+          THE 21ST CENTURY SCHOOL OS
+        </span>
       </div>
       <div className="grid lg:grid-cols-3  gap-2 sm:mb-[5rem] mb-[1rem]">
         <div className="mt-[2.5rem] text-gray-700 lg:w-[50vw] sm:pr-0 pr-[1rem] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-sm">
-          The 21st Century School OS unifies ERP (enterprise resource planning),
-          LMS (learning management system) and CMS (content management system)
-          on a single sign-on, for all stakeholders of a school – parents,
-          teachers, students and parents. With the uniqueness lies in the
-          content and technology solutions development and deployment, Eupheus
-          Learning is working together with schools to encourage and support
-          children as they develop the core STEAM skills that are essential to
-          succeed in school and in today’s economy.
+          The uniqueness lies in the content and technology solutions
+          development and deployment. The 21st Century School OS integrates
+          Content, LMS (learning management system) and ERP (enterprise resource
+          planning) on a single sign-on. The integrated platform supports
+          schools with their automation and digitalization needs. This platform
+          serves as a single platform to keep a check on school’s business, its
+          administration, analytics and report generation as well as a close
+          watch on teaching and learning aids for educators and learners alike.
         </div>
 
         <img

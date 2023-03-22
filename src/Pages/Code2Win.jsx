@@ -29,27 +29,6 @@ export default function Code2Win() {
       >
         <Navbar highlight={"events"} />
 
-        {/* <div className=" sm:my-[5rem] my-[1rem] text-gray-700 text-left lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
-          Every year, Eupheus Learning hosts several national and global events
-          to promote the purpose of better learning, effective teaching &amp;
-          wholesome development in the education systems across the world.
-        </div> */}
-
-        {/* <div className="sm:my-[5rem] my-[2rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 justify-center items-center">
-          <img
-            src={isfo}
-            onClick={() => navigate("/ifso")}
-            className="sm:w-[30vw] cursor-pointer hover:scale-90 transition-all duration-150 ease-linear w-[40vw] h-auto object-cover"
-            alt=""
-          />
-
-          <img
-            src={c2w}
-            className="sm:w-[35vw] cursor-pointer hover:scale-90 transition-all duration-150 ease-linear w-[40vw] h-auto"
-            alt=""
-          />
-        </div> */}
-
         <div className="mt-[10rem] mb-[1rem] flex items-start gap-8 relative">
           <div>
             <div className="text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-5xl text-base">
@@ -58,11 +37,8 @@ export default function Code2Win() {
             </div>
 
             <div className=" mt-[2rem] text-black-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-base">
-              <span className="font-bold ">CODE2WIN</span>
-              <span className=" ">NATIONAL CODING COMPETITION</span>
-              <span>
-                CODE2WIN <span className="font-bold ">ROBOGARDEN</span>{" "}
-              </span>
+              <span className="font-bold ">CODE2WIN by ROBOGARDEN</span>
+              <span className=" ">National Coding Competition</span>
             </div>
 
             <div className=" mt-[1rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
@@ -146,7 +122,7 @@ export default function Code2Win() {
           <div className="grid lg:grid-cols-2">
             <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
               <div className=" sm:my-[3rem] my-[1rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
-                <span className="font-bold ">FOR GRADES 1-4</span>
+                <span className="font-bold ">FOR GRADES 9-12</span>
               </div>
               Game-based course in which missions
               <br />

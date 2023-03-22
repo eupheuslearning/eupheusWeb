@@ -229,8 +229,9 @@ const Home = () => {
       </Parallax>
       <div className="flex gap-4 items-center w-[100vw] justify-center pl-6 mt-[2.5rem]">
         <h3 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw]">
-          Empower your children beyond books and boards that can prepare them
-          for the unprecedented challenges of tomorrow.
+          Books are important friends of young learners. Now, also empower
+          children beyond books and boards that can prepare them for the
+          unprecedented challenges of tomorrow.
         </h3>
         {/* <Parallax rotate={[180, 570]}> */}
         <Reveal repeat>
@@ -254,7 +255,7 @@ const Home = () => {
             <img src={book} className="w-[8rem] ml-[30vw] h-auto" alt="" />
           </Tween>
         </Reveal>
-        <div className="flex gap-4">
+        <div className="flex sm:flex-row flex-col gap-4">
           <Parallax translateX={[-50, 50]}>
             <div
               className=" relative cursor-pointer"
@@ -262,7 +263,7 @@ const Home = () => {
             >
               <img
                 src={card}
-                className="sm:w-[20rem] w-[24rem] h-auto"
+                className="sm:w-[22.3rem] w-[13rem] h-auto"
                 alt=""
               />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
@@ -270,10 +271,29 @@ const Home = () => {
                   CURRICULAR CONTENT
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
-                  Eupheus Learning places learners at the heart of education.
-                  Therefore, textbooks and syllabi are designed by subject
-                  matter experts from across the globe and are mapped to CBSE
-                  and ICSE boards.
+                  Widest catalogue of course book solutions and learning aids
+                  for K-12, mapped to CBSE and ICSE boards. Most updated with
+                  NEP 2020 mandates. India’s First “personalised remedial
+                  solutions” for students now available.
+                </div>
+              </div>
+            </div>
+          </Parallax>
+          <Parallax translateX={[0, 0]}>
+            <div className=" relative cursor-pointer">
+              <img
+                src={card}
+                className="sm:w-[22.3rem] w-[13rem] h-auto"
+                alt=""
+              />
+              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
+                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-xl text-sm">
+                  21st Century School OS
+                </div>
+                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
+                  Unique School operating system offering Content, Learning
+                  Management System and ERP on a single sign-on. A powerful tool
+                  for Schools to Implement key mandates of NEP 2020
                 </div>
               </div>
             </div>
@@ -285,7 +305,7 @@ const Home = () => {
             >
               <img
                 src={card}
-                className="sm:w-[21.3rem] w-[25.1rem] h-auto"
+                className="sm:w-[22.3rem] w-[13rem] h-auto"
                 alt=""
               />
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
@@ -293,10 +313,10 @@ const Home = () => {
                   SUPPLEMENTAL CONTENT
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] sm:w-[15rem] w-[10rem]">
-                  Specially curated educational offerings, such as Step and
-                  Learn, Cubetto, and Fiction Express to promote Kinaesthetic
-                  Learning, Reading Enhancement, STEM/STEAM, and English
-                  language learning
+                  Best global content with tech promoting Kinaesthetic Learning,
+                  Reading Enhancement, STEM/ STEAM, English Language Learning
+                  and Assessment, Digital Library and Competitions. Now Schools
+                  have a one-stop-solution.
                 </div>
               </div>
             </div>
@@ -310,10 +330,10 @@ const Home = () => {
       <div className="flex gap-4 flex-col w-fit items-end md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] mt-[5rem]">
         <span>
           <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold pr-2">
-            PERSONALISATION REMEDIAL SERVICE
+            Personalized Remedial Solutions
           </h1>
           <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl font-semibold text-right pr-2">
-            TO GAIN AN EDGE IN THE FUTURE
+            Because No Two Students Are Alike
           </h1>
         </span>
         {mobile ? (
@@ -375,10 +395,10 @@ const Home = () => {
       <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] mt-[5rem]">
         <span>
           <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
-            PERSONALISATION REMEDIAL SERVICE
+            21st Century School OS
           </h1>
           <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl font-semibold">
-            TO GAIN AN EDGE IN THE FUTURE
+            Unique and Single Signon School Management Software
           </h1>
         </span>
         {mobile ? (
@@ -399,12 +419,12 @@ const Home = () => {
             </Parallax>
             <div className="flex flex-col gap-2 items-end">
               <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[90vw] pr-2">
-                SchoolMitra a home grown SaaS company offering digital school
-                management system has introduced The 21st Century School OS
-                which unifies ERP (enterprise resource planning), LMS (learning
-                management system) and CMS (content management system) on a
-                single sign-on, benefitting all stakeholders of a school alike –
-                Principals, Teachers, Students and Parents.
+                Making automation and digitalization of Schools easy. The 21st
+                Century School OS integrates Content, LMS (learning management
+                system) and ERP (enterprise resource planning) on a single
+                sign-on, benefitting all stakeholders of a school alike –
+                Principals, Teachers, Parents and Students. A unique and
+                affordable solution from SchoolMitra, our acquired company.
               </h1>
               <a href="https://www.schoolmitra.com/">
                 <BasicButton text={"Know More"} bgColor={"rgb(185 28 28)"} />
@@ -415,12 +435,12 @@ const Home = () => {
           <div className="flex md:gap-[7rem] gap-[2rem] items-center">
             <div className="flex flex-col gap-2 items-end">
               <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
-                SchoolMitra a home grown SaaS company offering digital school
-                management system has introduced The 21st Century School OS
-                which unifies ERP (enterprise resource planning), LMS (learning
-                management system) and CMS (content management system) on a
-                single sign-on, benefitting all stakeholders of a school alike –
-                Principals, Teachers, Students and Parents.
+                Making automation and digitalization of Schools easy. The 21st
+                Century School OS integrates Content, LMS (learning management
+                system) and ERP (enterprise resource planning) on a single
+                sign-on, benefitting all stakeholders of a school alike –
+                Principals, Teachers, Parents and Students. A unique and
+                affordable solution from SchoolMitra, our acquired company.
               </h1>
               <a href="https://www.schoolmitra.com/">
                 <BasicButton text={"Know More"} bgColor={"rgb(185 28 28)"} />
@@ -453,11 +473,15 @@ const Home = () => {
 
       {/* <Form /> */}
 
-      <div className="w-[100vw] items-center px-[2vw] py-[2rem] grid grid-rows-1 grid-cols-3 gap-[2rem] bg-[#f5ab1d]">
-        <div className="grid grid-cols-2 grid-rows-3 col-span-2 gap-3 w-full">
+      <div className="w-[100vw] items-center px-[2vw] py-[2rem] grid grid-rows-2 grid-cols-3 gap-[2rem] bg-[#f5ab1d]">
+        <span className="row-span-2 col-span-3 pl-4 text-gray-100 underline text-xl">
+          Latest From Eupheus Learning
+        </span>
+
+        <div className="grid grid-cols-2 grid-rows-3 sm:col-span-2 col-span-3 gap-3 w-full">
           {news.map((item) => {
             return (
-              <div className="flex w-[30vw] flex-col gap-2">
+              <div className="flex w-full shadow-2xl p-4 rounded-md flex-col gap-2">
                 <a href={item.link} target="_blank">
                   <span className=" sm:text-sm text-xs text-white">
                     <span>{item.headline}</span>
@@ -469,68 +493,12 @@ const Home = () => {
               </div>
             );
           })}
-
-          {/* <div className=" flex w-[30vw] flex-col gap-2">
-            <a href="https://economictimes.indiatimes.com/tech/funding/eupheus-learning-acquires-classklap-for-19-million/articleshow/86396052.cms">
-              <span className="sm:text-sm text-xs text-white">
-                Eupheus Learning acquires ClassKlap for $19 million
-              </span>
-            </a>
-            <span className="md:text-base text-xs text-red-700">
-              Sep 21, 2021
-            </span>
-          </div>
-          <div className=" flex w-[30vw] flex-col gap-2">
-            <a href="https://economictimes.indiatimes.com/industry/services/education/eupheus-learning-collaborates-with-global-education-solutions-to-help-students-develop-competencies/articleshow/85295893.cms">
-              <span className=" sm:text-sm text-xs text-white">
-                Eupheus Learning collaborates with Global Education Solutions to
-                help students develop competencies
-              </span>
-            </a>
-            <span className="md:text-base text-xs text-red-700">
-              Aug 13, 2021
-            </span>
-          </div>
-          <div className=" flex w-[30vw] flex-col gap-2">
-            <a href="https://www.apnnews.com/eupheus-learning-signs-mou-with-varthana-to-make-school-financing-and-21st-century-education-solutions-accessible-to-more-schools-in-india/">
-              <span className=" sm:text-sm text-xs text-white">
-                Eupheus Learning signs MoU with Varthana to make school
-                financing and 21st century education solutions accessible to
-                more schools in India
-              </span>
-            </a>
-            <span className="md:text-base text-xs text-red-700">
-              Jan 11, 2022
-            </span>
-          </div>
-          <div className=" flex w-[30vw] flex-col gap-2">
-            <a href="https://economictimes.indiatimes.com/tech/funding/edtech-startup-eupheus-learning-raises-10-million-from-lightrock-india/articleshow/86198785.cms?from=mdr">
-              <span className="sm:text-sm text-xs text-white">
-                Edtech startup Eupheus Learning raises $10 million from
-                Lightrock India
-              </span>
-            </a>
-            <span className="md:text-base text-xs text-red-700">
-              Sep 14, 2021
-            </span>
-          </div>
-          <div className=" flex w-[30vw] flex-col gap-2">
-            <a href="https://www.cnbctv18.com/business/most-trusted-brands-of-india-2021-8791541.htm">
-              <span className="sm:text-sm text-xs text-white">
-                Eupheus Learning - Most Trusted Brands Of India 2021
-              </span>
-            </a>
-            <span className="md:text-base text-xs text-red-700">
-              Apr 12, 2021
-            </span>
-          </div> */}
         </div>
-
-        {/* <div className="flex flex-col gap-3"> */}
-
-        {/* </div> */}
-
-        <img src={footerimg1} alt="" />
+        <img
+          src={footerimg1}
+          className="sm:block hidden place-self-center"
+          alt=""
+        />
       </div>
       <Footer />
       <GoToTop />

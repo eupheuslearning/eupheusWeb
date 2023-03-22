@@ -115,21 +115,21 @@ export default function About() {
           <span>MEET THE GUIDING LIGHT</span>
         </div>
 
-        <div className=" text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
+        <div className=" text-gray-700 lg:w-[50vw] md:w-[50vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
           The brand of Proficiency Learning Solutions Private Limited, Eupheus
           Learning started its operations in June 2017. Based in New Delhi, it
           was bootstrapped by about 40 members who joined the 3-founding member
           team to create a new category in the Indian education market.
-        </div>
-
-        <div className=" text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
+          <br />
+          <br />
           The founding team comprises creative minds with experience of more
           than 120 man-years in starting up and turning around businesses in the
           Education and Training space.
         </div>
+
         <img
           src={img3}
-          className="sm:absolute right-[3vw] bottom-0 object-cover top-[5rem] sm:w-[70vw] w-[100vw] h-auto"
+          className="sm:absolute right-[3vw] bottom-0 object-cover md:top-[10rem] sm:top-[15rem] sm:w-[70vw] w-[100vw] h-auto"
           alt=""
         />
       </div>
@@ -316,8 +316,10 @@ export default function About() {
             }}
           >
             <div className="flex flex-col gap-8 w-[100%] pl-7 items-center">
-              <span className="text-yellow-500 sm:pt-[10vh] pt-[3rem] font-bold text-base lg:text-xl 2xl:text-4xl">
-                LIGHTROCK INDIA (2021)
+              <span className="text-yellow-500 sm:pt-[10vh] pt-[3rem] font-bold text-base text-center lg:text-xl 2xl:text-4xl">
+                LIGHTROCK INDIA
+                <br />
+                (2021)
               </span>
 
               <img src={img11} className="w-[50%] h-auto" alt="" />
@@ -350,8 +352,9 @@ export default function About() {
             }}
           >
             <div className="flex flex-col gap-8 pl-7 items-center">
-              <div className="text-yellow-500 font-bold sm:pt-[10vh] pt-[3rem] text-base lg:text-xl 2xl:text-4xl">
+              <div className="text-yellow-500 font-bold sm:pt-[10vh] pt-[3rem] text-base lg:text-xl 2xl:text-4xl text-center">
                 UNITED EDUCATION COMPANY AND AL RAYAN HOLDING COMPANY, KUWAIT
+                <br />
                 (2021)
               </div>
               <img src={img10} className="w-[50%] h-auto" alt="" />
@@ -382,8 +385,10 @@ export default function About() {
             }}
           >
             <div className="flex flex-col items-center gap-8">
-              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl">
-                YUJ VENTURES (2020)
+              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl text-center">
+                YUJ VENTURES
+                <br />
+                (2020)
               </div>
               <img src={img9} className="w-[50%] h-auto" alt="" />
               <div className="text-gray-700 lg:text-lg pl-6 2xl:text-2xl text-sm w-full">
@@ -407,8 +412,10 @@ export default function About() {
             }}
           >
             <div className="flex flex-col items-center gap-8">
-              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl">
-                SIXTH SENSE VENTURES (2018)
+              <div className="text-yellow-500 font-bold text-base lg:text-xl 2xl:text-4xl text-center">
+                SIXTH SENSE VENTURES
+                <br />
+                (2018)
               </div>
               <img src={img8} className="w-[50%] h-auto" alt="" />
               <div className="text-gray-700 pl-6 lg:text-lg 2xl:text-2xl text-sm w-full">

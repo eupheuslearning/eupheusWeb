@@ -33,9 +33,9 @@ export default function Events() {
             <h1 className=" text-black-700 md:text-3xl text-xs  ">
               PROMOTING BETTER LEARNING,
               <br />
-              EFFECTIVE TEACHING & WHOLESOME
+              EFFECTIVE TEACHING &
               <br />
-              DEVELOPMENT WITH
+              WHOLESOME DEVELOPMENT WITH
             </h1>
             <h1 className="text-black-500 md:text-3xl text-xs font-extrabold">
               NATIONAL AND GLOBAL EVENTS
@@ -48,9 +48,11 @@ export default function Events() {
           />
         </div>
         <div className=" sm:my-[5rem] my-[1rem] text-gray-700 text-left lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
-          Every year, Eupheus Learning hosts several national and global events
-          to promote the purpose of better learning, effective teaching &amp;
-          wholesome development in the education systems across the world.
+          Consistent with the key mandates of NEP 2020, where Schools are
+          encouraged to undertake competitions on a routine basis, Eupheus
+          Learning hosts several national and global events to help schools.
+          Enabling schools with an environment to promote better learning,
+          effective teaching & wholesome development.
         </div>
 
         <div className="sm:my-[5rem] my-[2rem] w-[100vw] flex md:gap-[7rem] sm:gap-[4rem] gap-4 justify-center items-center">

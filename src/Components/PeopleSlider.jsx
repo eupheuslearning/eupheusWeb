@@ -82,7 +82,7 @@ const PeopleSlider = () => {
           target={
             <div
               ref={sliderRef}
-              className="flex w-fit justify-center items-center"
+              className="flex w-fit justify-center items-center relative"
             >
               <div className="flex w-fit gap-8 people sm:px-4 px-1 h-fit overflow-hidden">
                 <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
@@ -99,10 +99,13 @@ const PeopleSlider = () => {
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     Vice President - SALES
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    (WEST BENGAL, NEPAL)
+                  <span className=" text-gray-600 sm:text-sm text-xs text-center">
+                    ( WEST BENGAL, NEPAL )
                   </span>
-                  <a href="https://www.linkedin.com/in/abhijit-sen-57010537/">
+                  <a
+                    href="https://www.linkedin.com/in/abhijit-sen-57010537/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -122,13 +125,14 @@ const PeopleSlider = () => {
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     Vice President - SALES
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    (MAHARASHTRA, CHHATTISGARH,
+                  <span className=" text-gray-600 sm:text-sm text-xs text-center">
+                    ( MAHARASHTRA, CHHATTISGARH, KARNATAKA )
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    KARNATAKA)
-                  </span>
-                  <a href="https://www.linkedin.com/in/ashok-yeligeti-286425aa/">
+
+                  <a
+                    href="https://www.linkedin.com/in/ashok-yeligeti-286425aa/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -142,14 +146,16 @@ const PeopleSlider = () => {
                       alt=""
                     />
                   </div>
-
                   <span className=" font-bold sm:text-base text-xs text-gray-800">
                     Kapil Chanana
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     Chief Growth Officer
                   </span>
-                  <a href="https://www.linkedin.com/in/kapil-chanana-3903834/">
+                  <a
+                    href="https://www.linkedin.com/in/kapil-chanana-3903834/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -170,9 +176,12 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    (East Delhi, Kerala)
+                    ( East Delhi, Kerala )
                   </span>
-                  <a href="https://www.linkedin.com/in/lalit-sharma-9807b520/">
+                  <a
+                    href="https://www.linkedin.com/in/lalit-sharma-9807b520/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -192,7 +201,10 @@ const PeopleSlider = () => {
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     AVP TRAINING
                   </span>
-                  <a href="https://www.linkedin.com/in/lokesh-darira-48677550/">
+                  <a
+                    href="https://www.linkedin.com/in/lokesh-darira-48677550/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -213,9 +225,12 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    (AP & TELANGANA)
+                    ( AP & TELANGANA )
                   </span>
-                  <a href="https://www.linkedin.com/in/nehal-ather-97284981/">
+                  <a
+                    href="https://www.linkedin.com/in/nehal-ather-97284981/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -234,7 +249,10 @@ const PeopleSlider = () => {
                     HEAD - TECHNOLOGY
                   </span>
 
-                  <a href="https://www.linkedin.com/in/pritam-kumar-71861b57">
+                  <a
+                    href="https://www.linkedin.com/in/pritam-kumar-71861b57"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -255,7 +273,10 @@ const PeopleSlider = () => {
                   <span className="text-gray-600 sm:text-sm text-xs">
                     SALES (EXPORTS)
                   </span>
-                  <a href="https://www.linkedin.com/in/rajiv-bajaj-ba0974a/">
+                  <a
+                    href="https://www.linkedin.com/in/rajiv-bajaj-ba0974a/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -275,7 +296,10 @@ const PeopleSlider = () => {
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     VP DIGITAL SALES (INDIA)
                   </span>
-                  <a href="https://www.linkedin.com/in/rajivrazdan/">
+                  <a
+                    href="https://www.linkedin.com/in/rajivrazdan/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -290,13 +314,14 @@ const PeopleSlider = () => {
                   <span className=" font-bold sm:text-base text-xs text-gray-800">
                     RAJNEESH GREWAL
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP SALES (NORTH
+                  <span className=" text-gray-600 sm:text-sm text-xs text-center">
+                    VP SALES ( NORTH INDIA & MIDDLE EAST )
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    INDIA & MIDDLE EAST)
-                  </span>
-                  <a href="https://www.linkedin.com/in/rajneesh-grewal-b2983720/">
+
+                  <a
+                    href="https://www.linkedin.com/in/rajneesh-grewal-b2983720/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -320,9 +345,12 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    (NORTHEAST)
+                    ( NORTHEAST )
                   </span>
-                  <a href="https://www.linkedin.com/in/ramesh-choudhury-3b886b8/">
+                  <a
+                    href="https://www.linkedin.com/in/ramesh-choudhury-3b886b8/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -343,9 +371,12 @@ const PeopleSlider = () => {
                     AVP SALES
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    (ODISHA)
+                    ( ODISHA )
                   </span>
-                  <a href="https://www.linkedin.com/in/ranjan-samal-061105151/">
+                  <a
+                    href="https://www.linkedin.com/in/ranjan-samal-061105151/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -368,7 +399,10 @@ const PeopleSlider = () => {
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     RESOURCES
                   </span>
-                  <a href="https://www.linkedin.com/in/ranjitsingh6/">
+                  <a
+                    href="https://www.linkedin.com/in/ranjitsingh6/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -385,13 +419,14 @@ const PeopleSlider = () => {
                   <span className="font-bold sm:text-base text-xs text-gray-800">
                     DR. REENA PURI
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP, ISFO OLYMPIAD
+                  <span className=" text-gray-600 sm:text-sm text-xs text-center">
+                    VP, ISFO OLYMPIAD & SPECIAL PROJECTS
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    & SPECIAL PROJECTS
-                  </span>
-                  <a href="https://www.linkedin.com/in/reena-puri-phd-86a42159">
+                  <span className=" text-gray-600 sm:text-sm text-xs"></span>
+                  <a
+                    href="https://www.linkedin.com/in/reena-puri-phd-86a42159"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
@@ -412,16 +447,18 @@ const PeopleSlider = () => {
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     AVP SALES
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    (UP, UK, BIHAR, JH)
+                  <span className=" text-gray-600 sm:text-sm text-xs text-center">
+                    ( UP, UK, BIHAR, JH )
                   </span>
-                  <a href="https://www.linkedin.com/in/sanjeetmukherjee/">
+                  <a
+                    href="https://www.linkedin.com/in/sanjeetmukherjee/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
                   </a>
                 </div>
-
                 <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
                   <img
                     src={p3}
@@ -434,16 +471,18 @@ const PeopleSlider = () => {
                   <span className=" font-bold sm:text-base text-xs text-gray-800">
                     BHATIA
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
+                  <span className=" text-gray-600 sm:text-sm text-xs text-center">
                     VP, FINANCE & ACCOUNTS
                   </span>
-                  <a href="https://www.linkedin.com/in/sukhvinder-singh-bhatia-424884b6/">
+                  <a
+                    href="https://www.linkedin.com/in/sukhvinder-singh-bhatia-424884b6/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>
                   </a>
                 </div>
-
                 <div className="flex flex-col items-center sm:w-[16vw] w-[40vw]">
                   <img
                     src={p9}
@@ -462,7 +501,10 @@ const PeopleSlider = () => {
                   <span className=" text-gray-600 sm:text-sm text-xs">
                     TAMIL NADU)
                   </span>
-                  <a href="https://www.linkedin.com/in/vijay-paul-322b5054/">
+                  <a
+                    href="https://www.linkedin.com/in/vijay-paul-322b5054/"
+                    className="absolute top-[100%]"
+                  >
                     <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
                       <LinkedIn /> <span>Linkedin</span>
                     </button>

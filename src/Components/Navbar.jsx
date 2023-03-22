@@ -109,6 +109,12 @@ const Navbar = ({ highlight }) => {
               >
                 Supplemental
               </h1>
+              <h1
+                onClick={() => navigate("/digital")}
+                className="hover:translate-x-2 transition-all duration-200 leading-[15px] ease-linear"
+              >
+                21st Century School OS
+              </h1>
             </div>
           </div>
         </div>
