@@ -15,6 +15,7 @@ import class1 from "../assets/class1.png";
 import img1 from "../assets/eventAsset1.png";
 import img2 from "../assets/eventAsset2.png";
 import { useNavigate } from "react-router-dom";
+import { Reveal, Tween } from "react-gsap";
 
 export default function Code2Win() {
   const navigate = useNavigate();
@@ -73,39 +74,42 @@ export default function Code2Win() {
           ></iframe>
         </div>
 
-        <div className="sm:my-[5rem]">
-          <div className="grid lg:grid-cols-2">
-            <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}
+            to={{ opacity: 1, transform: "translate3d(0, 0px, 0)" }}
+            ease="back.out(1.4)"
+          >
+            <div className="flex md:flex-row flex-col justify-around w-full">
+              <div className="sm:my-[5rem] md:w-[30%] w-full">
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  {/* <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
               <div className=" sm:my-[3rem] my-[1rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
                 <span className="font-bold ">FOR GRADES 1-4</span>
               </div>
-              Game-based course in which missions
-              <br />
-              are achieved by a program written by
-              <br />
-              Blocks. While preparing for a birthday
-              <br />
-              party, students will learn repeat loop
-              <br />
-              and Robo sensors of colors and text.
-            </div>
+            </div> */}
+                  <span className="font-bold text-gray-700 md:text-4xl text-xl">
+                    FOR GRADES 1-4
+                  </span>
 
-            <div className="flex justify-center">
-              <img src={class1} className="sm:h-[70vh] h-[30vh]" alt="" />
-            </div>
-          </div>
-        </div>
-
-        <div className="sm:my-[5rem]">
-          <div className="grid lg:grid-cols-2">
-            <div className="flex justify-center">
-              <img src={java} className="sm:h-[70vh] h-[30vh]" alt="" />
-            </div>
-            <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
-              <div className=" sm:my-[3rem] my-[1rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
-                <span className="font-bold ">FOR GRADES 5-8</span>
+                  <div className="flex justify-center">
+                    <img src={class1} className="h-[40vh] w-full" alt="" />
+                  </div>
+                </div>
               </div>
-              Game-based course in which missions
+              <div className="sm:my-[5rem] md:w-[30%] w-full">
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  <span className="font-bold text-gray-700 md:text-4xl text-xl">
+                    FOR GRADES 5-8
+                  </span>
+                  <div className="flex justify-center">
+                    <img src={java} className="w-full h-[40vh]" alt="" />
+                  </div>
+                  {/* <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base"> */}
+                  {/* <div className=" sm:my-[3rem] my-[1rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
+                <span className="font-bold ">FOR GRADES 5-8</span>
+              </div> */}
+                  {/* Game-based course in which missions
               <br />
               are achieved by a program written by
               <br />
@@ -113,89 +117,29 @@ export default function Code2Win() {
               <br />
               party, students will learn repeat loop
               <br />
-              and Robo sensors of colors and text.
-            </div>
-          </div>
-        </div>
-
-        <div className="sm:my-[5rem] my-[1rem]">
-          <div className="grid lg:grid-cols-2">
-            <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
+              and Robo sensors of colors and text. */}
+                  {/* </div> */}
+                </div>
+              </div>
+              <div className="sm:my-[5rem] my-[1rem] md:w-[30%] w-full">
+                <div className="flex flex-col gap-4 items-center justify-center">
+                  {/* <div className=" mt-[2.5rem] text-gray-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] md:text-2xl text-base">
               <div className=" sm:my-[3rem] my-[1rem] text-black-700 lg:w-[50vw] md:w-[70vw]  flex flex-col md:text-4xl text-xl">
                 <span className="font-bold ">FOR GRADES 9-12</span>
               </div>
-              Game-based course in which missions
-              <br />
-              are achieved by a program written by
-              <br />
-              JavaScript. Students will start their first
-              <br />
-              steps to JavaScript as a textual language
-              <br />
-              and its relation to Blocks programs.
-            </div>
+            </div> */}
+                  <span className="font-bold text-gray-700 md:text-4xl text-xl">
+                    FOR GRADES 9-12
+                  </span>
 
-            <div className="flex justify-center">
-              <img src={python} className="sm:h-[70vh] h-[40vh]" alt="" />
-            </div>
-          </div>
-        </div>
-
-        {/* <div className="sm:my-[5rem] my-[1rem]">
-          <img
-            src={isfo}
-            className="sm:w-[430px] w-[16rem] my-[2rem]  md:ml-[12vw] ml-[5vw] h-auto"
-            alt=""
-          />
-          <div className=" mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-5xl text-base">
-            <span className="font-bold ">OLYMPIAD THROUGH ISFO</span>
-            <span className="font-extrabold ">(FOR GRADES 1 – 10)</span>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-2">
-            <div>
-              <p
-                className="
-             md:ml-[12vw] ml-[5vw] sm:my-[3rem] my-[1rem] font-semibold md:text-2xl"
-              >
-                Empowering Children to become
-                <br />
-                Global Olympiad Champions
-              </p>
-              <div className=" my-[2rem] text-gray-700  md:ml-[12vw] ml-[5vw] md:text-2xl text-base pr-4 sm:pr-0">
-                International Society for Olympiad (ISFO), registered as a
-                non-profit organisation in India and UAE, aims to identify,
-                encourage and promote students with a creative bent of mind and
-                affinity towards the disciplines of Maths, Science, English and
-                General Knowledge. It aims to nurture &amp; enhance the latent
-                genius in students through tests &amp; competitive exams of
-                exemplary global quality and standard. ISFO aims to create an
-                army of global learners who challenge the boundaries of the
-                existing educational structure &amp; emerge as international
-                olympiad champions.
-              </div>
-
-              <div className=" my-[2rem] text-gray-700  md:ml-[12vw] ml-[5vw] md:text-2xl text-base pr-4 sm:pr-0">
-                ISFO is not just a series of tests—it’s a way of life!
+                  <div className="flex justify-center">
+                    <img src={python} className="w-full h-[40vh]" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
-            <img
-              src={eventLast}
-              className="sm:h-[100vh] h-[35vh] lg:mt-[-10vh]"
-              alt=""
-            />
-          </div>
-        </div>
-
-        <div className=" sm:my-[5rem] my-[1rem] lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] flex flex-col md:text-4xl text-lg">
-          <span className="">
-            PAST <span className="font-bold "> OLYMPIAD WINNERS</span>
-          </span>
-        </div>
-
-        <div className="flex justify-center">
-          <img src={winner} className="sm:w-auto w-[100vw]" alt="" />
-        </div> */}
+          </Tween>
+        </Reveal>
 
         <Footer />
         <GoToTop />
