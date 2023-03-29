@@ -2,23 +2,15 @@ import React, { useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import GoToTop from "../Components/Top";
-import Banner_1 from "../assets/eventBanner.png";
-import power from "../assets/power.png";
 import grayBg from "../assets/grayBg.png";
-import isfo from "../assets/iso.png";
-import c2w from "../assets/code2win.png";
-import eventLast from "../assets/img01.png";
-import winner from "../assets/wiiner.png";
 import java from "../assets/java.png";
 import python from "../assets/python.png";
 import class1 from "../assets/class1.png";
 import img1 from "../assets/eventAsset1.png";
 import img2 from "../assets/eventAsset2.png";
-import { useNavigate } from "react-router-dom";
 import { Reveal, Tween } from "react-gsap";
 
 export default function Code2Win() {
-  const navigate = useNavigate();
   useEffect(() => {
     document.title = "Competitions - Eupheus";
   }, []);
@@ -140,6 +132,45 @@ export default function Code2Win() {
             </div>
           </Tween>
         </Reveal>
+        <div className="w-full flex flex-col gap-4 items-start pl-[5rem] my-[4rem]">
+          <h1 className="text-red-700 font-bold sm:text-4xl text-xl">
+            Features Of The Program
+          </h1>
+
+          <ol className="list-disc pl-[2rem] sm:text-2xl text-base">
+            <li>1 Hour of tutor based online orientation session</li>
+            <li>
+              Access to 16 hrs of self learning module on Coding based on grade
+              of the student
+            </li>
+          </ol>
+        </div>
+
+        <div className="w-full flex flex-col gap-4 items-start pl-[5rem] my-[4rem]">
+          <h1 className="text-red-700 font-bold sm:text-4xl text-xl">
+            Learn2Code
+          </h1>
+          <h1 className="text-red-700 font-bold sm:text-3xl text-xl">
+            Features of the program:
+          </h1>
+
+          <ol className="list-disc pl-[2rem] sm:text-2xl text-base">
+            <li>1 Hour of tutor based online orientation session</li>
+            <li>
+              Access to 16 hrs of self learning module on Coding based on grade
+              of the student
+            </li>
+            <li>1 Hour of doubt clearing online session </li>
+            <li>
+              Exciting Gifts for students to encourage them to complete their
+              assigned journeys
+            </li>
+          </ol>
+          <h1 className="font-semibold sm:text-4xl text-xl">
+            *Contact your school to Register for “Learn2code - Free 17 hrs
+            Program on Coding“
+          </h1>
+        </div>
 
         <Footer />
         <GoToTop />

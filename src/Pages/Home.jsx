@@ -26,14 +26,13 @@ import footerimg1 from "../assets/footerimg1.png";
 import { Parallax } from "react-scroll-parallax";
 import Slider from "../Components/Slider";
 // import Form from "../Components/Form";
-import { Tween, ScrollTrigger, Reveal } from "react-gsap";
+import { Tween, Reveal } from "react-gsap";
 // import { gsap } from "gsap";
 import { useNavigate } from "react-router-dom";
 import BasicButton from "../Components/Material/Button";
 import instance from "../Instance";
 
 const Home = () => {
-  const [index, setIndex] = useState(0);
   const [news, setNews] = useState([]);
   const navigate = useNavigate();
   const timeout = useRef(null);
@@ -280,25 +279,6 @@ const Home = () => {
             </div>
           </Parallax>
           <Parallax translateX={[0, 0]}>
-            <div className=" relative cursor-pointer">
-              <img
-                src={card}
-                className="sm:w-[22.3rem] w-[13rem] h-auto"
-                alt=""
-              />
-              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
-                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-xl text-sm">
-                  21st Century School OS
-                </div>
-                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
-                  Unique School operating system offering Content, Learning
-                  Management System and ERP on a single sign-on. A powerful tool
-                  for Schools to Implement key mandates of NEP 2020
-                </div>
-              </div>
-            </div>
-          </Parallax>
-          <Parallax translateX={[50, -50]}>
             <div
               className=" relative cursor-pointer"
               onClick={() => navigate("/digital")}
@@ -317,6 +297,25 @@ const Home = () => {
                   Reading Enhancement, STEM/ STEAM, English Language Learning
                   and Assessment, Digital Library and Competitions. Now Schools
                   have a one-stop-solution.
+                </div>
+              </div>
+            </div>
+          </Parallax>
+          <Parallax translateX={[50, -50]}>
+            <div className=" relative cursor-pointer">
+              <img
+                src={card}
+                className="sm:w-[22.3rem] w-[13rem] h-auto"
+                alt=""
+              />
+              <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
+                <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-xl text-sm">
+                  21st Century School OS
+                </div>
+                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
+                  Unique School operating system offering Content, Learning
+                  Management System and ERP on a single sign-on. A powerful tool
+                  for Schools to Implement key mandates of NEP 2020
                 </div>
               </div>
             </div>

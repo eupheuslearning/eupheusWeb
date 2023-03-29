@@ -270,9 +270,11 @@ const PeopleSlider = () => {
                   <span className=" font-bold sm:text-base text-xs text-gray-800">
                     RAJIV BAJAJ
                   </span>
-                  <span className=" text-gray-600 text-sm">VP DIGITAL</span>
+                  <span className=" text-gray-600 text-sm">
+                    VP DIGITAL SALES
+                  </span>
                   <span className="text-gray-600 sm:text-sm text-xs">
-                    SALES (EXPORTS)
+                    (EXPORTS)
                   </span>
                   <a
                     href="https://www.linkedin.com/in/rajiv-bajaj-ba0974a/"
@@ -295,7 +297,10 @@ const PeopleSlider = () => {
                     RAJIV RAZDAN
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP DIGITAL SALES (INDIA)
+                    VP DIGITAL SALES
+                  </span>
+                  <span className=" text-gray-600 sm:text-sm text-xs">
+                    (INDIA)
                   </span>
                   <a
                     href="https://www.linkedin.com/in/rajivrazdan/"
@@ -316,7 +321,10 @@ const PeopleSlider = () => {
                     RAJNEESH GREWAL
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs text-center">
-                    VP SALES ( NORTH INDIA & MIDDLE EAST )
+                    VP SALES
+                  </span>
+                  <span className=" text-gray-600 sm:text-sm text-xs text-center">
+                    ( NORTH INDIA & MIDDLE EAST )
                   </span>
 
                   <a
@@ -494,14 +502,12 @@ const PeopleSlider = () => {
                     VIJAY PAUL
                   </span>
                   <span className=" text-gray-600 sm:text-sm text-xs">
-                    VP SALES (PUNJAB,
+                    VP SALES
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    HIMACHAL PRADESH, J&K,
+                  <span className=" text-gray-600 sm:text-sm text-xs text-center">
+                    (PUNJAB, HIMACHAL PRADESH, J&K, TAMIL NADU)
                   </span>
-                  <span className=" text-gray-600 sm:text-sm text-xs">
-                    TAMIL NADU)
-                  </span>
+
                   <a
                     href="https://www.linkedin.com/in/vijay-paul-322b5054/"
                     className="absolute top-[100%]"

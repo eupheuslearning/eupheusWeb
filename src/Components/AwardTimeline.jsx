@@ -9,6 +9,7 @@ import certtificate1 from "../assets/media/cer1.png";
 import certtificate2 from "../assets/media/cer2.png";
 
 // 2022
+import cer0 from "../assets/media/new2022/cer0.png";
 import cer1 from "../assets/media/new2022/cer1.png";
 import cer2 from "../assets/media/new2022/cer2.png";
 import cer3 from "../assets/media/new2022/cer3.png";
@@ -61,50 +62,55 @@ export default function AwardTimeline() {
                   </span>
                 </div>
                 {first ? (
-                  <div className=" w-full sm:justify-start justify-around px-4 bg-transparent flex flex-col sm:gap-12 gap-2">
-                    <div className="flex gap-2">
-                      <img
-                        src={cer1}
-                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                        alt=""
-                      />
-                      <img
-                        src={cer2}
-                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                        alt=""
-                      />
+                  <div className="w-fit  px-4 bg-transparent grid lg:grid-cols-3 grid-cols-2 justify-items-start sm:gap-12 gap-8">
+                    {/* <div className="flex gap-2"> */}
+                    <img
+                      src={cer0}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    <img
+                      src={cer1}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    <img
+                      src={cer2}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
 
-                      <img
-                        src={cer3}
-                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                        alt=""
-                      />
-                    </div>
-                    <div className="flex gap-2">
-                      <img
-                        src={cer4}
-                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                        alt=""
-                      />
-                      <img
-                        src={cer5}
-                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                        alt=""
-                      />
+                    <img
+                      src={cer3}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    {/* </div> */}
+                    {/* <div className="flex gap-2"> */}
+                    <img
+                      src={cer4}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    <img
+                      src={cer5}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
 
-                      <img
-                        src={cer6}
-                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                        alt=""
-                      />
-                    </div>
-                    <div className="flex gap-2">
-                      <img
-                        src={cer7}
-                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
-                        alt=""
-                      />
-                      {/* <img
+                    <img
+                      src={cer6}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    {/* </div> */}
+                    {/* <div className="flex gap-2"> */}
+                    <img
+                      src={cer7}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    {/* <img
                         src={cer5}
                         className="sm:w-[16rem] w-[6rem] h-auto object-cover"
                         alt=""
@@ -115,7 +121,7 @@ export default function AwardTimeline() {
                         className="sm:w-[16rem] w-[6rem] h-auto object-cover"
                         alt=""
                       /> */}
-                    </div>
+                    {/* </div> */}
                   </div>
                 ) : null}
               </div>
