@@ -148,7 +148,7 @@ export default function Code2Win() {
 
         <div className="w-full flex flex-col gap-4 items-start pl-[5rem] my-[4rem]">
           <h1 className="text-red-700 font-bold sm:text-4xl text-xl">
-            Learn2Code
+            Code2Win
           </h1>
           <h1 className="text-red-700 font-bold sm:text-3xl text-xl">
             Features of the program:
@@ -166,10 +166,10 @@ export default function Code2Win() {
               assigned journeys
             </li>
           </ol>
-          <h1 className="font-semibold sm:text-4xl text-xl">
+          {/* <h1 className="font-semibold sm:text-4xl text-xl">
             *Contact your school to Register for “Learn2code - Free 17 hrs
             Program on Coding“
-          </h1>
+          </h1> */}
         </div>
 
         <Footer />
