@@ -39,6 +39,7 @@ import SchoolsDetails from "./Pages/SchoolsDetails";
 import AdminDashBoard from "./Pages/Admin/AdminDashBoard";
 import Oslite from "./Pages/Oslite";
 import Unsubscribe from "./Pages/Unsubscribe";
+import Redirect from "./Pages/Redirect";
 
 function App() {
   const Admin = useSelector((state) => state.auth.admin);
@@ -48,6 +49,7 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/url/:id" element={<Redirect />} />
             {/* <Route path="/demo" element={<Demo/>}/> */}
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/events" element={<Events />} />
