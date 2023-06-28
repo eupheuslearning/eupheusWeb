@@ -24,20 +24,39 @@ const Reading = () => {
     switch (page) {
       case "default":
         return (
-          <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <span
+          <div className=" flex flex-col  sm:grid-row-3 grid-row-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+            <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("fiction")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={img1} className="h-[70%] w-auto" alt="" />
+              <img src={img1} className="h-[70%] w-[70%]" alt="" />
+
             </span>
-            <span
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              Fiction Express: Reading plays a central role in a child’s education and keeping this need in mind, we have collaborated with Fiction Express by Boolino, Europe’s leading and innovative book platform, to nurture reading habits in students and improve lifelong-learning outcomes.
+
+              </h3>
+            </div>
+           </div>
+            <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("pickatale")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={img2} className="h-[70%] w-auto" alt="" />
+              <img src={img2} className="h-[70%] w-[70%]" alt="" />
+
             </span>
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              Pickatale: Pickatale is a library of digitized books that you can read and experience interactively.
+With Pickatale School, children can read or listen to hundreds of children’s books–narrated, illustrated storybooks, non-fiction titles, knowledge books, animated books and many more. Children can enjoy famous classics such as Beauty and the Beast, Cinderella, and Rapunzel, discover new and original characters, or indulge in exciting books that will enhance their knowledge.
+              </h3>
+            </div>
+           </div>
             <GoToTop />
+         
           </div>
         );
         break;

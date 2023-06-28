@@ -57,12 +57,17 @@ const Icse = () => {
             >
               <img src={chemistryIcon} className="w-[90%] h-auto" alt="" />
             </span>
-            <span
-              onClick={() => setPage("grammer_com_vibes")}
-              className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+             <span
+              onClick={() => setPage("chemistry6_8")}
+              className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={GrCompVibesIcon} className="w-[90%] h-auto" alt="" />
+              <img
+                src={simplifiedchemistryIcon}
+                className="w-[90%] h-auto"
+                alt=""
+              />
             </span>
+            
             <span
               onClick={() => setPage("biology")}
               className=" w-full  hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
@@ -112,15 +117,12 @@ const Icse = () => {
               <img src={silverbellIcon} className="w-[90%] h-auto" alt="" />
             </span>
             <span
-              onClick={() => setPage("chemistry6_8")}
-              className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
+              onClick={() => setPage("grammer_com_vibes")}
+              className=" w-full hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={simplifiedchemistryIcon}
-                className="w-[90%] h-auto"
-                alt=""
-              />
+              <img src={GrCompVibesIcon} className="w-[90%] h-auto" alt="" />
             </span>
+          
             <span
               onClick={() => setPage("eng_vibes")}
               className=" w-full flex-col gap-2 hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"

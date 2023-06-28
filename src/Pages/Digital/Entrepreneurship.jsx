@@ -23,12 +23,12 @@ const Entrepreneurship = () => {
       case "default":
         return (
           <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <span
+            {/* <span
               onClick={() => setPage("enpower")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
               <img src={img1} className="h-[70%] w-auto" alt="" />
-            </span>
+            </span> */}
             <GoToTop />
           </div>
         );

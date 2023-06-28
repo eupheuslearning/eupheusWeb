@@ -20,15 +20,42 @@ const KinaestheticLearning = () => {
     switch (page) {
       case "default":
         return (
-          <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <span
+          <div className="w-full flex flex-col sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+           <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("step")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={stepIcon} className="h-[70%] w-auto" alt="" />
+              <img src={stepIcon} className="h-[70%] w-[70%]" alt="" />
+
             </span>
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+                  Step & Learn powered by WizeFloor is an interactive floor that promotes collective and differentiated learning styles and needs through play and physical activity.
+                <br />
+                  A projector projects activities and learning games on to the floor from the ceiling. The children interact with the floor using their hands and feet allowing them to develop their cognitive as well as gross motor skills. Multiple children can play simultaneously.
+              </h3>
+            </div>
+           </div>
+
+
+
+
+
+
+
+
+
             <GoToTop />
           </div>
+
+
+
+
+
+
+
+
         );
         break;
       case "step":

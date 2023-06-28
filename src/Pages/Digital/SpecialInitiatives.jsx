@@ -21,13 +21,36 @@ const SpecialInitiatives = () => {
     switch (page) {
       case "default":
         return (
-          <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 2xl:gap-[7.5rem] sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <span
+          <div className="w-full flex flex-col 2xl:gap-[7.5rem] sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+            <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("Atal")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={img1} className="h-auto w-[50%]" alt="" />
+              <img src={img1} className="h-[70%] w-[70%]" alt="" />
+
             </span>
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              TechB: Introducing Tinkering Labs to support the Atal Innovation Mission and enhance the current teaching methodology using 3D printed models for multiple subjects which prove to be highly useful for teachers and students.
+
+              </h3>
+            </div>
+           </div>
+
+            {/* <span
+              onClick={() => setPage("Atal")}
+              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-normal"
+            >
+              <img src={img1} className=" h-auto w-[30%]" alt="" />
+              <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              TechB: Introducing Tinkering Labs to support the Atal Innovation Mission and enhance the current teaching methodology using 3D printed models for multiple subjects which prove to be highly useful for teachers and students.
+
+
+              </h3>
+            </div>
+            </span> */}
             <GoToTop />
           </div>
         );

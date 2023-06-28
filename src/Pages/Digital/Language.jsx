@@ -28,47 +28,125 @@ const Language = () => {
     switch (page) {
       case "default":
         return (
-          <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[2rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <span
+          <div className="w-full flex flex-col sm:gap-[3rem] gap-[2rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+           <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("muzzy")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
+              <img src={img1} className="h-[70%] w-[70%]" alt="" />
+
+            </span>
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              BBC MUZZY: World’s # 1 multimedia, multilingual, multi-platform and multi-awarded language learning course for children.
+
+              </h3>
+            </div>
+           </div>
+            {/* <span
+              onClick={() => setPage("muzzy")}
+              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-left cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-normal"
+            >
               <img
                 src={img1}
-                className="h-[5rem] w-[10rem] 2xl:h-[8rem] 2xl:w-[16rem]"
-                alt=""
-              />
-            </span>
-            <span
+                className="h-[5rem] w-[14rem] 2xl:h-[8rem] 2xl:w-[16rem]" alt="" />
+
+              <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+                <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+                  BBC MUZZY: World’s # 1 multimedia, multilingual, multi-platform and multi-awarded language learning course for children.
+
+                </h3>
+              </div>
+            </span> */}
+            <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("sanako")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={img2}
-                className="h-[2.5rem] w-[12rem] 2xl:h-[4rem] 2xl:w-[17rem]"
-                alt=""
-              />
+              <img src={img2} className="h-[70%] w-[70%]" alt="" />
+
             </span>
-            <span
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              SANAKO: Language Learning Solution.
+                  <br />
+                  Transform a set of desktops or laptops into a fully equipped language lab. Engage an entire class to participate in meaningful activities whilst utilizing the allocated time efficiently and remaining in complete control. Teach the way you want!
+              </h3>
+            </div>
+           </div>
+            {/* <span
+              onClick={() => setPage("sanako")}
+              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-left cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-normal"
+            >
+              <img src={img2} className="h-[2.5rem] w-[12rem] 2xl:h-[4rem] 2xl:w-[17rem]" alt="" />
+
+              <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+                <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+                  SANAKO: Language Learning Solution.
+                  <br />
+                  Transform a set of desktops or laptops into a fully equipped language lab. Engage an entire class to participate in meaningful activities whilst utilizing the allocated time efficiently and remaining in complete control. Teach the way you want!
+                </h3>
+              </div>
+            </span> */}
+            <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("radiant")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
+              <img src={img3} className="h-[70%] w-[70%]" alt="" />
+
+            </span>
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              Enounce: Language Learning Solution.
+                  <br />
+                  Enounce Live is an online solution for pronunciation practice. A user can listen to authentic speech models read any text or words selected, record own voice for comparison, and receive immediate feedback.
+              </h3>
+            </div>
+           </div>
+            {/* <span
+              onClick={() => setPage("radiant")}
+              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-left cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-normal"  >
               <img
                 src={img3}
-                className="h-[3rem] w-[12rem] 2xl:h-[5rem] 2xl:w-[18rem]"
-                alt=""
-              />
-            </span>
-            <span
+                className="h-[3rem] w-[12rem] 2xl:h-[5rem] 2xl:w-[18rem]" alt="" />
+
+              <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+                <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+                  Enounce: Language Learning Solution.
+                  <br />
+                  Enounce Live is an online solution for pronunciation practice. A user can listen to authentic speech models read any text or words selected, record own voice for comparison, and receive immediate feedback.
+                </h3>
+              </div>
+            </span> */}
+            <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("enounce")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img
-                src={img4}
-                className="h-[2rem] w-[12rem] 2xl:h-[4rem] 2xl:w-[16rem]"
-                alt=""
-              />
+              <img src={img4} className="h-[70%] w-[70%]" alt="" />
+
             </span>
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              Radiant-Ly: A.I.-Powered Adaptive App to improve your grammar skills in an interactive and fun way.
+
+              </h3>
+            </div>
+           </div>
+            {/* <span
+              onClick={() => setPage("enounce")}
+              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-left cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-normal"
+            >
+              <img src={img4} className="h-[2rem] w-[12rem] 2xl:h-[4rem] 2xl:w-[16rem]" alt="" />
+
+              <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+                <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+                  Radiant-Ly: A.I.-Powered Adaptive App to improve your grammar skills in an interactive and fun way.
+                </h3>
+              </div>
+            </span> */}
             <GoToTop />
           </div>
         );
