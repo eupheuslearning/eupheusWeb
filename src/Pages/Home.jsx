@@ -271,9 +271,9 @@ const Home = () => {
                 </div>
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
                   Widest catalogue of course book solutions and learning aids
-                  for K-12, mapped to CBSE and ICSE boards. Most updated with
-                  NEP 2020 mandates. India’s First “personalised remedial
-                  solutions” for students now available.
+                  for K-12, mapped to CBSE and ICSE boards and aligned to NCF
+                  2023. Most updated with NEP 2020 mandates. India’s First
+                  “personalised remedial solutions” for students now available.
                 </div>
               </div>
             </div>
@@ -353,9 +353,10 @@ const Home = () => {
             </Parallax>
             <div className="flex flex-col gap-2 items-end">
               <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm pr-2 w-[90vw]">
-                ClassKlap offers the NEP-based curriculum, seamless schooling,
-                and various programs to make schools and students future-ready.
-                Embrace the new-age learning to gain an edge in the future.
+                ClassKlap offers the NEP 2020 aligned and NCF 2023 based
+                curriculum, seamless schooling, and various programs to make
+                schools and students future-ready. Embrace the new-age learning
+                to give an edge in the future.
               </h1>
               <a href="https://www.classklap.com/">
                 <BasicButton text={"know More"} bgColor={"rgb(185 28 28)"} />
@@ -380,9 +381,10 @@ const Home = () => {
             </Parallax>
             <div className="flex flex-col gap-2 items-end">
               <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
-                ClassKlap offers the NEP-based curriculum, seamless schooling,
-                and various programs to make schools and students future-ready.
-                Embrace the new-age learning to gain an edge in the future.
+                ClassKlap offers the NEP 2020 aligned and NCF 2023 based
+                curriculum, seamless schooling, and various programs to make
+                schools and students future-ready. Embrace the new-age learning
+                to give an edge in the future.
               </h1>
               <a href="https://www.classklap.com/">
                 <BasicButton text={"know More"} bgColor={"rgb(185 28 28)"} />

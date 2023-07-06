@@ -24,6 +24,7 @@ export default function AwardTimeline() {
   const [third, setThird] = useState(false);
   const [fourth, setFourth] = useState(false);
   const [fifth, setFifth] = useState(false);
+  const [Sixth, setSixth] = useState(false);
   return (
     <>
       <div class="p-4 mt-4">
@@ -58,7 +59,7 @@ export default function AwardTimeline() {
                       first ? "rotate-[180deg]" : null
                     } font-bold text-lg`}
                   >
-                    2022
+                    2023
                   </span>
                 </div>
                 {first ? (
@@ -69,6 +70,103 @@ export default function AwardTimeline() {
                       className="sm:w-[16rem] w-[6rem] h-auto object-cover"
                       alt=""
                     />
+                    {/* <img
+                      src={cer1}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    <img
+                      src={cer2}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+
+                    <img
+                      src={cer3}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    {/* </div> }
+                    {/* <div className="flex gap-2">}
+                    <img
+                      src={cer4}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    <img
+                      src={cer5}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    <img
+                      src={cer6}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />
+                    {/* </div> }
+                    {/* <div className="flex gap-2"> }
+                    <img
+                      src={cer7}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    />{" "}
+                    }
+                    {/* <img
+                        src={cer5}
+                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                        alt=""
+                      />
+
+                      <img
+                        src={cer6}
+                        className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                        alt=""
+                      /> */}
+                    {/* </div> */}
+                  </div>
+                ) : null}
+              </div>
+            </div>
+            <div class="flex md:contents relative">
+              <div class="col-start-2 col-end-4 sm:mr-10 md:mx-auto relative">
+                {/* <div className="absolute font-semibold w-full h-full flex items-center -left-[5rem] top-0 text-2xl text-[#f5ab1d]">
+                  2022
+                </div> */}
+
+                <div class="h-full w-6 flex items-center justify-center">
+                  <div class="h-full w-1 bg-[#f5ab1d] pointer-events-none"></div>
+                </div>
+                <div class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-[#f5ab1d] shadow text-center"></div>
+              </div>
+
+              <div className="flex flex-col gap-4 w-[100vw] md:items-start items-center my-[5rem] relative">
+                <div
+                  onClick={() => setSixth(!Sixth)}
+                  className={`${
+                    Sixth ? null : "absolute"
+                  } -top-8 transition-all duration-[400] ease-linear sm:w-[40%] w-[85%] flex justify-center ${
+                    Sixth ? "rotate-[180deg] mt-4" : null
+                  } cursor-pointer`}
+                >
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <div class="chevron"></div>
+                  <span
+                    className={`text-black ${
+                      Sixth ? "rotate-[180deg]" : null
+                    } font-bold text-lg`}
+                  >
+                    2022
+                  </span>
+                </div>
+                {Sixth ? (
+                  <div className="w-fit  px-4 bg-transparent grid lg:grid-cols-3 grid-cols-2 justify-items-start sm:gap-12 gap-8">
+                    {/* <div className="flex gap-2"> */}
+                    {/* <img
+                      src={cer0}
+                      className="sm:w-[16rem] w-[6rem] h-auto object-cover"
+                      alt=""
+                    /> */}
                     <img
                       src={cer1}
                       className="sm:w-[16rem] w-[6rem] h-auto object-cover"
