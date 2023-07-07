@@ -9,7 +9,7 @@ import Step from "../../Components/Digital/Step";
 
 // icons
 import img1 from "../../assets/digital/worldbook/1.png";
-import img2 from "../../assets/digital/worldbook/1.png";
+import img2 from "../../assets/digital/worldbook/12.png";
 import WorldBook from "../../Components/Digital/reference/Worldbook";
 import WorldeBook from "../../Components/Digital/reference/Worldebook";
 
@@ -24,19 +24,71 @@ const ReferenceDigital = () => {
     switch (page) {
       case "default":
         return (
-          <div className="w-full grid sm:grid-rows-3 grid-rows-4 sm:grid-cols-3 grid-cols-2 sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
-            <span
+          <div className="flex flex-col  sm:gap-[3rem] gap-[1rem] sm:px-[3rem] px-2 pb-8 sm:pt-8 pt-[10rem] lg:mt-[13vh] md:mt-[15vh] sm:mt-[21vh]">
+            <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("world")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={img1} className="h-[70%] w-auto" alt="" />
+              <img src={img1} className="h-[70%] w-[70%]" alt="" />
+
             </span>
-            <span
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              WORLDBOOK: Image-based navigation helps young readers navigate through stories, games, videos, and interactive coloring pages for educational entertainment.
+
+              </h3>
+            </div>
+           </div>
+            {/* <span
+              onClick={() => setPage("world")}
+              className="bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-left cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-normal"
+            >
+              <img src={img1} className=" h-auto w-[40%]" alt="" />
+              
+              <span className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 p-8  md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              WORLDBOOK: Image-based navigation helps young readers navigate through stories, games, videos, and interactive coloring pages for educational entertainment.
+
+              </h3>
+            </span>
+               </span> */}
+
+                 <div className="flex sm:flex-row flex-col gap-2 items-center justify-center">
+           <span
               onClick={() => setPage("world_e")}
               className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-center cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-semibold"
             >
-              <img src={img2} className="h-[70%] w-auto" alt="" />
+              <img src={img2} className="h-[70%] w-[70%]" alt="" />
+
             </span>
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              WORLD eBOOK: World Book eBooks is a premier collection of illustrated, engaging titles that supports a span of curriculum areas and reading levels. World Book eBooks goes above and beyond other eBook platforms by providing a child-friendly layout and extensive subject coverage, as well as such interactive features as games, videos, and audio clips.
+              <br />
+              Access to over 2,500 eBooks and World Book® exclusive content
+              </h3>
+            </div>
+           </div>
+
+            {/* <span
+              onClick={() => setPage("world_e")}
+              className=" w-full bg-transparent hover:-translate-y-2 transition-all duration-200 ease-linear text-gray-100 flex justify-left cursor-pointer items-center rounded-md sm:text-[1.5rem] text-xs font-normal"
+            >
+              <img src={img2} className="h-[70%] w-[70%]" alt="" />
+              
+            <div className="flex textxl gap-4 items-center w-full justify-start sm:pl-[12vw] pl-[5vw]">
+              <h3 className="text-gray-700 md:text-2xl lg:text-lg 2xl:text-2xl text-sm flex flex-col gap-4">
+              WORLD eBOOK: World Book eBooks is a premier collection of illustrated, engaging titles that supports a span of curriculum areas and reading levels. World Book eBooks goes above and beyond other eBook platforms by providing a child-friendly layout and extensive subject coverage, as well as such interactive features as games, videos, and audio clips.
+              <br />
+              Access to over 2,500 eBooks and World Book® exclusive content
+
+              </h3>
+            </div>
+            </span> */}
+
+
+
             <GoToTop />
           </div>
         );

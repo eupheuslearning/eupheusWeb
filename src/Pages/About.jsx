@@ -161,7 +161,7 @@ export default function About() {
               WebkitLineClamp: `${first ? "5" : "100"}`,
             }}
           >
-            Sarvesh brings with him more than 32 years’ experience in education
+            Sarvesh brings with him more than 33 years’ experience in education
             and IT sectors, during which he has held progressive leadership
             positions in organizations such as General Electric, Corning,
             Telecom Australia, NIIT, Pearson and Encyclopaedia Britannica. He
@@ -212,7 +212,7 @@ export default function About() {
               WebkitLineClamp: `${second ? "5" : "100"}`,
             }}
           >
-            Ved has about 26 years’ sales experience in the K12 publishing
+            Ved has about 28 years’ sales experience in the K12 publishing
             industry space. He has held progressive positions with Suman
             Prakashan, Ratna Sagar, Oxford University Press and Encyclopaedia
             Britannica with credentials of successfully opening new territories
@@ -258,7 +258,7 @@ export default function About() {
               WebkitLineClamp: `${third ? "5" : "100"}`,
             }}
           >
-            Amit has more than 19 years’ experience in sales and marketing
+            Amit has more than 20 years’ experience in sales and marketing
             across Education, Training & Entertainment industries covering
             Indian and International markets. His stints at NIIT, Palador
             Pictures, Centum Learning, Across World Education and Encyclopaedia
