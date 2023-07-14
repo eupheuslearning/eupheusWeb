@@ -143,7 +143,9 @@ const Home = () => {
         >
           <div className="mt-[4rem] text-red-700 md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
             <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
-            <span>DISTRIBUTION PLATFORM</span>
+            <span style={{ color: "black", fontWeight: "500" }}>
+              DISTRIBUTION PLATFORM
+            </span>
           </div>
         </Tween>
       </Reveal>
@@ -165,7 +167,9 @@ const Home = () => {
         <div className=" sm:mt-[8rem] mt-[3rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
           <span>EUPHEUS LEARNING THE LIGHTHOUSE OF</span>
 
-          <span>TRANSFORMATION IN SCHOOLS</span>
+          <span style={{ color: "black", fontWeight: "500" }}>
+            TRANSFORMATION IN SCHOOLS
+          </span>
         </div>
       </Parallax>
 
@@ -202,7 +206,9 @@ const Home = () => {
         >
           <div className=" sm:mt-[8rem] mt-[3rem] text-red-700 lg:w-[70vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
             <span>THE POWER OF THE WIDEST</span>
-            <span>CURRICULUM CATALOGUE</span>
+            <span style={{ color: "black", fontWeight: "500" }}>
+              CURRICULUM CATALOGUE
+            </span>
           </div>
         </Tween>
       </Reveal>
@@ -272,8 +278,10 @@ const Home = () => {
                 <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
                   Widest catalogue of course book solutions and learning aids
                   for K-12, mapped to CBSE and ICSE boards. Most updated with
-                  NEP 2020 mandates. India’s First “personalised remedial
-                  solutions” for students now available.
+                  NEP 2020 mandates.
+                  <br />
+                  India’s First “personalised remedial solutions” for students
+                  now available.
                 </div>
               </div>
             </div>
@@ -331,12 +339,12 @@ const Home = () => {
           <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold pr-2">
             Personalized Remedial Solutions
           </h1>
-          <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl font-semibold text-right pr-2">
+          <h1 className="text-black-500 text-base lg:text-xl 2xl:text-4xl font-semibold text-right pr-2">
             Because No Two Students Are Alike
           </h1>
         </span>
         {mobile ? (
-          <div className="flex flex-col md:gap-[7rem] gap-2 items-center">
+          <div className="flex flex-col md:gap-[7rem] gap-2 items-start">
             <Parallax translateX={[-50, 20]}>
               <div className=" relative">
                 <img
@@ -361,6 +369,7 @@ const Home = () => {
                 <BasicButton text={"know More"} bgColor={"rgb(185 28 28)"} />
               </a>
             </div>
+            s
           </div>
         ) : (
           <div className="flex md:gap-[7rem] gap-[2rem] items-center">
@@ -396,12 +405,12 @@ const Home = () => {
           <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
             21st Century School OS
           </h1>
-          <h1 className="text-red-500 text-base lg:text-xl 2xl:text-4xl font-semibold">
+          <h1 className="text-black-500 text-base lg:text-xl 2xl:text-4xl font-semibold">
             Unique and Single Signon School Management Software
           </h1>
         </span>
         {mobile ? (
-          <div className="flex flex-col md:gap-[7rem] gap-2 items-center">
+          <div className="flex flex-col md:gap-[7rem] gap-2 items-centersssssss">
             <Parallax translateX={[100, -130]}>
               <div className=" relative">
                 <img
