@@ -144,7 +144,7 @@ const Home = () => {
           <div className="mt-[4rem] text-red-700 md:ml-[12vw] ml-[5vw] font-extrabold flex flex-col text-base lg:text-xl 2xl:text-4xl">
             <span>INDIA’S LARGEST SCHOOL FOCUSED</span>
             <span style={{ color: "black", fontWeight: "500" }}>
-              DISTRIBUTION PLATFORM
+              2 DISTRIBUTION PLATFORM
             </span>
           </div>
         </Tween>
@@ -232,6 +232,7 @@ const Home = () => {
           alt=""
         />
       </Parallax>
+
       <div className="flex gap-4 items-center w-[100vw] justify-center pl-6 mt-[2.5rem]">
         <h3 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw]">
           Books are important friends of young learners. Now, also empower
@@ -316,11 +317,12 @@ const Home = () => {
                 className="sm:w-[22.3rem] w-[13rem] h-auto"
                 alt=""
               />
+
               <div className="absolute top-0 flex flex-col sm:gap-3 gap-1 sm:pt-[5rem] pt-[2rem] sm:pl-[2rem] pl-[1rem]">
                 <div className="text-yellow-500 font-bold lg:text-2xl md:text-6xl sm:text-xl text-sm">
                   21st Century School OS
                 </div>
-                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem] w-[10rem] pr-2 ">
+                <div className="text-gray-700 sm:text-xl text-xs md:w-[17rem] h-auto sm:w-[15rem]  w-[10rem] pr-2 ">
                   Unique School operating system offering Content, Learning
                   Management System and ERP on a single sign-on. A powerful tool
                   for Schools to Implement key mandates of NEP 2020
@@ -335,16 +337,25 @@ const Home = () => {
         <img src={robot} className="w-[10rem] sm:w-[25vw] h-auto" alt="" />
       </div>
       <div className="flex gap-4 flex-col w-fit items-end md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] mt-[5rem]">
-        <span>
-          <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold pr-2">
-            Personalized Remedial Solutions
-          </h1>
-          <h1 className="text-black-500 text-base lg:text-xl 2xl:text-4xl font-semibold text-right pr-2">
-            Because No Two Students Are Alike
-          </h1>
-        </span>
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, transform: "translate3d(100px, 0, 0)" }}
+            to={{ opacity: 1, transform: "translate3d(0px, 0, 0)" }}
+            ease="back.out(1.4)"
+          >
+            <span>
+              <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold pr-2">
+                Personalized Remedial Solutions
+              </h1>
+              <h1 className="text-black-500 text-base lg:text-xl 2xl:text-4xl font-semibold text-right pr-2">
+                Because No Two Students Are Alike
+              </h1>
+            </span>
+          </Tween>
+        </Reveal>
+
         {mobile ? (
-          <div className="flex flex-col md:gap-[7rem] gap-2 items-start">
+          <div className="flex flex-col md:gap-[7rem] gap-2 items-center">
             <Parallax translateX={[-50, 20]}>
               <div className=" relative">
                 <img
@@ -360,7 +371,7 @@ const Home = () => {
               </div>
             </Parallax>
             <div className="flex flex-col gap-2 items-end">
-              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm pr-2 w-[90vw]">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl  mt-[2rem] text-sm pr-2 w-[90vw]">
                 ClassKlap offers the NEP 2020 aligned and NCF 2023 based
                 curriculum, seamless schooling, and various programs to make
                 schools and students future-ready. Embrace the new-age learning
@@ -373,7 +384,7 @@ const Home = () => {
             s
           </div>
         ) : (
-          <div className="flex md:gap-[7rem] gap-[2rem] items-center">
+          <div className="flex md:gap-[7rem] gap-[2rem] items-start">
             <Parallax translateX={[-50, 20]}>
               <div className=" relative">
                 <img
@@ -389,7 +400,7 @@ const Home = () => {
               </div>
             </Parallax>
             <div className="flex flex-col gap-2 items-end">
-              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl mt-[2rem] text-sm w-[35vw]">
                 ClassKlap offers the NEP 2020 aligned and NCF 2023 based
                 curriculum, seamless schooling, and various programs to make
                 schools and students future-ready. Embrace the new-age learning
@@ -403,16 +414,25 @@ const Home = () => {
         )}
       </div>
       <div className="flex gap-4 flex-col md:ml-[12vw] md:wl-[5vw] 2xl:ml-[18vw] pl-[2rem] mt-[5rem]">
-        <span>
-          <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
-            21st Century School OS
-          </h1>
-          <h1 className="text-black-500 text-base lg:text-xl 2xl:text-4xl font-semibold">
-            Unique and Single Signon School Management Software
-          </h1>
-        </span>
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, transform: "translate3d(-100px, 0, 0)" }}
+            to={{ opacity: 1, transform: "translate3d(0px, 0, 0)" }}
+            ease="back.out(1.4)"
+          >
+            <span>
+              <h1 className=" text-red-700 text-base lg:text-xl 2xl:text-4xl font-bold">
+                21st Century School OS
+              </h1>
+              <h1 className="text-black-500 text-base lg:text-xl 2xl:text-4xl font-semibold">
+                Unique and Single Signon School Management Software
+              </h1>
+            </span>
+          </Tween>
+        </Reveal>
+
         {mobile ? (
-          <div className="flex flex-col md:gap-[7rem] gap-2 items-centersssssss">
+          <div className="flex flex-col md:gap-[7rem] gap-2 items-center">
             <Parallax translateX={[100, -130]}>
               <div className=" relative">
                 <img
@@ -442,9 +462,9 @@ const Home = () => {
             </div>
           </div>
         ) : (
-          <div className="flex md:gap-[7rem] gap-[2rem] items-center">
+          <div className="flex md:gap-[7rem] gap-[2rem]  mt-2">
             <div className="flex flex-col gap-2 items-end">
-              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl text-sm w-[35vw]">
+              <h1 className="text-gray-700 lg:text-lg 2xl:text-2xl   mt-[2rem] text-sm w-[35vw]">
                 Making automation and digitalization of Schools easy. The 21st
                 Century School OS integrates Content, LMS (learning management
                 system) and ERP (enterprise resource planning) on a single

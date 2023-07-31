@@ -123,7 +123,7 @@ const Curriculum = () => {
       <div className="sticky bottom-0">
         <Footer />
       </div>
-      <GoToTop />
+      {/* <GoToTop /> */}
     </div>
   );
 };

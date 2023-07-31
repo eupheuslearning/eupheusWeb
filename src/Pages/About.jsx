@@ -9,12 +9,18 @@ import Banner_1 from "../assets/aboutBanner.png";
 import grayBg from "../assets/grayBg.png";
 import img1 from "../assets/about/Asset 35@3x.png";
 import img2 from "../assets/about/Asset 34@3x.png";
-import img3 from "../assets/about/Asset 36@3x.png";
+import img3 from "../assets/about/Asset 3@3x.png";
+import img3_1 from "../assets/about/Asset 2@3.1x.png";
 import img4 from "../assets/about/Asset 15@3x.png";
 import img5 from "../assets/about/Asset 16@3x.png";
 import img6 from "../assets/about/Asset 17@3x.png";
 import img7 from "../assets/about/Asset 37@3x.png";
+// importing parallax
 
+import { Parallax } from "react-scroll-parallax";
+// end parallax
+
+import { Tween, Reveal } from "react-gsap";
 import img8 from "../assets/about/1.png";
 import img9 from "../assets/about/2.png";
 import img10 from "../assets/about/3.png";
@@ -59,11 +65,11 @@ export default function About() {
     >
       <Navbar highlight={"about"} />
       <div className="sm:h-[100vh] relative w-[100vw]  ">
-        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[2rem] right-[5vw]  lg:right-[60vh] z-10">
-          <h1 className=" text-black-700 md:text-3xl text-sm ont-extrabold  ">
+        <div className=" absolute  lg:top-[25vh] md:top-[15vh] md:right-[30vw] sm:top-[30vh] top-[2rem] right-[5vw]  lg:right-[45vh] z-10">
+          <h1 className=" text-red-700 md:text-3xl text-sm font-extrabold  ">
             WELCOME TO THE LIGHTHOUSE OF
           </h1>
-          <h1 className="text-black-500 md:text-3xl text-xs font-bold">
+          <h1 className="text-black-500 md:text-3xl text-xs font-normal">
             TRANSFORMATION
           </h1>
         </div>
@@ -74,7 +80,7 @@ export default function About() {
         />
       </div>
 
-      <div className="flex flex-col gap-4 md:mb-[30vh] sm:my-[4rem] my-[1rem] relative">
+      <div className="flex flex-col gap-4 sm:my-[4rem] my-[1rem] relative">
         <div className=" text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
           <span>OUR VISION</span>
         </div>
@@ -88,14 +94,32 @@ export default function About() {
           that an empowered school is a great breeding point for a happier
           student.
         </div>
-        <img
+
+        <Reveal repeat>
+          <Tween
+            from={{ opacity: 0, transform: "translate3d(0, 100px, 0)" }}
+            to={{ opacity: 1, transform: "translate3d(0, 0px, 0)" }}
+            ease="back.out(1.4)"
+          >
+            <div className="w-[100vw] flex justify-center">
+              <img
+                src={img1}
+                // className="sm:absolute sm:right-[2rem] right-[2rem] object-cover sm:w-[60vw] w-[100vw] h-auto mb-4"
+                className="object-cover sm:w-[50vw] w-[100vw] h-auto"
+                alt=""
+              />
+            </div>
+          </Tween>
+        </Reveal>
+
+        {/* <img
           src={img1}
           className="sm:absolute sm:right-[13rem] right-[12rem] object-cover  top-[4rem] sm:w-[60vw] w-[100vw] h-auto"
           alt=""
-        />
+        /> */}
       </div>
 
-      <div className="flex gap-4 items-center w-[100vw] justify-start sm:pl-[12vw] pl-[5vw] md:mt-[40vh]">
+      <div className="flex gap-4 items-center w-[100vw] justify-start sm:pl-[12vw] pl-[5vw]">
         <h3 className="text-gray-700 md:text-2xl text-sm lg:w-[26vw] md:w-[45vw] w-[35vw] flex flex-col gap-4">
           <span className="font-extrabold text-base lg:text-xl 2xl:text-4xl text-red-700">
             OUR MISSION
@@ -107,7 +131,14 @@ export default function About() {
           </span>
         </h3>
 
-        <img src={img2} className="md:w-[40vw] w-[60vw] h-auto" alt="" />
+        <Parallax rotateY={[180, 570]}>
+          <img src={img2} className="md:w-[40vw] w-[60vw] h-auto" alt="" />
+        </Parallax>
+
+        {/* <Parallax translateX={[100, -210]}>
+          <img src={img2} className="md:w-[40vw] w-[60vw] h-auto" alt="" />
+        </Parallax> */}
+        {/* <img src={img2} className="md:w-[40vw] w-[60vw] h-auto" alt="" /> */}
       </div>
 
       <div className="flex flex-col gap-8 sm:mb-[40vh] relative">
@@ -118,168 +149,182 @@ export default function About() {
         <div className=" text-gray-700 lg:w-[50vw] md:w-[50vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
           The brand of Proficiency Learning Solutions Private Limited, Eupheus
           Learning started its operations in June 2017. Based in New Delhi, it
-          was bootstrapped by about 40 members who joined the 3-founding member
-          team to create a new category in the Indian education market.
+          was bootstrapped by about 40 members who joined the 3-fovw\]unding
+          member team to create a new category in the Indian education market.
           <br />
           <br />
           The founding team comprises creative minds with experience of more
           than 120 man-years in starting up and turning around businesses in the
           Education and Training space.
         </div>
-
         <img
+          src={img3}
+          className="sm:absolute right-[3vw] bottom-0 object-cover md:top-[3rem] sm:top-[15rem] sm:w-[33vw] w-[100vw] h-auto"
+          alt=""
+        />
+        <img
+          src={img3_1}
+          className="sm:absolute right-[33vw] bottom-0 object-cover lg:top-[26rem] md:top-[26rem] sm:top-[15rem] sm:w-[45vw] w-[100vw] h-auto"
+          alt=""
+        />
+
+        {/* <img
           src={img3}
           className="sm:absolute right-[3vw] bottom-0 object-cover md:top-[10rem] sm:top-[15rem] sm:w-[70vw] w-[100vw] h-auto"
           alt=""
-        />
+        /> */}
       </div>
 
-      <div className="flex sm:flex-row flex-col gap-3 w-[100vw] px-[5vw]">
-        <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
-          <div className="flex flex-col gap-12 relative">
-            <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
-              <span className="text-gray-800 font-bold">
-                SARVESH SHRIVASTAVA,
-              </span>
-              <br />
-              <span className="text-gray-600 font-semibold">
-                FOUNDER AND MANAGING DIRECTOR
-              </span>
-            </div>
+      <div className="flex w-[100vw] flex-col gap-4 px-[5vw] py-[11vw]">
+        <div className="flex sm:flex-row flex-col gap-3 w-[100vw]">
+          <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
+            <div className="flex flex-col gap-12 relative">
+              <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
+                <span className="text-gray-800 font-bold">
+                  SARVESH SHRIVASTAVA,
+                </span>
+                <br />
+                <span className="text-gray-600 font-semibold">
+                  FOUNDER AND MANAGING DIRECTOR
+                </span>
+              </div>
 
-            <img
-              src={img4}
-              className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
-              alt=""
-            />
-          </div>
-          <div
-            className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
-            style={{
-              display: "-webkit-box",
-              WebkitBoxOrient: "vertical",
-              WebkitLineClamp: `${first ? "5" : "100"}`,
-            }}
-          >
-            Sarvesh brings with him more than 33 years’ experience in education
-            and IT sectors, during which he has held progressive leadership
-            positions in organizations such as General Electric, Corning,
-            Telecom Australia, NIIT, Pearson and Encyclopaedia Britannica. He
-            also successfully started and ran his own company undertaking
-            several EPC optical fibre contracts which were the first in India
-            including the first franchise of pay phones in the 1990s. His last
-            stint was as Managing Director at Encyclopaedia Britannica South
-            Asia, Executive. He holds a master’s degree in chemical engineering
-            from the University of Illinois, Chicago, US.
-          </div>
-          <div className="flex gap-3 w-full pr-8 justify-end items-center">
-            <a href="https://www.linkedin.com/in/sarveshwar-sarvesh-shrivastava-4b4986/">
-              <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
-                <LinkedIn /> <span>Linkedin</span>
-              </button>
-            </a>
-            <button
-              className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
-              onClick={() => setFirst(!first)}
-            >
-              {first ? "Read More" : "Read Less"}
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
-          <div className="flex flex-col gap-12 relative">
-            <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
-              <span className="text-gray-800 font-bold">
-                VED PRAKASH KHATTRI,
-              </span>
-              <br />
-              <span className="text-gray-600 font-semibold">
-                CO-FOUNDER AND DIRECTOR
-              </span>
+              <img
+                style={{ marginTop: "-28px" }}
+                src={img4}
+                className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
+                alt=""
+              />
             </div>
-
-            <img
-              src={img5}
-              className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
-              alt=""
-            />
-          </div>
-          <div
-            className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
-            style={{
-              display: "-webkit-box",
-              WebkitBoxOrient: "vertical",
-              WebkitLineClamp: `${second ? "5" : "100"}`,
-            }}
-          >
-            Ved has about 28 years’ sales experience in the K12 publishing
-            industry space. He has held progressive positions with Suman
-            Prakashan, Ratna Sagar, Oxford University Press and Encyclopaedia
-            Britannica with credentials of successfully opening new territories
-            and grown the business in his tenures at each company. Ved in his
-            last assignment was Vice President – K12 at Encyclopaedia Britannica
-            South Asia. He holds a bachelor’s degree in commerce.
-          </div>
-          <div className="flex gap-3 w-full pr-8 justify-end items-center">
-            <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
-              <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
-                <LinkedIn /> <span>Linkedin</span>
-              </button>
-            </a>
-            <button
-              className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
-              onClick={() => setSecond(!second)}
+            <div
+              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
+              style={{
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: `${first ? "5" : "100"}`,
+              }}
             >
-              {second ? "Read More" : "Read Less"}
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
-          <div className="flex flex-col gap-12 relative">
-            <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
-              <span className="text-gray-800 font-bold">AMIT KAPOOR,</span>
-              <br />
-              <span className="text-gray-600 font-semibold">
-                CO-FOUNDER AND DIRECTOR
-              </span>
+              Sarvesh brings with him more than 33 years’ experience in
+              education and IT sectors, during which he has held progressive
+              leadership positions in organizations such as General Electric,
+              Corning, Telecom Australia, NIIT, Pearson and Encyclopaedia
+              Britannica. He also successfully started and ran his own company
+              undertaking several EPC optical fibre contracts which were the
+              first in India including the first franchise of pay phones in the
+              1990s. His last stint was as Managing Director at Encyclopaedia
+              Britannica South Asia, Executive. He holds a master’s degree in
+              chemical engineering from the University of Illinois, Chicago, US.
             </div>
-
-            <img
-              src={img6}
-              className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
-              alt=""
-            />
-          </div>
-          <div
-            className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
-            style={{
-              display: "-webkit-box",
-              WebkitBoxOrient: "vertical",
-              WebkitLineClamp: `${third ? "5" : "100"}`,
-            }}
-          >
-            Amit has more than 20 years’ experience in sales and marketing
-            across Education, Training & Entertainment industries covering
-            Indian and International markets. His stints at NIIT, Palador
-            Pictures, Centum Learning, Across World Education and Encyclopaedia
-            Britannica have been focussed on Sales, market entry and growth
-            strategies coupled with a focus on business development. Prior to
-            founding Eupheus, he was Head – Digital sales at Encyclopaedia
-            Britannica. He holds a post graduate diploma in marketing from T.A.
-            Pai Management Institute.
-          </div>
-          <div className="flex gap-3 w-full pr-8 justify-end items-center">
-            <a href="https://www.linkedin.com/in/amkapoor/">
-              <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
-                <LinkedIn /> <span>Linkedin</span>
+            <div className="flex gap-3 w-full pr-8 justify-end items-center">
+              <a href="https://www.linkedin.com/in/sarveshwar-sarvesh-shrivastava-4b4986/">
+                <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+                  <LinkedIn /> <span>Linkedin</span>
+                </button>
+              </a>
+              <button
+                className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+                onClick={() => setFirst(!first)}
+              >
+                {first ? "Read More" : "Read Less"}
               </button>
-            </a>
-            <button
-              className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
-              onClick={() => setThird(!third)}
+            </div>
+          </div>
+          <div className="flex flex-col gap-7 pr-4 sm:w-[30vw] w-full items-start">
+            <div className="flex flex-col gap-12 relative">
+              <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
+                <span className="text-gray-800 font-bold">
+                  VED PRAKASH KHATTRI,
+                </span>
+                <br />
+                <span className="text-gray-600 font-semibold">
+                  CO-FOUNDER AND DIRECTOR
+                </span>
+              </div>
+
+              <img
+                src={img5}
+                className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
+                alt=""
+              />
+            </div>
+            <div
+              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
+              style={{
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: `${second ? "5" : "100"}`,
+              }}
             >
-              {third ? "Read More" : "Read Less"}
-            </button>
+              Ved has about 28 years’ sales experience in the K12 publishing
+              industry space. He has held progressive positions with Suman
+              Prakashan, Ratna Sagar, Oxford University Press and Encyclopaedia
+              Britannica with credentials of successfully opening new
+              territories and grown the business in his tenures at each company.
+              Ved in his last assignment was Vice President – K12 at
+              Encyclopaedia Britannica South Asia. He holds a bachelor’s degree
+              in commerce.
+            </div>
+            <div className="flex gap-3 w-full pr-8 justify-end items-center">
+              <a href="https://www.linkedin.com/in/ved-prakash-khatri-3a588220/">
+                <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+                  <LinkedIn /> <span>Linkedin</span>
+                </button>
+              </a>
+              <button
+                className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+                onClick={() => setSecond(!second)}
+              >
+                {second ? "Read More" : "Read Less"}
+              </button>
+            </div>
+          </div>
+          <div className="flex flex-col gap-7 sm:w-[30vw] w-full items-start">
+            <div className="flex flex-col gap-12 relative">
+              <div className=" mt-[4rem] lg:w-full md:w-[70vw] md:text-3xl text-xl">
+                <span className="text-gray-800 font-bold">AMIT KAPOOR,</span>
+                <br />
+                <span className="text-gray-600 font-semibold">
+                  CO-FOUNDER AND DIRECTOR
+                </span>
+              </div>
+
+              <img
+                src={img6}
+                className="sm:w-[20vw] w-[60vw] shadow-2xl h-auto"
+                alt=""
+              />
+            </div>
+            <div
+              className=" text-gray-700 overflow-hidden lg:w-full md:w-[70vw] lg:text-lg 2xl:text-2xl text-sm"
+              style={{
+                display: "-webkit-box",
+                WebkitBoxOrient: "vertical",
+                WebkitLineClamp: `${third ? "5" : "100"}`,
+              }}
+            >
+              Amit has more than 20 years’ experience in sales and marketing
+              across Education, Training & Entertainment industries covering
+              Indian and International markets. His stints at NIIT, Palador
+              Pictures, Centum Learning, Across World Education and
+              Encyclopaedia Britannica have been focussed on Sales, market entry
+              and growth strategies coupled with a focus on business
+              development. Prior to founding Eupheus, he was Head – Digital
+              sales at Encyclopaedia Britannica. He holds a post graduate
+              diploma in marketing from T.A. Pai Management Institute.
+            </div>
+            <div className="flex gap-3 w-full pr-8 justify-end items-center">
+              <a href="https://www.linkedin.com/in/amkapoor/">
+                <button className="px-3 py-1 flex items-center gap-1 text-gray-200 bg-gray-500 rounded-md">
+                  <LinkedIn /> <span>Linkedin</span>
+                </button>
+              </a>
+              <button
+                className="px-3 py-1 gap-1 text-gray-200 bg-gray-500 rounded-md"
+                onClick={() => setThird(!third)}
+              >
+                {third ? "Read More" : "Read Less"}
+              </button>
+            </div>
           </div>
         </div>
       </div>
