@@ -63,9 +63,11 @@ const Solutions = () => {
         mandates of NEP 2020.
       </div>
 
-      <div className=" sm:mt-[8rem] mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-base">
-        <span>COURSE BOOK SOLUTIONS FOR</span>
-        <span>PRE-PRIMARY TO GRADE 8</span>
+      <div className=" sm:mt-[8rem] mt-[2rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col text-4xl g:text-xl 2xl:text-4xl">
+        <span>COURSE BOOK SOLUTIONS FOR </span>
+        <span style={{ color: "black", fontWeight: "400", fontsize: "normal" }}>
+          PRE-PRIMARY TO GRADE 8
+        </span>
       </div>
       <div className="mt-[2rem] flex justify-center">
         <img
@@ -82,7 +84,7 @@ const Solutions = () => {
         ></iframe>
       </div>
 
-      <div className="sm:mt-[8rem] mt-[1rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-base">
+      <div className="sm:mt-[8rem] mt-[1rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col  text-4xl">
         <span>SUPPLEMENTAL SOLUTIONS</span>
       </div>
       <div className="mt-[2rem] flex justify-center">
@@ -100,10 +102,11 @@ const Solutions = () => {
         ></iframe>
       </div>
 
-      <div className="sm:mt-[8rem] mt-[1rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col md:text-5xl text-base">
-        <span>
-          THE POWER OF
-          <br />
+      <div className="sm:mt-[8rem] mt-[1rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-bold flex flex-col text-4xl ">
+        <span>THE POWER OF </span>
+
+        <span style={{ color: "black", fontWeight: "400", fontsize: "normal" }}>
+          {" "}
           THE 21ST CENTURY SCHOOL OS
         </span>
       </div>
