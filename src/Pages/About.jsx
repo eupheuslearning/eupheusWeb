@@ -141,7 +141,7 @@ export default function About() {
         {/* <img src={img2} className="md:w-[40vw] w-[60vw] h-auto" alt="" /> */}
       </div>
 
-      <div className="flex flex-col gap-8 sm:mb-[40vh] relative">
+      <div className="flex flex-col gap-8 relative">
         <div className=" mt-[4rem] text-red-700 lg:w-[50vw] md:w-[70vw] md:ml-[12vw] ml-[5vw] font-extrabold text-base lg:text-xl 2xl:text-4xl">
           <span>MEET THE GUIDING LIGHT</span>
         </div>
@@ -162,17 +162,9 @@ export default function About() {
           className="sm:absolute right-[3vw] bottom-0 object-cover md:top-[3rem] sm:top-[15rem] sm:w-[33vw] w-[100vw] h-auto"
           alt=""
         />
-        <img
-          src={img3_1}
-          className="sm:absolute right-[33vw] bottom-0 object-cover lg:top-[26rem] md:top-[26rem] sm:top-[15rem] sm:w-[45vw] w-[100vw] h-auto"
-          alt=""
-        />
-
-        {/* <img
-          src={img3}
-          className="sm:absolute right-[3vw] bottom-0 object-cover md:top-[10rem] sm:top-[15rem] sm:w-[70vw] w-[100vw] h-auto"
-          alt=""
-        /> */}
+        <div className="w-[100vw] flex justify-center">
+          <img src={img3_1} className="pr-[4rem]" alt="" />
+        </div>
       </div>
 
       <div className="flex w-[100vw] flex-col gap-4 px-[5vw] py-[11vw]">
