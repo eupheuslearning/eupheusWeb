@@ -149,8 +149,8 @@ export default function About() {
         <div className=" text-gray-700 lg:w-[50vw] md:w-[50vw] md:ml-[12vw] ml-[5vw] lg:text-lg 2xl:text-2xl text-sm">
           The brand of Proficiency Learning Solutions Private Limited, Eupheus
           Learning started its operations in June 2017. Based in New Delhi, it
-          was bootstrapped by about 40 members who joined the 3-fovw\]unding
-          member team to create a new category in the Indian education market.
+          was bootstrapped by about 40 members who joined the 3 founding member
+          team to create a new category in the Indian education market.
           <br />
           <br />
           The founding team comprises creative minds with experience of more
